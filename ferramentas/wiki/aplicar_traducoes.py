@@ -1,11 +1,17 @@
-"""Acrescenta traduções novas aos JSONs de traducoes/pt-BR.
+"""Acrescenta traduções novas aos JSONs de traducoes/pt-BR, só as que passam nas regras.
 
-Uso: python3 aplicar_traducoes.py traducoes.json [outro.json ...]
+Uso:
+    python3 aplicar_traducoes.py traducoes.json [outro.json ...]
+    python3 aplicar_traducoes.py --auditar
 
 Cada arquivo de entrada é um objeto {"texto em inglês": "tradução"}. O tipo de
 cada texto vem das listas dados/faltando*.json e define o JSON de destino
-(ver ARQUIVO_DO_TIPO em cobertura.py). Chave que já existe no destino não muda. O
-script mantém a formatação e o fim de linha do arquivo de destino.
+(ver destinos.py). Cada tradução passa pelo validador de regras.py: o que falha vai
+para dados/rejeitadas.json com o código do erro, e não entra. Chave que já existe no
+destino não muda. O script mantém a formatação e o fim de linha do destino.
+
+--auditar roda as mesmas regras sobre os JSONs atuais e grava dados/auditoria.json,
+sem mudar nada.
 """
 import glob
 import json
@@ -14,7 +20,11 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import comum  # noqa: E402
-from cobertura import ARQUIVO_DO_TIPO  # noqa: E402
+import regras  # noqa: E402
+from destinos import arquivos_de_destino, imperativos  # noqa: E402
+
+REJEITADAS = os.path.join(comum.DADOS, "rejeitadas.json")
+AUDITORIA = os.path.join(comum.DADOS, "auditoria.json")
 
 
 def acrescentar(caminho, novas):
@@ -46,7 +56,32 @@ def acrescentar(caminho, novas):
     return len(novas)
 
 
+def auditar():
+    glossario = regras.carregar_glossario()
+    menu = imperativos()
+    relatorio = {}
+    for caminho in sorted(glob.glob(os.path.join(comum.PT_BR, "*.json"))):
+        arquivo = os.path.basename(caminho)
+        with open(caminho, encoding="utf-8-sig") as entrada:
+            traducoes = json.load(entrada)
+        por_regra = {}
+        for en, pt in traducoes.items():
+            for codigo in regras.validar(en, pt, arquivo, glossario, menu):
+                por_regra.setdefault(codigo, []).append({"en": en, "pt": pt})
+        relatorio[arquivo] = {codigo: {"total": len(itens), "exemplos": itens[:20]}
+                              for codigo, itens in sorted(por_regra.items())}
+        resumo = ", ".join(f"{c}={len(i)}" for c, i in sorted(por_regra.items())) or "sem erros"
+        print(f"{arquivo} ({len(traducoes)}): {resumo}")
+    with open(AUDITORIA, "w", encoding="utf-8") as saida:
+        json.dump(relatorio, saida, ensure_ascii=False, indent=1)
+    print(f"Relatório em {AUDITORIA}")
+
+
 def main():
+    if sys.argv[1:] == ["--auditar"]:
+        auditar()
+        return
+
     tipo_de = {}
     for lista in sorted(glob.glob(os.path.join(comum.DADOS, "faltando*.json"))):
         with open(lista, encoding="utf-8") as entrada:
@@ -54,7 +89,9 @@ def main():
                 # A mesma frase pode estar em mais de uma lista (fala e interface).
                 tipo_de.setdefault(fala["texto"], set()).add(fala["tipo"])
 
-    por_arquivo = {}
+    glossario = regras.carregar_glossario()
+    menu = imperativos()
+    por_arquivo, rejeitadas = {}, []
     sem_tipo = 0
     for caminho in sys.argv[1:]:
         with open(caminho, encoding="utf-8") as entrada:
@@ -63,17 +100,24 @@ def main():
                 if not tipos:
                     sem_tipo += 1
                     continue
-                # "arquivo:<json>" vem do registro do plugin e já diz o destino.
-                destinos = {t[len("arquivo:"):] if t.startswith("arquivo:") else ARQUIVO_DO_TIPO[t] for t in tipos}
-                for arquivo in destinos:
-                    por_arquivo.setdefault(arquivo, {})[en] = pt
+                # Tipos diferentes podem ir para o mesmo arquivo: valida uma vez por arquivo.
+                destinos = {arquivo for tipo in tipos for arquivo in arquivos_de_destino(tipo)}
+                for arquivo in sorted(destinos):
+                    erros = regras.validar(en, pt, arquivo, glossario, menu)
+                    if erros:
+                        rejeitadas.append({"en": en, "pt": pt, "arquivo": arquivo, "erros": erros})
+                    else:
+                        por_arquivo.setdefault(arquivo, {})[en] = pt
 
     for arquivo, novas in sorted(por_arquivo.items()):
         n = acrescentar(os.path.join(comum.PT_BR, arquivo), novas)
         print(f"{arquivo}: {n} traduções novas")
+    with open(REJEITADAS, "w", encoding="utf-8") as saida:
+        json.dump(rejeitadas, saida, ensure_ascii=False, indent=1)
+    if rejeitadas:
+        print(f"{len(rejeitadas)} traduções barradas pelas regras: veja {REJEITADAS}")
     if sem_tipo:
         print(f"{sem_tipo} textos ignorados: não estão em dados/faltando*.json")
-
 
 if __name__ == "__main__":
     main()

@@ -1,37 +1,47 @@
-"""Valida traduções antes de aplicar.
+"""Valida traduções antes de aplicar, com as regras de regras.py.
 
-Uso: python3 validar_traducoes.py dados/faltando.json traducoes_novas.json
+Uso: python3 validar_traducoes.py <lista.json> <traducoes.json>
 
-O primeiro arquivo é a lista de falas (dados/faltando.json). O segundo é um objeto
-{"texto em inglês": "tradução"}. O script confere se toda fala tem tradução não vazia
-e se os placeholders, como [player], ficaram iguais e na mesma ordem do inglês.
+A lista é uma das dados/faltando*.json ou dados/para_traduzir.json (itens com "texto"
+ou "en" e "tipo"). As traduções são um objeto {"texto em inglês": "tradução"}. O
+script lista cada erro com o código da regra e sai com código 1 se houver erro.
 """
 import json
-import re
+import os
 import sys
 
-PLACEHOLDER = re.compile(r"\[[^\]]+\]")
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import regras  # noqa: E402
+from destinos import arquivos_de_destino, imperativos  # noqa: E402
 
 
 def main():
     with open(sys.argv[1], encoding="utf-8") as arquivo:
-        falas = [f.get("texto", f.get("en")) for f in json.load(arquivo)]
+        itens = json.load(arquivo)
     with open(sys.argv[2], encoding="utf-8") as arquivo:
         traducoes = json.load(arquivo)
+    glossario = regras.carregar_glossario()
+    menu = imperativos()
 
-    erros = []
-    for en in falas:
-        pt = traducoes.get(en)
-        if not isinstance(pt, str) or not pt.strip():
-            erros.append(f"FALTA: {en[:80]}")
-        elif PLACEHOLDER.findall(en) != PLACEHOLDER.findall(pt):
-            erros.append(f"PLACEHOLDER: {en[:60]} => {pt[:60]}")
-    for extra in sorted(set(traducoes) - set(falas))[:10]:
-        erros.append(f"CHAVE EXTRA: {extra[:80]}")
+    erros, textos = [], set()
+    for item in itens:
+        en = item.get("texto", item.get("en"))
+        if not isinstance(en, str):
+            erros.append(("extra", "(item sem texto na lista)", None))
+            continue
+        textos.add(en)
+        for destino in arquivos_de_destino(item.get("tipo", "fala")):
+            for codigo in regras.validar(en, traducoes.get(en), destino, glossario, menu):
+                erros.append((codigo, en, traducoes.get(en)))
+    for extra in sorted(set(traducoes) - textos)[:10]:
+        erros.append(("extra", extra, None))
 
-    print(f"{len(falas)} falas, {len(traducoes)} traduções, {len(erros)} erros")
-    for erro in erros[:40]:
-        print("  " + erro)
+    print(f"{len(textos)} textos, {len(traducoes)} traduções, {len(erros)} erros")
+    for codigo, en, pt in erros[:60]:
+        print(f"  [{codigo}] {regras.MENSAGENS.get(codigo, 'chave que não está na lista')}")
+        print(f"      en: {en[:100]}")
+        if pt:
+            print(f"      pt: {pt[:100]}")
     sys.exit(1 if erros else 0)
 
 

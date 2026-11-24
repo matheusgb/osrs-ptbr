@@ -1,0 +1,16 @@
+[
+ {
+  "texto": "I can start this quest by talking to Romeo in Varrock Square.",
+  "tipo": "arquivo:translations_quests.json",
+  "paginas": [
+   "translations_quests.json"
+  ]
+ },
+ {
+  "texto": "Quest Month brings two more surprise quests to discover! Practice Mode for TFA is also here, alongside a new batch of tweaks.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ }
+]

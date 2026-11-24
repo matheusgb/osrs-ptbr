@@ -50,20 +50,42 @@ Aviso: o download faz uma requisição por vez, com 8 a 12 s de pausa, para não
 sobrecarregar a wiki. Não reduza a pausa e não rode duas cópias ao mesmo tempo. A
 conferência leva cerca de 25 minutos.
 
-Rode os passos 1 a 3 e 5 dentro de `ferramentas/wiki`, no Linux ou no WSL:
+Rode os comandos dentro de `ferramentas/wiki`, no Linux ou no WSL:
 
 1. Baixe as transcrições novas e as editadas: `python3 baixar_transcricoes.py --atualizar`.
 2. Extraia as falas: `python3 extrair_falas.py`.
 3. Meça o que falta: `python3 cobertura.py`. O resumo sai na tela, e as falas sem
    tradução ficam em `dados/faltando.json`.
-4. Traduza as falas de `dados/faltando.json` num arquivo JSON
+4. Classifique: `python3 classificar.py`. Sem IA, o script separa o que fica igual ao
+   inglês (`dados/automaticas.json`) do que precisa de tradução
+   (`dados/para_traduzir.json`).
+5. Traduza as frases de `dados/para_traduzir.json` num arquivo JSON
    `{"texto em inglês": "tradução"}`, seguindo os
    [critérios de tradução](#critérios-de-tradução). O Claude Code faz isso se você
-   pedir: "traduza o faltando.json seguindo os critérios do README".
-5. Valide e aplique:
-   1. `python3 validar_traducoes.py dados/faltando.json novas.json` (corrija até dar 0 erros);
-   2. `python3 aplicar_traducoes.py novas.json`.
-6. Faça commit e push, e rode o `instalar.bat` no Windows para copiar as traduções novas.
+   pedir: "traduza o para_traduzir.json seguindo os critérios do README".
+6. Valide e aplique:
+   1. `python3 validar_traducoes.py dados/para_traduzir.json novas.json` (corrija até dar 0 erros);
+   2. `python3 aplicar_traducoes.py dados/automaticas.json novas.json`. Tradução que
+      falha em alguma regra não entra e vai para `dados/rejeitadas.json`.
+7. Faça commit e push, e rode o `instalar.bat` no Windows para copiar as traduções novas.
+
+### Regras automáticas
+
+As regras ficam em `ferramentas/wiki/regras.py` e têm testes (`test_regras.py`). A mesma
+entrada sempre recebe a mesma decisão.
+
+- **Glossário:** `traducoes/glossario.json` tem os termos que ficam em inglês: nomes de
+  item, NPC, monstro, quest, lugar, objeto e loja da wiki, mais a lista editável
+  `traducoes/glossario_manual.json` (skills e termos do jogo). Gere de novo com
+  `python3 gerar_glossario.py` (13 requisições à wiki).
+- **Classificação:** texto que é inteiro um termo do glossário, ou só número, símbolo e
+  placeholder, fica igual ao inglês.
+- **Validação:** cada tradução precisa ter placeholders iguais e na mesma ordem, manter
+  os nomes próprios do glossário, manter a pontuação final (ponto, interrogação e
+  exclamação contam como a mesma; dois-pontos precisam ficar), não ter palavra comum do
+  inglês sobrando, não ter palavra sem acento da lista e, no menu, usar o infinitivo.
+- **Auditoria:** `python3 aplicar_traducoes.py --auditar` roda a validação nos JSONs
+  atuais e grava `dados/auditoria.json`, sem mudar nada.
 
 Para corrigir uma tradução que já existe, edite o JSON em `traducoes/pt-BR` e rode o
 `instalar.bat`. Com o jogo aberto, o plugin recarrega os JSONs da pasta instalada em

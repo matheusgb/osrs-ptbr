@@ -1,0 +1,16 @@
+{
+  "_sobre": "Termos que ficam em inglês além dos nomes que vêm da wiki. Edite à vontade; gerar_glossario.py junta esta lista com a da wiki em glossario.json.",
+  "skills": [
+    "Attack", "Strength", "Defence", "Ranged", "Prayer", "Magic", "Runecraft", "Runecrafting",
+    "Construction", "Hitpoints", "Agility", "Herblore", "Thieving", "Crafting", "Fletching",
+    "Slayer", "Hunter", "Mining", "Smithing", "Fishing", "Cooking", "Firemaking", "Woodcutting",
+    "Farming", "Sailing"
+  ],
+  "termos": [
+    "Grand Exchange", "Wilderness", "Collection Log", "clue scroll", "clue scrolls",
+    "Slayer Master", "Slayer Masters", "Quest Point", "Quest Points", "Prayer points",
+    "XP", "GP", "Ironman", "Hardcore Ironman", "Ultimate Ironman", "Group Ironman",
+    "Combat Achievement", "Combat Achievements", "Leagues", "Achievement Diary",
+    "Deadman", "PvP", "PvM", "OSRS", "RuneScape", "Old School RuneScape", "Jagex", "RuneLite"
+  ]
+}
