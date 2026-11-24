@@ -1,0 +1,30 @@
+name: Texto em inglês ou tradução ruim
+description: Avise de um texto que apareceu em inglês ou de uma tradução estranha.
+title: "[Tradução] "
+labels: ["tradução"]
+body:
+  - type: textarea
+    id: texto
+    attributes:
+      label: Texto que apareceu no jogo
+      description: Copie o texto exatamente como apareceu, com a pontuação.
+      placeholder: Only dairy cows are suitable for milking.
+    validations:
+      required: true
+  - type: textarea
+    id: sugestao
+    attributes:
+      label: Tradução que você sugere (opcional)
+      description: Nomes de item, NPC, lugar, missão e skill ficam em inglês.
+      placeholder: Só vacas leiteiras servem para ordenhar.
+  - type: input
+    id: onde
+    attributes:
+      label: Onde apareceu
+      description: Por exemplo, chat, diálogo com um NPC, menu, missão (diga qual).
+      placeholder: Chat, ao tentar ordenhar uma vaca em Lumbridge
+  - type: textarea
+    id: print
+    attributes:
+      label: Print da tela (opcional)
+      description: Arraste a imagem para cá.
