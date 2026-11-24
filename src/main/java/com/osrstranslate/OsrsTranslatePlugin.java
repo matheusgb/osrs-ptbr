@@ -37,6 +37,7 @@ import net.runelite.client.plugins.PluginDescriptor;
 import javax.inject.Inject;
 import java.io.File;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.Locale;
@@ -84,6 +85,7 @@ public class OsrsTranslatePlugin extends Plugin {
     private static final String LANGUAGE_FOLDER = "pt-BR";
     private static final int REMOTE_UPDATE_INTERVAL_MINUTES = 60;
     private static final int LOCAL_TRANSLATION_POLL_SECONDS = 2;
+    private static final int OTHER_INTERFACES_CACHE_LIMIT = 20_000;
 
     private static final int[] DIALOG_INTERFACES = {
         InterfaceID.DIALOG_NPC,
@@ -177,6 +179,8 @@ public class OsrsTranslatePlugin extends Plugin {
     private long loginInspectionDeadline;
     private final Set<Integer> inspectedLoginGroups = new HashSet<>();
     private final Set<Integer> loginInterfaceGroups = new HashSet<>();
+    private final Map<String, String> otherInterfacesCache = new HashMap<>();
+    private TranslationState otherInterfacesCacheState;
 
     @Override
     protected void startUp() {
@@ -569,10 +573,42 @@ public class OsrsTranslatePlugin extends Plugin {
             return;
         }
 
-        TranslationDictionary merged = translationState.merged;
-        for (Widget root : roots) {
-            translateOtherWidget(root, merged);
+        TranslationState state = translationState;
+        if (state != otherInterfacesCacheState) {
+            otherInterfacesCache.clear();
+            otherInterfacesCacheState = state;
         }
+        for (Widget root : roots) {
+            translateOtherWidget(root, state.merged);
+        }
+    }
+
+    /**
+     * Retorna a tradução do texto cru, ou null. Guarda o resultado em cache,
+     * porque o mesmo texto aparece em todo tick.
+     */
+    private String findOtherTranslation(String text, TranslationDictionary merged) {
+        String cached = otherInterfacesCache.get(text);
+        if (cached != null) {
+            return cached.isEmpty() ? null : cached;
+        }
+
+        String translation = null;
+        String startTags = preserveStartTags(text);
+        // Tag no meio do texto (cor de um valor, por exemplo) se perderia na troca.
+        if (text.indexOf('<', startTags.length()) < 0) {
+            String lookup = TranslationLookupHelper.normalizeLookupText(TranslationLookupHelper.cleanText(text));
+            if (!lookup.isEmpty() && !merged.isTranslated(lookup)) {
+                String found = merged.find(lookup);
+                translation = found == null ? null : startTags + found;
+            }
+        }
+
+        if (otherInterfacesCache.size() >= OTHER_INTERFACES_CACHE_LIMIT) {
+            otherInterfacesCache.clear();
+        }
+        otherInterfacesCache.put(text, translation == null ? "" : translation);
+        return translation;
     }
 
     private void translateOtherWidget(Widget widget, TranslationDictionary merged) {
@@ -585,12 +621,9 @@ public class OsrsTranslatePlugin extends Plugin {
         if (text != null && !text.isEmpty()
             && !HANDLED_INTERFACES.contains(groupId)
             && !loginInterfaceGroups.contains(groupId)) {
-            String lookup = TranslationLookupHelper.normalizeLookupText(TranslationLookupHelper.cleanText(text));
-            if (!lookup.isEmpty() && !merged.isTranslated(lookup)) {
-                String translation = merged.find(lookup);
-                if (translation != null) {
-                    widget.setText(preserveStartTags(text) + translation);
-                }
+            String translation = findOtherTranslation(text, merged);
+            if (translation != null) {
+                widget.setText(translation);
             }
         }
 
