@@ -14,8 +14,8 @@ public class TranslationCacheTest {
         AtomicInteger calls = new AtomicInteger();
 
         for (int i = 0; i < 5; i++) {
-            assertEquals("Olá", cache.get(state, "Hello", () -> { calls.incrementAndGet(); return "Olá"; }));
-            assertNull(cache.get(state, "Bob", () -> { calls.incrementAndGet(); return null; }));
+            assertEquals("Olá", cache.get(state, "", "Hello", () -> { calls.incrementAndGet(); return "Olá"; }));
+            assertNull(cache.get(state, "", "Bob", () -> { calls.incrementAndGet(); return null; }));
         }
         assertEquals("uma busca por texto, com ou sem tradução", 2, calls.get());
     }
@@ -23,8 +23,8 @@ public class TranslationCacheTest {
     @Test
     public void clearsWhenDictionariesChange() {
         TranslationCache cache = new TranslationCache(10);
-        cache.get(TranslationState.empty(), "Hello", () -> "Olá");
-        assertEquals("Oi", cache.get(TranslationState.empty(), "Hello", () -> "Oi"));
+        cache.get(TranslationState.empty(), "", "Hello", () -> "Olá");
+        assertEquals("Oi", cache.get(TranslationState.empty(), "", "Hello", () -> "Oi"));
     }
 
     @Test
@@ -33,8 +33,17 @@ public class TranslationCacheTest {
         TranslationState state = TranslationState.empty();
         AtomicInteger calls = new AtomicInteger();
         for (String text : new String[] {"a", "b", "c", "a"}) {
-            cache.get(state, text, () -> { calls.incrementAndGet(); return text; });
+            cache.get(state, "", text, () -> { calls.incrementAndGet(); return text; });
         }
         assertEquals(4, calls.get());
+    }
+
+    @Test
+    public void translatedTextIsNotTranslatedAgain() {
+        TranslationCache cache = new TranslationCache(10);
+        TranslationState state = TranslationState.empty();
+        assertEquals("300 Cooking de XP", cache.get(state, "j1", "300 Cooking XP", () -> "300 Cooking de XP"));
+        // No quadro seguinte o widget já mostra a tradução: ela não pode ser traduzida de novo.
+        assertNull(cache.get(state, "j1", "300 Cooking de XP", () -> "300 Cooking de de XP"));
     }
 }

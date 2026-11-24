@@ -19,13 +19,22 @@ final class TranslationCache {
         this.limit = limit;
     }
 
-    /** Retorna a tradução da chave, ou null. Só chama compute na primeira vez. */
-    String get(TranslationState currentState, String key, Supplier<String> compute) {
+    /**
+     * Retorna a tradução do texto, ou null. Só chama compute na primeira vez.
+     *
+     * O texto traduzido também fica marcado como "sem tradução": o plugin traduz o
+     * mesmo widget a cada quadro, e uma tradução por padrão pode casar de novo com
+     * um padrão ("[x] XP" vira "[x] de XP", que vira "[x] de de XP"...).
+     *
+     * @param prefix parte da chave que não é texto, como o id da interface
+     */
+    String get(TranslationState currentState, String prefix, String text, Supplier<String> compute) {
         if (currentState != state) {
             entries.clear();
             state = currentState;
         }
 
+        String key = prefix + text;
         String cached = entries.get(key);
         if (cached != null) {
             return cached.isEmpty() ? null : cached;
@@ -35,8 +44,13 @@ final class TranslationCache {
         if (entries.size() >= limit) {
             entries.clear();
         }
-        entries.put(key, translation == null || translation.isEmpty() ? NO_TRANSLATION : translation);
-        return translation == null || translation.isEmpty() ? null : translation;
+        if (translation == null || translation.isEmpty()) {
+            entries.put(key, NO_TRANSLATION);
+            return null;
+        }
+        entries.put(key, translation);
+        entries.putIfAbsent(prefix + translation, NO_TRANSLATION);
+        return translation;
     }
 
     void clear() {

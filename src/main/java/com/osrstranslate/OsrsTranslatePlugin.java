@@ -469,7 +469,7 @@ public class OsrsTranslatePlugin extends Plugin {
      * porque o mesmo texto aparece em todo quadro.
      */
     private String findOtherTranslation(String text, TranslationDictionary merged) {
-        return otherInterfacesCache.get(translationState, text, () -> {
+        return otherInterfacesCache.get(translationState, "", text, () -> {
             String startTags = preserveStartTags(text);
             // Tag no meio do texto (cor de um valor, por exemplo) se perderia na troca.
             if (text.indexOf('<', startTags.length()) >= 0) {
@@ -631,7 +631,8 @@ public class OsrsTranslatePlugin extends Plugin {
         return widgetTextCache.get(
             state,
             // O dicionário muda se a interface é de login, então isso entra na chave.
-            (loginInterfaceGroups.contains(interfaceId) ? "L" : "J") + interfaceId + "\u0000" + originalText,
+            (loginInterfaceGroups.contains(interfaceId) ? "L" : "J") + interfaceId + "\u0000",
+            originalText,
             () -> findWidgetTranslation(originalText, interfaceId, state)
         );
     }
