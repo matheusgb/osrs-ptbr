@@ -27,22 +27,24 @@ import net.runelite.client.RuneLite;
 import net.runelite.client.callback.ClientThread;
 import net.runelite.client.config.ConfigManager;
 import net.runelite.client.eventbus.EventBus;
-import net.runelite.client.eventbus.Subscribe;
 import net.runelite.client.events.ConfigChanged;
 import net.runelite.client.plugins.Plugin;
 import net.runelite.client.plugins.PluginDescriptor;
 
 import javax.inject.Inject;
 import java.io.File;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
+import java.util.function.Consumer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -155,7 +157,12 @@ public class OsrsTranslatePlugin extends Plugin {
 
     private ScheduledExecutorService localTranslationHotReloadScheduler;
     private volatile String localTranslationFingerprint = "";
-    private EventBus.Subscriber menuOpenedTranslationSubscriber;
+    /**
+     * Assinaturas de evento feitas à mão. Com @Subscribe, o EventBus tenta criar uma
+     * lambda para cada método, falha em plugin carregado fora do Plugin Hub ("Invalid
+     * caller") e cai para reflexão. Aqui a lambda é do próprio plugin.
+     */
+    private final List<EventBus.Subscriber> subscribers = new ArrayList<>();
     /** Registro de textos sem tradução; null com a opção desligada. */
     private volatile MissingTextLog missingTextLog;
     /** Interfaces abertas na tela de login; usam o dicionário de boas-vindas. */
@@ -177,29 +184,45 @@ public class OsrsTranslatePlugin extends Plugin {
     @Override
     protected void startUp() {
         reloadTranslations();
-        menuOpenedTranslationSubscriber = eventBus.register(
-            MenuOpened.class,
-            event -> {
-                if (config.enableMenuEntries()) {
-                    // Run after Menu Entry Swapper has created its entries and
-                    // submenus, but before the client renders the menu box.
-                    translateMenu(client.getMenu());
-                }
-            },
-            -1000f
-        );
+        unsubscribeAll();
+        subscribe(ConfigChanged.class, this::onConfigChanged, 0f);
+        subscribe(WidgetLoaded.class, this::onWidgetLoaded, 0f);
+        subscribe(WidgetClosed.class, this::onWidgetClosed, 0f);
+        subscribe(GameStateChanged.class, this::onGameStateChanged, 0f);
+        subscribe(MenuOptionClicked.class, this::onMenuOptionClicked, 1000f);
+        subscribe(BeforeRender.class, this::onBeforeRender, 0f);
+        subscribe(OverheadTextChanged.class, this::onOverheadTextChanged, 0f);
+        subscribe(PostMenuSort.class, this::onPostMenuSort, -1000f);
+        subscribe(MenuOpened.class, this::onMenuOpened, 1000f);
+        // Depois do Menu Entry Swapper criar entradas e submenus, antes do menu aparecer.
+        subscribe(MenuOpened.class, this::translateOpenedMenu, -1000f);
+        subscribe(ChatMessage.class, this::onChatMessage, -1000f);
         startLocalTranslationHotReload();
         startMissingTextLog();
         // Interfaces abertas antes de o plugin ligar não geram WidgetLoaded.
         clientThread.invokeLater(this::registerOpenInterfaces);
     }
 
+    private void translateOpenedMenu(MenuOpened event) {
+        if (config.enableMenuEntries()) {
+            translateMenu(client.getMenu());
+        }
+    }
+
+    private <T> void subscribe(Class<T> eventClass, Consumer<T> handler, float priority) {
+        subscribers.add(eventBus.register(eventClass, handler, priority));
+    }
+
+    private void unsubscribeAll() {
+        subscribers.forEach(eventBus::unregister);
+        subscribers.clear();
+    }
+
     @Override
     protected void shutDown() {
         stopLocalTranslationHotReload();
         stopMissingTextLog();
-        eventBus.unregister(menuOpenedTranslationSubscriber);
-        menuOpenedTranslationSubscriber = null;
+        unsubscribeAll();
         translationState = TranslationState.empty();
         loginInterfaceGroups.clear();
         openInterfaces.clear();
@@ -209,8 +232,7 @@ public class OsrsTranslatePlugin extends Plugin {
         originalMenuOptions.clear();
     }
 
-    @Subscribe
-    public void onConfigChanged(ConfigChanged event) {
+    private void onConfigChanged(ConfigChanged event) {
         if (!OsrsTranslateConfig.GROUP.equals(event.getGroup())) {
             return;
         }
@@ -318,8 +340,7 @@ public class OsrsTranslatePlugin extends Plugin {
         }
     }
 
-    @Subscribe
-    public void onWidgetLoaded(WidgetLoaded event) {
+    private void onWidgetLoaded(WidgetLoaded event) {
         registerInterface(event.getGroupId());
     }
 
@@ -428,14 +449,12 @@ public class OsrsTranslatePlugin extends Plugin {
         }
     }
 
-    @Subscribe
-    public void onWidgetClosed(WidgetClosed event) {
+    private void onWidgetClosed(WidgetClosed event) {
         openInterfaces.remove(event.getGroupId());
         openOtherInterfaces.remove(event.getGroupId());
     }
 
-    @Subscribe
-    public void onGameStateChanged(GameStateChanged event) {
+    private void onGameStateChanged(GameStateChanged event) {
         if (!isLoginScreenState()) {
             return;
         }
@@ -547,8 +566,7 @@ public class OsrsTranslatePlugin extends Plugin {
         }
     }
 
-    @Subscribe(priority = 1000f)
-    public void onMenuOptionClicked(MenuOptionClicked event) {
+    private void onMenuOptionClicked(MenuOptionClicked event) {
         if (!config.enableMenuEntries()) {
             return;
         }
@@ -559,8 +577,7 @@ public class OsrsTranslatePlugin extends Plugin {
         }
     }
 
-    @Subscribe
-    public void onBeforeRender(BeforeRender event) {
+    private void onBeforeRender(BeforeRender event) {
         translateOpenInterfaces();
         suppressMouseHighlightTooltipForTranslatedMenuOptions();
     }
@@ -753,8 +770,7 @@ public class OsrsTranslatePlugin extends Plugin {
         return TranslationDomain.DIALOG;
     }
 
-    @Subscribe
-    public void onOverheadTextChanged(OverheadTextChanged event) {
+    private void onOverheadTextChanged(OverheadTextChanged event) {
         if (!config.enableOverhead()) {
             return;
         }
@@ -785,8 +801,7 @@ public class OsrsTranslatePlugin extends Plugin {
     // Menu Entry Swapper also handles PostMenuSort and matches the original
     // English option/target text. Translate only after it has completed all
     // built-in, custom, item, NPC, object, UI, and submenu swaps.
-    @Subscribe(priority = -1000f)
-    public void onPostMenuSort(PostMenuSort event) {
+    private void onPostMenuSort(PostMenuSort event) {
         // O menu é refeito a cada quadro com ele fechado; guarda só o atual.
         originalMenuOptions.clear();
         if (!config.enableMenuEntries()) {
@@ -796,8 +811,7 @@ public class OsrsTranslatePlugin extends Plugin {
         translateMenu(client.getMenu());
     }
 
-    @Subscribe(priority = 1000f)
-    public void onMenuOpened(MenuOpened event) {
+    private void onMenuOpened(MenuOpened event) {
         if (!config.enableMenuEntries()) {
             return;
         }
@@ -917,8 +931,7 @@ public class OsrsTranslatePlugin extends Plugin {
     // Plugins such as Item Charges parse the original English game message
     // synchronously. Translate only after their default-priority listeners
     // have consumed the event, matching the menu integration below.
-    @Subscribe(priority = -1000f)
-    public void onChatMessage(ChatMessage event) {
+    private void onChatMessage(ChatMessage event) {
         if (!config.enableGameMessages()) {
             return;
         }
