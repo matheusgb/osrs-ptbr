@@ -139,7 +139,6 @@ nelas.
 | `dist/` | Jar pronto que o instalador copia |
 | `scripts/` | `instalar.ps1` (chamado pelo `instalar.bat`) e `gerar-dist.sh` |
 | `traducoes/pt-BR/` | Dicionários pt-BR corrigidos |
-| `traducoes/correcao/revisar/` | Traduções que precisam de revisão manual |
 | `ferramentas/wiki/` | Scripts que baixam as transcrições da wiki e medem a cobertura |
 
 ## Funcionalidades
