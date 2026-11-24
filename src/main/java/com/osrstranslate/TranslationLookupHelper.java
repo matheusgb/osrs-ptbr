@@ -116,7 +116,8 @@ final class TranslationLookupHelper
                 Pattern.compile(pattern.toString()),
                 translation,
                 specificity,
-                firstWord(parts[0])
+                parts[0],
+                parts[parts.length - 1]
             ));
         }
         return new PatternIndex(entries);
@@ -145,34 +146,19 @@ final class TranslationLookupHelper
         return length + text.length() - end;
     }
 
-    private static String findRegexTranslation(List<PatternEntry> patterns, String lookup)
+    /** Primeiro padrão da lista que traduz o texto, ou null. A lista vem em ordem de prioridade. */
+    private static Match firstMatch(List<PatternEntry> patterns, String lookup)
     {
+        if (patterns == null)
+        {
+            return null;
+        }
         for (PatternEntry entry : patterns)
         {
-            Matcher matcher = entry.pattern.matcher(lookup);
-            if (!matcher.matches())
+            String result = entry.apply(lookup);
+            if (result != null)
             {
-                continue;
-            }
-
-            String result = entry.translation;
-            boolean replacedPlaceholder = false;
-            for (int i = 1; i <= matcher.groupCount(); i++)
-            {
-                Matcher placeholderMatcher = PLACEHOLDER.matcher(result);
-                if (!placeholderMatcher.find())
-                {
-                    break;
-                }
-
-                result = result.substring(0, placeholderMatcher.start())
-                    + matcher.group(i)
-                    + result.substring(placeholderMatcher.end());
-                replacedPlaceholder = true;
-            }
-            if (replacedPlaceholder && !lookup.equals(result))
-            {
-                return result;
+                return new Match(entry.order, result);
             }
         }
         return null;
@@ -198,28 +184,36 @@ final class TranslationLookupHelper
             .replaceAll("standard Ironmen ", "standard Ironman ");
     }
 
-    /**
-     * Primeira palavra do texto fixo antes do primeiro placeholder.
-     * Retorna null quando esse texto não tem espaço, porque a palavra pode
-     * continuar dentro do placeholder.
-     */
-    private static String firstWord(String staticPrefix)
+    /** Texto até o primeiro espaço, ou null se não tem espaço. */
+    private static String firstWord(String text)
     {
-        int space = staticPrefix.indexOf(' ');
-        return space < 0 ? null : staticPrefix.substring(0, space);
+        int space = text.indexOf(' ');
+        return space < 0 ? null : text.substring(0, space);
+    }
+
+    /** Texto depois do último espaço, ou null se não tem espaço. */
+    private static String lastWord(String text)
+    {
+        int space = text.lastIndexOf(' ');
+        return space < 0 ? null : text.substring(space + 1);
     }
 
     /**
      * Padrões com placeholder, do mais específico para o menos específico.
-     * Os padrões ficam agrupados pela primeira palavra fixa. A busca testa só
-     * o grupo da primeira palavra do texto e os padrões sem palavra fixa.
+     *
+     * Cada padrão entra num grupo pela primeira palavra do texto fixo inicial.
+     * Se esse texto não tem espaço (por exemplo "[player], you're..."), o
+     * padrão entra num grupo pela última palavra do texto fixo final. Se nenhum
+     * dos dois tem espaço, o padrão fica sem grupo. A busca testa só os grupos
+     * da primeira e da última palavra do texto, mais os padrões sem grupo.
      */
     static final class PatternIndex
     {
         static final PatternIndex EMPTY = new PatternIndex(new ArrayList<>());
 
         private final Map<String, List<PatternEntry>> byFirstWord = new HashMap<>();
-        private final List<PatternEntry> withoutFirstWord = new ArrayList<>();
+        private final Map<String, List<PatternEntry>> byLastWord = new HashMap<>();
+        private final List<PatternEntry> withoutWord = new ArrayList<>();
         private final int size;
 
         private PatternIndex(List<PatternEntry> entries)
@@ -229,13 +223,19 @@ final class TranslationLookupHelper
             {
                 PatternEntry entry = entries.get(i);
                 entry.order = i;
-                if (entry.firstWord == null)
+                String first = firstWord(entry.prefix);
+                String last = first == null ? lastWord(entry.suffix) : null;
+                if (first != null)
                 {
-                    withoutFirstWord.add(entry);
+                    byFirstWord.computeIfAbsent(first, k -> new ArrayList<>()).add(entry);
+                }
+                else if (last != null)
+                {
+                    byLastWord.computeIfAbsent(last, k -> new ArrayList<>()).add(entry);
                 }
                 else
                 {
-                    byFirstWord.computeIfAbsent(entry.firstWord, k -> new ArrayList<>()).add(entry);
+                    withoutWord.add(entry);
                 }
             }
             size = entries.size();
@@ -248,19 +248,12 @@ final class TranslationLookupHelper
                 return null;
             }
 
-            int space = lookup.indexOf(' ');
-            List<PatternEntry> group = space < 0
-                ? null
-                : byFirstWord.get(lookup.substring(0, space));
-            if (group == null)
-            {
-                return findRegexTranslation(withoutFirstWord, lookup);
-            }
-            if (withoutFirstWord.isEmpty())
-            {
-                return findRegexTranslation(group, lookup);
-            }
-            return findRegexTranslation(merge(group, withoutFirstWord), lookup);
+            String first = firstWord(lookup);
+            String last = lastWord(lookup);
+            Match best = firstMatch(withoutWord, lookup);
+            best = better(best, first == null ? null : firstMatch(byFirstWord.get(first), lookup));
+            best = better(best, last == null ? null : firstMatch(byLastWord.get(last), lookup));
+            return best == null ? null : best.text;
         }
 
         int size()
@@ -268,38 +261,80 @@ final class TranslationLookupHelper
             return size;
         }
 
-        private static List<PatternEntry> merge(List<PatternEntry> left, List<PatternEntry> right)
+        private static Match better(Match left, Match right)
         {
-            List<PatternEntry> merged = new ArrayList<>(left.size() + right.size());
-            int i = 0;
-            int j = 0;
-            while (i < left.size() && j < right.size())
+            if (left == null)
             {
-                merged.add(left.get(i).order < right.get(j).order ? left.get(i++) : right.get(j++));
+                return right;
             }
-            merged.addAll(left.subList(i, left.size()));
-            merged.addAll(right.subList(j, right.size()));
-            return merged;
+            return right != null && right.order < left.order ? right : left;
         }
     }
 
     private static final Comparator<PatternEntry> ORDER =
         (left, right) -> Integer.compare(right.specificity, left.specificity);
 
+    private static final class Match
+    {
+        private final int order;
+        private final String text;
+
+        private Match(int order, String text)
+        {
+            this.order = order;
+            this.text = text;
+        }
+    }
+
     private static final class PatternEntry
     {
         private final Pattern pattern;
         private final String translation;
         private final int specificity;
-        private final String firstWord;
+        private final String prefix;
+        private final String suffix;
         private int order;
 
-        private PatternEntry(Pattern pattern, String translation, int specificity, String firstWord)
+        private PatternEntry(Pattern pattern, String translation, int specificity, String prefix, String suffix)
         {
             this.pattern = pattern;
             this.translation = translation;
             this.specificity = specificity;
-            this.firstWord = firstWord;
+            this.prefix = prefix;
+            this.suffix = suffix;
+        }
+
+        /** Tradução preenchida, ou null se o padrão não serve para o texto. */
+        private String apply(String lookup)
+        {
+            // Teste barato antes do regex: o texto fixo do início e do fim precisa bater.
+            if (lookup.length() <= specificity || !lookup.startsWith(prefix) || !lookup.endsWith(suffix))
+            {
+                return null;
+            }
+
+            Matcher matcher = pattern.matcher(lookup);
+            if (!matcher.matches())
+            {
+                return null;
+            }
+
+            String result = translation;
+            boolean replacedPlaceholder = false;
+            for (int i = 1; i <= matcher.groupCount(); i++)
+            {
+                Matcher placeholderMatcher = PLACEHOLDER.matcher(result);
+                if (!placeholderMatcher.find())
+                {
+                    break;
+                }
+
+                result = result.substring(0, placeholderMatcher.start())
+                    + matcher.group(i)
+                    + result.substring(placeholderMatcher.end());
+                replacedPlaceholder = true;
+            }
+            return replacedPlaceholder && !lookup.equals(result) ? result : null;
         }
     }
 }
