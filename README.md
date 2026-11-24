@@ -1,7 +1,7 @@
 # OSRS Translate PT-BR
 
-Plugin RuneLite que traduz o Old School RuneScape para Português brasileiro e
-Espanhol em tempo real.
+Plugin RuneLite que traduz o Old School RuneScape para Português brasileiro em
+tempo real.
 
 Autor: Walter Rezende
 
@@ -18,7 +18,6 @@ Contribua com traduções, correções de bugs ou novos idiomas. Use o Discord o
 - Tradução de menus, mensagens do jogo, Skill Guide, Quest Journal, diários
   de conquistas, pergaminhos de pistas, itens, livros e notas, tela de
   boas-vindas e configurações.
-- Seleção de idioma preparada para novos pacotes de tradução.
 - Compatibilidade com os plugins:
   - Quest Helper
   - Menu Entry Swapper

@@ -7,28 +7,6 @@ import net.runelite.client.config.ConfigSection;
 
 @ConfigGroup("osrstranslate")
 public interface OsrsTranslateConfig extends Config {
-    enum TranslationLanguage {
-        PORTUGUESE_BRAZIL("Português", "pt-BR"),
-        SPANISH("Español", "ESP");
-
-        private final String displayName;
-        private final String repositoryFolder;
-
-        TranslationLanguage(String displayName, String repositoryFolder) {
-            this.displayName = displayName;
-            this.repositoryFolder = repositoryFolder;
-        }
-
-        String getRepositoryFolder() {
-            return repositoryFolder;
-        }
-
-        @Override
-        public String toString() {
-            return displayName;
-        }
-    }
-
     enum TranslationSource {
         REMOTE("Remota"),
         LOCAL("Local");
@@ -43,24 +21,6 @@ public interface OsrsTranslateConfig extends Config {
         public String toString() {
             return displayName;
         }
-    }
-
-    @ConfigSection(
-        name = "Idioma",
-        description = "Seleciona o idioma das traduções",
-        position = 0
-    )
-    String languageSection = "Idioma";
-
-    @ConfigItem(
-        keyName = "translationLanguage",
-        name = "Idioma",
-        description = "Seleciona o idioma baixado do repositório oficial",
-        section = languageSection,
-        position = 0
-    )
-    default TranslationLanguage translationLanguage() {
-        return TranslationLanguage.PORTUGUESE_BRAZIL;
     }
 
     @ConfigItem(

@@ -83,6 +83,7 @@ public class OsrsTranslatePlugin extends Plugin {
     private static final int LOGIN_GROUP_SCAN_LIMIT = 900;
     private static final int LOGIN_CHILD_SCAN_LIMIT = 200;
     private static final String REMOTE_MANIFEST_URL = RemoteTranslationService.DEFAULT_MANIFEST_URL;
+    private static final String LANGUAGE_FOLDER = "pt-BR";
     private static final int REMOTE_UPDATE_INTERVAL_MINUTES = 60;
     private static final int LOCAL_TRANSLATION_POLL_SECONDS = 2;
 
@@ -162,7 +163,6 @@ public class OsrsTranslatePlugin extends Plugin {
     @Override
     protected void startUp() {
         log.info("[OsrsTranslatePlugin] startUp() chamado!");
-        OsrsTranslateConfigLocalization.start(config.translationLanguage());
         File translationCacheRoot = new File(
             RuneLite.RUNELITE_DIR,
             "osrs-translate" + File.separator + "translations"
@@ -195,7 +195,6 @@ public class OsrsTranslatePlugin extends Plugin {
     @Override
     protected void shutDown() {
         log.info("[OsrsTranslatePlugin] shutDown() chamado!");
-        OsrsTranslateConfigLocalization.stop();
         if (remoteUpdateScheduler != null) {
             remoteUpdateScheduler.shutdownNow();
             remoteUpdateScheduler = null;
@@ -274,14 +273,7 @@ public class OsrsTranslatePlugin extends Plugin {
             return;
         }
 
-        OsrsTranslateConfig.TranslationLanguage changedLanguage = languageFromConfigValue(
-            event.getNewValue()
-        );
-        OsrsTranslateConfigLocalization.localize(
-            changedLanguage == null ? config.translationLanguage() : changedLanguage
-        );
-        if ((!"translationLanguage".equals(event.getKey())
-            && !"translationSource".equals(event.getKey())
+        if ((!"translationSource".equals(event.getKey())
             && !"translationHotReload".equals(event.getKey())
             && !"localTranslationPath".equals(event.getKey())
             && !"developerMode".equals(event.getKey()))
@@ -302,24 +294,8 @@ public class OsrsTranslatePlugin extends Plugin {
         }
     }
 
-    private OsrsTranslateConfig.TranslationLanguage languageFromConfigValue(String value) {
-        if (value == null || value.isEmpty()) {
-            return null;
-        }
-
-        for (OsrsTranslateConfig.TranslationLanguage language
-            : OsrsTranslateConfig.TranslationLanguage.values()) {
-            if (value.equals(language.name())
-                || value.equals(language.toString())
-                || value.equals(language.getRepositoryFolder())) {
-                return language;
-            }
-        }
-        return null;
-    }
-
     private String selectedLanguageFolder() {
-        return config.translationLanguage().getRepositoryFolder();
+        return LANGUAGE_FOLDER;
     }
 
     private boolean isLocalTranslationSource() {
