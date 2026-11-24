@@ -47,6 +47,20 @@ O cache fica no diretório do RuneLite:
 ~/.runelite/osrs-translate/translations/<idioma>/
 ```
 
+## Traduções locais deste fork
+
+A pasta `traducoes/` tem uma cópia corrigida dos dicionários pt-BR. O plugin
+continua baixando os dicionários do repositório original. Para testar a cópia
+local:
+
+1. Ligue **Modo desenvolvedor** nas configurações do plugin.
+2. Em **Fonte das traduções**, escolha **Local**.
+3. Em **Caminho dos JSONs**, informe o caminho de `traducoes/pt-BR`.
+
+Nomes de skill, gírias e termos do jogo ficam em inglês, como `Slayer`,
+`Grand Exchange` e `Wilderness`. A pasta `traducoes/correcao/revisar` lista as
+traduções que precisam de revisão manual.
+
 ## Instalação
 
 Abra o RuneLite, acesse **Plugin Hub**, pesquise `OSRS Translate PT-BR` e
