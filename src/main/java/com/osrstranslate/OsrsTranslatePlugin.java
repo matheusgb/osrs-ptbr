@@ -160,12 +160,11 @@ public class OsrsTranslatePlugin extends Plugin {
 
     @Override
     protected void startUp() {
-        log.info("[OsrsTranslatePlugin] startUp() chamado!");
         File translationCacheRoot = new File(
             RuneLite.RUNELITE_DIR,
             "osrs-translate" + File.separator + "translations"
         );
-        log.info("Cache de traducoes remotas: {}", translationCacheRoot.getAbsolutePath());
+        log.debug("Cache de traducoes remotas: {}", translationCacheRoot.getAbsolutePath());
         remoteTranslationService = new RemoteTranslationService(
             httpClient,
             gson,
@@ -192,7 +191,6 @@ public class OsrsTranslatePlugin extends Plugin {
 
     @Override
     protected void shutDown() {
-        log.info("[OsrsTranslatePlugin] shutDown() chamado!");
         if (remoteUpdateScheduler != null) {
             remoteUpdateScheduler.shutdownNow();
             remoteUpdateScheduler = null;
@@ -393,7 +391,6 @@ public class OsrsTranslatePlugin extends Plugin {
     @Subscribe
     public void onWidgetLoaded(WidgetLoaded event) {
         int groupId = event.getGroupId();
-        log.info("[WidgetLoaded] groupId={}", groupId);
 
         if (groupId == CLUE_SCROLL_TEXT) {
             if (config.enableClueScrolls()) {
@@ -520,7 +517,7 @@ public class OsrsTranslatePlugin extends Plugin {
         loginInspectionDeadline = System.currentTimeMillis() + LOGIN_INSPECTION_WINDOW_MS;
         inspectedLoginGroups.clear();
         loginInterfaceGroups.clear();
-        log.info("[LoginInspect] state={}", state);
+        log.debug("[LoginInspect] state={}", state);
         inspectVisibleLoginGroups();
     }
 
@@ -636,8 +633,6 @@ public class OsrsTranslatePlugin extends Plugin {
         }
 
         String option = event.getMenuOption();
-        log.info("[DEBUG MenuOptionClicked] option='{}' target='{}' action={}",
-            option, event.getMenuTarget(), event.getMenuAction());
         String englishOption = reverseTranslateMenuOption(option);
         if ("View".equals(option) || "View".equals(englishOption)) {
             skillGuideNeedsTranslation = true;
@@ -758,13 +753,6 @@ public class OsrsTranslatePlugin extends Plugin {
     }
 
     private void translateInterface(int interfaceId) {
-        if (interfaceId == ITEM_PREVIEW) {
-            log.info("[ItemPreview] Traduzindo interface 203");
-        }
-        if (contains(SKILL_GUIDE_INTERFACES, interfaceId)) {
-            log.info("[SkillGuide] traducao iniciada");
-        }
-
         for (int i = 0; i < 100; i++) {
             Widget widget = client.getWidget(interfaceId, i);
             if (widget != null) {
@@ -780,63 +768,13 @@ public class OsrsTranslatePlugin extends Plugin {
 
         String text = widget.getText();
         if (text != null && !text.isEmpty()) {
-            if (interfaceId == ITEM_PREVIEW) {
-                log.info("[ItemPreview] processando texto: {}", text);
-            }
-
-            int wBefore = widget.getWidth();
-            int hBefore = widget.getHeight();
-            int xBefore = widget.getRelativeX();
-            int yBefore = widget.getRelativeY();
-            int idBefore = widget.getId();
-            int parentId = widget.getParentId();
-            int lineHeightAntes = widget.getLineHeight();
-            int linesAntes = countLines(text);
-
-            applyLineHeightFix(widget, interfaceId, lineHeightAntes);
+            int lineHeightBefore = widget.getLineHeight();
+            applyLineHeightFix(widget, interfaceId, lineHeightBefore);
 
             String translated = translateWidgetText(text, interfaceId);
             if (translated != null) {
-                int canvasW = client.getCanvasWidth();
-                int canvasH = client.getCanvasHeight();
-                log.debug(
-                    "[WidgetDebug] id={} parentId={} pos=({},{}) size=({},{}) "
-                        + "canvas=({},{}) textLen={} transLen={}",
-                    idBefore, parentId, xBefore, yBefore, wBefore, hBefore,
-                    canvasW, canvasH, text.length(), translated.length()
-                );
-                log.debug("[WidgetDebug] text='{}'", text.length() > 80 ? text.substring(0, 80) + "..." : text);
-                log.debug(
-                    "[WidgetDebug] trans='{}'",
-                    translated.length() > 80 ? translated.substring(0, 80) + "..." : translated
-                );
-                log.debug(
-                    "[LineHeightDebug] ANTES: id={} lineHeight={} linhas={}",
-                    idBefore, lineHeightAntes, linesAntes
-                );
-
                 widget.setText(translated);
-
-                int lineHeightDepois = widget.getLineHeight();
-                int linesDepois = countLines(translated);
-                log.debug(
-                    "[LineHeightDebug] DEPOIS: id={} lineHeight={} linhas={}",
-                    idBefore, lineHeightDepois, linesDepois
-                );
-                if (lineHeightAntes != lineHeightDepois) {
-                    log.debug("[LineHeightDebug] MUDOU! id={} {} -> {}", idBefore, lineHeightAntes, lineHeightDepois);
-                }
-
-                applyLineHeightFix(widget, interfaceId, Math.max(lineHeightAntes, lineHeightDepois));
-
-                int wAfter = widget.getWidth();
-                int hAfter = widget.getHeight();
-                if (wAfter != wBefore || hAfter != hBefore) {
-                    log.debug(
-                        "[WidgetDebug] CHANGED! id={} {}x{} -> {}x{}",
-                        idBefore, wBefore, hBefore, wAfter, hAfter
-                    );
-                }
+                applyLineHeightFix(widget, interfaceId, Math.max(lineHeightBefore, widget.getLineHeight()));
                 return;
             }
         }
@@ -878,20 +816,7 @@ public class OsrsTranslatePlugin extends Plugin {
         }
 
         widget.setLineHeight(18);
-        log.info("[LineHeightFix] id={} {} -> 18", widget.getId(), referenceLineHeight);
-    }
-
-    private int countLines(String text) {
-        if (text == null || text.isEmpty()) {
-            return 0;
-        }
-        int count = 1;
-        for (int i = 0; i < text.length(); i++) {
-            if (text.charAt(i) == '\n') {
-                count++;
-            }
-        }
-        return count;
+        log.debug("[LineHeightFix] id={} {} -> 18", widget.getId(), referenceLineHeight);
     }
 
     private String translateWidgetText(String originalText, int interfaceId) {
