@@ -12,6 +12,10 @@ MENU = frozenset(regras.imperativos_do_menu({"Buy": "Comprar", "Talk-to": "Falar
 QUESTS = "translations_quests.json"
 
 
+# Os testes não dependem do arquivo real de palavras comuns.
+regras._comuns = frozenset()
+
+
 def erros(en, pt, arquivo=QUESTS):
     return regras.validar(en, pt, arquivo, GLOSSARIO, MENU)
 
@@ -57,6 +61,10 @@ class ValidacaoTest(unittest.TestCase):
         self.assertEqual(erros("If it is important.", "Se for importante."), [])
         self.assertEqual(erros("She runs the Theatre of Blood.", "Ela comanda o Theatre of Blood."), [])
         self.assertEqual(erros("He gives you an Amulet of accuracy.", "Ele te dá um Amulet of accuracy."), [])
+        self.assertIn("ingles", erros("Complete the Theatre of Blood.", "Complete the Theatre of Blood em 14 minutos."))
+        self.assertEqual(erros("Complete the Theatre of Blood.", "Complete o Theatre of Blood."), [])
+        self.assertEqual(erros("The Shadow Reef is dangerous.", "The Shadow Reef é perigoso."), [])
+        self.assertEqual(erros("You craft an amulet of accuracy.", "Você cria um amulet of accuracy."), [])
 
     def test_palavra_no_inicio_da_frase_nao_e_nome(self):
         self.assertNotIn("glossario", erros("Cook the fish.", "Cozinhe o peixe."))

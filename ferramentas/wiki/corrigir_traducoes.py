@@ -60,6 +60,10 @@ def main():
         novo = correcoes.get(item["en"])
         if novo is None or novo == item["pt"]:
             continue
+        # Só corrige o que ainda falha nas regras de agora: uma regra ajustada depois
+        # da lista desfaz a cobrança, e a tradução atual fica.
+        if not regras.validar(item["en"], item["pt"], item["arquivo"], glossario, menu):
+            continue
         erros = regras.validar(item["en"], novo, item["arquivo"], glossario, menu)
         if erros:
             rejeitadas.append({**item, "correcao": novo, "erros": erros})

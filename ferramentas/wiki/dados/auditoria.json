@@ -1,182 +1,146 @@
 {
  "translations.json": {
   "glossario": {
-   "total": 5318,
+   "total": 455,
    "exemplos": [
     {
      "en": "When you get to Lumbridge, look out for Adventurer Jon, he can be found outside of the Sheared Ram pub.",
      "pt": "Quando você chegar em Lumbridge, fique atento ao Aventureiro Jon; ele pode ser encontrado do lado de fora do pub Sheared Ram."
     },
     {
-     "en": "You have training items in your bank. Climb the stairs in Lumbridge Castle until you see this icon on your minimap. There you will find a bank.",
-     "pt": "Você tem itens de treinamento no seu banco. Suba as escadas no Castelo de Lumbridge até ver este ícone no seu minimapa. Lá você encontrará um banco."
-    },
-    {
      "en": "You can choose to become an [ironman] while you're on Tutorial Island. Although you can't do that on this character, you might like to bear it in mind for the future.",
      "pt": "Você pode escolher se tornar um [ironman] enquanto estiver na Ilha do Tutorial. Embora não possa fazer isso nesta conta, talvez queira levar isso em consideração para o futuro."
     },
     {
-     "en": "Sorry, Iron Man mode isn't available on Deadman worlds.",
-     "pt": "Desculpe, o modo Ferro não está disponível em mundos de Deadman."
+     "en": "Yes Bobby. There's no doubt we will be sipping mulled pine inside The Nutcracker in no time.",
+     "pt": "Sim, Bobby. Não há dúvida de que logo estaremos tomando Mulled pine dentro da A Noz Quebradora."
     },
     {
-     "en": "Hello there, [player]. Everyone taking part in the Leagues II - Trailblazer is under Iron [Men/Women] restrictions once they leave Tutorial Island.",
-     "pt": "Olá, [player]. Todos os participantes das Ligas II - Trailblazer estão sob as restrições de Iron [Men/Women] assim que deixam a Tutorial Island."
+     "en": "Yep, the entrance is in the side of Ice Mountain just to the east of here. They're a friendly bunch. Stop in at Nurmof's store and buy one of my pickaxes!",
+     "pt": "Sim, a entrada fica na lateral da Montanha de Gelo, logo a leste daqui. Eles são um povo amigável. Passe na loja do Nurmof e compre uma de minhas picaretas!"
     },
     {
-     "en": "I'd like to change my Iron Man mode.",
-     "pt": "Gostaria de alterar meu modo Ferro."
+     "en": "What is the Achievement Diary?",
+     "pt": "O que é o Diary de Conquistas?"
     },
     {
-     "en": "If you're interested in the Fresh Start Worlds, you should know that you can't be an Iron Man on those.",
-     "pt": "Se você está interessado nos Mundos de Start Novos, saiba que não pode ser um Ferro nesse tipo de mundo."
+     "en": "Welcome to Lowe's Archery Emporium. Do you want to see my wares?",
+     "pt": "Bem-vindo ao Empório de Arcos de Lowe. Quer dar uma olhada nos meus produtos?"
     },
     {
-     "en": "Do you still wish to proceed with selecting an Iron Man mode?",
-     "pt": "Ainda deseja prosseguir com a seleção do modo Homem de Ferro?"
+     "en": "The minimap in the top right corner of the game screen has various icons showing the locations of things. This icon to the left shows where Fishing spots are.",
+     "pt": "O minimapa no canto superior direito da tela do jogo tem vários ícones mostrando as localizações das coisas. Este ícone à esquerda mostra onde estão os locais de pesca."
     },
     {
-     "en": "Iron Man tutor has given you a challenge scroll!",
-     "pt": "O tutor de Homem de Ferro lhe deu um pergaminho de desafio!"
+     "en": "There is a range at the southern end in this town and a Cooking tutor in south Lumbridge near Bob's Brilliant Axes shop.",
+     "pt": "Tem um fogão na extremidade sul desta cidade e um Instrutor de Cooking no sul de Lumbridge, perto da loja de Machados Brilhantes do Bob."
     },
     {
-     "en": "Iron Man tutor has given you another clue scroll!",
-     "pt": "O tutor de Homem de Ferro lhe deu outra pista no pergaminho!"
+     "en": "The minimap in the top right corner of the game screen has various icons showing the locations of things. This icon to the left shows where Cooking ranges are.",
+     "pt": "O minimapa no canto superior direito da tela do jogo tem vários ícones mostrando as localizações das coisas. Este ícone à esquerda mostra onde ficam os fogões."
     },
     {
-     "en": "If you are ever in the market for a new bow or some arrows, you should head on over to Lowe's Archery Emporium in Varrock. I can show you where the shop is if you like.",
-     "pt": "Se você estiver atrás de um novo arco ou flechas, deveria ir até a Loja de Arcos de Lowe em Varrock. Posso te mostrar onde fica a loja, se quiser."
+     "en": "When you get to the mainland you will find yourself in the town of Lumbridge. If you want some ideas on where to go next, talk to my friend Adventurer Jon. You can't miss him; he's wearing light blue armour with",
+     "pt": "Quando chegar ao continente, você estará em Lumbridge. Se quiser sugestões de onde ir, fale com meu amigo Aventureiro Jon. É fácil encontrá-lo, ele usa uma armadura azul-claro com"
     },
     {
-     "en": "It means that some decisions the King has to make might have unforeseen repercussions on the nation's spiritual sensibilities. My duty is to ensure that Saradominist ideals are not stomped underfoot.",
-     "pt": "Significa que algumas decisões que o Rei precisa tomar podem ter repercussões não previstas nas sensibilidades espirituais da nação. Meu dever é garantir que os ideais saradoministas não sejam pisoteados."
+     "en": "You can buy a Dwarven stout at the Rising Sun Inn in Falador.",
+     "pt": "Você pode comprar uma Dwarven stout na Taverna Sol Nascente em Falador."
     },
     {
-     "en": "But surely the King should be able to make his own decisions on what's best for Misthalin?",
-     "pt": "Mas certamente o Rei deveria poder tomar suas próprias decisões sobre o que é melhor para Misthalin?"
+     "en": "Well there were some pretty tough people here last week. Said they were Slayer Masters. They were planning on making some protective boots. You should speak to one of them.",
+     "pt": "Bom, havia algumas pessoas bem duronas aqui na semana passada. Elas disseram que eram Mestres de Matança. Elas estavam planejando fazer algumas botas protetoras. Você deveria falar com uma delas."
     },
     {
-     "en": "The King of Misthalin, like any great leader, always requires the best advice and the best advisors. He very often summons occasional advisors to help him in certain situations, but it was felt by the Church of Saradomin",
-     "pt": "O Rei de Misthalin, como qualquer grande líder, sempre precisa dos melhores conselhos e dos melhores conselheiros. Ele frequentemente convoca conselheiros ocasionais para ajudá-lo em determinadas situações, mas foi considerado pela Igreja de Saradomin"
+     "en": "We have a Sacred Forge. You will find none other like it in all the world. Some of the greatest weapons of legend started life here.",
+     "pt": "Temos uma Forja Sagrada. Você não encontrará outra igual em todo o mundo. Algumas das maiores armas lendárias começaram aqui."
     },
     {
-     "en": "Pollnivneach. It's a town to the south of the Shantay Pass.",
-     "pt": "Pollnivneach. É uma cidade ao sul da Passagem de Shantay."
+     "en": "The first skill we're going to look at is Fishing. There's some shrimp in this pond here. Let's try and catch some.",
+     "pt": "A primeira habilidade que vamos ver é Pesca. Tem alguns camarões nesse lago aqui. Vamos tentar pegar alguns."
     },
     {
-     "en": "Adventurer? I am no mere Adventurer, I am Andros Mai, brother of the Holy Order of Saradomin. You would do well to greet me with respect.",
-     "pt": "Aventureiro? Eu não sou um mero Aventureiro, sou Andros Mai, irmão da Ordem Sagrada de Saradomin. Seria bom se você me cumprimentasse com respeito."
+     "en": "Your Player Moderator identity must never be revealed on the regular Old School RuneScape forums. However, you're more than welcome to chat about all aspects of being a Player Moderator in the official",
+     "pt": "Sua identidade como Player Moderator nunca deve ser revelada nos fóruns regulares do RuneScape. No entanto, você está mais do que convidado a discutir todos os aspectos de ser um Player Moderator nos"
     },
     {
-     "en": "Why, the Chaos Tunnel of course! I imagine Surok will have told you of it.",
-     "pt": "Ora, o Túnel do Caos, claro! Imagino que o Surok tenha te falado sobre ele."
+     "en": "Well, since you saved my life when we were fighting the Sea Troll Queen, I don't mind telling you... I trust you won't tell anyone about this?",
+     "pt": "Bom, já que você salvou minha vida quando lutávamos contra a Rainha Troll Marinha, não me importo de te contar... você não vai contar para ninguém, né?"
     },
     {
-     "en": "Well, story and rumour has it that the Dagon'hai built a tunnel here under the statue of Saradomin that would allow them to visit the Chaos Altar without having to go through the Wilderness.",
-     "pt": "Bem, segundo lendas e boatos, os Dagon'hai construíram um túnel aqui embaixo da estátua do Saradomin que lhes permitiria visitar o Altar do Caos sem terem que atravessar a Wilderness."
+     "en": "Wizard Traiborn has given you another clue scroll!",
+     "pt": "Feiticeiro Traiborn te deu outro clue scroll!"
     },
     {
-     "en": "Well story and rumour has it that the Dagon'hai built a tunnel under this statue of Saradomin that would allow them to visit the Chaos Altar without having to go through the Wilderness.",
-     "pt": "Bom, histórias e rumores dizem que os Dagon'hai construíram um túnel embaixo desta estátua do Saradomin que lhes permitiria visitar o Altar do Caos sem ter que passar pelo Deserto Mortal."
+     "en": "This is a piece of map that you found in Melzar's Maze. You will need to join it to the other two map pieces before you can see the route to Crandor.",
+     "pt": "Esta é uma peça de mapa que você encontrou no Labirinto de Melzar. Você precisará juntá-la às outras duas peças antes de poder ver a rota para Crandor."
     },
     {
-     "en": "No problem, I get plenty of these from Gielinor Hospital Supplies.",
-     "pt": "Sem problema, recebo muitos desses do Hospital de Gielinor Suprimentos."
+     "en": "You must be Leela. Your father sent me to help rescue Prince Ali.",
+     "pt": "Você deve ser Leela. Seu pai me enviou para ajudar a resgatar o Príncipe Ali."
+    },
+    {
+     "en": "This might be a little tricky as you will need to go into the Lumbridge Swamp caves. You will need a light source! Never forget your light source down there!",
+     "pt": "Isso pode ser um pouco complicado, pois você terá que entrar nas cavernas do pântano de Lumbridge. Vai precisar de uma fonte de luz! Nunca esqueça da sua fonte de luz lá embaixo!"
     }
    ]
   },
   "ingles": {
-   "total": 480,
+   "total": 12,
    "exemplos": [
-    {
-     "en": "Head to Karamja Wines, Spirits, and Beers at Musa Point. There you'll find Dallas Jones. We've heard that he is investigating the destruction of Crandor. This seems like a good place to start.",
-     "pt": "Vá até Karamja Wines, Spirits, and Beers, em Musa Point. Lá você encontrará Dallas Jones. Ouvimos dizer que ele está investigando a destruição de Crandor. Parece um bom lugar para começar."
-    },
-    {
-     "en": "Head to Karamja Wines, Spirits, and Beers at Musa Point. There you'll find Dallas Jones. We've heard that he is investigating the destruction of Crandor. This seems like a good place to begin.",
-     "pt": "Vá até a Karamja Wines, Spirits, and Beers em Musa Point. Lá você encontrará o Dallas Jones. Ouvimos dizer que ele está investigando a destruição de Crandor. Parece um bom lugar para começar."
-    },
-    {
-     "en": "You show the Claws of callisto to Andros Mai.",
-     "pt": "Você mostra as Claws of callisto para Andros Mai."
-    },
-    {
-     "en": "Between the Guardians of the Rift and ourselves, we are managing to keep the Abyss at bay.",
-     "pt": "Entre os Guardians of the Rift e nós, estamos conseguindo manter o Abyss afastado."
-    },
-    {
-     "en": "You show the Fangs of venenatis to Derse Venator.",
-     "pt": "Você mostra as Fangs of venenatis para Derse Venator."
-    },
-    {
-     "en": "The Cape of Hitpoints doubles the speed of your hitpoints replenishing when worn. Is there anything else I can help you with?",
-     "pt": "A Cape of Hitpoints dobra a velocidade com que seus Hitpoints se regeneram quando equipada. Tem mais alguma coisa com que eu possa te ajudar?"
-    },
-    {
-     "en": "Within the Centre are tools to help them Moderate Old School RuneScape. These tools include dedicated forums, the Player Moderator Guidelines and the Player Moderator Code of Conduct.",
-     "pt": "Dentro do Player Moderator Centre há ferramentas para ajudá-los a moderar o Old School RuneScape. Essas ferramentas incluem fóruns dedicados, as Player Moderator Guidelines e o Player Moderator Code of Conduct"
-    },
-    {
-     "en": "Did you know that Free-to-Play P-mods CAN visit the moderator forums, by logging into the regular forums at the top right hand side of the forum screen, despite it saying Members only.",
-     "pt": "Você sabia que jogadores Free-to-Play com privilégios de moderador PODEM visitar os fóruns de moderação, acessando os fóruns normais no canto superior direito da tela dos fóruns, mesmo que esteja escrito \"Apenas para Membros\"?"
-    },
-    {
-     "en": "That's a bit too pricey for me.",
-     "pt": "Is um pouco caro demais pra mim."
-    },
-    {
-     "en": "Beware the Chambers of Xeric, adventurer.",
-     "pt": "Cuidado com as Chambers of Xeric, aventureiro."
-    },
-    {
-     "en": "You board the boat and journey to the Hollows.",
-     "pt": "Você embarca no barco e viaja até The Hollows."
-    },
-    {
-     "en": "That's Drunken Dwarf's Leg's problem now!",
-     "pt": "Agora é problema da Leg of Drunken Dwarf!"
-    },
-    {
-     "en": "I've always found Ode to Eternity to be fascinating!",
-     "pt": "Eu sempre achei Ode to Eternity fascinante!"
-    },
     {
      "en": "You're currently on a [type of contract]. Go see [client], [location description] [area]. You can get another job once you have furnished [his/her] home.",
      "pt": "Você está em um contrato de type of contract. Vá ver o [client] em [location description] [area] Port Roberts. Você pode pegar outro serviço assim que mobiliar a casa [dele/dela]."
     },
     {
-     "en": "The discovery of this cave could change everything. We might finally be able to discover the link between the lizardmen, the Chambers of Xeric and Xeric himself.",
-     "pt": "A descoberta desta caverna pode mudar tudo. Talvez finalmente possamos descobrir a ligação entre os homens-lagarto, as Chambers of Xeric e Xeric ele mesmo."
+     "en": "Guardians of the Rift? You mentioned them earlier. Who are they?",
+     "pt": "Guardians of the Rift? Você mencionou eles antes. Quem são eles?"
     },
     {
-     "en": "You show him 'History and Hearsay'.",
-     "pt": "Você mostra pra ele 'History and Hearsay]'."
+     "en": "I still need [type of clue] from you before I give you a master clue scroll.",
+     "pt": "Ainda preciso de uma type of clue sua antes de te dar um clue scroll mestre."
     },
     {
-     "en": "Have you noticed all the bones around the room? These are teleported here from all over Gielinor to help clean up the landscape of countless bones left behind from combat. What better use for these bones than to convert them to nutritious fruit to be eaten by you mortals? You have to use your Bones to Bananas spell to convert the bones and then place them in the holes on the walls to earn Graveyard Pizazz Points. Unluckily for you, your health will constantly decrease from getting hit by these dropping bones so you will probably want to eat some of the bananas yourself to increase your stay here.",
-     "pt": "Você notou todos os ossos espalhados pela sala? Eles são teletransportados de toda Gielinor para ajudar a limpar a paisagem de incontáveis ossos deixados para trás após combates. Qual melhor uso para esses ossos do que transformá-los em frutas nutritivas para serem comidas por vocês, mortais? Você tem que usar o feitiço Bones to Bananas para converter os ossos e depois colocá-los nos buracos nas paredes para ganhar Pontos de Charme do Cemitério. Infelizmente para você, sua saúde vai diminuir constantemente por ser atingido por esses ossos que caem, então provavelmente você vai querer comer algumas dessas bananas para aumentar sua estadia aqui."
+     "en": "Moons of Peril, allowing Eyatlalli to complete the ritual. I should now return to her and the others.",
+     "pt": "Os Moons of Peril permitiram que Eyatlalli completasse o ritual. Agora devo voltar até ela e os outros."
     },
     {
-     "en": "Ah, it was the same for me. After I left the Great Conch I didn't really have too much of a goal in mind to be honest. I decided to just explore the world. I started swimming and ended up here!",
-     "pt": "Ah, foi a mesma coisa comigo. Depois que saí da The Great Conch, eu não tinha muito um objetivo definido, para ser honesto. Decidi apenas explorar o mundo. Comecei a nadar e acabei aqui!"
+     "en": "Oh, how rude of me! [player] this is Fairy Very Wise, advisor to the Queen. Fairy Very Wise, this is lbj is 23.",
+     "pt": "Oh, que falta de educação minha! [player], esta é a Fada Muito Sávia, conselheira da Rainha. Fada Muito Sávia, este é o lbj is 23."
     },
     {
-     "en": "Start The Ribbiting Tale of a Lily Pad Labour Dispute quest?",
-     "pt": "Start The Ribbiting Tale of a Lily Pad Labour Dispute?"
+     "en": "Oh, how rude of me! [player] this is Fairy Very Wise, advisor to the Queen. Fairy Very Wise, this is tjk pks you.",
+     "pt": "Oh, que falta de educação da minha parte! [player], esta é a Fada Muito Sábia, conselheira da Rainha. Fada Muito Sábia, este é o tjk pks you."
     },
     {
-     "en": "You show him 'Jewellery of Jubilation'.",
-     "pt": "Você mostra a ele ‘Jewellery of Jubilation’."
+     "en": "Sorry, I'm trying to talk to Master The [player], but he seems to be ignoring me.",
+     "pt": "Desculpe, estou tentando falar com o Mestre The [player], mas ele parece estar me ignorando."
+    },
+    {
+     "en": "Sowwy, I'm twying to tawk to Mastew Mojo The God, buda seems to be ignowing me.",
+     "pt": "Dessculpe, tô tendeno falá com o Mestre Mojo The God, mas ele parece tá me ignorano."
+    },
+    {
+     "en": "Is dawe anything ewse me can do fow u?",
+     "pt": "Is dawe anything ewse me can do fow u?"
+    },
+    {
+     "en": "You stiww wook human!",
+     "pt": "You stiww wook human!"
+    },
+    {
+     "en": "THE Record Keeper!",
+     "pt": "THE Record Keeper!"
+    },
+    {
+     "en": "You've been given an item To view the item you've been given, you'll need to open your inventory. To do so, [click/tap] on the flashing backpack icon to the right hand side of your screen.",
+     "pt": "You've been given an item Para ver o item que você recebeu, você precisa abrir seu inventory. Para isso, [click/tap] no ícone da mochila piscando, no lado direito da sua tela."
     }
    ]
   },
   "placeholder": {
-   "total": 783,
+   "total": 560,
    "exemplos": [
-    {
-     "en": "That's okay. If you change your mind you can find out more about Fresh Start Worlds by speaking to the Magic Instructor, assuming you're not an [ironman].",
-     "pt": "Tudo bem. Se mudar de ideia, pode saber mais sobre os Start Mundos Novos falando com o Magic Instructor, desde que não seja um homem de ferro."
-    },
     {
      "en": "You'll have to remove any [ironman] status first by speaking to me.",
      "pt": "Você vai precisar remover seu status de homem de ferro primeiro falando comigo."
@@ -194,10 +158,6 @@
      "pt": "Bem, você é mais corajoso do que eu!"
     },
     {
-     "en": "That's a relief. I would hate to see such a promising adventurer cut down in [his/her] prime.",
-     "pt": "Que alívio. Detestaria ver um aventureiro tão promissor ser eliminado tão cedo."
-    },
-    {
      "en": "You're still hunting [monster]; you have [number] to go. Come back when you've finished your task.",
      "pt": "Você ainda está caçando [number]; falta [number] para terminar. Volte quando terminar sua tarefa."
     },
@@ -208,10 +168,6 @@
     {
      "en": "Well, 'e be on that ship for sure. And I remember 'im tellin' me about some [guy/gal] like ye, getting all mixed up with curses and cabin boys.",
      "pt": "Bom, ele com certeza está naquele navio. E lembro dele me falando de alguém como você, se metendo com maldições e grumetes."
-    },
-    {
-     "en": "Sorry, but I'm trying to talk to [targeted player name], but [he/she] seems to be ignoring me.",
-     "pt": "Desculpe, mas estou tentando falar com [targeted player name], mas [targeted player name] parece estar me ignorando."
     },
     {
      "en": "You show Ramarno the Ancient [relic].",
@@ -230,678 +186,112 @@
      "pt": "Preciso ir agora, sirrah!"
     },
     {
-     "en": "That entitles you to a free costume! Do you want a frog mask or a [prince/princess] outfit?",
-     "pt": "Isso te dá direito a uma fantasia grátis! Quer uma máscara de sapo ou uma fantasia de príncipe?"
-    },
-    {
      "en": "A frog [prince/princess] outfit, please!",
      "pt": "Um traje de príncipe sapo, por favor!"
-    },
-    {
-     "en": "Play by the rules! The rules of Old School RuneScape are enforced for a reason, to make the game a fair and enjoyable env[ironman]t for all.",
-     "pt": "Siga as regras! As regras do Old School RuneScape são aplicadas por um motivo: para tornar o jogo um ambiente justo e agradável para todos."
     },
     {
      "en": "Try smelting some iron. Then hammer the bronze on an anvil to make [arrowtips/throwing knives/warhammers/maces].",
      "pt": "Tente fundir um pouco de minério de ferro. Depois, forje o bronze em uma bigorna para fazer arrowtips."
     },
     {
-     "en": "That's a relief. I would hate to see such a promising adventurer cut down in [his/her/their] prime.",
-     "pt": "Que alívio. Eu odiaria ver um aventureiro tão promissor ser derrubado em sua prime."
-    },
-    {
      "en": "You earned [number] League Points in Leagues II: Trailblazer. Sadly, that means you are not eligible for any Trailblazer Trophies.",
      "pt": "Trailblazer. Infelizmente, isso significa que você não tem direito a nenhum Troféu de Trailblazer."
+    },
+    {
+     "en": "You earned [number] League Points in Leagues II: Trailblazer. That makes you eligible for the [trophy] and all Trailblazer Trophies under it!",
+     "pt": "Trailblazer. Isso te torna elegível para o [trophy] e todos os Troféus Trailblazer abaixo dele!"
+    },
+    {
+     "en": "You earned [number] League Points in Leagues III: Shattered Relics. Sadly, that means you are not eligible for any Shattered Relics Trophies.",
+     "pt": "Shattered Relics. Infelizmente, isso significa que você não é elegível para nenhum dos Troféus Shattered Relics."
+    },
+    {
+     "en": "You earned [number] League Points in Leagues III: Shattered Relics. That makes you eligible for the [trophy] and all Shattered Relics Trophies under it!",
+     "pt": "Shattered Relics. Isso te torna elegível para o [trophy] e todos os Troféus Shattered Relics abaixo dele!"
+    },
+    {
+     "en": "You earned [number] League Points in Leagues IV: Trailblazer Reloaded. That makes you eligible for the [trophy] and all Trailblazer Reloaded Trophies under it!",
+     "pt": "Trailblazer Reloaded. Isso te torna elegível para o [trophy] e todos os [number] abaixo dele!"
+    },
+    {
+     "en": "Yes - [charge price] coins.",
+     "pt": "Sim — charge price moedas."
+    },
+    {
+     "en": "Hah! What you want with me, little city [man/woman/person]?",
+     "pt": "Hah! O que você quer comigo, coitadinho da cidade?"
     }
    ]
   },
   "pontuacao": {
-   "total": 314,
+   "total": 10,
    "exemplos": [
     {
-     "en": "Talk about the Ratcatchers Quest.",
-     "pt": "Falar sobre a Missão Caçadores de Ratos"
+     "en": "You can only fight the gryphons in this cave if you've been assigned to kill them by a Slayer Master.",
+     "pt": "Você só pode lutar contra os grifos nesta caverna se tiver sido designado para matá-los por um Mestre de Extermínio"
     },
     {
-     "en": "Beginner clues are gained through various activities. Those activities are as follows.",
-     "pt": "As pistas iniciantes são obtidas por meio de várias atividades. Essas atividades são as seguintes:"
+     "en": "[Brother/Sister] [player] - welcome to the Realm of Memories.",
+     "pt": "Brother"
     },
     {
-     "en": "Yes, please. So few people have Skillcapes of Prayer!",
-     "pt": "Sim, por favor. Muquíssima gente tem Capas de Habilidade de Prayer:"
+     "en": "You apply [player input * 10] charges to your Alchemist's amulet.",
+     "pt": "Você aplica [entrada do jogador * 10] cargas ao seu Amuletos do Alquimista"
     },
     {
-     "en": "Tell me about Hetty the witch.",
-     "pt": "Conte-me sobre a bruxa Hetty"
+     "en": "There are a lot of books on the bookcase, but one is noticibly larger than the others. The cover reads 'Cooking for Auspah by Seraphis'.",
+     "pt": "Há muitos livros na estante, mas um deles é notavelmente maior que os outros. A capa diz 'Culinária para Auspah por Seraphis'"
     },
     {
-     "en": "I'd like to manage my Coffer.",
-     "pt": "Gostaria de gerenciar meu Coffer"
+     "en": "You can now grow Watermelons.",
+     "pt": "Agora você pode cultivar Melancias"
     },
     {
-     "en": "here, hve som munny.",
-     "pt": "aqui, tnv msm dnhr"
+     "en": "Well, I seen worse. Most humans come through here, dey got names with like all numbers and things wot aren't even words! I met some [man/woman] earlier wot called [himself/herself] [other player's name].",
+     "pt": "Bom, já vi coisa pior. A maioria dos humanos que passam por aqui tem nomes cheios de números e coisas que nem palavras são! Encontrei um [homem/mulher] mais cedo que se chamava other player's name"
     },
     {
-     "en": "This place has sat in ruin for an age, slowly destroyed by the harsh climate of the Wilderness.",
-     "pt": "Esse lugar está em ruínas há eras, lentamente destruído pelo clima hostil da Wilderness"
+     "en": "'The Penance Spawn - You're only likely to see these creatures in close proximity to their creator - the dreaded Penance Queen. All Penance begin their lives in this form, mutating into the seperate classes of Penance depending on the lack or abundance of other classes in the local env[ironman]t.",
+     "pt": "Por meio de comunicação telepática, a Queen consegue determinar o número de cada classe de Penance (Fighter, Ranger, Healer ou Runner) e comunicar à sua prole a forma que devem assumir para preencher eventuais lacunas numéricas. Se a prole não receber comunicação da Queen, ela se transforma em outra Queen por conta própria, devido à"
     },
     {
-     "en": "Congratulations, you can now harpoon Swordfish after level 50. Try the pier on the island of Karamja.",
-     "pt": "Parabéns, agora você pode fisgar Swordfish após o nível 50. Tente no cais da ilha de Karamja;"
+     "en": "Zemouregal's Base and reach Arrav's Heart. However, I was confronted by Zemouregal. He ordered Arrav to kill me, giving me no choice but to fight him off.",
+     "pt": "Cheguei à Base de Zemouregal e ao Coração de Arrav. No entanto, fui confrontado por Zemouregal. Ele ordenou que Arrav me matasse, não me restando escolha senão lutar para sobreviver"
     },
     {
-     "en": "You feel more knowledgeable in the skills Mining, Crafting, Smithing, Slayer, Prayer and Hunter.",
-     "pt": "Você se sente mais conhecedor nas habilidades Mining, Crafting, Smithing, Slayer, Prayer e Hunter"
+     "en": "We need [six/seven/eight] pieces of [tin/coal/mithril] for Keldagrim's merchants.",
+     "pt": "Precisamos de [six/seven/eight] peças de tin para os mercadores de Keldagrim"
     },
     {
-     "en": "All your rides on a magic carpet are free and you'll receive extra Agility experience from the Pollnivneach rooftop course.",
-     "pt": "Todos os seus passeios em um tapete mágico são gratuitos e você receberá experiência extra de Agility do percurso de telhado de Pollnivneach"
-    },
-    {
-     "en": "teleport you to Nardah and the kalphite hive to the East of the Shantay Pass as much as you desire. You'll also get completely free passage through the Shantay passes here and at the Ruins of Unkah.",
-     "pt": "poderá teletransportá-lo para Nardah e para a colmeia dos kalphites a leste da Shantay Pass quantas vezes quiser. Você também terá passagem gratuita pelas Shantay aqui e nas Ruins of Unkah"
-    },
-    {
-     "en": "Copper and Tin.",
-     "pt": "Cobre e Tin"
-    },
-    {
-     "en": "Iron and Coal.",
-     "pt": "Ferro e Coal"
-    },
-    {
-     "en": "ores from cleaning Pay-dirt.",
-     "pt": "minérios de limpar Pay-dirt"
-    },
-    {
-     "en": "Player Moderators, or 'P-mods', have the ability to mute rule breakers and Jagex view their reports as a priority so that action is taken as quickly as possible. P- Mods also have access to the Player Moderator Centre.",
-     "pt": "Player Moderators, ou simplesmente 'P-mods', têm a capacidade de mutar jogadores que violam as regras e a Jagex considera seus relatos como prioridade para que medidas sejam tomadas o mais rápido possível. Os P-mods também têm acesso ao Player Moderator Centre"
-    },
-    {
-     "en": "Within the Centre are tools to help them Moderate Old School RuneScape. These tools include dedicated forums, the Player Moderator Guidelines and the Player Moderator Code of Conduct.",
-     "pt": "Dentro do Player Moderator Centre há ferramentas para ajudá-los a moderar o Old School RuneScape. Essas ferramentas incluem fóruns dedicados, as Player Moderator Guidelines e o Player Moderator Code of Conduct"
-    },
-    {
-     "en": "Brother, do you even lift?",
-     "pt": "Dialogue 5"
-    },
-    {
-     "en": "You seemed like a completely different person when you were complimenting Gary on his ritual that opened the Realm of Memories.",
-     "pt": "Você parecia uma pessoa completamente diferente quando elogiava o Gary pelo ritual dele que abriu o Realm of Memories"
-    },
-    {
-     "en": "The map's behind a door below, but entering is rather tough. This is what you need to know: You must use the following stuff.",
-     "pt": "O mapa está atrás de uma porta lá embaixo, mas entrar é bem difícil. Isso é o que você precisa saber:"
-    },
-    {
-     "en": "You still need to bring me a Giant Rat bone.",
-     "pt": "Você ainda precisa me trazer um osso de rato gigante"
+     "en": "Yes General Wartface sir?",
+     "pt": "translation"
     }
    ]
   }
  },
  "translations_game_message.json": {
   "glossario": {
-   "total": 1336,
-   "exemplos": [
-    {
-     "en": "Moving on Well done, you've just cooked your first meal! Speak to the survival expert if you want a recap, otherwise you can move on. Click on the gate shown and follow the path. Remember, you can use your arrow keys to rotate the camera.",
-     "pt": "<col=0000ff>Moving on: Muito bem, você acabou de preparar sua primeira refeição! Fale com o survival expert se quiser uma recapitulação; caso contrário, você pode seguir em frente. Clique no portão indicado e siga o caminho. Lembre-se, você pode usar as setas do teclado para girar a câmera."
-    },
-    {
-     "en": "Moving on Well done, you've just cooked another meal! Speak to the survival expert if you want a recap, otherwise you can move on. Click on the gate shown and follow the path. Remember, you can use your arrow keys to rotate the camera.",
-     "pt": "<col=0000ff>Moving on: Muito bem, você acabou de preparar outra refeição! Fale com o survival expert se quiser uma recapitulação; caso contrário, você pode seguir em frente. Clique no portão indicado e siga o caminho. Lembre-se, você pode usar as setas do teclado para girar a câmera."
-    },
-    {
-     "en": "Moving on Well done! You've baked your first loaf of bread. As you gain experience in Cooking, you will be able to make other things like pies and cakes. You can now use the next door to move on. If you need a recap on anything, talk to the master chef.",
-     "pt": "<col=0000ff>Seguindo em frente, Muito bem! Você assou seu primeiro loaf of bread. Conforme você ganha experiência em Cooking, você será capaz de fazer outras coisas como pies e cakes. Você pode agora usar a porta seguinte para seguir em frente. Se precisar de uma recapitulação sobre qualquer coisa, fale com o master chef."
-    },
-    {
-     "en": "Account Management This is your Account Management menu where you can control various aspects of your account. Talk to the Account Guide to learn more.",
-     "pt": "<col=0000ff>Account Management: Este é o seu menu de Gerenciamento de Conta, onde você pode controlar vários aspectos da sua conta. Fale com o Guia da Conta para saber mais."
-    },
-    {
-     "en": "Prayer menu Talk with Brother Brace and he'll tell you about prayers.",
-     "pt": "<col=0000ff>Prayer menu: Fale com o Irmão Brace e ele lhe contará sobre as orações."
-    },
-    {
-     "en": "If you are stuck on what to do next, try talking to Adventurer Jon about Adventure Paths. He can be found outside of the Sheared Ram pub in Lumbridge which is east of the General Store.",
-     "pt": "Se estiver sem saber o que fazer a seguir, tente falar com o Aventureiro Jon sobre os Caminhos da Aventura. Ele pode ser encontrado do lado de fora do pub Sheared Ram em Lumbridge, que fica a leste da Loja Geral."
-    },
-    {
-     "en": "You should speak to the Easter Bunny before entering.",
-     "pt": "Você deveria falar com o Coelhinho da Páscoa antes de entrar."
-    },
-    {
-     "en": "The High Priest dies. You receive a reward.",
-     "pt": "O Alto Sacerdote morre. Você recebe uma recompensa."
-    },
-    {
-     "en": "King Snagwort dies. You receive a reward.",
-     "pt": "Rei Snagwort morre. Você recebe uma recompensa."
-    },
-    {
-     "en": "You need to be wielding a Ghost Buster loaded with a white destabiliser if you want force the spirit out of this.",
-     "pt": "Você precisa estar empunhando um Exterminador de Fantasmas carregado com um desestabilizador branco para forçar o espírito a sair daqui."
-    },
-    {
-     "en": "You can now claim a new reward from Diango: Skeleton [shirt/boots/gloves/mask/leggings]!",
-     "pt": "Você agora pode resgatar uma nova recompensa de Diango: Camiseta [shirt/boots/gloves/mask/leggings]!"
-    },
-    {
-     "en": "This area is saturated with Easter magic, so you can't stay in egg form for long.",
-     "pt": "Essa área está saturada com magia de Páscoa, então você não pode ficar na forma de ovo por muito tempo."
-    },
-    {
-     "en": "Talk to either the Guard or Goblin recruiter to take part in this event.",
-     "pt": "Fale com o Guard ou com o recrutador goblin para participar deste evento."
-    },
-    {
-     "en": "You need an Event Launcher to do this. Please talk to your Recruiter to obtain one.",
-     "pt": "Você precisa de um Lançador de Evento para fazer isso. Fale com seu Recrutador para obter um."
-    },
-    {
-     "en": "You either do not have enough space to claim this or haven't enlisted in this weeks event. Talk to the Head Guard again!",
-     "pt": "Ou você não tem espaço suficiente para reivindicar isso ou não se alistou no evento desta semana. Fale novamente com o Chefe da Guarda!"
-    },
-    {
-     "en": "This blaster is for use on the chocolate critters infesting the Easter Bunny's warren.",
-     "pt": "Esse lançador é para ser usado nos coelhos de chocolate que infestam a toca do Coelhinho da Páscoa."
-    },
-    {
-     "en": "The Easter Bunny is unlikely to appreciate you doing that in here.",
-     "pt": "O Coelhinho da Páscoa provavelmente não vai gostar nada se você fizer isso aqui."
-    },
-    {
-     "en": "You row through the fog back to Lumbridge Swamp.",
-     "pt": "Você rema pela névoa de volta para o Pântano de Lumbridge."
-    },
-    {
-     "en": "You've selected the Wise Old Man, speak to whomever you believe would make the best match.",
-     "pt": "Você selecionou o Homem Sábio, fale com quem você acredita que seria o melhor par."
-    },
-    {
-     "en": "You have correctly paired Aggie and the Wise Old Man.",
-     "pt": "Você acertou ao parear a Aggie e o Homem Sábio."
-    }
-   ]
-  },
-  "ingles": {
-   "total": 46,
-   "exemplos": [
-    {
-     "en": "Moving on Well done! You've baked your first loaf of bread. As you gain experience in Cooking, you will be able to make other things like pies and cakes. You can now use the next door to move on. If you need a recap on anything, talk to the master chef.",
-     "pt": "<col=0000ff>Seguindo em frente, Muito bem! Você assou seu primeiro loaf of bread. Conforme você ganha experiência em Cooking, você será capaz de fazer outras coisas como pies e cakes. Você pode agora usar a porta seguinte para seguir em frente. Se precisar de uma recapitulação sobre qualquer coisa, fale com o master chef."
-    },
-    {
-     "en": "Mining and Smithing Next let's get you a weapon, or more to the point, you can make your first weapon yourself. Don't panic, the mining instructor will help you. Talk to him and he'll tell you all about it.",
-     "pt": "<col=0000ff>Mining and Smithing: Agora, vamos conseguir uma arma para você, ou melhor, você pode fabricar sua primeira arma. Não entre em pânico, o mining instructor vai te ajudar. Fale com ele e ele lhe dirá tudo sobre isso."
-    },
-    {
-     "en": "A Premade Cheese and Tomato Batta.",
-     "pt": "Um Cheese and Tomato Batta pré-preparado."
-    },
-    {
-     "en": "Ahrim the Blighted's leather hood.",
-     "pt": "O capuz de couro de Ahrim the Blighted."
-    },
-    {
-     "en": "Ahrim the Blighted's quarterstaff.",
-     "pt": "O cajado de Ahrim the Blighted."
-    },
-    {
-     "en": "Ahrim the Blighted's armoured robe top.",
-     "pt": "A parte de cima da armadura de Ahrim the Blighted."
-    },
-    {
-     "en": "Ahrim the Blighted's armoured robe skirt.",
-     "pt": "A saia da armadura de Ahrim the Blighted."
-    },
-    {
-     "en": "Dharok the Wretched's helm.",
-     "pt": "O elmo de Dharok the Wretched."
-    },
-    {
-     "en": "Dharok the Wretched's greataxe.",
-     "pt": "O grande machado de Dharok the Wretched."
-    },
-    {
-     "en": "Dharok the Wretched's platebody armour.",
-     "pt": "A armadura corporal de Dharok the Wretched."
-    },
-    {
-     "en": "An ornate helm, first discovered by the Crack the Clue Community.",
-     "pt": "Um elmo ornamentado, descoberto pela comunidade Crack the Clue."
-    },
-    {
-     "en": "Below Ice Mountain is a free-to-play quest which was released on 14th April, 2021.",
-     "pt": "Abaixo da Montanha de Gelo é uma missão free-to-play lançada em 14 de abril de 2021."
-    },
-    {
-     "en": "A foolhardy adventurer who is now missing all their belles and whistles.",
-     "pt": "Um aventureiro temerário que agora está sem todas as suas belles and whistles."
-    },
-    {
-     "en": "Ahrim the Blighted's armoured robe skirt, using the Theme of Leagues V: Raging Echoes.",
-     "pt": "A armoured robe skirt de Ahrim the Blighted, com o tema das Leagues V: Raging Echoes."
-    },
-    {
-     "en": "Ahrim the Blighted's armoured robe top, using the Theme of Leagues V: Raging Echoes.",
-     "pt": "O armoured robe top de Ahrim the Blighted, com o tema das Leagues V: Raging Echoes."
-    },
-    {
-     "en": "Ahrim the Blighted's leather hood, using the Theme of Leagues V: Raging Echoes.",
-     "pt": "O leather hood de Ahrim the Blighted, com o tema das Leagues V: Raging Echoes."
-    },
-    {
-     "en": "Ahrim the Blighted's quarterstaff, using the Theme of Leagues V: Raging Echoes.",
-     "pt": "O quarterstaff de Ahrim the Blighted, com o tema das Leagues V: Raging Echoes."
-    },
-    {
-     "en": "An old note about 'The Dukes'.",
-     "pt": "Uma nota velha sobre \"The Dukes\"."
-    },
-    {
-     "en": "Completes the Myreque storyline, up to and including Night at the Theatre.",
-     "pt": "Completa a história dos Myreque, até e incluindo Night at the Theatre."
-    },
-    {
-     "en": "Enough power for a Teleblock[sic] or a Teleport to Target, blighted so it can be used only in the Wilderness.",
-     "pt": "Poder suficiente para um Teleblock[sic] ou um Teleport to Target, blighted para só poder ser usado na Wilderness."
-    }
-   ]
-  },
-  "placeholder": {
    "total": 5,
    "exemplos": [
     {
-     "en": "Well done, you completed [1-8] step[s] of the ritual! The Dryad has left you a gift...",
-     "pt": "Muito bem, você completou [1-8] etapa(s) do ritual! A Dríade deixou um presente para você..."
+     "en": "Looks like a human travelerJagex and the wiki use British English, where \"traveller\" is the appropriate spelling. visiting the library.",
+     "pt": "Parece um viajante visitando a biblioteca."
     },
     {
-     "en": "You break up the [rune/pure essence] shards into dust.",
-     "pt": "Você reduz as estilhas de essência rune/pure a pó."
+     "en": "A travelingJagex and the wiki use British English, where \"travelling\" is the appropriate spelling. man. Are those fleas?",
+     "pt": "São pulgas?"
     },
     {
-     "en": "[Hero]: Corrupted we are now Viyeldi was slain..",
-     "pt": "Corrompidos nós estamos agora. Viyeldi foi morto.."
+     "en": "A travelingJagex and the wiki use British English, where \"travelling\" is the appropriate spelling. man.",
+     "pt": "Um homem."
     },
     {
-     "en": "[Hero]: Slaves to this demon and forced to bring pain...",
-     "pt": "Escravos deste demônio e forçados a trazer dor..."
+     "en": "A travelingJagex and the wiki use British English, where \"travelling\" is the appropriate spelling. father and son.",
+     "pt": "Um pai e filho."
     },
     {
-     "en": "[Other player name] will probably tell you [he/she] wanted a free teleport after that performance.",
-     "pt": "[Other player name] provavelmente vai te dizer que queria um teleporte grátis depois dessa performance."
-    }
-   ]
-  },
-  "pontuacao": {
-   "total": 97,
-   "exemplos": [
-    {
-     "en": "color=red|Today you will train yourself in Runecrafting.",
-     "pt": "color=red|Hoje você irá treinar Runecrafting"
-    },
-    {
-     "en": "color=red|Today you will train yourself in Slayer.",
-     "pt": "color=red|Hoje você irá treinar Slayer"
-    },
-    {
-     "en": "color=red|Today you will train yourself in Smithing.",
-     "pt": "color=red|Hoje você irá treinar Smithing"
-    },
-    {
-     "en": "color=red|Today you will train yourself in Strength.",
-     "pt": "color=red|Hoje você irá treinar Strength"
-    },
-    {
-     "en": "color=red|Today you will train yourself in Thieving.",
-     "pt": "color=red|Hoje você irá treinar Thieving"
-    },
-    {
-     "en": "color=red|Today you will train yourself in Woodcutting.",
-     "pt": "color=red|Hoje você irá treinar Woodcutting"
-    },
-    {
-     "en": "color=red|Today you will fight the great Abyssal Sire.",
-     "pt": "color=red|Hoje você irá lutar contra o grande Abyssal Sire"
-    },
-    {
-     "en": "color=red|Today you will fight the great Alchemical Hydra.",
-     "pt": "color=red|Hoje você irá lutar contra a grande Alchemical Hydra"
-    },
-    {
-     "en": "color=red|Today you will fight the great Barrows brothers.",
-     "pt": "color=red|Hoje você irá lutar contra os grandes irmãos Barrows"
-    },
-    {
-     "en": "color=red|Today you will fight the great Bryophyta.",
-     "pt": "color=red|Hoje você irá lutar contra a grande Bryophyta"
-    },
-    {
-     "en": "''Managing Thine Kingdom for Noobes'' by A. Ghrim.",
-     "pt": "Gerenciando Teu Reino para Noobes por A. Ghrim"
-    },
-    {
-     "en": "Guards prisoners for the black knights.",
-     "pt": "Guarda prisioneiros para os Cavaleiros Negros"
-    },
-    {
-     "en": "'Berg bard.",
-     "pt": "Bardo de Berg"
-    },
-    {
-     "en": "Guardian of the dramen tree.",
-     "pt": "Guardião da Árvore Drâmen"
-    },
-    {
-     "en": "An ex-barbarian, willing to make you ex too.",
-     "pt": "Um ex-bárbaro, disposto a te transformar em ex também"
-    },
-    {
-     "en": "An earth impling. Rock on.",
-     "pt": "Um impling terrestre. ❤️"
-    },
-    {
-     "en": "Guards the Burgher's room.",
-     "pt": "Guarda o quarto do Burgomestre"
-    },
-    {
-     "en": "Bane of darkness.",
-     "pt": "Maldição das trevas"
-    },
-    {
-     "en": "Defender of the faithful.",
-     "pt": "Defensor dos fiéis"
-    },
-    {
-     "en": "Champion of truth.",
-     "pt": "Campeão da verdade"
-    }
-   ]
-  }
- },
- "translations_items.json": {
-  "glossario": {
-   "total": 2,
-   "exemplos": [
-    {
-     "en": "Stronghold of Security - Notes",
-     "pt": "Stronghold of Security - Anotações"
-    },
-    {
-     "en": "around the Barbarian Village.",
-     "pt": "perto da Vila dos Bárbaros."
-    }
-   ]
-  },
-  "pontuacao": {
-   "total": 1,
-   "exemplos": [
-    {
-     "en": "barely got away with my life!",
-     "pt": "por sorte encontrei um lugar"
-    }
-   ]
-  }
- },
- "translations_menu.json": {
-  "glossario": {
-   "total": 33,
-   "exemplos": [
-    {
-     "en": "Show on Map",
-     "pt": "Mostrar no mapa"
-    },
-    {
-     "en": "Seers' Village",
-     "pt": "Aldeia dos Videntes"
-    },
-    {
-     "en": "Otto's Grotto",
-     "pt": "Gruta de Otto"
-    },
-    {
-     "en": "Troll Stronghold",
-     "pt": "Fortaleza dos Trolls"
-    },
-    {
-     "en": "Troll Stronghold entrance",
-     "pt": "Entrada da Fortaleza dos Trolls"
-    },
-    {
-     "en": "Troll Stronghold roof",
-     "pt": "Telhado da Fortaleza dos Trolls"
-    },
-    {
-     "en": "Kourend Woodland",
-     "pt": "Floresta Kourend"
-    },
-    {
-     "en": "Mount Karuulm",
-     "pt": "Monte Karuulm"
-    },
-    {
-     "en": "Small net/Net",
-     "pt": "Rede pequena/Rede"
-    },
-    {
-     "en": "Waterbirth Island",
-     "pt": "Ilha do Nascimento na Água"
-    },
-    {
-     "en": "Port Sarim",
-     "pt": "Porto Sarim"
-    },
-    {
-     "en": "Port Piscarilius",
-     "pt": "Porto Piscarilius"
-    },
-    {
-     "en": "Pay (Spirit tree)",
-     "pt": "Pagar (Árvore Espiritual)"
-    },
-    {
-     "en": "Musa Point",
-     "pt": "Ponto Musa"
-    },
-    {
-     "en": "Island of Stone / Rellekka",
-     "pt": "Ilha da Pedra / Rellekka"
-    },
-    {
-     "en": "Charter-to Musa Point",
-     "pt": "Fretar para Ponta Musa"
-    },
-    {
-     "en": "Charter-to Port Khazard",
-     "pt": "Fretar para Porto Khazard"
-    },
-    {
-     "en": "Charter-to Port Phasmatys",
-     "pt": "Fretar para Porto Phasmatys"
-    },
-    {
-     "en": "Charter-to Port Sarim",
-     "pt": "Fretar para Porto Sarim"
-    },
-    {
-     "en": "Charter-to Corsair Cove",
-     "pt": "Fretar para Enseada dos Corsários"
-    }
-   ]
-  },
-  "menu_imperativo": {
-   "total": 42,
-   "exemplos": [
-    {
-     "en": "Check steps",
-     "pt": "Verifique as etapas"
-    },
-    {
-     "en": "Check kills",
-     "pt": "Verifique mortes"
-    },
-    {
-     "en": "Play-With",
-     "pt": "Brinque com"
-    },
-    {
-     "en": "Check totals",
-     "pt": "Verifique os totais"
-    },
-    {
-     "en": "Puff",
-     "pt": "Sopre"
-    },
-    {
-     "en": "Claim-trophies",
-     "pt": "Reivindique troféus"
-    },
-    {
-     "en": "Get-rewards",
-     "pt": "Receba recompensas"
-    },
-    {
-     "en": "Join-Crew",
-     "pt": "Junte-se à tripulação"
-    },
-    {
-     "en": "Join-Team",
-     "pt": "Junte-se à Equipe"
-    },
-    {
-     "en": "Check Scores",
-     "pt": "Verifique as pontuações"
-    },
-    {
-     "en": "Claim Pet Rock",
-     "pt": "Reivindique Pet Rock"
-    },
-    {
-     "en": "Join Castle Wars",
-     "pt": "Junte-se às Guerras do Castelo"
-    },
-    {
-     "en": "Check-ammo",
-     "pt": "Verifique munição"
-    },
-    {
-     "en": "Take-net",
-     "pt": "Pegue-rede"
-    },
-    {
-     "en": "Hand-in",
-     "pt": "Entregue"
-    },
-    {
-     "en": "Take treasure",
-     "pt": "Pegue o tesouro"
-    },
-    {
-     "en": "Cut",
-     "pt": "Corte"
-    },
-    {
-     "en": "Turn-left",
-     "pt": "Vire à esquerda"
-    },
-    {
-     "en": "Turn-right",
-     "pt": "Vire à direita"
-    },
-    {
-     "en": "Step-into",
-     "pt": "Entre"
-    }
-   ]
-  }
- },
- "translations_overhead.json": {
-  "glossario": {
-   "total": 71,
-   "exemplos": [
-    {
-     "en": "The Red Reef, the new Sailing quest, is here!",
-     "pt": "A Red Reef, a nova quest de Sailing, chegou!"
-    },
-    {
-     "en": "Speak to the Leagues Tutor in Lumbridge Castle for Leagues rewards!",
-     "pt": "Fale com o Leagues Tutor no Castelo de Lumbridge para obter recompensas da League!"
-    },
-    {
-     "en": "We've added a 'Favourites' right-click option for Fairy Rings!",
-     "pt": "Já adicionamos uma opção de clique direito em 'Favoritos' para os Anéis das Fadas!"
-    },
-    {
-     "en": "There are now 5 new canoe stations along the River Dougne!",
-     "pt": "Agora há 5 novas estações de canoa ao longo do Rio Dougne!"
-    },
-    {
-     "en": "The Easter 2026 event is here!",
-     "pt": "O evento de Páscoa 2026 está aqui!"
-    },
-    {
-     "en": "Ali's Discount Wares...",
-     "pt": "Mercadorias com Desconto do Ali..."
-    },
-    {
-     "en": "with a Scimitar from Zeke's Superior Scimitars!",
-     "pt": "com uma Cimitarra das Cimitarra Superior do Zeke!"
-    },
-    {
-     "en": "Visit Louie's Armoured Legs Bazaar...",
-     "pt": "Visite o Bazar de Pernas Blindadas do Louie..."
-    },
-    {
-     "en": "Visit Ranael's Super Skirt Store ..",
-     "pt": "Visite a Loja de Saias Super da Ranael..."
-    },
-    {
-     "en": "shadow=yes|colour=yellow|Fingers!",
-     "pt": "shadow=yes|colour=yellow|Dedos!"
-    },
-    {
-     "en": "shadow=yes|colour=yellow|Wall beast fingers!",
-     "pt": "shadow=yes|colour=yellow|Dedos de fera de parede!"
-    },
-    {
-     "en": "Trimmed those sails good and proper, Captain!",
-     "pt": "Ajeitei as velas direitinho, Capitão!"
-    },
-    {
-     "en": "shadow=yes|colour=yellow|Roll up, roll up!",
-     "pt": "shadow=yes|colour=yellow|Venham, venham!"
-    },
-    {
-     "en": "Join the Spirit Anglers!",
-     "pt": "Junte-se aos Pescadores Espirituais!"
-    },
-    {
-     "en": "shadow=yes|colour=yellow|Mummy!",
-     "pt": "sombra=sim|cor=amarelo|Múmia!"
-    },
-    {
-     "en": "shadow=yes|colour=yellow|You’ll be joining Davey Jones!",
-     "pt": "shadow=yes|colour=yellow|Você vai se juntar ao Davy Jones!"
-    },
-    {
-     "en": "You shouldn't ignore a Genie master [player]?",
-     "pt": "Não deve ignorar um mestre gênio como você, [player]?"
-    },
-    {
-     "en": "Come on, we need another High Stakes participant!",
-     "pt": "Vamos, precisamos de mais um participante de Altíssimas Apostas!"
-    },
-    {
-     "en": "Come on, we need [2-24] more High Stakes participants!",
-     "pt": "Vamos, precisamos de mais [2-24] participantes de Altíssimas Apostas!"
-    },
-    {
-     "en": "Are you ready for Sailing on November 19th?!",
-     "pt": "Você está pronto para a navegação em 19 de novembro?!"
+     "en": "A travelingJagex and the wiki use British English, where \"travelling\" is the appropriate spelling. adventurer.",
+     "pt": "Um viajante."
     }
    ]
   },
@@ -909,506 +299,153 @@
    "total": 1,
    "exemplos": [
     {
-     "en": "You are not worthy of holding that Diamond of [Blood/Shadow/Smoke/Ice]!",
-     "pt": "Você não é digno de carregar esse Diamond of [Blood/Shadow/Smoke/Ice]!"
-    }
-   ]
-  },
-  "placeholder": {
-   "total": 15,
-   "exemplos": [
-    {
-     "en": "[player] has started up a mine! Join [him/her/them] down there now!",
-     "pt": "[player] começou a minerar! Junte-se a [ele/ela/eles] lá embaixo agora!"
-    },
-    {
-     "en": "shadow=yes|colour=yellow|Argh! I can't stop [dancing/headbanging/jumping]!",
-     "pt": "sombra=sim|cor=amarelo|Argh! Não consigo parar de [dançar/balançar a cabeça/pular]!"
-    },
-    {
-     "en": "Good day to you, [milord/milady/my liege] [player].",
-     "pt": "Bom dia para você, [milord/milady/meu senhor] [player]."
-    },
-    {
-     "en": "I seek a moment of your time, [sirrah/ma’am/my liege]!",
-     "pt": "Busco um momento de sua atenção, [senhor/senhora/meu senhor]!"
-    },
-    {
-     "en": "Don't ask [player] for anything - [he's/she's/they're] stingy!",
-     "pt": "Não peça nada para [player] — [ele/ela] é sovina!"
-    },
-    {
-     "en": "[player], the frog [prince/princess] desires your attention!",
-     "pt": "[player], o/a príncipe/princesa sapo deseja sua atenção!"
-    },
-    {
-     "en": "If you kiss [him/her], [player], [he/she] will turn into a human!",
-     "pt": "Se beijar [ele/ela], [player], [ele/ela] se transformará em um humano!"
-    },
-    {
-     "en": "But if you ignore [him/her], [player], we will turn you into a frog!",
-     "pt": "Mas se ignorar [ele/ela], [player], nós te transformaremos em um sapo!"
-    },
-    {
-     "en": "Look at [her/him] go!",
-     "pt": "Olha [ele/ela] indo!"
-    },
-    {
-     "en": "[He/She] shoots - [He/She] scores!!!!!",
-     "pt": "[Ele/Ela] chuta - [Ele/Ela] faz o gol!!!!!"
-    },
-    {
-     "en": "Coming at you [player]!",
-     "pt": "Vindo até você nome do jogador!"
-    },
-    {
-     "en": "I can't believe [he/she/they] fell for that, boss!",
-     "pt": "Não acredito que nome caiu nessa, chefe!"
-    },
-    {
-     "en": "my [skill]'s ninety-nine!",
-     "pt": "a minha habilidade é noventa e nove!"
-    },
-    {
-     "en": "What kind of a person calls [him/her]self [player]?",
-     "pt": "Que tipo de pessoa se chama de [player]?"
-    },
-    {
-     "en": "[TzHaar caste]-[champion's name] is the champion!",
-     "pt": "[TzHaar caste]-nome do campeão é o campeão!"
-    }
-   ]
-  },
-  "pontuacao": {
-   "total": 1,
-   "exemplos": [
-    {
-     "en": "Dung will boil Ash's head!",
-     "pt": "Dung vai cozinhar a cabeça do Ash:"
+     "en": "Against players, gain 10% damage increase when using god spells. Flames of Zamorak has a 10% chance to burn. Claws of Guthix lowers your targets defence level equal to 50% of damage dealt. Saradomin Strike drains enemy prayer points by 30% of damage dealt.",
+     "pt": "Contra jogadores, ganhe 10% de aumento de dano ao usar god spells. Flames of Zamorak tem 10% de chance de queimar. Claws of Guthix reduz o nível de defesa do alvo em 50% do dano causado. Saradomin Strike drena os prayer points do inimigo em 30% do dano causado."
     }
    ]
   }
  },
+ "translations_items.json": {},
+ "translations_menu.json": {},
+ "translations_overhead.json": {},
  "translations_quests.json": {
-  "glossario": {
-   "total": 45,
-   "exemplos": [
-    {
-     "en": "It was the Duke of Lumbridge's birthday, but his cook had",
-     "pt": "Era o aniversário do Duque de Lumbridge, mas seu cozinheiro havia"
-    },
-    {
-     "en": "the Al Kharid Palace. He asked for my help with an urgent",
-     "pt": "o <col=800000>Palácio de Al Kharid<col=000080>. Ele pediu minha ajuda com um assunto"
-    },
-    {
-     "en": "I spoke to Osman outside the Al Kharid Palace. He informed me",
-     "pt": "<col=000080>Falei com <col=800000>Osman<col=000080> fora do <col=800000>Palácio de Al Kharid<col=000080>. Ele me informou"
-    },
-    {
-     "en": "that Prince Ali, the Emir's heir, was captured by a group of",
-     "pt": "<col=000080>que o <col=800000>Príncipe Ali<col=000080>, herdeiro do <col=800000>Emir<col=000080>, foi capturado por um grupo"
-    },
-    {
-     "en": "Village. Osman asked for my help in rescuing Prince Ali, and",
-     "pt": "<col=800000>Draynor Village<col=000080>. <col=800000>Osman<col=000080> pediu minha ajuda para resgatar o"
-    },
-    {
-     "en": "I found the piece of the map that was hidden beneath Ice",
-     "pt": "Encontrei o pedaço do mapa escondido sob"
-    },
-    {
-     "en": "I can stay on Tutorial Island to learn more about Ironman",
-     "pt": "Posso ficar em Tutorial Island para aprender mais sobre o"
-    },
-    {
-     "en": "potion to fool Juliet's father that she is dead so that Romeo",
-     "pt": "poção para fazer o pai de Juliet acreditar que ela está morta,"
-    },
-    {
-     "en": "Telegrab some Wine of Zamorak at the Chaos Temple by the Wilderness.",
-     "pt": "Telegrab alguns Wine de Zamorak no Chaos Temple pelo Wilderness."
-    },
-    {
-     "en": "Pray at the Altar of Guthix in Taverley whilst wearing full",
-     "pt": "Ore no Altar de Guthix em Taverley enquanto usa"
-    },
-    {
-     "en": "Pickpocket Martin the Master Gardener.",
-     "pt": "Furta Martin o Master Gardener."
-    },
-    {
-     "en": "If I ever lose my Explorer's ring I can speak to Hatius Cosaintus outside of Lumbridge Castle.",
-     "pt": "Se eu perder meu anel de explorador, posso falar com Hatius Cosaintus fora do Castelo de Lumbridge."
-    },
-    {
-     "en": "Enter the second level of the Stronghold of Security.",
-     "pt": "Entre no segundo nível do Stronghold de Security."
-    },
-    {
-     "en": "Perform the 4 emotes from the Stronghold of Security.",
-     "pt": "Execute os 4 emotes do Stronghold de Security."
-    },
-    {
-     "en": "Once I achieve a Ranger level of 50 or more, I can upgrade the",
-     "pt": "<col=000080>Assim que eu atingir um level de 50 ou mais em Ranged, posso melhorar o"
-    },
-    {
-     "en": "I reported what I'd discovered to Sergeant Tobyn in Varrock",
-     "pt": "Relatei o que descobri ao Sergeant Tobyn na"
-    },
-    {
-     "en": "I said that Farmer Fred was the King of Lumbridge. They",
-     "pt": "Eu disse que o Farmer Fred era o Rei de Lumbridge. Eles"
-    },
-    {
-     "en": "I saw what the penguins were working on. It was a Giant",
-     "pt": "Eu vi no que os pinguins estavam trabalhando. Era um"
-    },
-    {
-     "en": "to cross. However, Maisa agreed to help the Sophanem",
-     "pt": "atravessar. No entanto, Maisa concordou em ajudar os cidadãos de"
-    },
-    {
-     "en": "I have discovered lots about Gnome History, King Healthorg",
-     "pt": "<col=000080>Eu descobri muito sobre a história dos Gnome, King Healthorg"
-    }
-   ]
-  },
   "ingles": {
-   "total": 53,
+   "total": 11,
    "exemplos": [
-    {
-     "en": "The Duke of Lumbridge gave me an anti-dragonbreath shield.",
-     "pt": "O Duke of Lumbridge me deu um anti-dragonbreath shield."
-    },
-    {
-     "en": "I can get new anti-dragonbreath shields from the Duke of",
-     "pt": "<col=000080>Posso obter novos <col=800000>anti-dragonbreath shields<col=000080> com o <col=800000>Duke of"
-    },
-    {
-     "en": "It would appear I can safely store my items with the Bank of",
-     "pt": "Parece que posso guardar meus itens com segurança no Bank of"
-    },
-    {
-     "en": "an eye of newt which she used to make a potion.",
-     "pt": "um eye of newt que ela usou para fazer uma poção."
-    },
-    {
-     "en": "Teleport to Enakhra's Temple with the Camulet.",
-     "pt": "Teleporte para Enakhra's Temple with the Camulet."
-    },
-    {
-     "en": "Teleport to Pollnivneach with a redirected teleport to house tablet.",
-     "pt": "Teleporte para Pollnivneach with a redirected teleport to house tablet."
-    },
     {
      "en": "Visit the Isle of Crandor via the dungeon below the volcano.",
-     "pt": "Visite a Isle of Crandor pela masmorra abaixo do vulcão."
+     "pt": "Visit the Isle of Crandor pela masmorra abaixo do vulcão."
     },
     {
-     "en": "Charter the Lady of the Waves from Cairn Isle to Port Khazard.",
-     "pt": "Afrete o Lady of the Waves de Cairn Isle para Port Khazard."
+     "en": "Of Bordanzan, making the rock a viable place for Dondakan to",
+     "pt": "Of Bordanzan, tornando a rocha um lugar viável para o Dondakan"
     },
     {
-     "en": "Cast Bones to Peaches in Al Kharid palace.",
-     "pt": "Elenco Bones to Peaches no palácio Al Kharid."
+     "en": "Teokan of Ralos.",
+     "pt": "Teokan of Ralos."
     },
     {
-     "en": "Teleport to the digsite using a Digsite pendant.",
-     "pt": "Teleporte para the digsite using a Digsite pendant."
+     "en": "Toad and Chicken. The guard wouldn't talk to me! I bought the",
+     "pt": "Toad and Chicken. O guarda não queria falar comigo! Eu comprei uma"
     },
     {
-     "en": "Teleport to Barbarian Village with a skull sceptre.",
-     "pt": "Teleporte para Barbarian Village with a skull sceptre."
+     "en": "Curator of Varrock Museum for his approval.",
+     "pt": "Curator of Varrock Museum para sua aprovação."
     },
     {
-     "en": "Teleport to Pest Control using the Minigame teleports.",
-     "pt": "Teleporte para Pest Control using the Minigame teleports."
+     "en": "Curator of Varrock Museum, to the Examiner at the Exam",
+     "pt": "Curator of Varrock Museum para o Examiner no Exam"
     },
     {
-     "en": "I need to collect a holy symbol of Saradomin and a mithril axe.",
-     "pt": "Eu preciso coletar um holy symbol of Saradomin e um mithril axe."
+     "en": "Group of Advanced Gardeners. They sent me to Zanaris to",
+     "pt": "Group of Advanced Gardeners. Eles me enviaram para Zanaris para"
     },
     {
-     "en": "I gave the lead navigator a potion of sealegs for his crew,",
-     "pt": "Eu dei ao navegador principal uma potion of sealegs para sua tripulação,"
+     "en": "Burgher of Neitiznot has asked me to get 8 split arctic pine",
+     "pt": "O Burgher of Neitiznot me pediu para conseguir 8 split arctic pine"
     },
     {
-     "en": "The potion of sealegs worked, putting the crew to sleep,",
-     "pt": "A potion of sealegs funcionou, fazendo a tripulação dormir,"
+     "en": "Temple of Phasmatys.",
+     "pt": "Temple of Phasmatys."
     },
     {
-     "en": "Priest recommended I speak to Jex at the Temple of the",
-     "pt": "Priest recomendou que eu falasse com Jex no Temple of the"
+     "en": "Goddess of Destruction.",
+     "pt": "Goddess of Destruction."
     },
     {
-     "en": "Fenkenstrain, who then wanted a needle and 5 lots of thread,",
-     "pt": "Fenkenstrain, que então quis uma needle e 5 lots of thread,"
-    },
-    {
-     "en": "I brought Fenkenstrain a needle and 5 quantities of thread.",
-     "pt": "Eu trouxe para Fenkenstrain uma needle e 5 quantities of thread."
-    },
-    {
-     "en": "temple, where he was astonished to find the Staff of",
-     "pt": "abandonado, onde ficou surpreso ao encontrar o Staff of"
-    },
-    {
-     "en": "Lennissa's warning that Zamorak had obtained the Staff of",
-     "pt": "o aviso de Lennissa de que Zamorak havia obtido o Staff of"
-    }
-   ]
-  },
-  "pontuacao": {
-   "total": 1,
-   "exemplos": [
-    {
-     "en": "Goblin Village, but the Village came under attack by H.A.M.",
-     "pt": "Goblin Village, mas a Village sofreu um ataque de snipers da"
+     "en": "Monks of Zamorak had brought with them. I obtained a Bucket",
+     "pt": "Monks of Zamorak trouxeram com eles. Eu peguei um Bucket"
     }
    ]
   }
  },
  "translations_settings.json": {
-  "glossario": {
-   "total": 117,
-   "exemplos": [
-    {
-     "en": "Signed Dr Foster-MMD, PRD Head of Magical Healing.",
-     "pt": "Assinado por Dr. Foster-MMD, chefe de cura mágica do PRD."
-    },
-    {
-     "en": "Snapshot: Fire two arrows within quick succession, but with reduced accuracy.",
-     "pt": "Snapshot: dispara duas flechas em rápida sucessão, mas com precisão reduzida."
-    },
-    {
-     "en": "Spear Wall: Will hit twice with second hit deals a damage between 50% - 75% of the first hit damage. After using this attack, you will be immune from melee and ranged attacks for 5 seconds and the next attack delay is reduced by 0.6 seconds.",
-     "pt": "Spear Wall: acerta duas vezes, com o segundo acerto causando entre 50% e 75% do dano do primeiro. Após usar este ataque, você fica imune a ataques melee e ranged por 5 segundos e o delay do próximo ataque é reduzido em 0.6 segundos."
-    },
-    {
-     "en": "Swarm: Fire 4 times in quick succession, dealing reduced damage and inflicting poison.",
-     "pt": "Swarm: dispara 4 vezes em rápida sucessão, causando dano reduzido e aplicando poison."
-    },
-    {
-     "en": "The Fremennik Province area covers the entire Fremennik Province (including the Fremennik Isles) along with Lunar Isle and Weiss. Instances of areas in the Fremennik Province and underground areas with an entrance in the Fremennik Province will also be included. Access to Kandarin via the bridge south of Rellekka will be blocked by magical barriers. All transportation and teleportation via Charter Ships, Customs Officers, Gnome Gliders, Fairy Rings, Balloons and all other forms of transport will require you to have unlocked access to the area your destination is in. The following travel options are restricted unless you have access to the appropriate area: - The log shortcut leading to the Fremennik Province north of Sinclair Manor - The rubble separating the Fremennik Province and the Death Plateau - The Cave entrance in the tunnel leading to Keldagrim that leads to the bottom of Trollweiss mountain - The basalt rock Agility shortcut leading from the Lighthouse to the Barbarian Outpost",
-     "pt": "A área do Fremennik Province cobre todo o Fremennik Province (incluindo as Fremennik Isles), junto com Lunar Isle e Weiss. Instâncias de áreas no Fremennik Province e áreas subterrâneas com entrada no Fremennik Province também são incluídas. O acesso a Kandarin pela ponte ao sul de Rellekka será bloqueado por barreiras mágicas. Todo transporte e teleporte por Charter Ships, Customs Officers, Gnome Gliders, Fairy Rings, Balloons e outras formas de transporte exigem que você tenha desbloqueado acesso à área de destino. As seguintes rotas são restritas a menos que você tenha acesso à área correspondente: o shortcut de tronco que leva ao Fremennik Province ao norte do Sinclair Manor; o entulho que separa o Fremennik Province do Death Plateau; a entrada de caverna no túnel para Keldagrim que leva ao sopé da montanha Trollweiss; o shortcut de Agility na rocha basáltica do Lighthouse até o Barbarian Outpost"
-    },
-    {
-     "en": "The following actions all occur at a rate of 1.2 seconds (2 cycles) rather than their usual speed: - Mining any rock. - Woodcutting any tree. - Fishing from any fishing spot. - Cooking any food. - Firemaking any logs or adding to a bonfire. - Offering bones at a Prayer altar. - Fletching the following items: - Regular & Atlatl arrows - Bruma Roots - Unstrung bows - Shields - Stocks - Javelins - Battlestaves - Hunter spears - Redwood hiking staffs - Smithing the following items: - Smelting ores - Smithing bars - Making cannonballs - Crafting the following items: - Glassblowing - Leather crafting - Pottery - Gold/Silver items - Spinning wheel - The following Farming interactions: - Harvesting herbs - Harvesting allotments - Planting seeds - Casting the following Magic spells: - Low & high alchemy - Superheat - Alchemic divergence & convergence (if unlocked) - Additionally the following interactions in minigames will be sped up: - Wintertodt Roots and Brazier lighting - Tempoross fishing - Stealing Valuables This effect stacks with the Fletching knife and Diabolical worms.",
-     "pt": "As ações a seguir passam a ocorrer a uma taxa de 1.2 segundos (2 cycles) em vez da velocidade normal: minerar qualquer rocha; cortar qualquer árvore; fazer fishing em qualquer fishing spot; cozinhar qualquer comida; fazer firemaking de logs ou alimentar uma bonfire; oferecer bones num altar de Prayer; fletching dos seguintes itens: arrows regulares e Atlatl, Bruma Roots, unstrung bows, shields, stocks, javelins, battlestaves, hunter spears, redwood hiking staffs; smithing dos seguintes itens: fundir ores, fazer smithing de bars, fazer cannonballs; crafting dos seguintes itens: glassblowing, crafting de leather, pottery, itens de Gold/Silver, spinning wheel; as seguintes interações de Farming: colher herbs, colher allotments, plantar seeds; lançar os seguintes spells de Magic: low e high alchemy, superheat, alchemic divergence e convergence (se desbloqueado). Além disso, as seguintes interações em minigames ficam mais rápidas: Wintertodt roots e aceso de brazier, fishing no Tempoross, Stealing Valuables. Esse efeito acumula com o Fletching knife e com Diabolical worms."
-    },
-    {
-     "en": "The following quest is automatically completed but will not award any completion XP: - Enter the Abyss The Wilderness diary master has been relocated to Ferox Enclave and the following tasks in the Wilderness Achievement Diary are automatically completed: Easy Tasks: - Enter the Wilderness from the Ardougne or Edgeville lever - Kill an earth warrior Medium Tasks: - Smith a Gold Helmet in the resource area - Talk to the Emblem Trader - Charge an Earth orb Hard Tasks: - Take the Agility shortcut from Trollheim to the Wilderness - Fish a raw lava eel in the Wilderness - Charge an air orb Elite Tasks: - Teleport to Ghorrock The following Combat Achievements are automatically completed: - Finding the Weak Spot",
-     "pt": "A quest a seguir é concluída automaticamente, mas não dá XP de conclusão: Enter the Abyss. O diary master da Wilderness foi realocado para Ferox Enclave, e as tarefas a seguir no Wilderness Achievement Diary são concluídas automaticamente. Tarefas Easy: entrar na Wilderness pela lever de Ardougne ou Edgeville; matar um earth warrior. Tarefas Medium: fazer smithing de um Gold Helmet na resource area; falar com o Emblem Trader; carregar um Earth orb. Tarefas Hard: usar o shortcut de Agility de Trollheim até a Wilderness; pescar um raw lava eel na Wilderness; carregar um air orb. Tarefas Elite: teleportar para Ghorrock. A Combat Achievement a seguir é concluída automaticamente: Finding the Weak Spot"
-    },
-    {
-     "en": "The following quests and their pre-reqs are automatically completed but will not reward any completion XP: - Cook's Assistant - Sheep Shearer - Restless Ghost - Porcine of Interest - Shield of Arrav - Heroes' Quest - Merlin's Crystal - My Arm's Big Adventure - Below Ice Mountain - Dwarf Cannon The following tasks in the Falador Achievement Diary are automatically completed: Easy Tasks: - Smith some Blurite Limbs on Doric's anvil Medium Tasks: - Visit the Port Sarim Rat Pits Hard Tasks: - Recharge your Prayer in Port Sarim church while wearing full Proselyte Elite Tasks: - Purchase a white 2-handed sword from Sir Vyvin Additionally, you will be eligible to complete The Frozen Door, if you haven't already. It will not be auto-completed. The following Combat Achievements are automatically completed: - Tentacular - The Worst Ranged Weapon - The Bane of Demons",
-     "pt": "As quests a seguir e seus pré-requisitos são concluídos automaticamente, mas não dão XP de conclusão: Cook's Assistant, Sheep Shearer, Restless Ghost, Porcine of Interest, Shield of Arrav, Heroes' Quest, Merlin's Crystal, My Arm's Big Adventure, Below Ice Mountain, Dwarf Cannon. As tarefas a seguir no Falador Achievement Diary são concluídas automaticamente. Tarefas Easy: fazer smithing de Blurite Limbs no anvil de Doric. Tarefas Medium: visitar os Rat Pits de Port Sarim. Tarefas Hard: recarregar seu Prayer na igreja de Port Sarim vestindo o Proselyte completo. Tarefas Elite: comprar uma white 2-handed sword de Sir Vyvin. Além disso, você poderá completar The Frozen Door, se ainda não tiver feito. Ela não é concluída automaticamente. As Combat Achievements a seguir são concluídas automaticamente: Tentacular, The Worst Ranged Weapon, The Bane of Demons"
-    },
-    {
-     "en": "The following quests and their pre-reqs are automatically completed but will not reward any completion XP: - Dragon Slayer - Druidic Ritual - Elemental Workshop I - Tears of Guthix - Bone Voyage - Fairytale II - Cure a Queen - Death to the Dorgeshuun - Gertrude's Cat - Romeo and Juliet - A Soul's Bane - Defender of Varrock (This does not complete pre-reqs) Players can enter the Ancient Guthixian Temple from the Chasm of Tears without WGS completed. The following tasks in the Lumbridge and Draynor Achievement Diary are automatically completed: Easy Tasks: - Catch some Anchovies in Al Kharid - Mine some iron ore at the Al Kharid mine Medium Tasks: - Complete a lap of the Al Kharid Rooftop Course - Grapple or jump across the River Lum - Craft some Lava Runes at the Fire Altar in Al Kharid - Purchase an upgraded device from Ava Hard Tasks: - Cast Bones to Peaches in Al Kharid Palace - Collect 100 tears from Tears of Guthix - Recharge your Prayer at the Emir's Arena with Smite activated - Purchase some Barrows Gloves from the Culinaromancer's Chest - Take the train from Dorgesh-Kaan to Keldagrim Elite Tasks: - Chop some Magic Logs at the Mage Training Arena - Perform the Quest Point Cape emote in the Wise Old Man's house The following tasks in the Varrock Diary are automatically completed: Medium Tasks: - Select a colour for your kitten - Use the Spirit Tree in the north-eastern corner of Grand Exchange - Pick a White Tree Fruit - Use the balloon to travel from Varrock Hard Tasks: - Trade furs with the Fancy Dress Seller for a Spottier Cape and equip it - Teleport to Paddewwa Elite Tasks: - Use Lunar magic to make 20 Mahogany Planks in the Varrock Lumber Yard. - Smith and fletch ten Rune Darts while in Varrock. - Create a Summer Pie in the Cooks' Guild. - Mahogany homes tutorial is completed.",
-     "pt": "As quests a seguir e seus pré-requisitos são concluídos automaticamente, mas não dão XP de conclusão: Dragon Slayer, Druidic Ritual, Elemental Workshop I, Tears of Guthix, Bone Voyage, Fairytale II, Cure a Queen, Death to the Dorgeshuun, Gertrude's Cat, Romeo and Juliet, A Soul's Bane, Defender of Varrock (isso não conclui os pré-requisitos). Jogadores podem entrar no Ancient Guthixian Temple pelo Chasm of Tears sem ter completado WGS. As tarefas a seguir no Lumbridge and Draynor Achievement Diary são concluídas automaticamente. Tarefas Easy: pescar Anchovies em Al Kharid; minerar iron ore na mina de Al Kharid. Tarefas Medium: completar uma volta no Al Kharid Rooftop Course; usar grapple ou saltar sobre o River Lum; fazer crafting de Lava Runes no Fire Altar em Al Kharid; comprar um aparelho melhorado de Ava. Tarefas Hard: lançar Bones to Peaches no Al Kharid Palace; coletar 100 tears de Tears of Guthix; recarregar seu Prayer na Emir's Arena com Smite ativado; comprar Barrows Gloves do Culinaromancer's Chest; pegar o trem de Dorgesh-Kaan a Keldagrim. Tarefas Elite: cortar Magic Logs na Mage Training Arena; fazer a emote da Quest Point Cape na casa do Wise Old Man. As tarefas a seguir no Varrock Diary são concluídas automaticamente. Tarefas Medium: escolher uma cor para seu gatinho; usar a Spirit Tree no canto nordeste do Grand Exchange; colher uma White Tree Fruit; usar o balão para viajar de Varrock. Tarefas Hard: trocar furs com o Fancy Dress Seller por uma Spottier Cape e vesti-la; teleportar para Paddewwa. Tarefas Elite: usar Lunar magic para fazer 20 Mahogany Planks no Varrock Lumber Yard; fazer smithing e fletching de dez Rune Darts em Varrock; criar um Summer Pie no Cooks' Guild; completar o tutorial de Mahogany homes."
-    },
-    {
-     "en": "The following quests and their pre-reqs are automatically completed but will not reward any completion XP: - Elemental Workshop II - Hand in the Sand - Monkey Madness II - Swan Song - King's Ransom - Dragon slayer II - Recipe for Disaster (Freeing Skrach Uglogwee) The following tasks in the Kandarin Achievement Diary are automatically completed: Medium Tasks: - Use the Grapple Shortcut to get from the Water Obelisk to Catherby beach - Create a Mind helmet Hard Tasks: - Charge a water orb - Kill a shadow hound in the Shadow Dungeon Elite Tasks: - Fish and cook 5 sharks in Catherby using the Cooking Gauntlets - Teleport to Catherby The following tasks in the Western Provinces Achievement Diary are automatically completed: Easy Tasks: - Complete a novice game of Pest Control - Teleport to Pest Control using the minigame teleports Medium Tasks: - Complete an intermediate game of Pest Control Hard Tasks: - Complete a veteran game of Pest Control - Place an Isafdar painting in your Player Owned House Quest Hall Elite Tasks: - Equip any complete Void set The following tasks in the Ardougne Achievement Diary are automatically completed: Easy Tasks: - Enter the combat training camp north of West Ardougne - Use the Ardougne lever to teleport to the Wilderness Medium Tasks: - Travel to Castle Wars by hot air balloon - Equip an Iban's Upgraded Staff or upgrade an Iban's Staff Hard Tasks: - Recharge some jewellery at the totem pole in the Legends' Guild - Smith a Dragon Square Shield in West Ardougne - Craft some Death Runes at the Death Altar Elite Tasks: - Imbue a Salve Amulet at Nightmare Zone or equip a Salve Amulet(i) - Cast Ice Barrage on another player within Castle Wars The following bars will be automatically completed on Alfred Grimhand's Barcrawl: - Blue Moon Inn in Varrock - Jolly Boar Inn near Varrock - The Rising Sun in Falador - The Rusty Anchor in Port Sarim The following Combat Achievements are automatically completed: - Hitting them Where it Hurts",
-     "pt": "As quests a seguir e seus pré-requisitos são concluídos automaticamente, mas não dão XP de conclusão: Elemental Workshop II, Hand in the Sand, Monkey Madness II, Swan Song, King's Ransom, Dragon slayer II, Recipe for Disaster (Freeing Skrach Uglogwee). As tarefas a seguir no Kandarin Achievement Diary são concluídas automaticamente. Tarefas Medium: usar o Grapple Shortcut do Water Obelisk até a praia de Catherby; criar um Mind helmet. Tarefas Hard: carregar um water orb; matar um shadow hound no Shadow Dungeon. Tarefas Elite: pescar e cozinhar 5 sharks em Catherby usando as Cooking Gauntlets; teleportar para Catherby. As tarefas a seguir no Western Provinces Achievement Diary são concluídas automaticamente. Tarefas Easy: completar uma partida novice de Pest Control; teleportar para Pest Control usando os teleports do minigame. Tarefas Medium: completar uma partida intermediate de Pest Control. Tarefas Hard: completar uma partida veteran de Pest Control; colocar uma pintura de Isafdar no Quest Hall do seu Player Owned House. Tarefas Elite: equipar qualquer set Void completo. As tarefas a seguir no Ardougne Achievement Diary são concluídas automaticamente. Tarefas Easy: entrar no campo de treino de combate ao norte de West Ardougne; usar a lever de Ardougne para teleportar para a Wilderness. Tarefas Medium: viajar para Castle Wars de balão; equipar um Iban's Upgraded Staff ou melhorar um Iban's Staff. Tarefas Hard: recarregar jewellery no totem pole do Legends' Guild; fazer smithing de um Dragon Square Shield em West Ardougne; fazer crafting de Death Runes no Death Altar. Tarefas Elite: imbuir um Salve Amulet na Nightmare Zone ou equipar um Salve Amulet(i); lançar Ice Barrage em outro jogador dentro de Castle Wars. Os seguintes bars são concluídos automaticamente no Alfred Grimhand's Barcrawl: Blue Moon Inn em Varrock, Jolly Boar Inn perto de Varrock, The Rising Sun em Falador, The Rusty Anchor em Port Sarim. A Combat Achievement a seguir é concluída automaticamente: Hitting them Where it Hurts"
-    },
-    {
-     "en": "The following quests and their pre-reqs are automatically completed but will not reward any completion XP: - Song of the Elves The following Combat Achievements are automatically completed: - Snake Rebound",
-     "pt": "A quest a seguir e seus pré-requisitos são concluídos automaticamente, mas não dão XP de conclusão: Song of the Elves. A Combat Achievement a seguir é concluída automaticamente: Snake Rebound"
-    },
-    {
-     "en": "The high alchemy and low alchemy spells transform into two new spells: - Alchemic Divergence : Upgrades up to 10 of a resource into a higher tier. - Alchemic Convergence : Downgrades up to 10 of a resource into a lower tier. Both spells cost no runes and have no level requirement. The spell gives 10 Magic XP for each item transmuted (before league XP multipliers). The Transmutation ledger can be equipped and acts as an infinite source of Nature runes. Using items on the Transmutation ledger will display what they can turn into. When cast upon a noted item, these spells will automatically re-cast over time as long as the items are available in the same slot in your inventory. You can still cast alchemy spells via the toggle above or by configuring the spells in your spellbook. Normal Alchemy spells will not automatically re-cast and will only cost 1 Nature rune. List of Transmutable resources: - Hides - Runes - Ashes - Uncut gems - Compost - Seeds (Cactus) - Seeds (Hardwood tree) - Seeds (Fruit tree) - Seeds (Tree) - Seeds (Bush) - Seeds (Hops) - Seeds (Herbs) - Seeds (Flower) - Seeds (Allotment) - Logs (Normal) - Logs (Pyre) - Mining (Normal) - Mining (Crafting) - Bones - Raw Fish",
-     "pt": "Os spells high alchemy e low alchemy se transformam em dois novos spells: Alchemic Divergence, que melhora até 10 de um recurso para um tier mais alto; e Alchemic Convergence, que rebaixa até 10 de um recurso para um tier mais baixo. Os dois spells não custam runes e não exigem nível. O spell dá 10 de Magic XP para cada item transmutado (antes dos multiplicadores de XP da league). O Transmutation ledger pode ser equipado e age como fonte infinita de Nature runes. Usar itens no Transmutation ledger mostra em que eles podem se transformar. Ao lançar num item noted, esses spells relançam automaticamente com o tempo enquanto os itens estiverem disponíveis no mesmo slot do seu inventário. Você ainda pode lançar spells de alchemy pelo toggle acima ou configurando os spells no seu spellbook. Spells de Alchemy normais não relançam automaticamente e custam só 1 Nature rune. Lista de recursos transmutáveis: hides, runes, ashes, uncut gems, compost, seeds (cactus), seeds (hardwood tree), seeds (fruit tree), seeds (tree), seeds (bush), seeds (hops), seeds (herbs), seeds (flower), seeds (allotment), logs (normal), logs (pyre), mining (normal), mining (crafting), bones, raw fish"
-    },
-    {
-     "en": "Tumeken's Light: Sacrifice 50 prayer points to restore your hitpoints to 20% above their maximum, cure all poison, restore all drained stats (except prayer) and fully restore your run energy. This special attack can only be used within the Tombs of Amascut.",
-     "pt": "Tumeken's Light: sacrifica 50 pontos de prayer para restaurar seus hitpoints a 20% acima do máximo, curar todo poison, restaurar todos os stats drenados (exceto prayer) e restaurar totalmente seu run energy. Essa special attack só pode ser usada dentro do Tombs of Amascut."
-    },
-    {
-     "en": "Welcome to the Giants' Foundry Reward Shop.",
-     "pt": "Bem-vindo à Reward Shop do Giants' Foundry."
-    },
-    {
-     "en": "When Cooking food or making Jugs of Wine, all items are processed at once.",
-     "pt": "Ao cozinhar comida ou fazer Jugs of Wine, todos os itens são processados de uma vez."
-    },
-    {
-     "en": "When Crafting Leather, Uncut Gems, Glass, Jewellery, Pottery or Battlestaves, or when spinning Flax or Wool, all items are processed at once.",
-     "pt": "Ao fazer crafting de Leather, Uncut Gems, Glass, Jewellery, Pottery ou Battlestaves, ou ao fiar Flax ou Wool, todos os itens são processados de uma vez."
-    },
-    {
-     "en": "When Fletching Logs or cutting Bolt Tips, all items are processed at once.",
-     "pt": "Ao fazer fletching de Logs ou cortar Bolt Tips, todos os itens são processados de uma vez."
-    },
-    {
-     "en": "When doing the following Production activities, all items are processed at once: - smelting ores, Smithing bars and making Cannonballs. - Fletching logs, stringing Bows, making arrow shafts and cutting bolt tips. - Making headless arrows, regular arrows, bolts and darts (capped at 10x the regular amount per action). - Cleaning herbs and making potions which do not have a stackable secondary ingredient. - Cooking food, making pies or pizzas and making Jugs of Wine. - Crafting leather, uncut gems, glassblowing, jewellery, pottery, Battlestaves and spinning flax or wool.",
-     "pt": "Ao fazer as seguintes atividades de produção, todos os itens são processados de uma vez: fundir ores, fazer smithing de bars e fazer Cannonballs; fazer fletching de logs, encordar Bows, fazer arrow shafts e cortar bolt tips; fazer headless arrows, arrows regulares, bolts e darts (limitado a 10x a quantidade normal por ação); limpar herbs e fazer potions que não têm ingrediente secundário empilhável; cozinhar comida, fazer pies ou pizzas e fazer Jugs of Wine; fazer crafting de leather, uncut gems, glassblowing, jewellery, pottery, Battlestaves e fiar flax ou wool."
-    },
-    {
-     "en": "When the bell is rung, a Demon butler will be summoned to work for you. The butler's work will continue even if you are offline. The butler can gather the following resources for you: - Mining ores (8 per minute) - Catching fish (14 per minute) - Chopping logs (10 per minute) - Picking flax (50 per minute) - Farming herbs (10 per minute) Additionally, the butler can also process these gathered items for you but at half the rates listed above: - Ores into bars - Raw fish into cooked fish - Logs into planks - Flax into bowstrings - Herbs into unfinished potions When the Demon butler processes resources for you, he will share a 10 XP (before League XP multipliers) with you in the relevant production skill per resource.",
-     "pt": "Ao tocar o sino, um Demon butler é convocado para trabalhar para você. O trabalho do butler continua mesmo se você estiver offline. O butler pode coletar os seguintes recursos para você: minerar ores (8 por minuto); pescar peixe (14 por minuto); cortar logs (10 por minuto); colher flax (50 por minuto); fazer farming de herbs (10 por minuto). Além disso, o butler também pode processar esses itens coletados para você, mas na metade das taxas acima: ores em bars; peixe crú em peixe cozido; logs em planks; flax em bowstrings; herbs em potions não finalizadas. Quando o Demon butler processa recursos para você, ele compartilha 10 XP (antes dos multiplicadores de League) com você na skill de produção correspondente por recurso."
-    },
-    {
-     "en": "While the Forager's pouch is worn or in your inventory, you gain the following benefits: - When you gather resources from Woodcutting, Fishing, Mining and Hunter, the pouch will find and store a random grimy herb. - This herb is limited to any which your Herblore level + 25 can clean. This action also provides a small amount of Herblore XP. - The pouch will only find herbs it has room to store, but will always attempt to give you a herb you can receive. - The pouch also functions as a Silklined herb sack, and shares an inventory with it. Additionally, you gain the following perks to Herblore : - All items are processed at once. - Secondary ingredients have a 90% chance to not be consumed, this stacks additively with other sources. - Potions created will have 4 doses instead of 3.",
-     "pt": "Enquanto o Forager's pouch estiver vestido ou no seu inventário, você ganha os seguintes benefícios: ao coletar recursos de Woodcutting, Fishing, Mining e Hunter, o pouch acha e guarda um grimy herb aleatório. Esse herb é limitado aos que seu nível de Herblore + 25 pode limpar. Essa ação também dá uma pequena quantidade de Herblore XP. O pouch só acha herbs se tiver espaço para guardar, mas sempre tenta dar um herb que você pode receber. O pouch também funciona como Silklined herb sack e compartilha inventário com ele. Além disso, você ganha os seguintes perks em Herblore: todos os itens são processados de uma vez; ingredientes secundários têm 90% de chance de não serem consumidos, isso acumula de forma aditiva com outras fontes; potions criadas têm 4 doses em vez de 3."
-    }
-   ]
-  },
   "ingles": {
-   "total": 129,
+   "total": 89,
    "exemplos": [
     {
-     "en": "Show the Activity Adviser button,hide the Activity Adviser button,Advanced Display Settings,orb",
-     "pt": "Mostrar o botão Activity Adviser,hide the Activity Adviser button,Advanced Display Settings,orb"
+     "en": "Free-to-play",
+     "pt": "Free-to-play"
     },
     {
-     "en": "Show the Store button,hide the Store button,Advanced Display Settings,orb",
-     "pt": "Mostrar o botão da Store,hide the Store button,Advanced Display Settings,orb"
+     "en": "Against players, gain 10% damage increase when using god spells. Flames of Zamorak has a 10% chance to burn. Claws of Guthix lowers your targets defence level equal to 50% of damage dealt. Saradomin Strike drains enemy prayer points by 30% of damage dealt.",
+     "pt": "Contra jogadores, ganhe 10% de aumento de dano ao usar god spells. Flames of Zamorak tem 10% de chance de queimar. Claws of Guthix reduz o nível de defesa do alvo em 50% do dano causado. Saradomin Strike drena os prayer points do inimigo em 30% do dano causado."
     },
     {
-     "en": "Show warning when casting: Teleport to Target",
-     "pt": "Mostrar aviso ao usar: Teleport to Target"
-    },
-    {
-     "en": "Show warning when casting: Teleport to Target,Show warning when casting Teleport to Target,gameplay,teleports",
-     "pt": "Mostrar aviso ao usar: Teleport to Target,Show warning when casting Teleport to Target,gameplay,teleports"
-    },
-    {
-     "en": "Something of an expert myself",
-     "pt": "Something of an expert myself"
-    },
-    {
-     "en": "Space is Tight",
-     "pt": "Space is Tight"
-    },
-    {
-     "en": "Spoils of war opened:",
-     "pt": "Spoils of war abertos:"
-    },
-    {
-     "en": "Staff of the dead special duration",
-     "pt": "Duração do special do Staff of the dead"
-    },
-    {
-     "en": "Staff of the dead special.",
-     "pt": "Special do Staff of the dead."
-    },
-    {
-     "en": "Sticks and stones",
-     "pt": "Sticks and stones"
-    },
-    {
-     "en": "Teleporting via the following methods will never use charges: Master Scroll Book, Ring of Duelling, Ring of Returning, Slayer Ring, Ring of Wealth, Amulet of Glory, Games Necklace, Skills Necklace, Digsite Pendant, Combat Bracelet, Burning Amulet and Necklace of Passage.",
-     "pt": "Teleportar pelos seguintes métodos nunca usa charges: Master Scroll Book, Ring of Duelling, Ring of Returning, Slayer Ring, Ring of Wealth, Amulet of Glory, Games Necklace, Skills Necklace, Digsite Pendant, Combat Bracelet, Burning Amulet e Necklace of Passage."
-    },
-    {
-     "en": "The Karamja area covers the entire island of Karamja along with the island of Crandor and the Realm of the Fisher King. Instances of areas in Karamja and underground areas with an entrance in Karamja will also be included. When purchasing a Player Owned House from an Estate Agent your house will be placed in Brimhaven so that Construction can be trained from level 1. All transportation and teleportation through Charter Ships, Customs Officers, Gnome Gliders, Fairy Rings, Balloons and other forms of transport will require you to have unlocked access to the area your destination is in.",
-     "pt": "A área de Karamja cobre toda a ilha de Karamja, junto com a ilha de Crandor e o Realm of the Fisher King. Instâncias de áreas em Karamja e áreas subterrâneas com entrada em Karamja também são incluídas. Ao comprar um Player Owned House de um Estate Agent, sua casa será colocada em Brimhaven, para que Construction possa ser treinado desde o nível 1. Todo transporte e teleporte por Charter Ships, Customs Officers, Gnome Gliders, Fairy Rings, Balloons e outras formas de transporte exigem que você tenha desbloqueado acesso à área de destino."
-    },
-    {
-     "en": "The Theatre of Blood is a large arena located within the castle of Ver Sinhaza in Morytania. Access to Morytania required.",
-     "pt": "O Theatre of Blood é uma grande arena no castelo de Ver Sinhaza, em Morytania. Exige acesso a Morytania."
-    },
-    {
-     "en": "The Theatre of Blood is a large arena located within the castle of Ver Sinhaza in Morytania. The Theatre of Blood is a raid for 1-5 players. Attack Styles - Magic, Ranged, Melee, Special Immunities - Poison, Venom Slayer Categories - None",
-     "pt": "O Theatre of Blood é uma grande arena no castelo de Ver Sinhaza, em Morytania. É um raid para 1 a 5 jogadores. Estilos de ataque: Magic, Ranged, Melee, Special. Imunidades: Poison, Venom. Categorias de Slayer: Nenhuma"
-    },
-    {
-     "en": "The Theatre of Blood is a large arena located within the castle of Ver Sinhaza in Morytania. The Theatre of Blood is a raid for 1-5 players. Hard mode is a more challenging experience than the regular raid. Mechanics are harder and more punishing. Attack Styles - Magic, Ranged, Melee, Special Immunities - Poison, Venom Slayer Categories - None",
-     "pt": "O Theatre of Blood é uma grande arena no castelo de Ver Sinhaza, em Morytania. É um raid para 1 a 5 jogadores. O Hard mode é mais desafiador que o raid normal. As mecânicas são mais difíceis e punitivas. Estilos de ataque: Magic, Ranged, Melee, Special. Imunidades: Poison, Venom. Categorias de Slayer: Nenhuma"
-    },
-    {
-     "en": "The following quests and their pre-reqs are automatically completed but will not reward any completion XP: - Children of the Sun - Twilight's Promise - Perilous Moons - Eagles peak The following Combat Achievements are automatically completed: - Back to Our Roots - Demonic Rebound - I was here first!",
-     "pt": "As quests a seguir e seus pré-requisitos são concluídos automaticamente, mas não dão XP de conclusão: Children of the Sun, Twilight's Promise, Perilous Moons, Eagles peak. As Combat Achievements a seguir são concluídas automaticamente: Back to Our Roots, Demonic Rebound, I was here first!"
-    },
-    {
-     "en": "The following quests and their pre-reqs are automatically completed but will not reward any completion XP: - Dragon Slayer - Druidic Ritual - Elemental Workshop I - Tears of Guthix - Bone Voyage - Fairytale II - Cure a Queen - Death to the Dorgeshuun - Gertrude's Cat - Romeo and Juliet - A Soul's Bane - Defender of Varrock (This does not complete pre-reqs) Players can enter the Ancient Guthixian Temple from the Chasm of Tears without WGS completed. The following tasks in the Lumbridge and Draynor Achievement Diary are automatically completed: Easy Tasks: - Catch some Anchovies in Al Kharid - Mine some iron ore at the Al Kharid mine Medium Tasks: - Complete a lap of the Al Kharid Rooftop Course - Grapple or jump across the River Lum - Craft some Lava Runes at the Fire Altar in Al Kharid - Purchase an upgraded device from Ava Hard Tasks: - Cast Bones to Peaches in Al Kharid Palace - Collect 100 tears from Tears of Guthix - Recharge your Prayer at the Emir's Arena with Smite activated - Purchase some Barrows Gloves from the Culinaromancer's Chest - Take the train from Dorgesh-Kaan to Keldagrim Elite Tasks: - Chop some Magic Logs at the Mage Training Arena - Perform the Quest Point Cape emote in the Wise Old Man's house The following tasks in the Varrock Diary are automatically completed: Medium Tasks: - Select a colour for your kitten - Use the Spirit Tree in the north-eastern corner of Grand Exchange - Pick a White Tree Fruit - Use the balloon to travel from Varrock Hard Tasks: - Trade furs with the Fancy Dress Seller for a Spottier Cape and equip it - Teleport to Paddewwa Elite Tasks: - Use Lunar magic to make 20 Mahogany Planks in the Varrock Lumber Yard. - Smith and fletch ten Rune Darts while in Varrock. - Create a Summer Pie in the Cooks' Guild. - Mahogany homes tutorial is completed.",
-     "pt": "As quests a seguir e seus pré-requisitos são concluídos automaticamente, mas não dão XP de conclusão: Dragon Slayer, Druidic Ritual, Elemental Workshop I, Tears of Guthix, Bone Voyage, Fairytale II, Cure a Queen, Death to the Dorgeshuun, Gertrude's Cat, Romeo and Juliet, A Soul's Bane, Defender of Varrock (isso não conclui os pré-requisitos). Jogadores podem entrar no Ancient Guthixian Temple pelo Chasm of Tears sem ter completado WGS. As tarefas a seguir no Lumbridge and Draynor Achievement Diary são concluídas automaticamente. Tarefas Easy: pescar Anchovies em Al Kharid; minerar iron ore na mina de Al Kharid. Tarefas Medium: completar uma volta no Al Kharid Rooftop Course; usar grapple ou saltar sobre o River Lum; fazer crafting de Lava Runes no Fire Altar em Al Kharid; comprar um aparelho melhorado de Ava. Tarefas Hard: lançar Bones to Peaches no Al Kharid Palace; coletar 100 tears de Tears of Guthix; recarregar seu Prayer na Emir's Arena com Smite ativado; comprar Barrows Gloves do Culinaromancer's Chest; pegar o trem de Dorgesh-Kaan a Keldagrim. Tarefas Elite: cortar Magic Logs na Mage Training Arena; fazer a emote da Quest Point Cape na casa do Wise Old Man. As tarefas a seguir no Varrock Diary são concluídas automaticamente. Tarefas Medium: escolher uma cor para seu gatinho; usar a Spirit Tree no canto nordeste do Grand Exchange; colher uma White Tree Fruit; usar o balão para viajar de Varrock. Tarefas Hard: trocar furs com o Fancy Dress Seller por uma Spottier Cape e vesti-la; teleportar para Paddewwa. Tarefas Elite: usar Lunar magic para fazer 20 Mahogany Planks no Varrock Lumber Yard; fazer smithing e fletching de dez Rune Darts em Varrock; criar um Summer Pie no Cooks' Guild; completar o tutorial de Mahogany homes."
-    },
-    {
-     "en": "The following quests and their pre-reqs are automatically completed but will not reward any completion XP: - Elemental Workshop II - Hand in the Sand - Monkey Madness II - Swan Song - King's Ransom - Dragon slayer II - Recipe for Disaster (Freeing Skrach Uglogwee) The following tasks in the Kandarin Achievement Diary are automatically completed: Medium Tasks: - Use the Grapple Shortcut to get from the Water Obelisk to Catherby beach - Create a Mind helmet Hard Tasks: - Charge a water orb - Kill a shadow hound in the Shadow Dungeon Elite Tasks: - Fish and cook 5 sharks in Catherby using the Cooking Gauntlets - Teleport to Catherby The following tasks in the Western Provinces Achievement Diary are automatically completed: Easy Tasks: - Complete a novice game of Pest Control - Teleport to Pest Control using the minigame teleports Medium Tasks: - Complete an intermediate game of Pest Control Hard Tasks: - Complete a veteran game of Pest Control - Place an Isafdar painting in your Player Owned House Quest Hall Elite Tasks: - Equip any complete Void set The following tasks in the Ardougne Achievement Diary are automatically completed: Easy Tasks: - Enter the combat training camp north of West Ardougne - Use the Ardougne lever to teleport to the Wilderness Medium Tasks: - Travel to Castle Wars by hot air balloon - Equip an Iban's Upgraded Staff or upgrade an Iban's Staff Hard Tasks: - Recharge some jewellery at the totem pole in the Legends' Guild - Smith a Dragon Square Shield in West Ardougne - Craft some Death Runes at the Death Altar Elite Tasks: - Imbue a Salve Amulet at Nightmare Zone or equip a Salve Amulet(i) - Cast Ice Barrage on another player within Castle Wars The following bars will be automatically completed on Alfred Grimhand's Barcrawl: - Blue Moon Inn in Varrock - Jolly Boar Inn near Varrock - The Rising Sun in Falador - The Rusty Anchor in Port Sarim The following Combat Achievements are automatically completed: - Hitting them Where it Hurts",
-     "pt": "As quests a seguir e seus pré-requisitos são concluídos automaticamente, mas não dão XP de conclusão: Elemental Workshop II, Hand in the Sand, Monkey Madness II, Swan Song, King's Ransom, Dragon slayer II, Recipe for Disaster (Freeing Skrach Uglogwee). As tarefas a seguir no Kandarin Achievement Diary são concluídas automaticamente. Tarefas Medium: usar o Grapple Shortcut do Water Obelisk até a praia de Catherby; criar um Mind helmet. Tarefas Hard: carregar um water orb; matar um shadow hound no Shadow Dungeon. Tarefas Elite: pescar e cozinhar 5 sharks em Catherby usando as Cooking Gauntlets; teleportar para Catherby. As tarefas a seguir no Western Provinces Achievement Diary são concluídas automaticamente. Tarefas Easy: completar uma partida novice de Pest Control; teleportar para Pest Control usando os teleports do minigame. Tarefas Medium: completar uma partida intermediate de Pest Control. Tarefas Hard: completar uma partida veteran de Pest Control; colocar uma pintura de Isafdar no Quest Hall do seu Player Owned House. Tarefas Elite: equipar qualquer set Void completo. As tarefas a seguir no Ardougne Achievement Diary são concluídas automaticamente. Tarefas Easy: entrar no campo de treino de combate ao norte de West Ardougne; usar a lever de Ardougne para teleportar para a Wilderness. Tarefas Medium: viajar para Castle Wars de balão; equipar um Iban's Upgraded Staff ou melhorar um Iban's Staff. Tarefas Hard: recarregar jewellery no totem pole do Legends' Guild; fazer smithing de um Dragon Square Shield em West Ardougne; fazer crafting de Death Runes no Death Altar. Tarefas Elite: imbuir um Salve Amulet na Nightmare Zone ou equipar um Salve Amulet(i); lançar Ice Barrage em outro jogador dentro de Castle Wars. Os seguintes bars são concluídos automaticamente no Alfred Grimhand's Barcrawl: Blue Moon Inn em Varrock, Jolly Boar Inn perto de Varrock, The Rising Sun em Falador, The Rusty Anchor em Port Sarim. A Combat Achievement a seguir é concluída automaticamente: Hitting them Where it Hurts"
+     "en": "Slice and Dice: Hit 4 times in quick succession, with great accuracy.",
+     "pt": "Slice and Dice: acerta 4 vezes em rápida sucessão, com grande precisão."
     },
     {
      "en": "The following quests and their pre-reqs are automatically completed but will not reward any completion XP: - Prince Ali Rescue - The Golem - Shadow of the Storm - Icthlarin's Little Helper - Temple of the Eye - Desert Treasure II The following tasks in the Desert Achievement Diary are automatically completed: Medium Tasks: - Travel to the Desert via the Eagle transport system Hard Tasks: - Slay a dust devil in the desert cave with a Slayer Helmet equipped - Refill your Waterskins in the Desert using Lunar spells Elite Tasks: - Bake a wild pie at the Nardah clay oven - Speak to the Kalphite Queen Head in your Player Owned House The above Kalphite Queen Head diary task will complete when you receive a Kalphite Queen Head or Kalphite Queen Head(tattered) drop instead. Near the Mage training arena entrance there will be a portal to Guardians of the rift. The following Combat Achievements are automatically completed: - Tomb Explorer - Tomb Raider - Tomb Looter - Novice Tomb Explorer - Novice Tomb Raider - Novice Tomb Looter - Expert Tomb Looter - Expert Tomb Raider - Insect Deflection",
-     "pt": "As quests a seguir e seus pré-requisitos são concluídos automaticamente, mas não dão XP de conclusão: Prince Ali Rescue, The Golem, Shadow of the Storm, Icthlarin's Little Helper, Temple of the Eye, Desert Treasure II. As tarefas a seguir no Desert Achievement Diary são concluídas automaticamente. Tarefas Medium: viajar para o deserto pelo sistema de transporte Eagle. Tarefas Hard: matar um dust devil na caverna do deserto com um Slayer Helmet equipado; reabastecer seus Waterskins no deserto usando spells Lunar. Tarefas Elite: assar um wild pie no forno de argila de Nardah; falar com a Kalphite Queen Head no seu Player Owned House. Essa tarefa do diary da Kalphite Queen Head é concluída, em vez disso, ao receber um drop de Kalphite Queen Head ou Kalphite Queen Head(tattered). Perto da entrada da Mage Training Arena há um portal para Guardians of the Rift. As Combat Achievements a seguir são concluídas automaticamente: Tomb Explorer, Tomb Raider, Tomb Looter, Novice Tomb Explorer, Novice Tomb Raider, Novice Tomb Looter, Expert Tomb Looter, Expert Tomb Raider, Insect Deflection"
+     "pt": "As quests a seguir e seus pré-requisitos são concluídos automaticamente, mas não dão XP de conclusão: Prince Ali Rescue, The Golem, Shadow of the Storm, Icthlarin's Little Helper, Temple of the Eye, Desert Treasure II. The following tasks no Desert Achievement Diary são concluídas automaticamente. Medium Tasks: viajar para o deserto pelo sistema de transporte Eagle. Hard Tasks: matar um dust devil na caverna do deserto com um Slayer Helmet equipado; reabastecer seus Waterskins no deserto usando spells Lunar. Elite Tasks: assar um wild pie no forno de argila de Nardah; falar com a Kalphite Queen Head no seu Player Owned House. Essa tarefa do diary da Kalphite Queen Head é concluída, em vez disso, ao receber um drop de Kalphite Queen Head ou Kalphite Queen Head(tattered). Near the Mage training arena entrance há um portal para Guardiões do Rift. The following Combat Achievements são concluídas automaticamente: Tomb Explorer, Tomb Raider, Tomb Looter, Novice Tomb Explorer, Novice Tomb Raider, Novice Tomb Looter, Expert Tomb Looter, Expert Tomb Raider, Insect Deflection"
     },
     {
-     "en": "The following quests and their pre-reqs are automatically completed but will not reward any completion XP: - Shilo Village The following tasks in the Karamja Achievement Diary are automatically completed: Easy Tasks: - Travel to Port Sarim via the dock, east of Musa Point - Travel to Ardougne via the port near Brimhaven Medium Tasks: - Use the Gnome Glider to travel to Karamja - Charter a ship from the shipyard in the far east of Karamja - Charter the Lady of the Waves from south of Cairn Isle to Port Khazard Hard Tasks: - Eat an oomlie wrap - Collect 5 palm leaves - Kill a deathwing in the Viyeldi Caves under the Kharazi Jungle Elite Tasks: - Create an Anti-venom Potion whilst standing in the Horseshoe Mine Additionally, Tzhaar-Ket-Rak will let you do all of his challenges immediately.",
-     "pt": "A quest a seguir e seus pré-requisitos são concluídos automaticamente, mas não dão XP de conclusão: Shilo Village. As tarefas a seguir no Karamja Achievement Diary são concluídas automaticamente. Tarefas Easy: viajar para Port Sarim pelo dock, a leste de Musa Point; viajar para Ardougne pelo porto perto de Brimhaven. Tarefas Medium: usar o Gnome Glider para viajar a Karamja; fretar um navio do shipyard no extremo leste de Karamja; fretar o Lady of the Waves ao sul de Cairn Isle até Port Khazard. Tarefas Hard: comer um oomlie wrap; coletar 5 palm leaves; matar um deathwing nas Viyeldi Caves sob a Kharazi Jungle. Tarefas Elite: criar uma Anti-venom Potion enquanto estiver na Horseshoe Mine. Além disso, Tzhaar-Ket-Rak deixa você fazer todos os seus desafios imediatamente."
+     "en": "Theatre of Blood (Entry) completions:",
+     "pt": "Conclusões do Theatre of Blood (Entry):"
+    },
+    {
+     "en": "Theatre of Blood (Hard) completions:",
+     "pt": "Conclusões do Theatre of Blood (Hard):"
+    },
+    {
+     "en": "Theatre of Blood completions:",
+     "pt": "Conclusões do Theatre of Blood:"
+    },
+    {
+     "en": "Tombs of Amascut (Entry) completions:",
+     "pt": "Conclusões do Tombs of Amascut (Entry):"
+    },
+    {
+     "en": "Tombs of Amascut (Expert) completions:",
+     "pt": "Conclusões do Tombs of Amascut (Expert):"
+    },
+    {
+     "en": "Tombs of Amascut completions:",
+     "pt": "Conclusões do Tombs of Amascut:"
+    },
+    {
+     "en": "Tombs of Amascut: Entry mode",
+     "pt": "Tombs of Amascut: Entry mode"
+    },
+    {
+     "en": "Tombs of Amascut: Expert mode",
+     "pt": "Tombs of Amascut: Expert mode"
+    },
+    {
+     "en": "Ward of Arceuus active and duration",
+     "pt": "Ward of Arceuus ativo e duração"
+    },
+    {
+     "en": "Ward of Arceuus cooldown.",
+     "pt": "Cooldown do Ward of Arceuus."
+    },
+    {
+     "en": "Ward of Arceuus.",
+     "pt": "Ward of Arceuus."
+    },
+    {
+     "en": "Way of the Warrior.",
+     "pt": "Way of the Warrior."
+    },
+    {
+     "en": "Wrath of Amascut: Perform an attack with 100% increased accuracy and 25% increased damage, but with halved attack speed. If hit, the opponent will take 25% increased damage for the next 6 seconds. This special attack can only be used within the Tombs of Amascut.",
+     "pt": "Wrath of Amascut: realiza um ataque com 100% mais precisão e 25% mais dano, mas com velocidade de ataque reduzida à metade. Se acertar, o oponente leva 25% mais dano pelos próximos 6 segundos. Essa special attack só pode ser usada dentro do Tombs of Amascut."
+    },
+    {
+     "en": "Chambers of Xeric (CM) completions:",
+     "pt": "Conclusões do Chambers of Xeric (CM):"
+    },
+    {
+     "en": "Chambers of Xeric completions:",
+     "pt": "Conclusões do Chambers of Xeric:"
+    },
+    {
+     "en": "Chambers of Xeric helper",
+     "pt": "Ajudante do Chambers of Xeric"
     }
    ]
   }
  },
- "translations_skills.json": {
-  "glossario": {
-   "total": 13,
-   "exemplos": [
-    {
-     "en": "You can select your Attack style from the Combat Options side panel. Different enemies are weaker or stronger against different Attack styles, so choose carefully.",
-     "pt": "Escolha o estilo de Ataque nas Opções de Combate. Inimigos variam em fraquezas e resistências, então escolha com cuidado."
-    },
-    {
-     "en": "You can now wear Steel Armour!",
-     "pt": "Agora você pode usar Armadura de Aço!"
-    },
-    {
-     "en": "You can now wear Black Armour. Members can equip White Armour, the Slayer helm and Xerician armour.",
-     "pt": "Agora você pode usar Armadura Preta. Membros podem equipar Armadura Branca, o capacete de Caçador e armadura Xeric."
-    },
-    {
-     "en": "You can now wear Mithril Armour. Members can fight Shayzien soldiers for their armour.",
-     "pt": "Agora você pode usar Armadura de Mithril. Membros podem lutar contra soldados Shayzien para conseguir suas armaduras."
-    },
-    {
-     "en": "Members can now wield Granite armour.",
-     "pt": "Agora membros podem empunhar armaduras de Granito."
-    },
-    {
-     "en": "Pouches come in various sizes which allow you to carry extra essencia in them. As you use the pouches they degrade and store less essence. Speak to the Dark Mage at the center of the Abyss to restore them",
-     "pt": "Os bolsos vêm em vários tamanhos que permitem carregar itens extras de espaço. À medida que você usa os bolsos, eles se degradam e armazenam menos essência."
-    },
-    {
-     "en": "Pouches come in various sizes which allow you to carry extra essence in them. They degrade and store less essence. Speak to the Dark Mage at the centre of the Abyss to restore them.",
-     "pt": "As bolsas vêm em vários tamanhos para carregar essência extra. Elas se degradam e armazenam menos essência. Fale com o Mago das Trevas no centro do Abismo para restaurá-las."
-    },
-    {
-     "en": "Members: Orange hit splats are disease damage.",
-     "pt": "Membros: Hit splats laranjas são dano de disease."
-    },
-    {
-     "en": "View Attack on the Wiki",
-     "pt": "Ver Ataque na Wiki"
-    },
-    {
-     "en": "Town Crier: Head onto a League world to start Leagues VI!",
-     "pt": "Arauto da Cidade: Entre em um mundo de League para começar a Leagues VI!"
-    },
-    {
-     "en": "Melee Attack Styles deal either Stab, Slash or Crush damage as shown in the tooltip.",
-     "pt": "Os Estilos de Ataque Corpo a Corpo causam dano Perfurante, Cortante ou Esmagador, como mostrado na dica de ferramenta."
-    },
-    {
-     "en": "Certain weapons can be purchased from various shops around Gielinor, such as the Sword Shop in Varrock and the Scimitar Shop in Al Kharid.",
-     "pt": "Certas armas podem ser compradas em várias lojas por Gielinor, como a Loja de Espadas em Varrock e a Loja de Cimitarras em Al Kharid."
-    },
-    {
-     "en": "While Attack increases your accuracy, Strength increases your damage.",
-     "pt": "Enquanto Ataque aumenta sua precisão, Strength aumenta seu dano."
-    }
-   ]
-  },
-  "ingles": {
-   "total": 1,
-   "exemplos": [
-    {
-     "en": "To craft armour out of animal hides, you'll typically first need to take the hides to a tanner to get them tanned, then combine them with a needle and thread, which can be acquired from certain Crafting shops in the world.",
-     "pt": "Para criar armaduras de peles animais, leve-as primeiro a um tanner para curti-las e depois combine-as com needle and thread, disponíveis em certas lojas de Crafting."
-    }
-   ]
-  }
- },
+ "translations_skills.json": {},
  "translations_welcome.json": {}
 }

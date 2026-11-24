@@ -11,6 +11,22 @@ import re
 import comum
 
 GLOSSARIO = os.path.normpath(os.path.join(comum.PT_BR, "..", "glossario.json"))
+PALAVRAS_COMUNS = os.path.normpath(os.path.join(comum.PT_BR, "..", "palavras_comuns.json"))
+_comuns = None
+
+
+def palavras_comuns():
+    """Termos de uma palavra que também são palavra comum ("King", "Tree")."""
+    global _comuns
+    if _comuns is None:
+        try:
+            with open(PALAVRAS_COMUNS, encoding="utf-8") as entrada:
+                _comuns = frozenset(json.load(entrada))
+        except FileNotFoundError:
+            _comuns = frozenset()
+    return _comuns
+
+
 PLACEHOLDER = re.compile(r"\[[^\[\]]+\]")
 TAG = re.compile(r"<[^>]+>")
 
@@ -95,6 +111,9 @@ def nomes_proprios(ingles, glossario):
                 trecho = " ".join(palavras[i:fim])
                 if trecho in glossario and re.match(r"[A-Z]", trecho):
                     palavra_solta = fim - i == 1
+                    if palavra_solta and trecho in palavras_comuns():
+                        i = fim - 1
+                        break
                     if not (palavra_solta and (titulo or (i == 0 and inicio_frase))):
                         achados.append(trecho)
                     i = fim - 1
@@ -103,20 +122,55 @@ def nomes_proprios(ingles, glossario):
     return achados
 
 
+def sequencias_de_nome(ingles, glossario):
+    """Sequências com maiúscula do inglês, sem a palavra que só tem maiúscula por abrir a frase.
+
+    "Complete the Theatre of Blood" vira "Theatre of Blood": "Complete" abre a frase e não
+    está no glossário, então ela e o "the" depois dela não fazem parte do nome.
+    """
+    texto = PLACEHOLDER.sub(" ", sem_tags(ingles))
+    resultado = set()
+    for m in SEQUENCIA_NOME.finditer(texto):
+        palavras = m.group().split()
+        inicio_frase = m.start() == 0 or re.search(r"[.!?]\s*$", texto[:m.start()])
+        # "The"/"A" abrindo a sequência costuma ser parte do nome ("The Shadow Reef").
+        if inicio_frase and palavras[0] not in glossario and palavras[0] not in ("The", "A", "An") \
+                and m.group() not in glossario:
+            palavras = palavras[1:]
+            while palavras and re.fullmatch(LIGACAO, palavras[0]):
+                palavras = palavras[1:]
+        if palavras:
+            resultado.add(" ".join(palavras))
+    return resultado
+
+
 def termos_mantidos(ingles, traducao, glossario):
     """Termos do glossário que estão no inglês e ficaram iguais na tradução.
 
-    Pega qualquer sequência de até 8 palavras do inglês, inclusive com palavra
+    Pega qualquer sequência de até 12 palavras do inglês, inclusive com palavra
     minúscula no meio ("Amulet of accuracy").
     """
     palavras = re.findall(r"[\w'’&\-]+", PLACEHOLDER.sub(" ", sem_tags(ingles)))
+    minusculo = _glossario_minusculo(glossario)
     termos = set()
     for i in range(len(palavras)):
-        for fim in range(i + 1, min(i + 8, len(palavras)) + 1):
+        for fim in range(i + 1, min(i + 12, len(palavras)) + 1):
             trecho = " ".join(palavras[i:fim])
-            if trecho in glossario and trecho in traducao:
+            # Nome de item costuma vir em minúscula na frase: "a necklace of rupture".
+            if (trecho in glossario or trecho.lower() in minusculo) and trecho in traducao:
                 termos.add(trecho)
     return termos
+
+
+_minusculo = (None, frozenset())
+
+
+def _glossario_minusculo(glossario):
+    """Termos compostos do glossário em minúscula; recalcula se o glossário mudar."""
+    global _minusculo
+    if _minusculo[0] is not glossario:
+        _minusculo = (glossario, frozenset(t.lower() for t in glossario if " " in t))
+    return _minusculo[1]
 
 
 def pontuacao_final(texto):
@@ -170,7 +224,7 @@ def validar(ingles, traducao, arquivo, glossario, imperativos=frozenset()):
         resto = PLACEHOLDER.sub(" ", sem_tags(traducao))
         # Nome com maiúscula que ficou igual nas duas línguas pode ter palavra inglesa
         # ("Theatre of Blood"), mesmo fora do glossário.
-        sequencias = {m.group() for m in SEQUENCIA_NOME.finditer(PLACEHOLDER.sub(" ", sem_tags(ingles)))}
+        sequencias = sequencias_de_nome(ingles, glossario)
         mantidos = termos_mantidos(ingles, traducao, glossario)
         for nome in sorted(set(nomes) | sequencias | mantidos, key=len, reverse=True):
             resto = re.sub(rf"(?<!\w){re.escape(nome)}(?!\w)", " ", resto)

@@ -1,0 +1,38 @@
+[
+ {
+  "arquivo": "translations.json",
+  "en": "Oh, how rude of me! [player] this is Fairy Very Wise, advisor to the Queen. Fairy Very Wise, this is lbj is 23.",
+  "pt": "Oh, que falta de educação minha! [player], esta é a Fada Muito Sávia, conselheira da Rainha. Fada Muito Sávia, este é o lbj is 23.",
+  "erros": [
+   "ingles"
+  ],
+  "nomes_em_ingles": [
+   "Fairy Very Wise",
+   "Fairy Very Wise"
+  ],
+  "correcao": "Oh, que falta de educação minha! [player], esta é a Fairy Very Wise, conselheira da Rainha. Fairy Very Wise, este é o lbj is 23."
+ },
+ {
+  "arquivo": "translations.json",
+  "en": "Oh, how rude of me! [player] this is Fairy Very Wise, advisor to the Queen. Fairy Very Wise, this is tjk pks you.",
+  "pt": "Oh, que falta de educação da minha parte! [player], esta é a Fada Muito Sábia, conselheira da Rainha. Fada Muito Sábia, este é o tjk pks you.",
+  "erros": [
+   "ingles"
+  ],
+  "nomes_em_ingles": [
+   "Fairy Very Wise",
+   "Fairy Very Wise"
+  ],
+  "correcao": "Oh, que falta de educação da minha parte! [player], esta é a Fairy Very Wise, conselheira da Rainha. Fairy Very Wise, este é o tjk pks you."
+ },
+ {
+  "arquivo": "translations.json",
+  "en": "Sorry, I'm trying to talk to Master The [player], but he seems to be ignoring me.",
+  "pt": "Desculpe, estou tentando falar com o Mestre The [player], mas ele parece estar me ignorando.",
+  "erros": [
+   "ingles"
+  ],
+  "nomes_em_ingles": [],
+  "correcao": "Desculpe, tô tentando falar com o Mestre The [player], mas ele parece estar me ignorando."
+ }
+]
