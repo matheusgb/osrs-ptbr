@@ -52,7 +52,7 @@ SUBSTANTIVOS_MENU = ("passe", "teleporte", "monte", "corte de")
 
 MENSAGENS = {
     "vazia": "tradução vazia",
-    "placeholder": "placeholders diferentes do inglês ou fora de ordem",
+    "placeholder": "placeholders diferentes do inglês ou fora de ordem (lista de escolha pode vir traduzida, com o mesmo número de opções)",
     "glossario": "termo do glossário (nome próprio) mudou na tradução",
     "pontuacao": "pontuação final diferente do inglês",
     "ingles": "palavra do inglês sobrando na tradução",
@@ -189,6 +189,14 @@ def hibridos(ingles, traducao, glossario):
     return achados
 
 
+def forma_placeholders(texto):
+    """Placeholders em ordem. Lista de escolha ("[hasn't/haven't]") vale pelo número de opções:
+    o plugin escolhe a opção traduzida pela posição, então "[não terminou/não terminaram]" serve."""
+    # Lista só de números ("[10/15/20]") é valor do jogo: precisa ficar igual.
+    return [("/", p.count("/")) if "/" in p and re.search(r"[^\W\d_]", p) else p
+            for p in PLACEHOLDER.findall(texto)]
+
+
 def pontuacao_final(texto):
     """Classe da pontuação final: ":", "frase" (. ! ? ...) ou "" (nenhuma).
 
@@ -222,7 +230,7 @@ def validar(ingles, traducao, arquivo, glossario, imperativos=frozenset()):
     if not isinstance(traducao, str) or not traducao.strip():
         return ["vazia"]
     erros = []
-    if PLACEHOLDER.findall(ingles) != PLACEHOLDER.findall(traducao):
+    if forma_placeholders(ingles) != forma_placeholders(traducao):
         erros.append("placeholder")
 
     nomes = nomes_proprios(ingles, glossario)

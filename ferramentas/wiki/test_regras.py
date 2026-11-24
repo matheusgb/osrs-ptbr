@@ -46,6 +46,10 @@ class ValidacaoTest(unittest.TestCase):
     def test_placeholder(self):
         self.assertIn("placeholder", erros("You need [number] more.", "Você precisa de mais [número]."))
         self.assertIn("placeholder", erros("[a] and [b].", "[b] e [a]."))
+        self.assertEqual(erros("Take [him/her] away.", "Levem [ele/ela] embora."), [])
+        self.assertIn("placeholder", erros("Take [him/her] away.", "Levem [ele] embora."))
+        self.assertIn("placeholder", erros("Hi [player].", "Oi [jogador]."))
+        self.assertIn("placeholder", erros("Gain [10/20] XP.", "Ganhe [20/10] XP."))
 
     def test_glossario(self):
         self.assertIn("glossario", erros(self.EN, "Posso começar esta quest falando com Romeu na Varrock Square."))

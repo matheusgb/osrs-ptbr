@@ -1,12 +1,15 @@
 """Corrige traduções que já existem, só se a correção passar nas regras.
 
-Uso: python3 corrigir_traducoes.py <lista.json> <correcoes.json>
+Uso: python3 corrigir_traducoes.py <lista.json> <correcoes.json> [--melhorar]
 
 A lista tem itens {"arquivo", "en", "pt"} (como dados/auditoria_lista.json): "pt" é a
 tradução atual. As correções são {"texto em inglês": "tradução nova"}. Uma chave só
 muda se o valor atual no arquivo ainda for o "pt" da lista e se a tradução nova passar
 em regras.validar. O que falhar vai para dados/rejeitadas_correcoes.json. A formatação e o fim de
 linha do arquivo ficam iguais.
+
+Sem --melhorar, só troca o que ainda falha nas regras. Com --melhorar, troca também
+traduções que já passam (revisão, como traduzir uma lista de escolha "[a/some]").
 """
 import collections
 import json
@@ -48,9 +51,11 @@ def trocar(caminho, mudancas):
 
 
 def main():
-    with open(sys.argv[1], encoding="utf-8") as entrada:
+    args = [a for a in sys.argv[1:] if a != "--melhorar"]
+    melhorar = "--melhorar" in sys.argv[1:]
+    with open(args[0], encoding="utf-8") as entrada:
         lista = json.load(entrada)
-    with open(sys.argv[2], encoding="utf-8") as entrada:
+    with open(args[1], encoding="utf-8") as entrada:
         correcoes = json.load(entrada)
     glossario = regras.carregar_glossario()
     menu = imperativos()
@@ -62,7 +67,7 @@ def main():
             continue
         # Só corrige o que ainda falha nas regras de agora: uma regra ajustada depois
         # da lista desfaz a cobrança, e a tradução atual fica.
-        if not regras.validar(item["en"], item["pt"], item["arquivo"], glossario, menu):
+        if not melhorar and not regras.validar(item["en"], item["pt"], item["arquivo"], glossario, menu):
             continue
         erros = regras.validar(item["en"], novo, item["arquivo"], glossario, menu)
         if erros:
