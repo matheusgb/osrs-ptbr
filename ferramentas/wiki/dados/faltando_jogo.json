@@ -1,1 +1,9 @@
-[]
+[
+ {
+  "texto": "Ernest the Chicken",
+  "tipo": "arquivo:translations_quests.json",
+  "paginas": [
+   "translations_quests.json"
+  ]
+ }
+]
