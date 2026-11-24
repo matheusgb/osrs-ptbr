@@ -21,6 +21,7 @@ import net.runelite.api.events.MenuOptionClicked;
 import net.runelite.api.events.OverheadTextChanged;
 import net.runelite.api.events.PostMenuSort;
 import net.runelite.api.gameval.VarClientID;
+import net.runelite.api.events.WidgetClosed;
 import net.runelite.api.events.WidgetLoaded;
 import net.runelite.api.widgets.InterfaceID;
 import net.runelite.api.widgets.Widget;
@@ -37,7 +38,6 @@ import net.runelite.client.plugins.PluginDescriptor;
 import javax.inject.Inject;
 import java.io.File;
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.Locale;
@@ -85,7 +85,7 @@ public class OsrsTranslatePlugin extends Plugin {
     private static final String LANGUAGE_FOLDER = "pt-BR";
     private static final int REMOTE_UPDATE_INTERVAL_MINUTES = 60;
     private static final int LOCAL_TRANSLATION_POLL_SECONDS = 2;
-    private static final int OTHER_INTERFACES_CACHE_LIMIT = 20_000;
+    private static final int TRANSLATION_CACHE_LIMIT = 20_000;
 
     private static final int[] DIALOG_INTERFACES = {
         InterfaceID.DIALOG_NPC,
@@ -179,8 +179,13 @@ public class OsrsTranslatePlugin extends Plugin {
     private long loginInspectionDeadline;
     private final Set<Integer> inspectedLoginGroups = new HashSet<>();
     private final Set<Integer> loginInterfaceGroups = new HashSet<>();
-    private final Map<String, String> otherInterfacesCache = new HashMap<>();
-    private TranslationState otherInterfacesCacheState;
+    private final TranslationCache otherInterfacesCache = new TranslationCache(TRANSLATION_CACHE_LIMIT);
+    /** Interfaces abertas que são traduzidas antes de cada quadro. */
+    private final Set<Integer> openInterfaces = new HashSet<>();
+    /** Interfaces abertas sem tradução própria (opção experimental). */
+    private final Set<Integer> openOtherInterfaces = new HashSet<>();
+    /** Tradução já calculada por interface e texto cru. */
+    private final TranslationCache widgetTextCache = new TranslationCache(TRANSLATION_CACHE_LIMIT);
 
     @Override
     protected void startUp() {
@@ -233,6 +238,10 @@ public class OsrsTranslatePlugin extends Plugin {
         loginInspectionDeadline = 0L;
         inspectedLoginGroups.clear();
         loginInterfaceGroups.clear();
+        openInterfaces.clear();
+        openOtherInterfaces.clear();
+        widgetTextCache.clear();
+        otherInterfacesCache.clear();
     }
 
     private void startRemoteTranslationUpdater() {
@@ -292,6 +301,10 @@ public class OsrsTranslatePlugin extends Plugin {
         if (!"osrstranslate".equals(event.getGroup())) {
             return;
         }
+
+        // Uma opção desligada não pode continuar traduzindo a interface aberta.
+        openInterfaces.clear();
+        openOtherInterfaces.clear();
 
         if ((!"translationSource".equals(event.getKey())
             && !"translationHotReload".equals(event.getKey())
@@ -416,6 +429,12 @@ public class OsrsTranslatePlugin extends Plugin {
     public void onWidgetLoaded(WidgetLoaded event) {
         int groupId = event.getGroupId();
 
+        if (config.enableOtherInterfaces()
+            && !HANDLED_INTERFACES.contains(groupId)
+            && !isLoginScreenState()) {
+            openOtherInterfaces.add(groupId);
+        }
+
         if (groupId == CLUE_SCROLL_TEXT) {
             if (config.enableClueScrolls()) {
                 clientThread.invokeLater(() ->
@@ -489,6 +508,12 @@ public class OsrsTranslatePlugin extends Plugin {
         }
     }
 
+    @Subscribe
+    public void onWidgetClosed(WidgetClosed event) {
+        openInterfaces.remove(event.getGroupId());
+        openOtherInterfaces.remove(event.getGroupId());
+    }
+
     private boolean contains(int[] values, int target) {
         for (int value : values) {
             if (value == target) {
@@ -499,7 +524,35 @@ public class OsrsTranslatePlugin extends Plugin {
     }
 
     private void scheduleTranslation(int interfaceId) {
+        // As opções de diálogo ficam fora: o Quest Helper lê o texto em inglês
+        // logo depois de abrir, e a tradução antecipada quebraria o destaque.
+        if (interfaceId != InterfaceID.DIALOG_OPTION) {
+            openInterfaces.add(interfaceId);
+        }
         QuestHelperCompat.scheduleDialogTranslation(clientThread, interfaceId, () -> translateInterface(interfaceId));
+    }
+
+    /**
+     * Traduz as interfaces abertas antes de o quadro ser desenhado, para o
+     * texto não aparecer em inglês. Com o cache, cada widget custa uma
+     * consulta de mapa quando o texto não mudou.
+     */
+    private void translateOpenInterfaces() {
+        // Sem checar o componente 0: em algumas interfaces ele é um fundo oculto
+        // e o texto fica em outro componente. Interface fechada não tem widget.
+        for (int groupId : openInterfaces) {
+            translateInterface(groupId);
+        }
+
+        if (!config.enableOtherInterfaces() || openOtherInterfaces.isEmpty()) {
+            return;
+        }
+        TranslationDictionary merged = otherInterfacesDictionary();
+        for (int groupId : openOtherInterfaces) {
+            for (int i = 0; i < 100; i++) {
+                translateOtherWidget(client.getWidget(groupId, i), merged);
+            }
+        }
     }
 
     private boolean isLoginScreenState() {
@@ -564,8 +617,9 @@ public class OsrsTranslatePlugin extends Plugin {
 
     /**
      * Traduz por busca exata o texto de toda interface visível que o plugin
-     * não trata em outro lugar. Roda a cada game tick, então um texto que o
-     * jogo redesenha pode aparecer em inglês por até um tick.
+     * não trata em outro lugar. Roda a cada game tick como reforço, para
+     * interfaces que já estavam abertas. As que abrem depois entram em
+     * openOtherInterfaces e são traduzidas antes de cada quadro.
      */
     private void translateOtherInterfaces() {
         Widget[] roots = client.getWidgetRoots();
@@ -573,14 +627,14 @@ public class OsrsTranslatePlugin extends Plugin {
             return;
         }
 
-        TranslationState state = translationState;
-        if (state != otherInterfacesCacheState) {
-            otherInterfacesCache.clear();
-            otherInterfacesCacheState = state;
-        }
+        TranslationDictionary merged = otherInterfacesDictionary();
         for (Widget root : roots) {
-            translateOtherWidget(root, state.merged);
+            translateOtherWidget(root, merged);
         }
+    }
+
+    private TranslationDictionary otherInterfacesDictionary() {
+        return translationState.merged;
     }
 
     /**
@@ -588,27 +642,19 @@ public class OsrsTranslatePlugin extends Plugin {
      * porque o mesmo texto aparece em todo tick.
      */
     private String findOtherTranslation(String text, TranslationDictionary merged) {
-        String cached = otherInterfacesCache.get(text);
-        if (cached != null) {
-            return cached.isEmpty() ? null : cached;
-        }
-
-        String translation = null;
-        String startTags = preserveStartTags(text);
-        // Tag no meio do texto (cor de um valor, por exemplo) se perderia na troca.
-        if (text.indexOf('<', startTags.length()) < 0) {
-            String lookup = TranslationLookupHelper.normalizeLookupText(TranslationLookupHelper.cleanText(text));
-            if (!lookup.isEmpty() && !merged.isTranslated(lookup)) {
-                String found = merged.find(lookup);
-                translation = found == null ? null : startTags + found;
+        return otherInterfacesCache.get(translationState, text, () -> {
+            String startTags = preserveStartTags(text);
+            // Tag no meio do texto (cor de um valor, por exemplo) se perderia na troca.
+            if (text.indexOf('<', startTags.length()) >= 0) {
+                return null;
             }
-        }
-
-        if (otherInterfacesCache.size() >= OTHER_INTERFACES_CACHE_LIMIT) {
-            otherInterfacesCache.clear();
-        }
-        otherInterfacesCache.put(text, translation == null ? "" : translation);
-        return translation;
+            String lookup = TranslationLookupHelper.normalizeLookupText(TranslationLookupHelper.cleanText(text));
+            if (lookup.isEmpty() || merged.isTranslated(lookup)) {
+                return null;
+            }
+            String found = merged.find(lookup);
+            return found == null ? null : startTags + found;
+        });
     }
 
     private void translateOtherWidget(Widget widget, TranslationDictionary merged) {
@@ -749,6 +795,7 @@ public class OsrsTranslatePlugin extends Plugin {
 
     @Subscribe
     public void onBeforeRender(BeforeRender event) {
+        translateOpenInterfaces();
         suppressMouseHighlightTooltipForTranslatedMenuOptions();
         translateDynamicInterfaces();
 
@@ -927,6 +974,16 @@ public class OsrsTranslatePlugin extends Plugin {
     }
 
     private String translateWidgetText(String originalText, int interfaceId) {
+        TranslationState state = translationState;
+        return widgetTextCache.get(
+            state,
+            // O dicionário muda se a interface é de login, então isso entra na chave.
+            (loginInterfaceGroups.contains(interfaceId) ? "L" : "J") + interfaceId + "\u0000" + originalText,
+            () -> findWidgetTranslation(originalText, interfaceId, state)
+        );
+    }
+
+    private String findWidgetTranslation(String originalText, int interfaceId, TranslationState state) {
         String cleanText = TranslationLookupHelper.normalizeLookupText(TranslationLookupHelper.cleanText(originalText));
         if (cleanText.isEmpty()) {
             return null;
@@ -939,13 +996,12 @@ public class OsrsTranslatePlugin extends Plugin {
             lookup,
             interfaceId,
             loginInterfaceGroups,
-            translationState.get(TranslationDomain.WELCOME).translations
+            state.get(TranslationDomain.WELCOME).translations
         );
         if (specialTranslation != null) {
             return preserveStartTags(originalText) + numberingPrefix + specialTranslation;
         }
 
-        TranslationState state = translationState;
         TranslationDictionary dictionary = dictionaryForInterface(interfaceId, state);
         if (dictionary.isTranslated(lookup)) {
             return null;
