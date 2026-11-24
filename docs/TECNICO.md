@@ -132,6 +132,8 @@ entrada sempre recebe a mesma decisão.
   - ter os placeholders iguais e na mesma ordem (lista de escolha com palavras pode vir
     traduzida, com o mesmo número de opções);
   - manter os nomes próprios do glossário;
+  - manter em inglês os termos do jogo de `glossario_manual.json` ("clue scroll", "Slayer
+    Master", "XP"), mesmo quando o inglês usa minúscula;
   - manter a pontuação final (ponto, interrogação e exclamação contam como a mesma;
     dois-pontos precisam ficar);
   - não ter palavra comum do inglês sobrando nem palavra sem acento da lista;

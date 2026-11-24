@@ -15,6 +15,7 @@ QUESTS = "translations_quests.json"
 
 # Os testes não dependem do arquivo real de palavras comuns.
 regras._comuns = frozenset()
+regras._termos = ("Slayer Master", "clue scroll", "XP")
 
 
 def erros(en, pt, arquivo=QUESTS):
@@ -57,6 +58,15 @@ class ValidacaoTest(unittest.TestCase):
     def test_nome_pendurado_entre_parenteses(self):
         self.assertIn("parenteses", erros("Talk to Romeo.", "Fale com o Romeu (Romeo)."))
         self.assertEqual(erros("Talk to Romeo (again).", "Fale com Romeo (de novo)."), [])
+
+    def test_termo_do_jogo(self):
+        self.assertIn("termo", erros("Read a Clue Scroll.", "Leia um Pergaminho de Dica."))
+        self.assertEqual(erros("Read a Clue Scroll.", "Leia um Clue Scroll."), [])
+        self.assertEqual(erros("Talk to a slayer master.", "Fale com um Slayer Master."), [])
+        self.assertIn("termo", erros("You gain XP.", "Você ganha experiência."))
+        self.assertIn("termo", erros("You gain XP.", "Você ganha xp."))
+        self.assertEqual(regras.termos_presentes("You see [XP] here."), [])
+        self.assertEqual(erros("Expensive.", "Caro."), [])
 
     def test_nome_hibrido(self):
         self.assertIn("hibrido", erros("Raid the Chambers of Xeric.", "Faça a raid das Chambers de Xeric."))

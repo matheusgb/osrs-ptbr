@@ -12,7 +12,9 @@ import comum
 
 GLOSSARIO = os.path.normpath(os.path.join(comum.PT_BR, "..", "glossario.json"))
 PALAVRAS_COMUNS = os.path.normpath(os.path.join(comum.PT_BR, "..", "palavras_comuns.json"))
+GLOSSARIO_MANUAL = os.path.normpath(os.path.join(comum.PT_BR, "..", "glossario_manual.json"))
 _comuns = None
+_termos = None
 
 
 def palavras_comuns():
@@ -25,6 +27,34 @@ def palavras_comuns():
         except FileNotFoundError:
             _comuns = frozenset()
     return _comuns
+
+
+def termos_do_jogo():
+    """Termos do jogo da lista manual ("clue scroll", "Slayer Master"), do maior para o menor."""
+    global _termos
+    if _termos is None:
+        try:
+            with open(GLOSSARIO_MANUAL, encoding="utf-8") as entrada:
+                _termos = tuple(sorted(json.load(entrada).get("termos", []), key=len, reverse=True))
+        except FileNotFoundError:
+            _termos = ()
+    return _termos
+
+
+def busca_termo(termo):
+    return re.compile(r"(?<![\w-])" + re.escape(termo) + r"(?![\w-])", re.I if " " in termo else 0)
+
+
+def termos_presentes(ingles):
+    """Termos do jogo que aparecem no inglês. Termo composto vale em qualquer caixa
+    ("Clue Scroll", "clue scroll"); termo de uma palavra só com a caixa da lista."""
+    texto, achados = PLACEHOLDER.sub(" ", sem_tags(ingles)), []
+    for termo in termos_do_jogo():
+        busca = busca_termo(termo)
+        if busca.search(texto):
+            achados.append(termo)
+            texto = busca.sub(" ", texto)
+    return achados
 
 
 PLACEHOLDER = re.compile(r"\[[^\[\]]+\]")
@@ -59,6 +89,7 @@ MENSAGENS = {
     "acento": "palavra sem acento ou \"-só\" errado",
     "menu_imperativo": "verbo no imperativo no menu (o menu usa infinitivo)",
     "parenteses": "nome em inglês acrescentado entre parênteses",
+    "termo": "termo do jogo da lista manual traduzido (\"clue scroll\", \"Slayer Master\")",
     "hibrido": "nome do glossário com \"of\" trocado por \"de\" (\"Chambers de Xeric\")",
 }
 
@@ -239,6 +270,8 @@ def validar(ingles, traducao, arquivo, glossario, imperativos=frozenset()):
     # O nome tem que estar no lugar dele na frase, não pendurado: "...desse jeito (Black Knight)?".
     if any(f"({nome})" in traducao and f"({nome})" not in ingles for nome in nomes):
         erros.append("parenteses")
+    if any(not busca_termo(termo).search(traducao) for termo in termos_presentes(ingles)):
+        erros.append("termo")
     if hibridos(ingles, traducao, glossario):
         erros.append("hibrido")
 

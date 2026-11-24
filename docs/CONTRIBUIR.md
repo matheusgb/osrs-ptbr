@@ -11,8 +11,7 @@ Escolha o modo que combina com você:
 
 Os dois modos seguem os mesmos [critérios de tradução](#critérios-de-tradução).
 
-Aviso: este repositório é privado. Para abrir issue ou propor mudança, você precisa de
-acesso. Peça ao dono do repositório para te adicionar como colaborador.
+Para abrir issue ou propor mudança, você precisa de uma conta gratuita no GitHub.
 
 ## Modo simples
 

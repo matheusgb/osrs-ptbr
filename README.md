@@ -15,8 +15,6 @@ Antes de começar:
 - Instale o [RuneLite](https://runelite.net) e abra o jogo pelo menos uma vez.
 - Se você usa o plugin original "OSRS Translate" do Plugin Hub, desinstale esse plugin
   no RuneLite. Os dois juntos entram em conflito.
-- Este repositório é privado. Para baixar, você precisa de acesso: peça ao dono do
-  repositório.
 
 1. Baixe este projeto: clique no botão verde **Code** e depois em **Download ZIP**.
 2. Extraia o ZIP numa pasta qualquer (clique com o botão direito, depois **Extrair tudo**).
