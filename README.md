@@ -36,7 +36,7 @@ modo que carrega plugins de fora do Plugin Hub, e o lançador oficial desliga es
 Aviso sobre conta Jagex: fora do Jagex Launcher, o login precisa do arquivo
 `%USERPROFILE%\.runelite\credentials.properties`. Esse arquivo guarda o token da conta
 em texto puro. Quem copiar esse arquivo entra na sua conta. Para cancelar o acesso,
-apague o arquivo.
+apague o arquivo: dê dois cliques em `limpar-credencial.bat`.
 
 Depois de mudar o código, gere o jar de novo com `./scripts/gerar-dist.sh` (Linux ou
 WSL, precisa de JDK 11 ou mais novo) e rode o `instalar.bat`.
@@ -69,9 +69,26 @@ Para corrigir uma tradução que já existe, edite o JSON em `traducoes/pt-BR` e
 `instalar.bat`. Com o jogo aberto, o plugin recarrega os JSONs da pasta instalada em
 2 segundos.
 
-Limite: as transcrições da wiki cobrem diálogos, opções, caixas de mensagem e falas
-acima da cabeça. Mensagens do chat, examines e textos de interface novos não estão
-nelas.
+As transcrições cobrem diálogos, opções, caixas de mensagem e falas acima da cabeça.
+Examines e textos de interface vêm de outras fontes:
+
+1. Examines de item, NPC e monstro: `python3 baixar_examines.py` (7 requisições à
+   API Bucket da wiki).
+2. Textos de interface do cache do jogo (configurações, tooltips, conquistas,
+   relíquias). Copie a pasta `%USERPROFILE%\.runelite\jagexcache\oldschool\LIVE`
+   para uma pasta temporária, porque a ferramenta abre os arquivos para escrita, e rode
+   na raiz do repositório:
+   `./gradlew -p ferramentas/cache run --args="<cópia do cache> $PWD/ferramentas/cache/dados/textos_cache.json"`.
+3. Liste o que falta: `python3 cobertura_extra.py`. Saem `dados/faltando_examines.json`
+   e `dados/faltando_interfaces.json`.
+4. Traduza, valide e aplique como nos passos 4 e 5 acima. O `aplicar_traducoes.py`
+   põe examines em `translations_game_message.json` e textos de interface em
+   `translations_settings.json`.
+
+Aviso: aplique as traduções antes de rodar `cobertura.py` ou `cobertura_extra.py` de
+novo. O `aplicar_traducoes.py` usa essas listas para saber o arquivo de destino.
+
+Mensagens do chat que não são examines continuam sem fonte automática.
 
 ## Créditos
 
@@ -107,12 +124,13 @@ nelas.
 | Área | Mudança |
 |---|---|
 | Idioma | Só pt-BR. O espanhol e a opção de idioma saíram. |
-| Atraso | As interfaces abertas são traduzidas antes de cada quadro, então o texto não aparece em inglês por um instante. As opções de diálogo continuam no caminho antigo por causa do Quest Helper. |
+| Atraso | As interfaces abertas são traduzidas antes de cada quadro, então o texto não aparece em inglês por um instante. As opções de diálogo ficam no caminho antigo por causa do Quest Helper; a opção "Traduzir opções de diálogo sem atraso" (desligada) muda isso para quem quiser testar. |
 | Desempenho | A busca por frases com placeholder usa um índice e um cache. A busca de diálogo ficou cerca de 140 vezes mais rápida. |
 | Outras interfaces | Opção, ligada por padrão, que traduz interfaces sem tradução própria, como banco, lojas e GE. Ela pode atrapalhar plugins que leem o texto em inglês. |
 | Fonte das traduções | Por padrão, o plugin lê os JSONs locais que o instalador copia e não baixa nada do repositório original. |
-| Correção | Chaves só com pontuação fora do placeholder, como `[name].`, não casam mais com qualquer frase. |
-| Dicionários | Correções de acento, de colchete, de termo do jogo e de menu, e 8.723 falas novas. As 126.571 falas das transcrições da wiki têm tradução. |
+| Correções | Chaves só com pontuação fora do placeholder, como `[name].`, não casam mais com qualquer frase. O menu guarda a opção original de cada entrada, então opções com a mesma tradução ("Subir") voltam ao inglês certo para o Menu Entry Swapper. |
+| Escolhas | Em falas como "Good day, [sir/madam]", a palavra escolhida pelo jogo também é traduzida ("Bom dia, senhora"). |
+| Dicionários | Correções de acento, de colchete, de placeholder, de termo do jogo e de menu, e 8.723 falas novas. As 126.571 falas das transcrições da wiki têm tradução, além de examines e textos de interface do cache. |
 
 ## Critérios de tradução
 
@@ -139,7 +157,8 @@ nelas.
 | `dist/` | Jar pronto que o instalador copia |
 | `scripts/` | `instalar.ps1` (chamado pelo `instalar.bat`) e `gerar-dist.sh` |
 | `traducoes/pt-BR/` | Dicionários pt-BR corrigidos |
-| `ferramentas/wiki/` | Scripts que baixam as transcrições da wiki e medem a cobertura |
+| `ferramentas/wiki/` | Scripts que baixam transcrições e examines da wiki, medem a cobertura e aplicam traduções |
+| `ferramentas/cache/` | Ferramenta Java que extrai os textos de interface do cache do jogo |
 
 ## Funcionalidades
 

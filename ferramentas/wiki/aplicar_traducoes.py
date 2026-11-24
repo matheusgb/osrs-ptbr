@@ -3,10 +3,11 @@
 Uso: python3 aplicar_traducoes.py traducoes.json [outro.json ...]
 
 Cada arquivo de entrada é um objeto {"texto em inglês": "tradução"}. O tipo de
-cada texto vem de dados/faltando.json: overhead vai para translations_overhead.json
-e o resto para translations.json. Chave que já existe no destino não muda. O
+cada texto vem das listas dados/faltando*.json e define o JSON de destino
+(ver ARQUIVO_DO_TIPO em cobertura.py). Chave que já existe no destino não muda. O
 script mantém a formatação e o fim de linha do arquivo de destino.
 """
+import glob
 import json
 import os
 import sys
@@ -20,8 +21,8 @@ def acrescentar(caminho, novas):
     """Insere as entradas antes do "}" final e devolve quantas entraram."""
     with open(caminho, "rb") as arquivo:
         texto = arquivo.read().decode("utf-8")
-    bom = texto.startswith("﻿")
-    existentes = json.loads(texto.lstrip("﻿"))
+    bom = texto.startswith("\ufeff")
+    existentes = json.loads(texto.lstrip("\ufeff"))
     novas = {k: v for k, v in novas.items() if k not in existentes}
     if not novas:
         return 0
@@ -40,31 +41,36 @@ def acrescentar(caminho, novas):
 
     with open(caminho, encoding="utf-8-sig") as arquivo:
         resultado = json.load(arquivo)
-    assert all(resultado[k] == v for k, v in novas.items()), caminho
-    assert bom == texto.startswith("﻿")
+    if any(resultado.get(k) != v for k, v in novas.items()) or bom != texto.startswith("\ufeff"):
+        raise ValueError(f"{caminho} ficou diferente do esperado depois de gravar")
     return len(novas)
 
 
 def main():
-    with open(comum.FALTANDO, encoding="utf-8") as entrada:
-        tipo_de = {f["texto"]: f["tipo"] for f in json.load(entrada)}
+    tipo_de = {}
+    for lista in sorted(glob.glob(os.path.join(comum.DADOS, "faltando*.json"))):
+        with open(lista, encoding="utf-8") as entrada:
+            for fala in json.load(entrada):
+                # A mesma frase pode estar em mais de uma lista (fala e interface).
+                tipo_de.setdefault(fala["texto"], set()).add(fala["tipo"])
 
     por_arquivo = {}
     sem_tipo = 0
     for caminho in sys.argv[1:]:
         with open(caminho, encoding="utf-8") as entrada:
             for en, pt in json.load(entrada).items():
-                tipo = tipo_de.get(en)
-                if tipo is None:
+                tipos = tipo_de.get(en)
+                if not tipos:
                     sem_tipo += 1
                     continue
-                por_arquivo.setdefault(ARQUIVO_DO_TIPO[tipo], {})[en] = pt
+                for arquivo in {ARQUIVO_DO_TIPO[t] for t in tipos}:
+                    por_arquivo.setdefault(arquivo, {})[en] = pt
 
     for arquivo, novas in sorted(por_arquivo.items()):
         n = acrescentar(os.path.join(comum.PT_BR, arquivo), novas)
         print(f"{arquivo}: {n} traduções novas")
     if sem_tipo:
-        print(f"{sem_tipo} textos ignorados: não estão em dados/faltando.json")
+        print(f"{sem_tipo} textos ignorados: não estão em dados/faltando*.json")
 
 
 if __name__ == "__main__":

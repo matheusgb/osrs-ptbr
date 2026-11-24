@@ -16,3 +16,5 @@ Thumbs.db
 *.log
 
 __pycache__/
+ferramentas/cache/build/
+ferramentas/cache/.gradle/

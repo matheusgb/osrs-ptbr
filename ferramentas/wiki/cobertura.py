@@ -20,6 +20,10 @@ ARQUIVO_DO_TIPO = {
     "opcao": "translations.json",
     "caixa": "translations.json",
     "overhead": "translations_overhead.json",
+    # Examines chegam como mensagem do jogo.
+    "examine": "translations_game_message.json",
+    # Textos do cache; a opção "Outras interfaces" consulta todos os JSONs juntos.
+    "interface": "translations_settings.json",
 }
 
 

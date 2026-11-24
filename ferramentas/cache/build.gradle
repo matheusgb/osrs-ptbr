@@ -1,0 +1,27 @@
+plugins {
+	id 'java'
+	id 'application'
+}
+
+repositories {
+	maven {
+		url = 'https://repo.runelite.net'
+		content {
+			includeGroupByRegex("net\\.runelite.*")
+		}
+	}
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'net.runelite:cache:1.13.8'
+	implementation 'com.google.code.gson:gson:2.10.1'
+}
+
+application {
+	mainClass = 'ExtrairTextosCache'
+}
+
+tasks.withType(JavaCompile).configureEach {
+	options.encoding = 'UTF-8'
+}
