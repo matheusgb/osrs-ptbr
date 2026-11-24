@@ -8,6 +8,7 @@ $itens = @(
     (Join-Path $runelite 'sideloaded-plugins\osrs-translate-fork.jar'),
     (Join-Path $runelite 'osrs-translate-ptbr\pt-BR'),
     (Join-Path $runelite 'RuneLite-PTBR.bat'),
+    (Join-Path $runelite 'RuneLite-PTBR-Steam.vbs'),
     (Join-Path ([Environment]::GetFolderPath('Desktop')) 'RuneLite PT-BR.lnk')
 )
 

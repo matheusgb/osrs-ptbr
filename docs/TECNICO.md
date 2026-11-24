@@ -60,8 +60,13 @@ O `instalar.bat` chama `scripts/instalar.ps1`, que:
 
 1. copia `dist/osrs-translate-ptbr.jar` para `%USERPROFILE%\.runelite\sideloaded-plugins`;
 2. copia `traducoes/pt-BR` para `%USERPROFILE%\.runelite\osrs-translate-ptbr\pt-BR`;
-3. cria `%USERPROFILE%\.runelite\RuneLite-PTBR.bat` e o atalho na área de trabalho;
+3. cria `%USERPROFILE%\.runelite\RuneLite-PTBR.bat`, o atalho na área de trabalho e o
+   `RuneLite-PTBR-Steam.vbs`;
 4. oferece criar a credencial da conta Jagex.
+
+O instalador também cria `RuneLite-PTBR-Steam.vbs`, para abrir pela Steam (veja o
+README). Ele abre o jogo sem janela de terminal e só termina quando o jogo fecha, então a
+Steam conta as horas.
 
 O atalho abre o RuneLite direto pelo Java, em modo de desenvolvedor. Esse é o único modo
 que carrega plugins de fora do Plugin Hub, e o lançador oficial desliga esse modo.
@@ -71,7 +76,8 @@ Aviso sobre conta Jagex: fora do Jagex Launcher, o login precisa do arquivo
 texto puro. Quem copiar esse arquivo entra na sua conta. Para cancelar o acesso, apague o
 arquivo com `limpar-credencial.bat`.
 
-O `desinstalar.bat` remove o jar, as traduções, o atalho e o `RuneLite-PTBR.bat`. Ele não
+O `desinstalar.bat` remove o jar, as traduções, o atalho, o `RuneLite-PTBR.bat` e o
+`RuneLite-PTBR-Steam.vbs`. Ele não
 apaga a credencial nem o registro `sem-traducao.jsonl`.
 
 ## Gerar o plugin

@@ -37,6 +37,23 @@ cada texto que aparece em inglês, no arquivo:
 - Para desligar, abra a configuração do plugin no RuneLite (ícone de chave inglesa) e
   desmarque **Registrar textos sem tradução**.
 
+## Abrir pela Steam
+
+Se você joga pela Steam, faça a Steam abrir a versão em português:
+
+1. Na Steam, clique com o botão direito em **Old School RuneScape**, depois em
+   **Propriedades**.
+2. Em **Opções de inicialização**, cole a linha abaixo, trocando `SEU_USUARIO` pelo seu
+   usuário do Windows:
+
+   ```
+   C:\Windows\System32\wscript.exe "C:\Users\SEU_USUARIO\.runelite\RuneLite-PTBR-Steam.vbs" %command%
+   ```
+
+3. Clique em **Jogar** na Steam. As horas jogadas continuam contando.
+
+Para voltar ao jogo normal da Steam, apague a linha.
+
 ## Atualizar
 
 Feche o jogo. Baixe o ZIP de novo, extraia e dê dois cliques em `instalar.bat`.

@@ -55,6 +55,17 @@ if (Test-Path $icone) { $atalho.IconLocation = $icone }
 $atalho.Save()
 Write-Host "Atalho criado na area de trabalho: RuneLite PT-BR"
 
+# Versao para a Steam: abre o jogo sem janela e so termina quando o jogo fecha,
+# entao a Steam conta as horas. Argumentos que a Steam passa sao ignorados.
+$steam = Join-Path $runelite 'RuneLite-PTBR-Steam.vbs'
+$comando = "`"$java`" -ea -Xmx768m -Xss2m -cp `"$bibliotecas\*`" net.runelite.client.RuneLite --developer-mode"
+@(
+    "' Abre o RuneLite PT-BR e espera o jogo fechar. Uso na Steam:",
+    "' C:\Windows\System32\wscript.exe `"$steam`" %command%",
+    "CreateObject(`"WScript.Shell`").Run `"$($comando.Replace('`"', '`"`"'))`", 1, True"
+) | Set-Content -Encoding ASCII $steam
+Write-Host "Para a Steam: $steam"
+
 # 4. Login com conta Jagex
 # O backup do settings.json do lancador fica em disco: se a janela fechar no meio,
 # a proxima execucao restaura o arquivo original.
