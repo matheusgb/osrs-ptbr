@@ -25,6 +25,20 @@ Antes de começar:
 
 Pronto. O jogo abre em português.
 
+## Textos que ainda aparecem em inglês
+
+Alguns textos do jogo não têm tradução ainda. Enquanto você joga, o plugin anota sozinho
+cada texto que aparece em inglês, no arquivo:
+
+`%USERPROFILE%\.runelite\osrs-translate-ptbr\sem-traducao.jsonl`
+
+- O arquivo fica só no seu PC. Nada é enviado pela internet.
+- O chat de outros jogadores e as listas de amigos e clã nunca entram.
+- Para ajudar a traduzir esses textos, mande o arquivo como explica
+  [Como contribuir](docs/CONTRIBUIR.md#mandar-a-lista-de-textos-sem-tradução).
+- Para desligar, abra a configuração do plugin no RuneLite (ícone de chave inglesa) e
+  desmarque **Registrar textos sem tradução**.
+
 ## Atualizar
 
 Feche o jogo. Baixe o ZIP de novo, extraia e dê dois cliques em `instalar.bat`.
