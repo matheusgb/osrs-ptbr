@@ -6,23 +6,13 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.Collections;
-import java.util.HashSet;
+import java.util.EnumMap;
 import java.util.LinkedHashMap;
 import java.util.Locale;
 import java.util.Map;
 
 @Slf4j
 final class TranslationRepository {
-    private static final String TRANSLATIONS = "translations.json";
-    private static final String TRANSLATIONS_SKILLS = "translations_skills.json";
-    private static final String TRANSLATIONS_QUESTS = "translations_quests.json";
-    private static final String TRANSLATIONS_ITEMS = "translations_items.json";
-    private static final String TRANSLATIONS_MENU = "translations_menu.json";
-    private static final String TRANSLATIONS_OVERHEAD = "translations_overhead.json";
-    private static final String TRANSLATIONS_GAME_MESSAGE = "translations_game_message.json";
-    private static final String TRANSLATIONS_WELCOME = "translations_welcome.json";
-    private static final String TRANSLATIONS_SETTINGS = "translations_settings.json";
-
     private volatile File remoteCacheDirectory;
     private volatile File localTranslationDirectory;
 
@@ -39,7 +29,7 @@ final class TranslationRepository {
     String localFingerprint() {
         File directory = localTranslationDirectory;
         StringBuilder fingerprint = new StringBuilder();
-        for (String fileName : RemoteTranslationService.REQUIRED_FILES) {
+        for (String fileName : TranslationDomain.FILE_NAMES) {
             File file = directory == null ? null : new File(directory, fileName);
             if (file == null || !file.isFile()) {
                 fingerprint.append(fileName).append(":missing;");
@@ -59,7 +49,7 @@ final class TranslationRepository {
             return true;
         }
 
-        for (String fileName : RemoteTranslationService.REQUIRED_FILES) {
+        for (String fileName : TranslationDomain.FILE_NAMES) {
             File file = new File(directory, fileName);
             if (!file.isFile()) {
                 continue;
@@ -76,57 +66,26 @@ final class TranslationRepository {
     }
 
     TranslationState loadState(OsrsTranslateConfig.TranslationSource source) {
-        Map<String, String> translations = loadMap(TRANSLATIONS, source);
-        Map<String, String> translationsSkills = loadMap(TRANSLATIONS_SKILLS, source);
-        Map<String, String> translationsQuests = loadMap(TRANSLATIONS_QUESTS, source);
-        Map<String, String> translationsItems = loadMap(TRANSLATIONS_ITEMS, source);
-        Map<String, String> translationsMenu = loadMap(TRANSLATIONS_MENU, source);
-        Map<String, String> translationsOverhead = loadMap(TRANSLATIONS_OVERHEAD, source);
-        Map<String, String> translationsGameMessage = loadMap(TRANSLATIONS_GAME_MESSAGE, source);
-        Map<String, String> translationsWelcome = loadMap(TRANSLATIONS_WELCOME, source);
-        Map<String, String> translationsSettings = loadMap(TRANSLATIONS_SETTINGS, source);
+        Map<TranslationDomain, TranslationDictionary> dictionaries = new EnumMap<>(TranslationDomain.class);
+        StringBuilder summary = new StringBuilder("PT-BR carregado:");
+        for (TranslationDomain domain : TranslationDomain.values()) {
+            TranslationDictionary dictionary = new TranslationDictionary(
+                loadMap(domain.fileName, source),
+                domain.usesPlaceholders
+            );
+            dictionaries.put(domain, dictionary);
+            summary.append(' ').append(domain.name().toLowerCase(Locale.ROOT))
+                .append('=').append(dictionary.size());
+            if (domain.usesPlaceholders) {
+                summary.append(" (padroes=").append(dictionary.patternCount()).append(')');
+            }
+        }
 
         TranslationState state = new TranslationState(
-            translations,
-            translationsSkills,
-            translationsQuests,
-            translationsItems,
-            translationsMenu,
-            translationsOverhead,
-            translationsGameMessage,
-            translationsWelcome,
-            translationsSettings,
-            new HashSet<>(translations.values()),
-            new HashSet<>(translationsSkills.values()),
-            new HashSet<>(translationsQuests.values()),
-            new HashSet<>(translationsItems.values()),
-            new HashSet<>(translationsMenu.values()),
-            new HashSet<>(translationsGameMessage.values()),
-            new HashSet<>(translationsWelcome.values()),
-            new HashSet<>(translationsSettings.values()),
-            TranslationLookupHelper.compileRegexTranslations(translations),
-            TranslationLookupHelper.compileRegexTranslations(translationsOverhead),
-            TranslationLookupHelper.compileRegexTranslations(translationsGameMessage),
-            TranslationLookupHelper.compileRegexTranslations(translationsWelcome),
-            buildReverseMenuMap(translationsMenu)
+            dictionaries,
+            buildReverseMenuMap(dictionaries.get(TranslationDomain.MENU).translations)
         );
-
-        log.info(
-            "PT-BR carregado: dialogos={} skills={} quests={} items={} menu={} "
-                + "overhead={} gameMessages={} welcome={} settings={} regex={} overheadRegex={} welcomeRegex={}",
-            translations.size(),
-            translationsSkills.size(),
-            translationsQuests.size(),
-            translationsItems.size(),
-            translationsMenu.size(),
-            translationsOverhead.size(),
-            translationsGameMessage.size(),
-            translationsWelcome.size(),
-            translationsSettings.size(),
-            state.regexTranslations.size(),
-            state.regexOverheadTranslations.size(),
-            state.regexWelcomeTranslations.size()
-        );
+        log.info(summary.toString());
         return state;
     }
 

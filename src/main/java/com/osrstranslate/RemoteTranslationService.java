@@ -22,8 +22,6 @@ import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Locale;
@@ -37,17 +35,7 @@ final class RemoteTranslationService {
         "https://api.github.com/repos/walterrezende12-tech/"
             + "osrs-translate-translations/contents/manifest.json?ref=main";
 
-    static final List<String> REQUIRED_FILES = Collections.unmodifiableList(Arrays.asList(
-        "translations.json",
-        "translations_skills.json",
-        "translations_quests.json",
-        "translations_items.json",
-        "translations_menu.json",
-        "translations_overhead.json",
-        "translations_game_message.json",
-        "translations_welcome.json",
-        "translations_settings.json"
-    ));
+    static final List<String> REQUIRED_FILES = TranslationDomain.FILE_NAMES;
 
     private static final int SUPPORTED_SCHEMA_VERSION = 1;
     private static final int MAX_MANIFEST_BYTES = 1_000_000;

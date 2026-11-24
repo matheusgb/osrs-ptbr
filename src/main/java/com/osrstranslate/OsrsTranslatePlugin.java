@@ -35,10 +35,8 @@ import net.runelite.client.plugins.PluginDescriptor;
 
 import javax.inject.Inject;
 import java.io.File;
-import java.util.Collections;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
-import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
@@ -832,19 +830,19 @@ public class OsrsTranslatePlugin extends Plugin {
             lookup,
             interfaceId,
             loginInterfaceGroups,
-            translationState.translationsWelcome
+            translationState.get(TranslationDomain.WELCOME).translations
         );
         if (specialTranslation != null) {
             return preserveStartTags(originalText) + numberingPrefix + specialTranslation;
         }
 
         TranslationState state = translationState;
-        TranslationDomain domain = domainForInterface(interfaceId, state);
-        if (domain.values.contains(lookup)) {
+        TranslationDictionary dictionary = dictionaryForInterface(interfaceId, state);
+        if (dictionary.isTranslated(lookup)) {
             return null;
         }
 
-        String translation = TranslationLookupHelper.findTranslation(domain.translations, domain.regexPatterns, lookup);
+        String translation = dictionary.find(lookup);
 
         if (translation != null && interfaceId == CHAT_OVERLAY) {
             translation = normalizeChatOverlayTags(translation);
@@ -863,67 +861,40 @@ public class OsrsTranslatePlugin extends Plugin {
             .replace("</col>", "<col=000000>");
     }
 
-    private TranslationDomain domainForInterface(int interfaceId, TranslationState state) {
+    private TranslationDictionary dictionaryForInterface(int interfaceId, TranslationState state) {
+        return state.get(domainForInterface(interfaceId));
+    }
+
+    private TranslationDomain domainForInterface(int interfaceId) {
         if (contains(SKILL_GUIDE_INTERFACES, interfaceId)) {
-            return new TranslationDomain(
-                state.translationsSkills,
-                state.translationSkillsValues,
-                Collections.emptyList()
-            );
+            return TranslationDomain.SKILLS;
         }
         if (interfaceId == QUEST_JOURNAL_MINIMAP
             || interfaceId == QUEST_JOURNAL
             || interfaceId == ACHIEVEMENT_DIARY
             || interfaceId == ACHIEVEMENT_DIARY_SCROLL) {
-            return new TranslationDomain(
-                state.translationsQuests,
-                state.translationQuestsValues,
-                Collections.emptyList()
-            );
+            return TranslationDomain.QUESTS;
         }
         if (interfaceId == ITEM_PREVIEW || interfaceId == BOOKS_NOTES || interfaceId == CLUE_SCROLL_TEXT) {
-            return new TranslationDomain(
-                state.translationsItems,
-                state.translationItemsValues,
-                Collections.emptyList()
-            );
+            return TranslationDomain.ITEMS;
         }
         if (interfaceId == PLAYER_DESIGN
             || interfaceId == TUTORIAL_PLAYER_EXPERIENCE
             || interfaceId == TUTORIAL_DISPLAY_NAME
             || interfaceId == MACRO_MIME_EMOTES
             || interfaceId == CRAFTING_GOLD) {
-            return new TranslationDomain(state.translationsMenu, state.translationMenuValues, Collections.emptyList());
+            return TranslationDomain.MENU;
         }
         if (interfaceId == CHAT_OVERLAY) {
-            return new TranslationDomain(
-                state.translationsGameMessage,
-                state.translationGameMessageValues,
-                state.regexGameMessageTranslations
-            );
+            return TranslationDomain.GAME_MESSAGE;
         }
-        if (interfaceId == WELCOME_SCREEN) {
-            return new TranslationDomain(
-                state.translationsWelcome,
-                state.translationWelcomeValues,
-                state.regexWelcomeTranslations
-            );
-        }
-        if (loginInterfaceGroups.contains(interfaceId)) {
-            return new TranslationDomain(
-                state.translationsWelcome,
-                state.translationWelcomeValues,
-                state.regexWelcomeTranslations
-            );
+        if (interfaceId == WELCOME_SCREEN || loginInterfaceGroups.contains(interfaceId)) {
+            return TranslationDomain.WELCOME;
         }
         if (interfaceId == SETTINGS || interfaceId == BANK_PIN) {
-            return new TranslationDomain(
-                state.translationsSettings,
-                state.translationSettingsValues,
-                Collections.emptyList()
-            );
+            return TranslationDomain.SETTINGS;
         }
-        return new TranslationDomain(state.translations, state.translationValues, state.regexTranslations);
+        return TranslationDomain.DIALOG;
     }
 
     @Subscribe
@@ -942,11 +913,7 @@ public class OsrsTranslatePlugin extends Plugin {
             return;
         }
 
-        String translation = TranslationLookupHelper.findTranslation(
-            translationState.translationsOverhead,
-            translationState.regexOverheadTranslations,
-            clean
-        );
+        String translation = translationState.get(TranslationDomain.OVERHEAD).find(clean);
         if (translation != null) {
             actor.setOverheadText(translation);
             log.debug("[OverheadTranslate] '{}' -> '{}'", clean, translation);
@@ -1003,7 +970,7 @@ public class OsrsTranslatePlugin extends Plugin {
         }
 
         String cleanOption = HTML_TAG.matcher(option).replaceAll("").trim();
-        String translation = translationState.translationsMenu.get(cleanOption);
+        String translation = translationState.get(TranslationDomain.MENU).translations.get(cleanOption);
         if (translation != null && !translation.equals(cleanOption)) {
             entry.setOption(option.replaceAll(Pattern.quote(cleanOption), Matcher.quoteReplacement(translation)));
         }
@@ -1079,16 +1046,12 @@ public class OsrsTranslatePlugin extends Plugin {
         }
 
         String clean = TranslationLookupHelper.cleanText(event.getMessage());
-        TranslationState state = translationState;
-        if (clean.isEmpty() || state.translationGameMessageValues.contains(clean)) {
+        TranslationDictionary gameMessages = translationState.get(TranslationDomain.GAME_MESSAGE);
+        if (clean.isEmpty() || gameMessages.isTranslated(clean)) {
             return;
         }
 
-        String translation = TranslationLookupHelper.findTranslation(
-            state.translationsGameMessage,
-            state.regexGameMessageTranslations,
-            clean
-        );
+        String translation = gameMessages.find(clean);
         if (translation == null) {
             return;
         }
@@ -1155,22 +1118,6 @@ public class OsrsTranslatePlugin extends Plugin {
     private String preserveStartTags(String text) {
         Matcher matcher = START_TAGS.matcher(text);
         return matcher.find() ? matcher.group() : "";
-    }
-
-    private static final class TranslationDomain {
-        private final Map<String, String> translations;
-        private final Set<String> values;
-        private final List<TranslationLookupHelper.PatternEntry> regexPatterns;
-
-        private TranslationDomain(
-            Map<String, String> translations,
-            Set<String> values,
-            List<TranslationLookupHelper.PatternEntry> regexPatterns
-        ) {
-            this.translations = translations;
-            this.values = values;
-            this.regexPatterns = regexPatterns;
-        }
     }
 
     @Provides

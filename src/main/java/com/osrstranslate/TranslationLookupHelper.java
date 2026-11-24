@@ -74,7 +74,7 @@ final class TranslationLookupHelper
         }
     }
 
-    static List<PatternEntry> compileRegexTranslations(Map<String, String> source)
+    static PatternIndex compileRegexTranslations(Map<String, String> source)
     {
         List<PatternEntry> entries = new ArrayList<>();
         for (Map.Entry<String, String> entry : source.entrySet())
@@ -116,8 +116,7 @@ final class TranslationLookupHelper
                 specificity
             ));
         }
-        entries.sort((left, right) -> Integer.compare(right.specificity, left.specificity));
-        return entries;
+        return new PatternIndex(entries);
     }
 
     private static boolean isIdentityTemplate(String key, String translation)
@@ -143,22 +142,7 @@ final class TranslationLookupHelper
         return length + text.length() - end;
     }
 
-    static String findTranslation(Map<String, String> source, String lookup)
-    {
-        return source.get(lookup);
-    }
-
-    static String findTranslation(Map<String, String> source, List<PatternEntry> patterns, String lookup)
-    {
-        String translation = findTranslation(source, lookup);
-        if (translation != null || patterns == null || patterns.isEmpty())
-        {
-            return translation;
-        }
-        return findRegexTranslation(patterns, lookup);
-    }
-
-    static String findRegexTranslation(List<PatternEntry> patterns, String lookup)
+    private static String findRegexTranslation(List<PatternEntry> patterns, String lookup)
     {
         for (PatternEntry entry : patterns)
         {
@@ -211,7 +195,31 @@ final class TranslationLookupHelper
             .replaceAll("standard Ironmen ", "standard Ironman ");
     }
 
-    static final class PatternEntry
+    /** Padrões com placeholder, do mais específico para o menos específico. */
+    static final class PatternIndex
+    {
+        static final PatternIndex EMPTY = new PatternIndex(new ArrayList<>());
+
+        private final List<PatternEntry> entries;
+
+        private PatternIndex(List<PatternEntry> entries)
+        {
+            entries.sort((left, right) -> Integer.compare(right.specificity, left.specificity));
+            this.entries = entries;
+        }
+
+        String find(String lookup)
+        {
+            return entries.isEmpty() ? null : findRegexTranslation(entries, lookup);
+        }
+
+        int size()
+        {
+            return entries.size();
+        }
+    }
+
+    private static final class PatternEntry
     {
         private final Pattern pattern;
         private final String translation;
