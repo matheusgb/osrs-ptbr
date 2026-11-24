@@ -55,4 +55,14 @@ public class TranslationDictionaryTest {
         assertTrue(dictionary.isTranslated("Mudar de mundo"));
         assertFalse(dictionary.isTranslated("Switch world"));
     }
+
+    @Test
+    public void moreSpecificPatternWinsAcrossIndexGroups() {
+        Map<String, String> map = new LinkedHashMap<>();
+        map.put("[amount] more.", "mais [amount].");
+        map.put("You need [number] more.", "Você precisa de mais [number].");
+        TranslationDictionary dictionary = new TranslationDictionary(map, true);
+        assertEquals("Você precisa de mais 3.", dictionary.find("You need 3 more."));
+        assertEquals("mais tudo isso.", dictionary.find("tudo isso more."));
+    }
 }

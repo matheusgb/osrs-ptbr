@@ -10,6 +10,8 @@ import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -113,7 +115,8 @@ final class TranslationLookupHelper
             entries.add(new PatternEntry(
                 Pattern.compile(pattern.toString()),
                 translation,
-                specificity
+                specificity,
+                firstWord(parts[0])
             ));
         }
         return new PatternIndex(entries);
@@ -195,41 +198,108 @@ final class TranslationLookupHelper
             .replaceAll("standard Ironmen ", "standard Ironman ");
     }
 
-    /** Padrões com placeholder, do mais específico para o menos específico. */
+    /**
+     * Primeira palavra do texto fixo antes do primeiro placeholder.
+     * Retorna null quando esse texto não tem espaço, porque a palavra pode
+     * continuar dentro do placeholder.
+     */
+    private static String firstWord(String staticPrefix)
+    {
+        int space = staticPrefix.indexOf(' ');
+        return space < 0 ? null : staticPrefix.substring(0, space);
+    }
+
+    /**
+     * Padrões com placeholder, do mais específico para o menos específico.
+     * Os padrões ficam agrupados pela primeira palavra fixa. A busca testa só
+     * o grupo da primeira palavra do texto e os padrões sem palavra fixa.
+     */
     static final class PatternIndex
     {
         static final PatternIndex EMPTY = new PatternIndex(new ArrayList<>());
 
-        private final List<PatternEntry> entries;
+        private final Map<String, List<PatternEntry>> byFirstWord = new HashMap<>();
+        private final List<PatternEntry> withoutFirstWord = new ArrayList<>();
+        private final int size;
 
         private PatternIndex(List<PatternEntry> entries)
         {
-            entries.sort((left, right) -> Integer.compare(right.specificity, left.specificity));
-            this.entries = entries;
+            entries.sort(ORDER);
+            for (int i = 0; i < entries.size(); i++)
+            {
+                PatternEntry entry = entries.get(i);
+                entry.order = i;
+                if (entry.firstWord == null)
+                {
+                    withoutFirstWord.add(entry);
+                }
+                else
+                {
+                    byFirstWord.computeIfAbsent(entry.firstWord, k -> new ArrayList<>()).add(entry);
+                }
+            }
+            size = entries.size();
         }
 
         String find(String lookup)
         {
-            return entries.isEmpty() ? null : findRegexTranslation(entries, lookup);
+            if (size == 0)
+            {
+                return null;
+            }
+
+            int space = lookup.indexOf(' ');
+            List<PatternEntry> group = space < 0
+                ? null
+                : byFirstWord.get(lookup.substring(0, space));
+            if (group == null)
+            {
+                return findRegexTranslation(withoutFirstWord, lookup);
+            }
+            if (withoutFirstWord.isEmpty())
+            {
+                return findRegexTranslation(group, lookup);
+            }
+            return findRegexTranslation(merge(group, withoutFirstWord), lookup);
         }
 
         int size()
         {
-            return entries.size();
+            return size;
+        }
+
+        private static List<PatternEntry> merge(List<PatternEntry> left, List<PatternEntry> right)
+        {
+            List<PatternEntry> merged = new ArrayList<>(left.size() + right.size());
+            int i = 0;
+            int j = 0;
+            while (i < left.size() && j < right.size())
+            {
+                merged.add(left.get(i).order < right.get(j).order ? left.get(i++) : right.get(j++));
+            }
+            merged.addAll(left.subList(i, left.size()));
+            merged.addAll(right.subList(j, right.size()));
+            return merged;
         }
     }
+
+    private static final Comparator<PatternEntry> ORDER =
+        (left, right) -> Integer.compare(right.specificity, left.specificity);
 
     private static final class PatternEntry
     {
         private final Pattern pattern;
         private final String translation;
         private final int specificity;
+        private final String firstWord;
+        private int order;
 
-        private PatternEntry(Pattern pattern, String translation, int specificity)
+        private PatternEntry(Pattern pattern, String translation, int specificity, String firstWord)
         {
             this.pattern = pattern;
             this.translation = translation;
             this.specificity = specificity;
+            this.firstWord = firstWord;
         }
     }
 }
