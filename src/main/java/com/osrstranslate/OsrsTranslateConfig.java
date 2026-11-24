@@ -5,8 +5,11 @@ import net.runelite.client.config.ConfigGroup;
 import net.runelite.client.config.ConfigItem;
 import net.runelite.client.config.ConfigSection;
 
-@ConfigGroup("osrstranslate")
+@ConfigGroup(OsrsTranslateConfig.GROUP)
 public interface OsrsTranslateConfig extends Config {
+    /** Grupo próprio do fork, separado das configurações salvas do plugin original. */
+    String GROUP = "osrstranslateptbr";
+
     enum TranslationSource {
         REMOTE("Remota"),
         LOCAL("Local");
@@ -31,7 +34,7 @@ public interface OsrsTranslateConfig extends Config {
         position = 1
     )
     default TranslationSource translationSource() {
-        return TranslationSource.REMOTE;
+        return TranslationSource.LOCAL;
     }
 
     @ConfigItem(
@@ -46,20 +49,9 @@ public interface OsrsTranslateConfig extends Config {
     }
 
     @ConfigItem(
-        keyName = "developerMode",
-        name = "Modo desenvolvedor",
-        description = "Permite usar traduções locais e hot reload para testar correções",
-        section = translationCorrection,
-        position = 0
-    )
-    default boolean developerMode() {
-        return false;
-    }
-
-    @ConfigItem(
         keyName = "localTranslationPath",
         name = "Caminho dos JSONs",
-        description = "Pasta que contém os arquivos JSON quando a fonte Local estiver selecionada",
+        description = "Pasta com os JSONs da fonte Local. Vazio usa ~/.runelite/osrs-translate-ptbr/pt-BR, onde o instalador copia as traduções",
         section = translationCorrection,
         position = 2
     )
@@ -211,7 +203,7 @@ public interface OsrsTranslateConfig extends Config {
         position = 11
     )
     default boolean enableOtherInterfaces() {
-        return false;
+        return true;
     }
 
     @ConfigSection(

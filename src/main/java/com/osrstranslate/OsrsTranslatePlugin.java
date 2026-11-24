@@ -298,7 +298,7 @@ public class OsrsTranslatePlugin extends Plugin {
 
     @Subscribe
     public void onConfigChanged(ConfigChanged event) {
-        if (!"osrstranslate".equals(event.getGroup())) {
+        if (!OsrsTranslateConfig.GROUP.equals(event.getGroup())) {
             return;
         }
 
@@ -308,8 +308,7 @@ public class OsrsTranslatePlugin extends Plugin {
 
         if ((!"translationSource".equals(event.getKey())
             && !"translationHotReload".equals(event.getKey())
-            && !"localTranslationPath".equals(event.getKey())
-            && !"developerMode".equals(event.getKey()))
+            && !"localTranslationPath".equals(event.getKey()))
             || remoteTranslationService == null) {
             return;
         }
@@ -331,20 +330,33 @@ public class OsrsTranslatePlugin extends Plugin {
         return LANGUAGE_FOLDER;
     }
 
+    /**
+     * Fonte local, se escolhida e se a pasta existe. Sem a pasta (instalador não
+     * rodou), o plugin usa a fonte remota em vez de carregar dicionários vazios.
+     */
     private boolean isLocalTranslationSource() {
-        return config.developerMode()
-            && config.translationSource() == OsrsTranslateConfig.TranslationSource.LOCAL;
+        if (config.translationSource() != OsrsTranslateConfig.TranslationSource.LOCAL) {
+            return false;
+        }
+        File directory = localTranslationDirectory();
+        return directory != null && directory.isDirectory();
     }
 
     private File localTranslationDirectory() {
         String path = config.localTranslationPath();
         if (path == null || path.trim().isEmpty()) {
-            return null;
+            // Pasta onde o instalador (instalar.bat) copia as traduções.
+            return new File(RuneLite.RUNELITE_DIR, "osrs-translate-ptbr" + File.separator + "pt-BR");
         }
         return new File(path.trim());
     }
 
     private void reloadTranslations() {
+        if (config.translationSource() == OsrsTranslateConfig.TranslationSource.LOCAL
+            && !isLocalTranslationSource()) {
+            log.warn("Pasta de traducoes locais nao encontrada ({}); usando a fonte remota",
+                localTranslationDirectory());
+        }
         String languageFolder = selectedLanguageFolder();
         translationRepository.configureLocalDirectory(localTranslationDirectory());
 
