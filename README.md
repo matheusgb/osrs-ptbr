@@ -88,7 +88,20 @@ Examines e textos de interface vêm de outras fontes:
 Aviso: aplique as traduções antes de rodar `cobertura.py` de
 novo. O `aplicar_traducoes.py` usa essas listas para saber o arquivo de destino.
 
-Mensagens do chat que não são examines continuam sem fonte automática.
+### Textos que faltam enquanto você joga
+
+Mensagens do chat e alguns textos de missão vêm do servidor do jogo e não estão em
+nenhuma fonte pública. Para esses, o plugin anota sozinho cada texto que aparece em
+inglês, em `%USERPROFILE%\.runelite\osrs-translate-ptbr\sem-traducao.jsonl` (opção
+"Registrar textos sem tradução", ligada por padrão). O chat de jogadores nunca entra.
+
+1. Jogue normalmente.
+2. Importe o registro dentro de `ferramentas/wiki`:
+   `python3 importar_registro.py /mnt/c/Users/<usuário>/.runelite/osrs-translate-ptbr/sem-traducao.jsonl`.
+   Sai `dados/faltando_jogo.json`, já sem o que tem tradução.
+3. Traduza, valide e aplique como nos passos 4 e 5 acima. Cada texto vai para o JSON
+   em que o plugin procurou por ele.
+4. Rode o `instalar.bat`.
 
 ## Créditos
 

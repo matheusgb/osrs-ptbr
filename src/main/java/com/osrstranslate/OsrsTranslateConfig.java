@@ -191,6 +191,18 @@ public interface OsrsTranslateConfig extends Config {
         return false;
     }
 
+    @ConfigItem(
+        keyName = "recordMissingTexts",
+        name = "Registrar textos sem tradução",
+        description = "Anota em ~/.runelite/osrs-translate-ptbr/sem-traducao.jsonl os textos que "
+            + "aparecem em inglês, para traduzir depois. Só mensagens do jogo, nunca o chat de jogadores",
+        section = staticTranslations,
+        position = 13
+    )
+    default boolean recordMissingTexts() {
+        return true;
+    }
+
     @ConfigSection(
         name = "Correções Visuais",
         description = "Ajustes de layout e apresentação",

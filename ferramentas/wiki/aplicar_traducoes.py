@@ -63,7 +63,9 @@ def main():
                 if not tipos:
                     sem_tipo += 1
                     continue
-                for arquivo in {ARQUIVO_DO_TIPO[t] for t in tipos}:
+                # "arquivo:<json>" vem do registro do plugin e já diz o destino.
+                destinos = {t[len("arquivo:"):] if t.startswith("arquivo:") else ARQUIVO_DO_TIPO[t] for t in tipos}
+                for arquivo in destinos:
                     por_arquivo.setdefault(arquivo, {})[en] = pt
 
     for arquivo, novas in sorted(por_arquivo.items()):

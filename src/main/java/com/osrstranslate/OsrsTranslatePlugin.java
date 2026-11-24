@@ -156,6 +156,8 @@ public class OsrsTranslatePlugin extends Plugin {
     private ScheduledExecutorService localTranslationHotReloadScheduler;
     private volatile String localTranslationFingerprint = "";
     private EventBus.Subscriber menuOpenedTranslationSubscriber;
+    /** Registro de textos sem tradução; null com a opção desligada. */
+    private volatile MissingTextLog missingTextLog;
     /** Interfaces abertas na tela de login; usam o dicionário de boas-vindas. */
     private final Set<Integer> loginInterfaceGroups = new HashSet<>();
     private final TranslationCache otherInterfacesCache = new TranslationCache(TRANSLATION_CACHE_LIMIT);
@@ -187,6 +189,7 @@ public class OsrsTranslatePlugin extends Plugin {
             -1000f
         );
         startLocalTranslationHotReload();
+        startMissingTextLog();
         // Interfaces abertas antes de o plugin ligar não geram WidgetLoaded.
         clientThread.invokeLater(this::registerOpenInterfaces);
     }
@@ -194,6 +197,7 @@ public class OsrsTranslatePlugin extends Plugin {
     @Override
     protected void shutDown() {
         stopLocalTranslationHotReload();
+        stopMissingTextLog();
         eventBus.unregister(menuOpenedTranslationSubscriber);
         menuOpenedTranslationSubscriber = null;
         translationState = TranslationState.empty();
@@ -216,9 +220,37 @@ public class OsrsTranslatePlugin extends Plugin {
         openOtherInterfaces.clear();
         clientThread.invokeLater(this::registerOpenInterfaces);
 
+        if ("recordMissingTexts".equals(event.getKey())) {
+            stopMissingTextLog();
+            startMissingTextLog();
+        }
+
         if ("translationHotReload".equals(event.getKey()) || "localTranslationPath".equals(event.getKey())) {
             reloadTranslations();
             startLocalTranslationHotReload();
+        }
+    }
+
+    private void startMissingTextLog() {
+        if (config.recordMissingTexts()) {
+            missingTextLog = new MissingTextLog(new File(RuneLite.RUNELITE_DIR,
+                "osrs-translate-ptbr" + File.separator + "sem-traducao.jsonl"));
+        }
+    }
+
+    private void stopMissingTextLog() {
+        MissingTextLog current = missingTextLog;
+        missingTextLog = null;
+        if (current != null) {
+            current.close();
+        }
+    }
+
+    /** Anota um texto que apareceu sem tradução, se o registro estiver ligado. */
+    private void recordMissing(TranslationDomain domain, String text) {
+        MissingTextLog current = missingTextLog;
+        if (current != null) {
+            current.record(domain.fileName, text);
         }
     }
 
@@ -480,6 +512,7 @@ public class OsrsTranslatePlugin extends Plugin {
                 return null;
             }
             String found = merged.find(lookup);
+            // Sem registro aqui: lista de amigos e chat do clã mostram nomes de jogadores.
             return found == null ? null : startTags + found;
         });
     }
@@ -662,6 +695,10 @@ public class OsrsTranslatePlugin extends Plugin {
         }
 
         String translation = dictionary.find(lookup);
+        // O overlay do chat mostra também mensagens de jogadores: não entra no registro.
+        if (translation == null && interfaceId != CHAT_OVERLAY) {
+            recordMissing(domainForInterface(interfaceId), lookup);
+        }
 
         if (translation != null && interfaceId == CHAT_OVERLAY) {
             translation = normalizeChatOverlayTags(translation);
@@ -732,8 +769,14 @@ public class OsrsTranslatePlugin extends Plugin {
             return;
         }
 
-        String translation = translationState.get(TranslationDomain.OVERHEAD).find(clean);
-        if (translation != null) {
+        TranslationDictionary overheads = translationState.get(TranslationDomain.OVERHEAD);
+        if (overheads.isTranslated(clean)) {
+            return;
+        }
+        String translation = overheads.find(clean);
+        if (translation == null) {
+            recordMissing(TranslationDomain.OVERHEAD, clean);
+        } else {
             actor.setOverheadText(translation);
             log.debug("[OverheadTranslate] '{}' -> '{}'", clean, translation);
         }
@@ -892,6 +935,7 @@ public class OsrsTranslatePlugin extends Plugin {
 
         String translation = gameMessages.find(clean);
         if (translation == null) {
+            recordMissing(TranslationDomain.GAME_MESSAGE, clean);
             return;
         }
 
