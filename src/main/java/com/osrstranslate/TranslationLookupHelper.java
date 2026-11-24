@@ -8,8 +8,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedHashMap;
@@ -26,22 +24,6 @@ final class TranslationLookupHelper
 
     private TranslationLookupHelper()
     {
-    }
-
-    static Map<String, String> loadMap(Class<?> owner, String path)
-    {
-        try (InputStream is = owner.getResourceAsStream(path))
-        {
-            if (is == null)
-            {
-                return Collections.emptyMap();
-            }
-            return parseJsonMap(is);
-        }
-        catch (Exception e)
-        {
-            return Collections.emptyMap();
-        }
     }
 
     static Map<String, String> parseJsonMap(InputStream is)
@@ -227,25 +209,6 @@ final class TranslationLookupHelper
             .replaceAll("\\s+([.,!?])", "$1")
             .replaceAll("([Hh])ardcore Ironmen ", "$1ardcore Ironman ")
             .replaceAll("standard Ironmen ", "standard Ironman ");
-    }
-
-    static String textToId(String text)
-    {
-        try
-        {
-            MessageDigest md = MessageDigest.getInstance("SHA-256");
-            byte[] hash = md.digest(text.trim().toLowerCase().getBytes(StandardCharsets.UTF_8));
-            StringBuilder sb = new StringBuilder();
-            for (int i = 0; i < 8; i++)
-            {
-                sb.append(String.format("%02x", hash[i]));
-            }
-            return sb.toString();
-        }
-        catch (NoSuchAlgorithmException e)
-        {
-            return null;
-        }
     }
 
     static final class PatternEntry

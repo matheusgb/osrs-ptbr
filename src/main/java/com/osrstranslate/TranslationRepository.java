@@ -24,6 +24,7 @@ final class TranslationRepository {
     private static final String TRANSLATIONS_SETTINGS = "translations_settings.json";
 
     private volatile File remoteCacheDirectory;
+    private volatile File localTranslationDirectory;
 
     boolean configureRemoteCacheDirectory(File directory) {
         File previous = remoteCacheDirectory;
@@ -31,16 +32,59 @@ final class TranslationRepository {
         return previous == null ? directory != null : !previous.equals(directory);
     }
 
-    TranslationState loadState() {
-        Map<String, String> translations = loadMap(TRANSLATIONS);
-        Map<String, String> translationsSkills = loadMap(TRANSLATIONS_SKILLS);
-        Map<String, String> translationsQuests = loadMap(TRANSLATIONS_QUESTS);
-        Map<String, String> translationsItems = loadMap(TRANSLATIONS_ITEMS);
-        Map<String, String> translationsMenu = loadMap(TRANSLATIONS_MENU);
-        Map<String, String> translationsOverhead = loadMap(TRANSLATIONS_OVERHEAD);
-        Map<String, String> translationsGameMessage = loadMap(TRANSLATIONS_GAME_MESSAGE);
-        Map<String, String> translationsWelcome = loadMap(TRANSLATIONS_WELCOME);
-        Map<String, String> translationsSettings = loadMap(TRANSLATIONS_SETTINGS);
+    void configureLocalDirectory(File directory) {
+        localTranslationDirectory = directory;
+    }
+
+    String localFingerprint() {
+        File directory = localTranslationDirectory;
+        StringBuilder fingerprint = new StringBuilder();
+        for (String fileName : RemoteTranslationService.REQUIRED_FILES) {
+            File file = directory == null ? null : new File(directory, fileName);
+            if (file == null || !file.isFile()) {
+                fingerprint.append(fileName).append(":missing;");
+            } else {
+                fingerprint.append(fileName)
+                    .append(':').append(file.length())
+                    .append(':').append(file.lastModified())
+                    .append(';');
+            }
+        }
+        return fingerprint.toString();
+    }
+
+    boolean areLocalFilesValid() {
+        File directory = localTranslationDirectory;
+        if (directory == null) {
+            return true;
+        }
+
+        for (String fileName : RemoteTranslationService.REQUIRED_FILES) {
+            File file = new File(directory, fileName);
+            if (!file.isFile()) {
+                continue;
+            }
+
+            try (InputStream input = new FileInputStream(file)) {
+                TranslationLookupHelper.parseJsonMapStrict(input);
+            } catch (Exception e) {
+                log.warn("Aguardando a conclusao da edicao do arquivo local: {}", file);
+                return false;
+            }
+        }
+        return true;
+    }
+
+    TranslationState loadState(OsrsTranslateConfig.TranslationSource source) {
+        Map<String, String> translations = loadMap(TRANSLATIONS, source);
+        Map<String, String> translationsSkills = loadMap(TRANSLATIONS_SKILLS, source);
+        Map<String, String> translationsQuests = loadMap(TRANSLATIONS_QUESTS, source);
+        Map<String, String> translationsItems = loadMap(TRANSLATIONS_ITEMS, source);
+        Map<String, String> translationsMenu = loadMap(TRANSLATIONS_MENU, source);
+        Map<String, String> translationsOverhead = loadMap(TRANSLATIONS_OVERHEAD, source);
+        Map<String, String> translationsGameMessage = loadMap(TRANSLATIONS_GAME_MESSAGE, source);
+        Map<String, String> translationsWelcome = loadMap(TRANSLATIONS_WELCOME, source);
+        Map<String, String> translationsSettings = loadMap(TRANSLATIONS_SETTINGS, source);
 
         TranslationState state = new TranslationState(
             translations,
@@ -69,8 +113,7 @@ final class TranslationRepository {
 
         log.info(
             "PT-BR carregado: dialogos={} skills={} quests={} items={} menu={} "
-                + "overhead={} gameMessages={} welcome={} settings={} regex={} "
-                + "overheadRegex={} welcomeRegex={}",
+                + "overhead={} gameMessages={} welcome={} settings={} regex={} overheadRegex={} welcomeRegex={}",
             translations.size(),
             translationsSkills.size(),
             translationsQuests.size(),
@@ -87,7 +130,14 @@ final class TranslationRepository {
         return state;
     }
 
-    private Map<String, String> loadMap(String fileName) {
+    private Map<String, String> loadMap(
+        String fileName,
+        OsrsTranslateConfig.TranslationSource source
+    ) {
+        if (source == OsrsTranslateConfig.TranslationSource.LOCAL) {
+            return loadLocalMap(fileName);
+        }
+
         File cacheDirectory = remoteCacheDirectory;
         if (cacheDirectory == null) {
             return Collections.emptyMap();
@@ -103,6 +153,26 @@ final class TranslationRepository {
             return TranslationLookupHelper.parseJsonMap(input);
         } catch (Exception e) {
             log.warn("Cache remoto invalido para {}", fileName, e);
+            return Collections.emptyMap();
+        }
+    }
+
+    private Map<String, String> loadLocalMap(String fileName) {
+        File directory = localTranslationDirectory;
+        if (directory == null || !directory.isDirectory()) {
+            return Collections.emptyMap();
+        }
+
+        File localFile = new File(directory, fileName);
+        if (!localFile.isFile()) {
+            log.warn("Arquivo local de traducoes ausente: {}", localFile);
+            return Collections.emptyMap();
+        }
+
+        try (InputStream input = new FileInputStream(localFile)) {
+            return TranslationLookupHelper.parseJsonMapStrict(input);
+        } catch (Exception e) {
+            log.warn("Arquivo local de traducoes invalido: {}", localFile, e);
             return Collections.emptyMap();
         }
     }

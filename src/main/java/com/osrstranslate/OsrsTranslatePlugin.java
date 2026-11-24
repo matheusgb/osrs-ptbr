@@ -35,8 +35,6 @@ import net.runelite.client.plugins.PluginDescriptor;
 
 import javax.inject.Inject;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.InputStream;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
@@ -567,7 +565,7 @@ public class OsrsTranslatePlugin extends Plugin {
             return;
         }
 
-        String clean = normalizeLookupText(cleanText(widget.getText()));
+        String clean = TranslationLookupHelper.normalizeLookupText(TranslationLookupHelper.cleanText(widget.getText()));
         if (!clean.isEmpty() && containsLetters(clean)) {
             texts.putIfAbsent(widget.getId(), clean);
         }
@@ -897,7 +895,7 @@ public class OsrsTranslatePlugin extends Plugin {
     }
 
     private String translateWidgetText(String originalText, int interfaceId) {
-        String cleanText = normalizeLookupText(cleanText(originalText));
+        String cleanText = TranslationLookupHelper.normalizeLookupText(TranslationLookupHelper.cleanText(originalText));
         if (cleanText.isEmpty()) {
             return null;
         }
@@ -1014,7 +1012,7 @@ public class OsrsTranslatePlugin extends Plugin {
             return;
         }
 
-        String clean = normalizeLookupText(cleanText(event.getOverheadText()));
+        String clean = TranslationLookupHelper.normalizeLookupText(TranslationLookupHelper.cleanText(event.getOverheadText()));
         if (clean.length() <= 3) {
             return;
         }
@@ -1155,7 +1153,7 @@ public class OsrsTranslatePlugin extends Plugin {
             return;
         }
 
-        String clean = cleanText(event.getMessage());
+        String clean = TranslationLookupHelper.cleanText(event.getMessage());
         TranslationState state = translationState;
         if (clean.isEmpty() || state.translationGameMessageValues.contains(clean)) {
             return;
@@ -1229,23 +1227,6 @@ public class OsrsTranslatePlugin extends Plugin {
         }
     }
 
-    private String cleanText(String text) {
-        if (text == null) {
-            return "";
-        }
-
-        String clean = BR_TAG.matcher(text).replaceAll(" ");
-        clean = HTML_TAG.matcher(clean).replaceAll(" ");
-        return clean.replaceAll("\\s+", " ").trim();
-    }
-
-    private String normalizeLookupText(String text) {
-        return text
-            .replaceAll("\\s+([.,!?])", "$1")
-            .replaceAll("([Hh])ardcore Ironmen ", "$1ardcore Ironman ")
-            .replaceAll("standard Ironmen ", "standard Ironman ");
-    }
-
     private String preserveStartTags(String text) {
         Matcher matcher = START_TAGS.matcher(text);
         return matcher.find() ? matcher.group() : "";
@@ -1267,302 +1248,9 @@ public class OsrsTranslatePlugin extends Plugin {
         }
     }
 
-    private static final class TranslationState {
-        private final Map<String, String> translations;
-        private final Map<String, String> translationsSkills;
-        private final Map<String, String> translationsQuests;
-        private final Map<String, String> translationsItems;
-        private final Map<String, String> translationsMenu;
-        private final Map<String, String> translationsOverhead;
-        private final Map<String, String> translationsGameMessage;
-        private final Map<String, String> translationsWelcome;
-        private final Map<String, String> translationsSettings;
-        private final Set<String> translationValues;
-        private final Set<String> translationSkillsValues;
-        private final Set<String> translationQuestsValues;
-        private final Set<String> translationItemsValues;
-        private final Set<String> translationMenuValues;
-        private final Set<String> translationGameMessageValues;
-        private final Set<String> translationWelcomeValues;
-        private final Set<String> translationSettingsValues;
-        private final List<TranslationLookupHelper.PatternEntry> regexTranslations;
-        private final List<TranslationLookupHelper.PatternEntry> regexOverheadTranslations;
-        private final List<TranslationLookupHelper.PatternEntry> regexGameMessageTranslations;
-        private final List<TranslationLookupHelper.PatternEntry> regexWelcomeTranslations;
-        private final Map<String, String> reverseTranslationsMenu;
-
-        private TranslationState(
-            Map<String, String> translations,
-            Map<String, String> translationsSkills,
-            Map<String, String> translationsQuests,
-            Map<String, String> translationsItems,
-            Map<String, String> translationsMenu,
-            Map<String, String> translationsOverhead,
-            Map<String, String> translationsGameMessage,
-            Map<String, String> translationsWelcome,
-            Map<String, String> translationsSettings,
-            Set<String> translationValues,
-            Set<String> translationSkillsValues,
-            Set<String> translationQuestsValues,
-            Set<String> translationItemsValues,
-            Set<String> translationMenuValues,
-            Set<String> translationGameMessageValues,
-            Set<String> translationWelcomeValues,
-            Set<String> translationSettingsValues,
-            List<TranslationLookupHelper.PatternEntry> regexTranslations,
-            List<TranslationLookupHelper.PatternEntry> regexOverheadTranslations,
-            List<TranslationLookupHelper.PatternEntry> regexGameMessageTranslations,
-            List<TranslationLookupHelper.PatternEntry> regexWelcomeTranslations,
-            Map<String, String> reverseTranslationsMenu
-        ) {
-            this.translations = translations;
-            this.translationsSkills = translationsSkills;
-            this.translationsQuests = translationsQuests;
-            this.translationsItems = translationsItems;
-            this.translationsMenu = translationsMenu;
-            this.translationsOverhead = translationsOverhead;
-            this.translationsGameMessage = translationsGameMessage;
-            this.translationsWelcome = translationsWelcome;
-            this.translationsSettings = translationsSettings;
-            this.translationValues = translationValues;
-            this.translationSkillsValues = translationSkillsValues;
-            this.translationQuestsValues = translationQuestsValues;
-            this.translationItemsValues = translationItemsValues;
-            this.translationMenuValues = translationMenuValues;
-            this.translationGameMessageValues = translationGameMessageValues;
-            this.translationWelcomeValues = translationWelcomeValues;
-            this.translationSettingsValues = translationSettingsValues;
-            this.regexTranslations = regexTranslations;
-            this.regexOverheadTranslations = regexOverheadTranslations;
-            this.regexGameMessageTranslations = regexGameMessageTranslations;
-            this.regexWelcomeTranslations = regexWelcomeTranslations;
-            this.reverseTranslationsMenu = reverseTranslationsMenu;
-        }
-
-        private static TranslationState empty() {
-            return new TranslationState(
-                Collections.emptyMap(),
-                Collections.emptyMap(),
-                Collections.emptyMap(),
-                Collections.emptyMap(),
-                Collections.emptyMap(),
-                Collections.emptyMap(),
-                Collections.emptyMap(),
-                Collections.emptyMap(),
-                Collections.emptyMap(),
-                Collections.emptySet(),
-                Collections.emptySet(),
-                Collections.emptySet(),
-                Collections.emptySet(),
-                Collections.emptySet(),
-                Collections.emptySet(),
-                Collections.emptySet(),
-                Collections.emptySet(),
-                Collections.emptyList(),
-                Collections.emptyList(),
-                Collections.emptyList(),
-                Collections.emptyList(),
-                Collections.emptyMap()
-            );
-        }
-    }
-
-    private static final class TranslationRepository {
-        private static final String TRANSLATIONS = "translations.json";
-        private static final String TRANSLATIONS_SKILLS = "translations_skills.json";
-        private static final String TRANSLATIONS_QUESTS = "translations_quests.json";
-        private static final String TRANSLATIONS_ITEMS = "translations_items.json";
-        private static final String TRANSLATIONS_MENU = "translations_menu.json";
-        private static final String TRANSLATIONS_OVERHEAD = "translations_overhead.json";
-        private static final String TRANSLATIONS_GAME_MESSAGE = "translations_game_message.json";
-        private static final String TRANSLATIONS_WELCOME = "translations_welcome.json";
-        private static final String TRANSLATIONS_SETTINGS = "translations_settings.json";
-
-        private volatile File remoteCacheDirectory;
-        private volatile File localTranslationDirectory;
-
-        private boolean configureRemoteCacheDirectory(File directory) {
-            File previous = remoteCacheDirectory;
-            remoteCacheDirectory = directory;
-            return previous == null ? directory != null : !previous.equals(directory);
-        }
-
-        private void configureLocalDirectory(File directory) {
-            localTranslationDirectory = directory;
-        }
-
-        private String localFingerprint() {
-            File directory = localTranslationDirectory;
-            StringBuilder fingerprint = new StringBuilder();
-            for (String fileName : RemoteTranslationService.REQUIRED_FILES) {
-                File file = directory == null ? null : new File(directory, fileName);
-                if (file == null || !file.isFile()) {
-                    fingerprint.append(fileName).append(":missing;");
-                } else {
-                    fingerprint.append(fileName)
-                        .append(':').append(file.length())
-                        .append(':').append(file.lastModified())
-                        .append(';');
-                }
-            }
-            return fingerprint.toString();
-        }
-
-        private boolean areLocalFilesValid() {
-            File directory = localTranslationDirectory;
-            if (directory == null) {
-                return true;
-            }
-
-            for (String fileName : RemoteTranslationService.REQUIRED_FILES) {
-                File file = new File(directory, fileName);
-                if (!file.isFile()) {
-                    continue;
-                }
-
-                try (InputStream input = new FileInputStream(file)) {
-                    TranslationLookupHelper.parseJsonMapStrict(input);
-                } catch (Exception e) {
-                    log.warn("Aguardando a conclusao da edicao do arquivo local: {}", file);
-                    return false;
-                }
-            }
-            return true;
-        }
-
-        private TranslationState loadState(OsrsTranslateConfig.TranslationSource source) {
-            Map<String, String> translations = loadMap(TRANSLATIONS, source);
-            Map<String, String> translationsSkills = loadMap(TRANSLATIONS_SKILLS, source);
-            Map<String, String> translationsQuests = loadMap(TRANSLATIONS_QUESTS, source);
-            Map<String, String> translationsItems = loadMap(TRANSLATIONS_ITEMS, source);
-            Map<String, String> translationsMenu = loadMap(TRANSLATIONS_MENU, source);
-            Map<String, String> translationsOverhead = loadMap(TRANSLATIONS_OVERHEAD, source);
-            Map<String, String> translationsGameMessage = loadMap(TRANSLATIONS_GAME_MESSAGE, source);
-            Map<String, String> translationsWelcome = loadMap(TRANSLATIONS_WELCOME, source);
-            Map<String, String> translationsSettings = loadMap(TRANSLATIONS_SETTINGS, source);
-
-            TranslationState state = new TranslationState(
-                translations,
-                translationsSkills,
-                translationsQuests,
-                translationsItems,
-                translationsMenu,
-                translationsOverhead,
-                translationsGameMessage,
-                translationsWelcome,
-                translationsSettings,
-                new HashSet<>(translations.values()),
-                new HashSet<>(translationsSkills.values()),
-                new HashSet<>(translationsQuests.values()),
-                new HashSet<>(translationsItems.values()),
-                new HashSet<>(translationsMenu.values()),
-                new HashSet<>(translationsGameMessage.values()),
-                new HashSet<>(translationsWelcome.values()),
-                new HashSet<>(translationsSettings.values()),
-                TranslationLookupHelper.compileRegexTranslations(translations),
-                TranslationLookupHelper.compileRegexTranslations(translationsOverhead),
-                TranslationLookupHelper.compileRegexTranslations(translationsGameMessage),
-                TranslationLookupHelper.compileRegexTranslations(translationsWelcome),
-                buildReverseMenuMap(translationsMenu)
-            );
-
-            log.info(
-                "PT-BR carregado: dialogos={} skills={} quests={} items={} menu={} "
-                    + "overhead={} gameMessages={} welcome={} settings={} regex={} overheadRegex={} welcomeRegex={}",
-                translations.size(),
-                translationsSkills.size(),
-                translationsQuests.size(),
-                translationsItems.size(),
-                translationsMenu.size(),
-                translationsOverhead.size(),
-                translationsGameMessage.size(),
-                translationsWelcome.size(),
-                translationsSettings.size(),
-                state.regexTranslations.size(),
-                state.regexOverheadTranslations.size(),
-                state.regexWelcomeTranslations.size()
-            );
-            return state;
-        }
-
-        private Map<String, String> loadMap(
-            String fileName,
-            OsrsTranslateConfig.TranslationSource source
-        ) {
-            if (source == OsrsTranslateConfig.TranslationSource.LOCAL) {
-                return loadLocalMap(fileName);
-            }
-
-            File cacheDirectory = remoteCacheDirectory;
-            if (cacheDirectory == null) {
-                return Collections.emptyMap();
-            }
-
-            File remoteFile = new File(cacheDirectory, fileName);
-            if (!remoteFile.isFile()) {
-                log.warn("Arquivo ausente no cache remoto: {}", fileName);
-                return Collections.emptyMap();
-            }
-
-            try (InputStream input = new FileInputStream(remoteFile)) {
-                return TranslationLookupHelper.parseJsonMap(input);
-            } catch (Exception e) {
-                log.warn("Cache remoto invalido para {}", fileName, e);
-                return Collections.emptyMap();
-            }
-        }
-
-        private Map<String, String> loadLocalMap(String fileName) {
-            File directory = localTranslationDirectory;
-            if (directory == null || !directory.isDirectory()) {
-                return Collections.emptyMap();
-            }
-
-            File localFile = new File(directory, fileName);
-            if (!localFile.isFile()) {
-                log.warn("Arquivo local de traducoes ausente: {}", localFile);
-                return Collections.emptyMap();
-            }
-
-            try (InputStream input = new FileInputStream(localFile)) {
-                return TranslationLookupHelper.parseJsonMapStrict(input);
-            } catch (Exception e) {
-                log.warn("Arquivo local de traducoes invalido: {}", localFile, e);
-                return Collections.emptyMap();
-            }
-        }
-
-        private Map<String, String> buildReverseMenuMap(Map<String, String> source) {
-            Map<String, String> reverse = new LinkedHashMap<>();
-            for (Map.Entry<String, String> entry : source.entrySet()) {
-                String key = stripMenuText(entry.getKey());
-                String value = normalizeMenuLookup(entry.getValue());
-                if (key.isEmpty() || value.isEmpty()) {
-                    continue;
-                }
-                reverse.putIfAbsent(value, key);
-            }
-            return reverse;
-        }
-
-        private String stripMenuText(String text) {
-            return text.replaceAll("<[^>]+>", "").trim();
-        }
-
-        private String normalizeMenuLookup(String text) {
-            return stripMenuText(text).toLowerCase(Locale.ROOT);
-        }
-    }
-
     @Provides
     OsrsTranslateConfig provideConfig(ConfigManager configManager) {
         return configManager.getConfig(OsrsTranslateConfig.class);
     }
 
-    /**
-     * Faz quebra de linha justificada: distribui palavras pra cada linha ter tamanho similar.
-     * @param text texto a quebrar
-     * @param maxCharsPorLinha número máximo de caracteres por linha
-     * @return texto com quebras de linha (\n) balanceadas
-     */
-    }
+}
