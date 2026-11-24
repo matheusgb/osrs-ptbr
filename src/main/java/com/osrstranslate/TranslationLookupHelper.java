@@ -94,11 +94,12 @@ final class TranslationLookupHelper
             }
 
             int specificity = staticTextLength(key);
-            if (specificity == 0)
+            if (!hasLetterOutsidePlaceholders(key))
             {
-                // A key made only of brackets is an alternative/choice form,
-                // not a safe generic pattern.  It would match every text,
-                // including NPC names such as "Banker".
+                // Uma chave sem letra fora dos placeholders, como "[name]" ou
+                // "[name].", casaria com qualquer texto terminado assim,
+                // inclusive nomes de NPC como "Banker", e devolveria o próprio
+                // inglês sem a pontuação final.
                 continue;
             }
 
@@ -131,6 +132,19 @@ final class TranslationLookupHelper
     private static String templateSignature(String text)
     {
         return PLACEHOLDER.matcher(text).replaceAll(Matcher.quoteReplacement("\u0000"));
+    }
+
+    private static boolean hasLetterOutsidePlaceholders(String text)
+    {
+        String staticText = PLACEHOLDER.matcher(text).replaceAll("");
+        for (int i = 0; i < staticText.length(); i++)
+        {
+            if (Character.isLetter(staticText.charAt(i)))
+            {
+                return true;
+            }
+        }
+        return false;
     }
 
     private static int staticTextLength(String text)

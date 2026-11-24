@@ -43,6 +43,18 @@ public class TranslationDictionaryTest {
     }
 
     @Test
+    public void keyWithOnlyPunctuationOutsidePlaceholderIsIgnored() {
+        Map<String, String> map = new LinkedHashMap<>();
+        map.put("[Vampyre name].", "[Vampyre name]");
+        map.put("[player]?", "[jogador]?");
+        map.put("Hi [player].", "Oi, [player].");
+        TranslationDictionary dictionary = new TranslationDictionary(map, true);
+        assertNull("frase sem tradução não pode perder o ponto", dictionary.find("Some untranslated sentence."));
+        assertNull(dictionary.find("Who are you?"));
+        assertEquals("Oi, Bob.", dictionary.find("Hi Bob."));
+    }
+
+    @Test
     public void domainWithoutPlaceholdersUsesExactMatchOnly() {
         TranslationDictionary dictionary = new TranslationDictionary(sample(), false);
         assertNull(dictionary.find("You need 3 more."));
