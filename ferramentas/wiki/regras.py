@@ -59,6 +59,7 @@ MENSAGENS = {
     "acento": "palavra sem acento ou \"-só\" errado",
     "menu_imperativo": "verbo no imperativo no menu (o menu usa infinitivo)",
     "parenteses": "nome em inglês acrescentado entre parênteses",
+    "hibrido": "nome do glossário com \"of\" trocado por \"de\" (\"Chambers de Xeric\")",
 }
 
 
@@ -173,6 +174,21 @@ def _glossario_minusculo(glossario):
     return _minusculo[1]
 
 
+def hibridos(ingles, traducao, glossario):
+    """Nomes "A of B" do glossário que aparecem na tradução como "A de B"."""
+    achados = []
+    palavras = re.findall(r"[\w'’&\-]+", PLACEHOLDER.sub(" ", sem_tags(ingles)))
+    for i in range(len(palavras)):
+        for fim in range(i + 3, min(i + 12, len(palavras)) + 1):
+            trecho = " ".join(palavras[i:fim])
+            if " of " not in trecho or trecho not in glossario or trecho in traducao:
+                continue
+            a, b = trecho.split(" of ", 1)
+            if re.search(re.escape(a) + r" d(?:e|o|a|os|as) " + re.escape(b), traducao):
+                achados.append(trecho)
+    return achados
+
+
 def pontuacao_final(texto):
     """Classe da pontuação final: ":", "frase" (. ! ? ...) ou "" (nenhuma).
 
@@ -215,6 +231,8 @@ def validar(ingles, traducao, arquivo, glossario, imperativos=frozenset()):
     # O nome tem que estar no lugar dele na frase, não pendurado: "...desse jeito (Black Knight)?".
     if any(f"({nome})" in traducao and f"({nome})" not in ingles for nome in nomes):
         erros.append("parenteses")
+    if hibridos(ingles, traducao, glossario):
+        erros.append("hibrido")
 
     if pontuacao_final(ingles) and pontuacao_final(ingles) != pontuacao_final(traducao):
         erros.append("pontuacao")

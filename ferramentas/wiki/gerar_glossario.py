@@ -2,7 +2,7 @@
 
 Uso: python3 gerar_glossario.py [--so-palavras]
 
-Junta os nomes de item, NPC, monstro, quest, lugar, objeto e loja da OSRS Wiki (API
+Junta os nomes de item, NPC, monstro, quest, lugar, objeto, loja, magia e atividade da OSRS Wiki (API
 Bucket, com o cliente gentil de comum.Wiki) com a lista manual de
 traducoes/glossario_manual.json. A saída é ordenada e sem duplicata. Também gera
 traducoes/palavras_comuns.json a partir de dados/falas.json (--so-palavras refaz só
@@ -17,7 +17,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import comum  # noqa: E402
 
 BUCKETS = ["infobox_item", "infobox_npc", "infobox_monster", "quest",
-           "infobox_location", "infobox_scenery", "infobox_shop"]
+           "infobox_location", "infobox_scenery", "infobox_shop", "infobox_spell", "infobox_activity"]
 POR_PAGINA = 5000
 MANUAL = os.path.normpath(os.path.join(comum.PT_BR, "..", "glossario_manual.json"))
 COMUNS = os.path.normpath(os.path.join(comum.PT_BR, "..", "palavras_comuns.json"))

@@ -1,108 +1,15 @@
 {
  "translations.json": {
   "glossario": {
-   "total": 455,
+   "total": 4,
    "exemplos": [
     {
-     "en": "When you get to Lumbridge, look out for Adventurer Jon, he can be found outside of the Sheared Ram pub.",
-     "pt": "Quando você chegar em Lumbridge, fique atento ao Aventureiro Jon; ele pode ser encontrado do lado de fora do pub Sheared Ram."
+     "en": "You guessed the largest number in existence?! I don't think we could fit that many balloons in Al Kharid! Too high though, try again.",
+     "pt": "Tem 30 balões de aniversário neste prédio!"
     },
     {
-     "en": "You can choose to become an [ironman] while you're on Tutorial Island. Although you can't do that on this character, you might like to bear it in mind for the future.",
-     "pt": "Você pode escolher se tornar um [ironman] enquanto estiver na Ilha do Tutorial. Embora não possa fazer isso nesta conta, talvez queira levar isso em consideração para o futuro."
-    },
-    {
-     "en": "Yes Bobby. There's no doubt we will be sipping mulled pine inside The Nutcracker in no time.",
-     "pt": "Sim, Bobby. Não há dúvida de que logo estaremos tomando Mulled pine dentro da A Noz Quebradora."
-    },
-    {
-     "en": "Yep, the entrance is in the side of Ice Mountain just to the east of here. They're a friendly bunch. Stop in at Nurmof's store and buy one of my pickaxes!",
-     "pt": "Sim, a entrada fica na lateral da Montanha de Gelo, logo a leste daqui. Eles são um povo amigável. Passe na loja do Nurmof e compre uma de minhas picaretas!"
-    },
-    {
-     "en": "What is the Achievement Diary?",
-     "pt": "O que é o Diary de Conquistas?"
-    },
-    {
-     "en": "Welcome to Lowe's Archery Emporium. Do you want to see my wares?",
-     "pt": "Bem-vindo ao Empório de Arcos de Lowe. Quer dar uma olhada nos meus produtos?"
-    },
-    {
-     "en": "The minimap in the top right corner of the game screen has various icons showing the locations of things. This icon to the left shows where Fishing spots are.",
-     "pt": "O minimapa no canto superior direito da tela do jogo tem vários ícones mostrando as localizações das coisas. Este ícone à esquerda mostra onde estão os locais de pesca."
-    },
-    {
-     "en": "There is a range at the southern end in this town and a Cooking tutor in south Lumbridge near Bob's Brilliant Axes shop.",
-     "pt": "Tem um fogão na extremidade sul desta cidade e um Instrutor de Cooking no sul de Lumbridge, perto da loja de Machados Brilhantes do Bob."
-    },
-    {
-     "en": "The minimap in the top right corner of the game screen has various icons showing the locations of things. This icon to the left shows where Cooking ranges are.",
-     "pt": "O minimapa no canto superior direito da tela do jogo tem vários ícones mostrando as localizações das coisas. Este ícone à esquerda mostra onde ficam os fogões."
-    },
-    {
-     "en": "When you get to the mainland you will find yourself in the town of Lumbridge. If you want some ideas on where to go next, talk to my friend Adventurer Jon. You can't miss him; he's wearing light blue armour with",
-     "pt": "Quando chegar ao continente, você estará em Lumbridge. Se quiser sugestões de onde ir, fale com meu amigo Aventureiro Jon. É fácil encontrá-lo, ele usa uma armadura azul-claro com"
-    },
-    {
-     "en": "You can buy a Dwarven stout at the Rising Sun Inn in Falador.",
-     "pt": "Você pode comprar uma Dwarven stout na Taverna Sol Nascente em Falador."
-    },
-    {
-     "en": "Well there were some pretty tough people here last week. Said they were Slayer Masters. They were planning on making some protective boots. You should speak to one of them.",
-     "pt": "Bom, havia algumas pessoas bem duronas aqui na semana passada. Elas disseram que eram Mestres de Matança. Elas estavam planejando fazer algumas botas protetoras. Você deveria falar com uma delas."
-    },
-    {
-     "en": "We have a Sacred Forge. You will find none other like it in all the world. Some of the greatest weapons of legend started life here.",
-     "pt": "Temos uma Forja Sagrada. Você não encontrará outra igual em todo o mundo. Algumas das maiores armas lendárias começaram aqui."
-    },
-    {
-     "en": "The first skill we're going to look at is Fishing. There's some shrimp in this pond here. Let's try and catch some.",
-     "pt": "A primeira habilidade que vamos ver é Pesca. Tem alguns camarões nesse lago aqui. Vamos tentar pegar alguns."
-    },
-    {
-     "en": "Your Player Moderator identity must never be revealed on the regular Old School RuneScape forums. However, you're more than welcome to chat about all aspects of being a Player Moderator in the official",
-     "pt": "Sua identidade como Player Moderator nunca deve ser revelada nos fóruns regulares do RuneScape. No entanto, você está mais do que convidado a discutir todos os aspectos de ser um Player Moderator nos"
-    },
-    {
-     "en": "Well, since you saved my life when we were fighting the Sea Troll Queen, I don't mind telling you... I trust you won't tell anyone about this?",
-     "pt": "Bom, já que você salvou minha vida quando lutávamos contra a Rainha Troll Marinha, não me importo de te contar... você não vai contar para ninguém, né?"
-    },
-    {
-     "en": "Wizard Traiborn has given you another clue scroll!",
-     "pt": "Feiticeiro Traiborn te deu outro clue scroll!"
-    },
-    {
-     "en": "This is a piece of map that you found in Melzar's Maze. You will need to join it to the other two map pieces before you can see the route to Crandor.",
-     "pt": "Esta é uma peça de mapa que você encontrou no Labirinto de Melzar. Você precisará juntá-la às outras duas peças antes de poder ver a rota para Crandor."
-    },
-    {
-     "en": "You must be Leela. Your father sent me to help rescue Prince Ali.",
-     "pt": "Você deve ser Leela. Seu pai me enviou para ajudar a resgatar o Príncipe Ali."
-    },
-    {
-     "en": "This might be a little tricky as you will need to go into the Lumbridge Swamp caves. You will need a light source! Never forget your light source down there!",
-     "pt": "Isso pode ser um pouco complicado, pois você terá que entrar nas cavernas do pântano de Lumbridge. Vai precisar de uma fonte de luz! Nunca esqueça da sua fonte de luz lá embaixo!"
-    }
-   ]
-  },
-  "ingles": {
-   "total": 12,
-   "exemplos": [
-    {
-     "en": "You're currently on a [type of contract]. Go see [client], [location description] [area]. You can get another job once you have furnished [his/her] home.",
-     "pt": "Você está em um contrato de type of contract. Vá ver o [client] em [location description] [area] Port Roberts. Você pode pegar outro serviço assim que mobiliar a casa [dele/dela]."
-    },
-    {
-     "en": "Guardians of the Rift? You mentioned them earlier. Who are they?",
-     "pt": "Guardians of the Rift? Você mencionou eles antes. Quem são eles?"
-    },
-    {
-     "en": "I still need [type of clue] from you before I give you a master clue scroll.",
-     "pt": "Ainda preciso de uma type of clue sua antes de te dar um clue scroll mestre."
-    },
-    {
-     "en": "Moons of Peril, allowing Eyatlalli to complete the ritual. I should now return to her and the others.",
-     "pt": "Os Moons of Peril permitiram que Eyatlalli completasse o ritual. Agora devo voltar até ela e os outros."
+     "en": "'The Penance Spawn - You're only likely to see these creatures in close proximity to their creator - the dreaded Penance Queen. All Penance begin their lives in this form, mutating into the seperate classes of Penance depending on the lack or abundance of other classes in the local env[ironman]t.",
+     "pt": "Por meio de comunicação telepática, a Queen consegue determinar o número de cada classe de Penance (Fighter, Ranger, Healer ou Runner) e comunicar à sua prole a forma que devem assumir para preencher eventuais lacunas numéricas. Se a prole não receber comunicação da Queen, ela se transforma em outra Queen por conta própria, devido à"
     },
     {
      "en": "Oh, how rude of me! [player] this is Fairy Very Wise, advisor to the Queen. Fairy Very Wise, this is lbj is 23.",
@@ -111,160 +18,37 @@
     {
      "en": "Oh, how rude of me! [player] this is Fairy Very Wise, advisor to the Queen. Fairy Very Wise, this is tjk pks you.",
      "pt": "Oh, que falta de educação da minha parte! [player], esta é a Fada Muito Sábia, conselheira da Rainha. Fada Muito Sábia, este é o tjk pks you."
+    }
+   ]
+  },
+  "ingles": {
+   "total": 2,
+   "exemplos": [
+    {
+     "en": "Oh, how rude of me! [player] this is Fairy Very Wise, advisor to the Queen. Fairy Very Wise, this is lbj is 23.",
+     "pt": "Oh, que falta de educação minha! [player], esta é a Fada Muito Sávia, conselheira da Rainha. Fada Muito Sávia, este é o lbj is 23."
     },
     {
-     "en": "Sorry, I'm trying to talk to Master The [player], but he seems to be ignoring me.",
-     "pt": "Desculpe, estou tentando falar com o Mestre The [player], mas ele parece estar me ignorando."
-    },
-    {
-     "en": "Sowwy, I'm twying to tawk to Mastew Mojo The God, buda seems to be ignowing me.",
-     "pt": "Dessculpe, tô tendeno falá com o Mestre Mojo The God, mas ele parece tá me ignorano."
-    },
-    {
-     "en": "Is dawe anything ewse me can do fow u?",
-     "pt": "Is dawe anything ewse me can do fow u?"
-    },
-    {
-     "en": "You stiww wook human!",
-     "pt": "You stiww wook human!"
-    },
-    {
-     "en": "THE Record Keeper!",
-     "pt": "THE Record Keeper!"
-    },
-    {
-     "en": "You've been given an item To view the item you've been given, you'll need to open your inventory. To do so, [click/tap] on the flashing backpack icon to the right hand side of your screen.",
-     "pt": "You've been given an item Para ver o item que você recebeu, você precisa abrir seu inventory. Para isso, [click/tap] no ícone da mochila piscando, no lado direito da sua tela."
+     "en": "Oh, how rude of me! [player] this is Fairy Very Wise, advisor to the Queen. Fairy Very Wise, this is tjk pks you.",
+     "pt": "Oh, que falta de educação da minha parte! [player], esta é a Fada Muito Sábia, conselheira da Rainha. Fada Muito Sábia, este é o tjk pks you."
     }
    ]
   },
   "placeholder": {
-   "total": 560,
+   "total": 1,
    "exemplos": [
     {
-     "en": "You'll have to remove any [ironman] status first by speaking to me.",
-     "pt": "Você vai precisar remover seu status de homem de ferro primeiro falando comigo."
-    },
-    {
-     "en": "You are given [a/some] [reward item(s)] as a tip.",
-     "pt": "Você recebe [a/alguns] reward item(s) como gorjeta."
-    },
-    {
-     "en": "The cook has given you [another clue scroll/a casket]!",
-     "pt": "O cozinheiro lhe deu another clue scroll!"
-    },
-    {
-     "en": "Well, you're a braver [man/woman] than I!",
-     "pt": "Bem, você é mais corajoso do que eu!"
-    },
-    {
-     "en": "You're still hunting [monster]; you have [number] to go. Come back when you've finished your task.",
-     "pt": "Você ainda está caçando [number]; falta [number] para terminar. Volte quando terminar sua tarefa."
-    },
-    {
-     "en": "[I'm sorry, sir,/I'm sorry, madam,/I'm sorry,] but no weapons or armour may be worn on Entrana. This rule even forbids items dedicated to Saradomin.",
-     "pt": "Desculpe-me, senhor, mas nenhuma arma ou armadura pode ser usada em Entrana. Essa regra também proíbe itens dedicados a Saradomin."
-    },
-    {
-     "en": "Well, 'e be on that ship for sure. And I remember 'im tellin' me about some [guy/gal] like ye, getting all mixed up with curses and cabin boys.",
-     "pt": "Bom, ele com certeza está naquele navio. E lembro dele me falando de alguém como você, se metendo com maldições e grumetes."
-    },
-    {
-     "en": "You show Ramarno the Ancient [relic].",
-     "pt": "Você mostra a Ramarno a Relíquia Antiga."
-    },
-    {
-     "en": "You need a Barronite [piece] and 1500 barronite shards.",
-     "pt": "Você precisa de uma peça de Barronite e 1500 estilhaços de barronita."
-    },
-    {
-     "en": "Today is your lucky day, [sirrah/madam/my liege]! I am donating to the victims of crime to atone for my past actions!",
-     "pt": "Hoje é o seu dia de sorte, sirrah!"
-    },
-    {
-     "en": "I must leave you now, [sirrah/ma'am/my liege]!",
-     "pt": "Preciso ir agora, sirrah!"
-    },
-    {
-     "en": "A frog [prince/princess] outfit, please!",
-     "pt": "Um traje de príncipe sapo, por favor!"
-    },
-    {
-     "en": "Try smelting some iron. Then hammer the bronze on an anvil to make [arrowtips/throwing knives/warhammers/maces].",
-     "pt": "Tente fundir um pouco de minério de ferro. Depois, forje o bronze em uma bigorna para fazer arrowtips."
-    },
-    {
-     "en": "You earned [number] League Points in Leagues II: Trailblazer. Sadly, that means you are not eligible for any Trailblazer Trophies.",
-     "pt": "Trailblazer. Infelizmente, isso significa que você não tem direito a nenhum Troféu de Trailblazer."
-    },
-    {
-     "en": "You earned [number] League Points in Leagues II: Trailblazer. That makes you eligible for the [trophy] and all Trailblazer Trophies under it!",
-     "pt": "Trailblazer. Isso te torna elegível para o [trophy] e todos os Troféus Trailblazer abaixo dele!"
-    },
-    {
-     "en": "You earned [number] League Points in Leagues III: Shattered Relics. Sadly, that means you are not eligible for any Shattered Relics Trophies.",
-     "pt": "Shattered Relics. Infelizmente, isso significa que você não é elegível para nenhum dos Troféus Shattered Relics."
-    },
-    {
-     "en": "You earned [number] League Points in Leagues III: Shattered Relics. That makes you eligible for the [trophy] and all Shattered Relics Trophies under it!",
-     "pt": "Shattered Relics. Isso te torna elegível para o [trophy] e todos os Troféus Shattered Relics abaixo dele!"
-    },
-    {
-     "en": "You earned [number] League Points in Leagues IV: Trailblazer Reloaded. That makes you eligible for the [trophy] and all Trailblazer Reloaded Trophies under it!",
-     "pt": "Trailblazer Reloaded. Isso te torna elegível para o [trophy] e todos os [number] abaixo dele!"
-    },
-    {
-     "en": "Yes - [charge price] coins.",
-     "pt": "Sim — charge price moedas."
-    },
-    {
-     "en": "Hah! What you want with me, little city [man/woman/person]?",
-     "pt": "Hah! O que você quer comigo, coitadinho da cidade?"
+     "en": "'The Penance Spawn - You're only likely to see these creatures in close proximity to their creator - the dreaded Penance Queen. All Penance begin their lives in this form, mutating into the seperate classes of Penance depending on the lack or abundance of other classes in the local env[ironman]t.",
+     "pt": "Por meio de comunicação telepática, a Queen consegue determinar o número de cada classe de Penance (Fighter, Ranger, Healer ou Runner) e comunicar à sua prole a forma que devem assumir para preencher eventuais lacunas numéricas. Se a prole não receber comunicação da Queen, ela se transforma em outra Queen por conta própria, devido à"
     }
    ]
   },
   "pontuacao": {
-   "total": 10,
+   "total": 1,
    "exemplos": [
-    {
-     "en": "You can only fight the gryphons in this cave if you've been assigned to kill them by a Slayer Master.",
-     "pt": "Você só pode lutar contra os grifos nesta caverna se tiver sido designado para matá-los por um Mestre de Extermínio"
-    },
-    {
-     "en": "[Brother/Sister] [player] - welcome to the Realm of Memories.",
-     "pt": "Brother"
-    },
-    {
-     "en": "You apply [player input * 10] charges to your Alchemist's amulet.",
-     "pt": "Você aplica [entrada do jogador * 10] cargas ao seu Amuletos do Alquimista"
-    },
-    {
-     "en": "There are a lot of books on the bookcase, but one is noticibly larger than the others. The cover reads 'Cooking for Auspah by Seraphis'.",
-     "pt": "Há muitos livros na estante, mas um deles é notavelmente maior que os outros. A capa diz 'Culinária para Auspah por Seraphis'"
-    },
-    {
-     "en": "You can now grow Watermelons.",
-     "pt": "Agora você pode cultivar Melancias"
-    },
-    {
-     "en": "Well, I seen worse. Most humans come through here, dey got names with like all numbers and things wot aren't even words! I met some [man/woman] earlier wot called [himself/herself] [other player's name].",
-     "pt": "Bom, já vi coisa pior. A maioria dos humanos que passam por aqui tem nomes cheios de números e coisas que nem palavras são! Encontrei um [homem/mulher] mais cedo que se chamava other player's name"
-    },
     {
      "en": "'The Penance Spawn - You're only likely to see these creatures in close proximity to their creator - the dreaded Penance Queen. All Penance begin their lives in this form, mutating into the seperate classes of Penance depending on the lack or abundance of other classes in the local env[ironman]t.",
      "pt": "Por meio de comunicação telepática, a Queen consegue determinar o número de cada classe de Penance (Fighter, Ranger, Healer ou Runner) e comunicar à sua prole a forma que devem assumir para preencher eventuais lacunas numéricas. Se a prole não receber comunicação da Queen, ela se transforma em outra Queen por conta própria, devido à"
-    },
-    {
-     "en": "Zemouregal's Base and reach Arrav's Heart. However, I was confronted by Zemouregal. He ordered Arrav to kill me, giving me no choice but to fight him off.",
-     "pt": "Cheguei à Base de Zemouregal e ao Coração de Arrav. No entanto, fui confrontado por Zemouregal. Ele ordenou que Arrav me matasse, não me restando escolha senão lutar para sobreviver"
-    },
-    {
-     "en": "We need [six/seven/eight] pieces of [tin/coal/mithril] for Keldagrim's merchants.",
-     "pt": "Precisamos de [six/seven/eight] peças de tin para os mercadores de Keldagrim"
-    },
-    {
-     "en": "Yes General Wartface sir?",
-     "pt": "translation"
     }
    ]
   }
@@ -294,158 +78,13 @@
      "pt": "Um viajante."
     }
    ]
-  },
-  "ingles": {
-   "total": 1,
-   "exemplos": [
-    {
-     "en": "Against players, gain 10% damage increase when using god spells. Flames of Zamorak has a 10% chance to burn. Claws of Guthix lowers your targets defence level equal to 50% of damage dealt. Saradomin Strike drains enemy prayer points by 30% of damage dealt.",
-     "pt": "Contra jogadores, ganhe 10% de aumento de dano ao usar god spells. Flames of Zamorak tem 10% de chance de queimar. Claws of Guthix reduz o nível de defesa do alvo em 50% do dano causado. Saradomin Strike drena os prayer points do inimigo em 30% do dano causado."
-    }
-   ]
   }
  },
  "translations_items.json": {},
  "translations_menu.json": {},
  "translations_overhead.json": {},
- "translations_quests.json": {
-  "ingles": {
-   "total": 11,
-   "exemplos": [
-    {
-     "en": "Visit the Isle of Crandor via the dungeon below the volcano.",
-     "pt": "Visit the Isle of Crandor pela masmorra abaixo do vulcão."
-    },
-    {
-     "en": "Of Bordanzan, making the rock a viable place for Dondakan to",
-     "pt": "Of Bordanzan, tornando a rocha um lugar viável para o Dondakan"
-    },
-    {
-     "en": "Teokan of Ralos.",
-     "pt": "Teokan of Ralos."
-    },
-    {
-     "en": "Toad and Chicken. The guard wouldn't talk to me! I bought the",
-     "pt": "Toad and Chicken. O guarda não queria falar comigo! Eu comprei uma"
-    },
-    {
-     "en": "Curator of Varrock Museum for his approval.",
-     "pt": "Curator of Varrock Museum para sua aprovação."
-    },
-    {
-     "en": "Curator of Varrock Museum, to the Examiner at the Exam",
-     "pt": "Curator of Varrock Museum para o Examiner no Exam"
-    },
-    {
-     "en": "Group of Advanced Gardeners. They sent me to Zanaris to",
-     "pt": "Group of Advanced Gardeners. Eles me enviaram para Zanaris para"
-    },
-    {
-     "en": "Burgher of Neitiznot has asked me to get 8 split arctic pine",
-     "pt": "O Burgher of Neitiznot me pediu para conseguir 8 split arctic pine"
-    },
-    {
-     "en": "Temple of Phasmatys.",
-     "pt": "Temple of Phasmatys."
-    },
-    {
-     "en": "Goddess of Destruction.",
-     "pt": "Goddess of Destruction."
-    },
-    {
-     "en": "Monks of Zamorak had brought with them. I obtained a Bucket",
-     "pt": "Monks of Zamorak trouxeram com eles. Eu peguei um Bucket"
-    }
-   ]
-  }
- },
- "translations_settings.json": {
-  "ingles": {
-   "total": 89,
-   "exemplos": [
-    {
-     "en": "Free-to-play",
-     "pt": "Free-to-play"
-    },
-    {
-     "en": "Against players, gain 10% damage increase when using god spells. Flames of Zamorak has a 10% chance to burn. Claws of Guthix lowers your targets defence level equal to 50% of damage dealt. Saradomin Strike drains enemy prayer points by 30% of damage dealt.",
-     "pt": "Contra jogadores, ganhe 10% de aumento de dano ao usar god spells. Flames of Zamorak tem 10% de chance de queimar. Claws of Guthix reduz o nível de defesa do alvo em 50% do dano causado. Saradomin Strike drena os prayer points do inimigo em 30% do dano causado."
-    },
-    {
-     "en": "Slice and Dice: Hit 4 times in quick succession, with great accuracy.",
-     "pt": "Slice and Dice: acerta 4 vezes em rápida sucessão, com grande precisão."
-    },
-    {
-     "en": "The following quests and their pre-reqs are automatically completed but will not reward any completion XP: - Prince Ali Rescue - The Golem - Shadow of the Storm - Icthlarin's Little Helper - Temple of the Eye - Desert Treasure II The following tasks in the Desert Achievement Diary are automatically completed: Medium Tasks: - Travel to the Desert via the Eagle transport system Hard Tasks: - Slay a dust devil in the desert cave with a Slayer Helmet equipped - Refill your Waterskins in the Desert using Lunar spells Elite Tasks: - Bake a wild pie at the Nardah clay oven - Speak to the Kalphite Queen Head in your Player Owned House The above Kalphite Queen Head diary task will complete when you receive a Kalphite Queen Head or Kalphite Queen Head(tattered) drop instead. Near the Mage training arena entrance there will be a portal to Guardians of the rift. The following Combat Achievements are automatically completed: - Tomb Explorer - Tomb Raider - Tomb Looter - Novice Tomb Explorer - Novice Tomb Raider - Novice Tomb Looter - Expert Tomb Looter - Expert Tomb Raider - Insect Deflection",
-     "pt": "As quests a seguir e seus pré-requisitos são concluídos automaticamente, mas não dão XP de conclusão: Prince Ali Rescue, The Golem, Shadow of the Storm, Icthlarin's Little Helper, Temple of the Eye, Desert Treasure II. The following tasks no Desert Achievement Diary são concluídas automaticamente. Medium Tasks: viajar para o deserto pelo sistema de transporte Eagle. Hard Tasks: matar um dust devil na caverna do deserto com um Slayer Helmet equipado; reabastecer seus Waterskins no deserto usando spells Lunar. Elite Tasks: assar um wild pie no forno de argila de Nardah; falar com a Kalphite Queen Head no seu Player Owned House. Essa tarefa do diary da Kalphite Queen Head é concluída, em vez disso, ao receber um drop de Kalphite Queen Head ou Kalphite Queen Head(tattered). Near the Mage training arena entrance há um portal para Guardiões do Rift. The following Combat Achievements são concluídas automaticamente: Tomb Explorer, Tomb Raider, Tomb Looter, Novice Tomb Explorer, Novice Tomb Raider, Novice Tomb Looter, Expert Tomb Looter, Expert Tomb Raider, Insect Deflection"
-    },
-    {
-     "en": "Theatre of Blood (Entry) completions:",
-     "pt": "Conclusões do Theatre of Blood (Entry):"
-    },
-    {
-     "en": "Theatre of Blood (Hard) completions:",
-     "pt": "Conclusões do Theatre of Blood (Hard):"
-    },
-    {
-     "en": "Theatre of Blood completions:",
-     "pt": "Conclusões do Theatre of Blood:"
-    },
-    {
-     "en": "Tombs of Amascut (Entry) completions:",
-     "pt": "Conclusões do Tombs of Amascut (Entry):"
-    },
-    {
-     "en": "Tombs of Amascut (Expert) completions:",
-     "pt": "Conclusões do Tombs of Amascut (Expert):"
-    },
-    {
-     "en": "Tombs of Amascut completions:",
-     "pt": "Conclusões do Tombs of Amascut:"
-    },
-    {
-     "en": "Tombs of Amascut: Entry mode",
-     "pt": "Tombs of Amascut: Entry mode"
-    },
-    {
-     "en": "Tombs of Amascut: Expert mode",
-     "pt": "Tombs of Amascut: Expert mode"
-    },
-    {
-     "en": "Ward of Arceuus active and duration",
-     "pt": "Ward of Arceuus ativo e duração"
-    },
-    {
-     "en": "Ward of Arceuus cooldown.",
-     "pt": "Cooldown do Ward of Arceuus."
-    },
-    {
-     "en": "Ward of Arceuus.",
-     "pt": "Ward of Arceuus."
-    },
-    {
-     "en": "Way of the Warrior.",
-     "pt": "Way of the Warrior."
-    },
-    {
-     "en": "Wrath of Amascut: Perform an attack with 100% increased accuracy and 25% increased damage, but with halved attack speed. If hit, the opponent will take 25% increased damage for the next 6 seconds. This special attack can only be used within the Tombs of Amascut.",
-     "pt": "Wrath of Amascut: realiza um ataque com 100% mais precisão e 25% mais dano, mas com velocidade de ataque reduzida à metade. Se acertar, o oponente leva 25% mais dano pelos próximos 6 segundos. Essa special attack só pode ser usada dentro do Tombs of Amascut."
-    },
-    {
-     "en": "Chambers of Xeric (CM) completions:",
-     "pt": "Conclusões do Chambers of Xeric (CM):"
-    },
-    {
-     "en": "Chambers of Xeric completions:",
-     "pt": "Conclusões do Chambers of Xeric:"
-    },
-    {
-     "en": "Chambers of Xeric helper",
-     "pt": "Ajudante do Chambers of Xeric"
-    }
-   ]
-  }
- },
+ "translations_quests.json": {},
+ "translations_settings.json": {},
  "translations_skills.json": {},
  "translations_welcome.json": {}
 }

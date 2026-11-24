@@ -84,7 +84,8 @@ entrada sempre recebe a mesma decisão.
   os nomes próprios do glossário, manter a pontuação final (ponto, interrogação e
   exclamação contam como a mesma; dois-pontos precisam ficar), não ter palavra comum do
   inglês sobrando, não ter palavra sem acento da lista, não pendurar o nome em inglês
-  entre parênteses e, no menu, usar o infinitivo.
+  entre parênteses, não misturar línguas num nome ("Chambers de Xeric") e, no menu,
+  usar o infinitivo.
 - **Auditoria:** `python3 aplicar_traducoes.py --auditar` roda a validação nos JSONs
   atuais e grava `dados/auditoria.json`, sem mudar nada.
 

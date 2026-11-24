@@ -7,7 +7,8 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import regras  # noqa: E402
 
 GLOSSARIO = frozenset({"Romeo", "Varrock Square", "Romeo & Juliet", "Sheep Shearer", "Cook",
-                       "Grand Exchange", "Slayer", "Bronze sword", "Amulet of accuracy"})
+                       "Grand Exchange", "Slayer", "Bronze sword", "Amulet of accuracy",
+                       "Chambers of Xeric"})
 MENU = frozenset(regras.imperativos_do_menu({"Buy": "Comprar", "Talk-to": "Falar com", "Take": "Pegar", "Pass": "Passar"}))
 QUESTS = "translations_quests.json"
 
@@ -52,6 +53,10 @@ class ValidacaoTest(unittest.TestCase):
     def test_nome_pendurado_entre_parenteses(self):
         self.assertIn("parenteses", erros("Talk to Romeo.", "Fale com o Romeu (Romeo)."))
         self.assertEqual(erros("Talk to Romeo (again).", "Fale com Romeo (de novo)."), [])
+
+    def test_nome_hibrido(self):
+        self.assertIn("hibrido", erros("Raid the Chambers of Xeric.", "Faça a raid das Chambers de Xeric."))
+        self.assertEqual(erros("Raid the Chambers of Xeric.", "Faça a raid das Chambers of Xeric."), [])
 
     def test_titulo_com_maiusculas_so_conta_termo_composto(self):
         self.assertNotIn("glossario", erros("View Cook Options", "Ver opções do cozinheiro"))
