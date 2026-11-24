@@ -41,6 +41,38 @@ apague o arquivo.
 Depois de mudar o código, gere o jar de novo com `./scripts/gerar-dist.sh` (Linux ou
 WSL, precisa de JDK 11 ou mais novo) e rode o `instalar.bat`.
 
+## Atualizar as traduções
+
+Quando o jogo ganhar diálogos novos, atualize a base pela OSRS Wiki. O jogo atualiza
+às quartas-feiras, e a wiki costuma transcrever os diálogos novos em poucos dias.
+
+Aviso: o download faz uma requisição por vez, com 8 a 12 s de pausa, para não
+sobrecarregar a wiki. Não reduza a pausa e não rode duas cópias ao mesmo tempo. A
+conferência leva cerca de 25 minutos.
+
+Rode os passos 1 a 3 e 5 dentro de `ferramentas/wiki`, no Linux ou no WSL:
+
+1. Baixe as transcrições novas e as editadas: `python3 baixar_transcricoes.py --atualizar`.
+2. Extraia as falas: `python3 extrair_falas.py`.
+3. Meça o que falta: `python3 cobertura.py`. O resumo sai na tela, e as falas sem
+   tradução ficam em `dados/faltando.json`.
+4. Traduza as falas de `dados/faltando.json` num arquivo JSON
+   `{"texto em inglês": "tradução"}`, seguindo os
+   [critérios de tradução](#critérios-de-tradução). O Claude Code faz isso se você
+   pedir: "traduza o faltando.json seguindo os critérios do README".
+5. Valide e aplique:
+   1. `python3 validar_traducoes.py dados/faltando.json novas.json` (corrija até dar 0 erros);
+   2. `python3 aplicar_traducoes.py novas.json`.
+6. Faça commit e push, e rode o `instalar.bat` no Windows para copiar as traduções novas.
+
+Para corrigir uma tradução que já existe, edite o JSON em `traducoes/pt-BR` e rode o
+`instalar.bat`. Com o jogo aberto, o plugin recarrega os JSONs da pasta instalada em
+2 segundos.
+
+Limite: as transcrições da wiki cobrem diálogos, opções, caixas de mensagem e falas
+acima da cabeça. Mensagens do chat, examines e textos de interface novos não estão
+nelas.
+
 ## Créditos
 
 - **Walter Rezende**: autor do plugin original e dos dicionários de tradução,

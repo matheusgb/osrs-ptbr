@@ -16,6 +16,9 @@ cópias ao mesmo tempo, para não sobrecarregar a wiki.
 3. Meça a cobertura: `python3 cobertura.py`.
 4. Leia o resumo em `dados/cobertura.md` e a lista do que falta em
    `dados/faltando.json`.
+5. Traduza o que falta num JSON `{"texto em inglês": "tradução"}`, valide com
+   `python3 validar_traducoes.py dados/faltando.json novas.json` e aplique com
+   `python3 aplicar_traducoes.py novas.json`.
 
 ## Arquivos gerados
 
