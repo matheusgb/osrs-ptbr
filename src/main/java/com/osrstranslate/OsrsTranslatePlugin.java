@@ -358,6 +358,11 @@ public class OsrsTranslatePlugin extends Plugin {
      * opção e ao entrar na tela de login.
      */
     private void registerOpenInterfaces() {
+        // Antes da tela de login o cliente ainda não montou as interfaces, e
+        // getWidgetRoots() lança NullPointerException dentro do próprio cliente.
+        if (client.getGameState().getState() < GameState.LOGIN_SCREEN.getState()) {
+            return;
+        }
         Set<Integer> groups = new HashSet<>();
         Widget[] roots = client.getWidgetRoots();
         if (roots != null) {
