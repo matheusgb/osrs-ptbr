@@ -202,6 +202,18 @@ public interface OsrsTranslateConfig extends Config {
         return true;
     }
 
+    @ConfigItem(
+        keyName = "enableOtherInterfaces",
+        name = "Traduzir outras interfaces (experimental)",
+        description = "Traduz textos de qualquer interface aberta, como banco, lojas e GE. "
+            + "Usa só tradução exata e pode atrapalhar plugins que leem o texto em inglês",
+        section = staticTranslations,
+        position = 11
+    )
+    default boolean enableOtherInterfaces() {
+        return false;
+    }
+
     @ConfigSection(
         name = "Correções Visuais",
         description = "Ajustes de layout e apresentação",

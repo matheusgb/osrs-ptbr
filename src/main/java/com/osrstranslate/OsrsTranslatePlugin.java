@@ -24,6 +24,7 @@ import net.runelite.api.gameval.VarClientID;
 import net.runelite.api.events.WidgetLoaded;
 import net.runelite.api.widgets.InterfaceID;
 import net.runelite.api.widgets.Widget;
+import net.runelite.api.widgets.WidgetUtil;
 import net.runelite.client.RuneLite;
 import net.runelite.client.callback.ClientThread;
 import net.runelite.client.config.ConfigManager;
@@ -35,6 +36,7 @@ import net.runelite.client.plugins.PluginDescriptor;
 
 import javax.inject.Inject;
 import java.io.File;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.Locale;
@@ -121,6 +123,26 @@ public class OsrsTranslatePlugin extends Plugin {
         BANK_PIN,
         TOPLEVEL_OSRS_STRETCH,
     };
+
+    /** Interfaces com tradução própria ou que não devem ser tocadas, como o chat. */
+    private static final Set<Integer> HANDLED_INTERFACES = handledInterfaces();
+
+    private static Set<Integer> handledInterfaces() {
+        Set<Integer> ids = new HashSet<>();
+        for (int[] group : new int[][] {
+            DIALOG_INTERFACES, MAIN_TEXT_INTERFACES, QUEST_INTERFACES, ACHIEVEMENT_DIARY_INTERFACES,
+            ITEM_INTERFACES, SKILL_GUIDE_INTERFACES, SETTINGS_INTERFACES,
+        }) {
+            for (int id : group) {
+                ids.add(id);
+            }
+        }
+        ids.addAll(Set.of(
+            CHATBOX_UNIVERSE, CHAT_OVERLAY, PLAYER_DESIGN, TUTORIAL_PLAYER_EXPERIENCE,
+            TUTORIAL_DISPLAY_NAME, CLUE_SCROLL_TEXT, WELCOME_SCREEN, MACRO_MIME_EMOTES, CRAFTING_GOLD
+        ));
+        return Collections.unmodifiableSet(ids);
+    }
 
     private static final Pattern HTML_TAG = Pattern.compile("<[^>]+>");
     private static final Pattern BR_TAG = Pattern.compile("(?i)<br\\s*/?>");
@@ -521,6 +543,10 @@ public class OsrsTranslatePlugin extends Plugin {
 
     @Subscribe
     public void onGameTick(GameTick event) {
+        if (config.enableOtherInterfaces() && client.getGameState() == GameState.LOGGED_IN) {
+            translateOtherInterfaces();
+        }
+
         if (!config.enableWelcome() || !isLoginScreenState()) {
             return;
         }
@@ -530,6 +556,56 @@ public class OsrsTranslatePlugin extends Plugin {
         }
 
         inspectVisibleLoginGroups();
+    }
+
+    /**
+     * Traduz por busca exata o texto de toda interface visível que o plugin
+     * não trata em outro lugar. Roda a cada game tick, então um texto que o
+     * jogo redesenha pode aparecer em inglês por até um tick.
+     */
+    private void translateOtherInterfaces() {
+        Widget[] roots = client.getWidgetRoots();
+        if (roots == null) {
+            return;
+        }
+
+        TranslationDictionary merged = translationState.merged;
+        for (Widget root : roots) {
+            translateOtherWidget(root, merged);
+        }
+    }
+
+    private void translateOtherWidget(Widget widget, TranslationDictionary merged) {
+        if (widget == null || widget.isSelfHidden()) {
+            return;
+        }
+
+        int groupId = WidgetUtil.componentToInterface(widget.getId());
+        String text = widget.getText();
+        if (text != null && !text.isEmpty()
+            && !HANDLED_INTERFACES.contains(groupId)
+            && !loginInterfaceGroups.contains(groupId)) {
+            String lookup = TranslationLookupHelper.normalizeLookupText(TranslationLookupHelper.cleanText(text));
+            if (!lookup.isEmpty() && !merged.isTranslated(lookup)) {
+                String translation = merged.find(lookup);
+                if (translation != null) {
+                    widget.setText(preserveStartTags(text) + translation);
+                }
+            }
+        }
+
+        translateOtherChildren(widget.getChildren(), merged);
+        translateOtherChildren(widget.getDynamicChildren(), merged);
+        translateOtherChildren(widget.getNestedChildren(), merged);
+    }
+
+    private void translateOtherChildren(Widget[] children, TranslationDictionary merged) {
+        if (children == null) {
+            return;
+        }
+        for (Widget child : children) {
+            translateOtherWidget(child, merged);
+        }
     }
 
     private void inspectVisibleLoginGroups() {
