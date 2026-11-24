@@ -1,9 +1,7 @@
 package com.osrstranslate;
 
-import com.google.gson.Gson;
 import com.google.inject.Provides;
 import lombok.extern.slf4j.Slf4j;
-import okhttp3.OkHttpClient;
 import net.runelite.api.Actor;
 import net.runelite.api.ChatMessageType;
 import net.runelite.api.Client;
@@ -14,7 +12,6 @@ import net.runelite.api.MenuEntry;
 import net.runelite.api.NPC;
 import net.runelite.api.events.BeforeRender;
 import net.runelite.api.events.ChatMessage;
-import net.runelite.api.events.GameTick;
 import net.runelite.api.events.GameStateChanged;
 import net.runelite.api.events.MenuOpened;
 import net.runelite.api.events.MenuOptionClicked;
@@ -40,7 +37,6 @@ import java.io.File;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.LinkedHashMap;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
@@ -79,12 +75,6 @@ public class OsrsTranslatePlugin extends Plugin {
     private static final int MACRO_MIME_EMOTES = 188;
     private static final int CRAFTING_GOLD = 446;
     private static final int TOPLEVEL_OSRS_STRETCH = 161;
-    private static final long LOGIN_INSPECTION_WINDOW_MS = 30_000L;
-    private static final int LOGIN_GROUP_SCAN_LIMIT = 900;
-    private static final int LOGIN_CHILD_SCAN_LIMIT = 200;
-    private static final String REMOTE_MANIFEST_URL = RemoteTranslationService.DEFAULT_MANIFEST_URL;
-    private static final String LANGUAGE_FOLDER = "pt-BR";
-    private static final int REMOTE_UPDATE_INTERVAL_MINUTES = 60;
     private static final int LOCAL_TRANSLATION_POLL_SECONDS = 2;
     private static final int TRANSLATION_CACHE_LIMIT = 20_000;
 
@@ -158,32 +148,20 @@ public class OsrsTranslatePlugin extends Plugin {
     @Inject private Client client;
     @Inject private ClientThread clientThread;
     @Inject private OsrsTranslateConfig config;
-    @Inject private Gson gson;
-    @Inject private OkHttpClient httpClient;
     @Inject private EventBus eventBus;
-    private final ExaminePluginBridge examinePluginBridge = new ExaminePluginBridge();
     private final TranslationRepository translationRepository = new TranslationRepository();
     private final WelcomeTranslationService welcomeTranslationService = new WelcomeTranslationService();
     private volatile TranslationState translationState = TranslationState.empty();
 
-    private boolean skillGuideOpen;
-    private boolean skillGuideNeedsTranslation;
-    private int skillGuideInterfaceId = SKILL_GUIDE;
-    private String lastTutorialPlayerExperienceSnapshot = "";
-    private String lastChatboxUniverseSnapshot = "";
-    private String lastChatOverlaySnapshot = "";
-    private ScheduledExecutorService remoteUpdateScheduler;
     private ScheduledExecutorService localTranslationHotReloadScheduler;
     private volatile String localTranslationFingerprint = "";
-    private RemoteTranslationService remoteTranslationService;
     private EventBus.Subscriber menuOpenedTranslationSubscriber;
-    private long loginInspectionDeadline;
-    private final Set<Integer> inspectedLoginGroups = new HashSet<>();
+    /** Interfaces abertas na tela de login; usam o dicionário de boas-vindas. */
     private final Set<Integer> loginInterfaceGroups = new HashSet<>();
     private final TranslationCache otherInterfacesCache = new TranslationCache(TRANSLATION_CACHE_LIMIT);
     /** Interfaces abertas que são traduzidas antes de cada quadro. */
     private final Set<Integer> openInterfaces = new HashSet<>();
-    /** Interfaces abertas sem tradução própria (opção experimental). */
+    /** Interfaces abertas sem tradução própria (opção "Outras interfaces"). */
     private final Set<Integer> openOtherInterfaces = new HashSet<>();
     /** Tradução já calculada por interface e texto cru. */
     private final TranslationCache widgetTextCache = new TranslationCache(TRANSLATION_CACHE_LIMIT);
@@ -196,16 +174,6 @@ public class OsrsTranslatePlugin extends Plugin {
 
     @Override
     protected void startUp() {
-        File translationCacheRoot = new File(
-            RuneLite.RUNELITE_DIR,
-            "osrs-translate" + File.separator + "translations"
-        );
-        log.debug("Cache de traducoes remotas: {}", translationCacheRoot.getAbsolutePath());
-        remoteTranslationService = new RemoteTranslationService(
-            httpClient,
-            gson,
-            translationCacheRoot
-        );
         reloadTranslations();
         menuOpenedTranslationSubscriber = eventBus.register(
             MenuOpened.class,
@@ -218,32 +186,17 @@ public class OsrsTranslatePlugin extends Plugin {
             },
             -1000f
         );
-        if (!isLocalTranslationSource()) {
-            startRemoteTranslationUpdater();
-        } else {
-            startLocalTranslationHotReload();
-        }
+        startLocalTranslationHotReload();
+        // Interfaces abertas antes de o plugin ligar não geram WidgetLoaded.
+        clientThread.invokeLater(this::registerOpenInterfaces);
     }
 
     @Override
     protected void shutDown() {
-        if (remoteUpdateScheduler != null) {
-            remoteUpdateScheduler.shutdownNow();
-            remoteUpdateScheduler = null;
-        }
         stopLocalTranslationHotReload();
         eventBus.unregister(menuOpenedTranslationSubscriber);
         menuOpenedTranslationSubscriber = null;
-        remoteTranslationService = null;
         translationState = TranslationState.empty();
-        skillGuideOpen = false;
-        skillGuideNeedsTranslation = false;
-        skillGuideInterfaceId = SKILL_GUIDE;
-        lastTutorialPlayerExperienceSnapshot = "";
-        lastChatboxUniverseSnapshot = "";
-        lastChatOverlaySnapshot = "";
-        loginInspectionDeadline = 0L;
-        inspectedLoginGroups.clear();
         loginInterfaceGroups.clear();
         openInterfaces.clear();
         openOtherInterfaces.clear();
@@ -252,102 +205,21 @@ public class OsrsTranslatePlugin extends Plugin {
         originalMenuOptions.clear();
     }
 
-    private void startRemoteTranslationUpdater() {
-        if (remoteTranslationService == null) {
-            return;
-        }
-
-        if (remoteUpdateScheduler != null) {
-            remoteUpdateScheduler.shutdownNow();
-        }
-
-        remoteUpdateScheduler = Executors.newSingleThreadScheduledExecutor();
-        remoteUpdateScheduler.execute(this::checkRemoteTranslationUpdate);
-        remoteUpdateScheduler.scheduleWithFixedDelay(
-            this::checkRemoteTranslationUpdate,
-            REMOTE_UPDATE_INTERVAL_MINUTES,
-            REMOTE_UPDATE_INTERVAL_MINUTES,
-            TimeUnit.MINUTES
-        );
-    }
-
-    private void checkRemoteTranslationUpdate() {
-        if (isLocalTranslationSource()) {
-            return;
-        }
-
-        try {
-            String languageFolder = selectedLanguageFolder();
-            RemoteTranslationService.UpdateResult result = remoteTranslationService.update(
-                REMOTE_MANIFEST_URL,
-                languageFolder
-            );
-            if (isLocalTranslationSource() || !languageFolder.equals(selectedLanguageFolder())) {
-                return;
-            }
-            boolean sourceChanged = translationRepository.configureRemoteCacheDirectory(
-                result.getActiveDirectory()
-            );
-            if (result.isChanged() || sourceChanged) {
-                translationState = translationRepository.loadState(
-                    OsrsTranslateConfig.TranslationSource.REMOTE
-                );
-                if (skillGuideOpen) {
-                    skillGuideNeedsTranslation = true;
-                }
-                log.info("Traducoes remotas atualizadas para a versao {}", result.getVersion());
-            } else {
-                log.debug("Traducoes remotas ja estao na versao {}", result.getVersion());
-            }
-        } catch (Exception e) {
-            log.warn("Nao foi possivel atualizar as traducoes remotas; mantendo o cache atual", e);
-        }
-    }
-
     @Subscribe
     public void onConfigChanged(ConfigChanged event) {
         if (!OsrsTranslateConfig.GROUP.equals(event.getGroup())) {
             return;
         }
 
-        // Uma opção desligada não pode continuar traduzindo a interface aberta.
+        // Uma opção pode ter sido desligada: refaz a lista de interfaces traduzidas.
         openInterfaces.clear();
         openOtherInterfaces.clear();
+        clientThread.invokeLater(this::registerOpenInterfaces);
 
-        if ((!"translationSource".equals(event.getKey())
-            && !"translationHotReload".equals(event.getKey())
-            && !"localTranslationPath".equals(event.getKey()))
-            || remoteTranslationService == null) {
-            return;
-        }
-
-        reloadTranslations();
-        if (isLocalTranslationSource()) {
+        if ("translationHotReload".equals(event.getKey()) || "localTranslationPath".equals(event.getKey())) {
+            reloadTranslations();
             startLocalTranslationHotReload();
-        } else {
-            stopLocalTranslationHotReload();
-            if (remoteUpdateScheduler == null || remoteUpdateScheduler.isShutdown()) {
-                startRemoteTranslationUpdater();
-            } else {
-                remoteUpdateScheduler.execute(this::checkRemoteTranslationUpdate);
-            }
         }
-    }
-
-    private String selectedLanguageFolder() {
-        return LANGUAGE_FOLDER;
-    }
-
-    /**
-     * Fonte local, se escolhida e se a pasta existe. Sem a pasta (instalador não
-     * rodou), o plugin usa a fonte remota em vez de carregar dicionários vazios.
-     */
-    private boolean isLocalTranslationSource() {
-        if (config.translationSource() != OsrsTranslateConfig.TranslationSource.LOCAL) {
-            return false;
-        }
-        File directory = localTranslationDirectory();
-        return directory != null && directory.isDirectory();
     }
 
     private File localTranslationDirectory() {
@@ -360,40 +232,17 @@ public class OsrsTranslatePlugin extends Plugin {
     }
 
     private void reloadTranslations() {
-        if (config.translationSource() == OsrsTranslateConfig.TranslationSource.LOCAL
-            && !isLocalTranslationSource()) {
-            log.warn("Pasta de traducoes locais nao encontrada ({}); usando a fonte remota",
-                localTranslationDirectory());
+        File directory = localTranslationDirectory();
+        if (!directory.isDirectory()) {
+            log.warn("Pasta de traducoes nao encontrada: {}. Rode o instalar.bat.", directory);
         }
-        String languageFolder = selectedLanguageFolder();
-        translationRepository.configureLocalDirectory(localTranslationDirectory());
-
-        if (isLocalTranslationSource()) {
-            translationState = translationRepository.loadState(
-                OsrsTranslateConfig.TranslationSource.LOCAL
-            );
-            stopRemoteTranslationUpdater();
-            return;
-        }
-
-        translationRepository.configureRemoteCacheDirectory(
-            remoteTranslationService.getActiveDirectory(languageFolder)
-        );
-        translationState = translationRepository.loadState(
-            OsrsTranslateConfig.TranslationSource.REMOTE
-        );
-    }
-
-    private void stopRemoteTranslationUpdater() {
-        if (remoteUpdateScheduler != null) {
-            remoteUpdateScheduler.shutdownNow();
-            remoteUpdateScheduler = null;
-        }
+        translationRepository.configureLocalDirectory(directory);
+        translationState = translationRepository.loadState();
     }
 
     private void startLocalTranslationHotReload() {
         stopLocalTranslationHotReload();
-        if (!isLocalTranslationSource() || !config.translationHotReload()) {
+        if (!config.translationHotReload()) {
             return;
         }
 
@@ -416,10 +265,6 @@ public class OsrsTranslatePlugin extends Plugin {
     }
 
     private void checkLocalTranslationHotReload() {
-        if (!isLocalTranslationSource() || !config.translationHotReload()) {
-            return;
-        }
-
         try {
             String fingerprint = translationRepository.localFingerprint();
             if (fingerprint.equals(localTranslationFingerprint)
@@ -427,18 +272,14 @@ public class OsrsTranslatePlugin extends Plugin {
                 return;
             }
 
-            TranslationState updatedState = translationRepository.loadState(
-                OsrsTranslateConfig.TranslationSource.LOCAL
-            );
+            TranslationState updatedState = translationRepository.loadState();
             if (!fingerprint.equals(translationRepository.localFingerprint())) {
                 return;
             }
 
+            // O cache de tradução troca junto, porque ele é ligado ao estado.
             translationState = updatedState;
             localTranslationFingerprint = fingerprint;
-            if (skillGuideOpen) {
-                clientThread.invokeLater(() -> skillGuideNeedsTranslation = true);
-            }
             log.info("Traducoes locais recarregadas automaticamente");
         } catch (Exception e) {
             log.warn("Nao foi possivel recarregar as traducoes locais", e);
@@ -447,15 +288,13 @@ public class OsrsTranslatePlugin extends Plugin {
 
     @Subscribe
     public void onWidgetLoaded(WidgetLoaded event) {
-        int groupId = event.getGroupId();
+        registerInterface(event.getGroupId());
+    }
 
-        if (config.enableOtherInterfaces()
-            && !HANDLED_INTERFACES.contains(groupId)
-            && !isLoginScreenState()) {
-            openOtherInterfaces.add(groupId);
-        }
-
+    /** Decide como uma interface que abriu é traduzida. */
+    private void registerInterface(int groupId) {
         if (groupId == CLUE_SCROLL_TEXT) {
+            // O plugin Clue Scroll lê o texto original logo depois de abrir.
             if (config.enableClueScrolls()) {
                 clientThread.invokeLater(() ->
                     clientThread.invokeLater(() -> translateInterface(CLUE_SCROLL_TEXT)));
@@ -463,68 +302,92 @@ public class OsrsTranslatePlugin extends Plugin {
             return;
         }
 
-        if (config.enableWelcome() && isLoginScreenState()) {
-            loginInspectionDeadline = System.currentTimeMillis() + LOGIN_INSPECTION_WINDOW_MS;
-            loginInterfaceGroups.add(groupId);
-            inspectLoginGroup(groupId);
-            scheduleTranslation(groupId);
+        if (isLoginScreenState()) {
+            if (config.enableWelcome()) {
+                loginInterfaceGroups.add(groupId);
+                scheduleTranslation(groupId);
+            }
             return;
         }
 
-        if (config.enableDialogues() && contains(DIALOG_INTERFACES, groupId)) {
+        if (isKnownInterfaceEnabled(groupId)) {
             scheduleTranslation(groupId);
-            return;
+        } else if (config.enableOtherInterfaces() && !HANDLED_INTERFACES.contains(groupId)) {
+            openOtherInterfaces.add(groupId);
         }
+    }
 
+    /** Interface com dicionário próprio, com a opção dela ligada. */
+    private boolean isKnownInterfaceEnabled(int groupId) {
+        if (contains(DIALOG_INTERFACES, groupId)) {
+            return config.enableDialogues();
+        }
         if (contains(MAIN_TEXT_INTERFACES, groupId)) {
-            scheduleTranslation(groupId);
+            return true;
+        }
+        if (groupId == CHAT_OVERLAY) {
+            return config.enableGameMessages();
+        }
+        if (groupId == PLAYER_DESIGN || groupId == TUTORIAL_PLAYER_EXPERIENCE || groupId == TUTORIAL_DISPLAY_NAME
+            || groupId == MACRO_MIME_EMOTES || groupId == CRAFTING_GOLD) {
+            return config.enableMenuEntries();
+        }
+        if (contains(QUEST_INTERFACES, groupId)) {
+            return config.enableQuestJournal();
+        }
+        if (contains(ACHIEVEMENT_DIARY_INTERFACES, groupId)) {
+            return config.enableAchievementDiary();
+        }
+        if (contains(ITEM_INTERFACES, groupId)) {
+            return config.enableItems();
+        }
+        if (groupId == WELCOME_SCREEN) {
+            return config.enableWelcome();
+        }
+        if (contains(SKILL_GUIDE_INTERFACES, groupId)) {
+            return config.enableSkillGuide();
+        }
+        if (contains(SETTINGS_INTERFACES, groupId)) {
+            return config.enableSettings();
+        }
+        return false;
+    }
+
+    /**
+     * Registra as interfaces que já estão abertas: ao ligar o plugin, ao mudar uma
+     * opção e ao entrar na tela de login.
+     */
+    private void registerOpenInterfaces() {
+        Set<Integer> groups = new HashSet<>();
+        Widget[] roots = client.getWidgetRoots();
+        if (roots != null) {
+            for (Widget root : roots) {
+                collectGroups(root, groups);
+            }
+        }
+        for (int groupId : groups) {
+            registerInterface(groupId);
+        }
+    }
+
+    private void collectGroups(Widget widget, Set<Integer> groups) {
+        if (widget == null) {
             return;
         }
-
-        if (config.enableGameMessages() && groupId == CHAT_OVERLAY) {
-            scheduleTranslation(groupId);
-            return;
+        groups.add(WidgetUtil.componentToInterface(widget.getId()));
+        // Interfaces abertas dentro de outras ficam nos filhos aninhados.
+        Widget[] nested = widget.getNestedChildren();
+        if (nested != null) {
+            for (Widget child : nested) {
+                collectGroups(child, groups);
+            }
         }
-
-        if (config.enableMenuEntries()
-            && (groupId == PLAYER_DESIGN
-                || groupId == TUTORIAL_PLAYER_EXPERIENCE
-                || groupId == TUTORIAL_DISPLAY_NAME
-                || groupId == MACRO_MIME_EMOTES
-                || groupId == CRAFTING_GOLD)) {
-            scheduleTranslation(groupId);
-            return;
-        }
-
-        if (config.enableQuestJournal() && contains(QUEST_INTERFACES, groupId)) {
-            scheduleTranslation(groupId);
-            return;
-        }
-
-        if (config.enableAchievementDiary() && contains(ACHIEVEMENT_DIARY_INTERFACES, groupId)) {
-            scheduleTranslation(groupId);
-            return;
-        }
-
-        if (config.enableItems() && contains(ITEM_INTERFACES, groupId)) {
-            scheduleTranslation(groupId);
-            return;
-        }
-
-        if (config.enableWelcome() && groupId == WELCOME_SCREEN) {
-            scheduleTranslation(groupId);
-            return;
-        }
-
-        if (config.enableSkillGuide() && contains(SKILL_GUIDE_INTERFACES, groupId)) {
-            skillGuideOpen = true;
-            skillGuideNeedsTranslation = true;
-            skillGuideInterfaceId = groupId;
-            translateInterface(groupId);
-        }
-
-        if (config.enableSettings() && contains(SETTINGS_INTERFACES, groupId)) {
-            scheduleTranslation(groupId);
+        for (Widget[] children : new Widget[][] {widget.getStaticChildren(), widget.getDynamicChildren()}) {
+            if (children != null) {
+                for (Widget child : children) {
+                    collectGroups(child, groups);
+                }
+            }
         }
     }
 
@@ -532,6 +395,18 @@ public class OsrsTranslatePlugin extends Plugin {
     public void onWidgetClosed(WidgetClosed event) {
         openInterfaces.remove(event.getGroupId());
         openOtherInterfaces.remove(event.getGroupId());
+    }
+
+    @Subscribe
+    public void onGameStateChanged(GameStateChanged event) {
+        if (!isLoginScreenState()) {
+            return;
+        }
+        // A tela de login troca as interfaces: começa a lista de novo.
+        loginInterfaceGroups.clear();
+        openInterfaces.clear();
+        openOtherInterfaces.clear();
+        registerOpenInterfaces();
     }
 
     private boolean contains(int[] values, int target) {
@@ -548,8 +423,9 @@ public class OsrsTranslatePlugin extends Plugin {
         // inglês logo depois de abrir, e a tradução antecipada pode quebrar o destaque.
         if (interfaceId != InterfaceID.DIALOG_OPTION || config.translateDialogOptionsEarly()) {
             openInterfaces.add(interfaceId);
+            return;
         }
-        QuestHelperCompat.scheduleDialogTranslation(clientThread, interfaceId, () -> translateInterface(interfaceId));
+        clientThread.invokeLater(() -> clientThread.invokeLater(() -> translateInterface(interfaceId)));
     }
 
     /**
@@ -567,7 +443,7 @@ public class OsrsTranslatePlugin extends Plugin {
         if (!config.enableOtherInterfaces() || openOtherInterfaces.isEmpty()) {
             return;
         }
-        TranslationDictionary merged = otherInterfacesDictionary();
+        TranslationDictionary merged = translationState.merged;
         for (int groupId : openOtherInterfaces) {
             for (int i = 0; i < 100; i++) {
                 translateOtherWidget(client.getWidget(groupId, i), merged);
@@ -583,83 +459,9 @@ public class OsrsTranslatePlugin extends Plugin {
             || state == GameState.HOPPING;
     }
 
-    private void inspectLoginGroup(int groupId) {
-        if (System.currentTimeMillis() > loginInspectionDeadline || inspectedLoginGroups.contains(groupId)) {
-            return;
-        }
-
-        Map<Integer, String> texts = new LinkedHashMap<>();
-        for (int i = 0; i < 200; i++) {
-            Widget widget = client.getWidget(groupId, i);
-            if (widget != null) {
-                collectWidgetTexts(widget, texts);
-            }
-        }
-
-        if (texts.isEmpty()) {
-            return;
-        }
-
-        inspectedLoginGroups.add(groupId);
-        log.debug("[LoginInspect] groupId={} textos={}", groupId, texts.size());
-    }
-
-    @Subscribe
-    public void onGameStateChanged(GameStateChanged event) {
-        GameState state = event.getGameState();
-        if (!config.enableWelcome() || !isLoginScreenState()) {
-            return;
-        }
-
-        loginInspectionDeadline = System.currentTimeMillis() + LOGIN_INSPECTION_WINDOW_MS;
-        inspectedLoginGroups.clear();
-        loginInterfaceGroups.clear();
-        log.debug("[LoginInspect] state={}", state);
-        inspectVisibleLoginGroups();
-    }
-
-    @Subscribe
-    public void onGameTick(GameTick event) {
-        if (config.enableOtherInterfaces() && client.getGameState() == GameState.LOGGED_IN) {
-            translateOtherInterfaces();
-        }
-
-        if (!config.enableWelcome() || !isLoginScreenState()) {
-            return;
-        }
-
-        if (loginInspectionDeadline == 0L || System.currentTimeMillis() > loginInspectionDeadline) {
-            loginInspectionDeadline = System.currentTimeMillis() + LOGIN_INSPECTION_WINDOW_MS;
-        }
-
-        inspectVisibleLoginGroups();
-    }
-
-    /**
-     * Traduz por busca exata o texto de toda interface visível que o plugin
-     * não trata em outro lugar. Roda a cada game tick como reforço, para
-     * interfaces que já estavam abertas. As que abrem depois entram em
-     * openOtherInterfaces e são traduzidas antes de cada quadro.
-     */
-    private void translateOtherInterfaces() {
-        Widget[] roots = client.getWidgetRoots();
-        if (roots == null) {
-            return;
-        }
-
-        TranslationDictionary merged = otherInterfacesDictionary();
-        for (Widget root : roots) {
-            translateOtherWidget(root, merged);
-        }
-    }
-
-    private TranslationDictionary otherInterfacesDictionary() {
-        return translationState.merged;
-    }
-
     /**
      * Retorna a tradução do texto cru, ou null. Guarda o resultado em cache,
-     * porque o mesmo texto aparece em todo tick.
+     * porque o mesmo texto aparece em todo quadro.
      */
     private String findOtherTranslation(String text, TranslationDictionary merged) {
         return otherInterfacesCache.get(translationState, text, () -> {
@@ -707,109 +509,15 @@ public class OsrsTranslatePlugin extends Plugin {
         }
     }
 
-    private void inspectVisibleLoginGroups() {
-        for (int groupId = 0; groupId <= LOGIN_GROUP_SCAN_LIMIT; groupId++) {
-            if (inspectedLoginGroups.contains(groupId)) {
-                continue;
-            }
-
-            boolean foundAnyWidget = false;
-            for (int childId = 0; childId < LOGIN_CHILD_SCAN_LIMIT; childId++) {
-                if (client.getWidget(groupId, childId) != null) {
-                    foundAnyWidget = true;
-                    break;
-                }
-            }
-
-            if (!foundAnyWidget) {
-                continue;
-            }
-
-            loginInterfaceGroups.add(groupId);
-            inspectLoginGroup(groupId);
-        }
-    }
-
-    private void collectWidgetTexts(Widget widget, Map<Integer, String> texts) {
-        if (widget == null) {
-            return;
-        }
-
-        String clean = TranslationLookupHelper.normalizeLookupText(TranslationLookupHelper.cleanText(widget.getText()));
-        if (!clean.isEmpty() && containsLetters(clean)) {
-            texts.putIfAbsent(widget.getId(), clean);
-        }
-
-        Widget[] children = widget.getChildren();
-        if (children != null) {
-            for (Widget child : children) {
-                collectWidgetTexts(child, texts);
-            }
-        }
-
-        Widget[] dynamicChildren = widget.getDynamicChildren();
-        if (dynamicChildren != null) {
-            for (Widget child : dynamicChildren) {
-                collectWidgetTexts(child, texts);
-            }
-        }
-
-        Widget[] nestedChildren = widget.getNestedChildren();
-        if (nestedChildren != null) {
-            for (Widget child : nestedChildren) {
-                collectWidgetTexts(child, texts);
-            }
-        }
-    }
-
-    private String buildWidgetTextSnapshot(int interfaceId) {
-        Widget root = client.getWidget(interfaceId, 0);
-        if (root == null || root.isHidden()) {
-            return "";
-        }
-
-        Map<Integer, String> texts = new LinkedHashMap<>();
-        collectWidgetTexts(root, texts);
-        if (texts.isEmpty()) {
-            return "";
-        }
-
-        StringBuilder snapshot = new StringBuilder();
-        for (Map.Entry<Integer, String> entry : texts.entrySet()) {
-            snapshot.append(entry.getKey()).append('=').append(entry.getValue()).append('\n');
-        }
-        return snapshot.toString();
-    }
-
-    private boolean containsLetters(String text) {
-        for (int i = 0; i < text.length(); i++) {
-            if (Character.isLetter(text.charAt(i))) {
-                return true;
-            }
-        }
-        return false;
-    }
-
     @Subscribe(priority = 1000f)
     public void onMenuOptionClicked(MenuOptionClicked event) {
-        examinePluginBridge.restoreEnglishOption(event, this);
-
-        if (config.enableSettings()) {
-            Widget bankPinRoot = client.getWidget(BANK_PIN, 0);
-            if (bankPinRoot != null && !bankPinRoot.isHidden()) {
-                clientThread.invokeLater(() -> clientThread.invokeLater(() -> translateInterface(BANK_PIN)));
-            }
-        }
-
-        if (!skillGuideOpen || !config.enableSkillGuide()) {
+        if (!config.enableMenuEntries()) {
             return;
         }
-
-        String option = event.getMenuOption();
+        // Outros plugins e o RuneLite recebem a opção original em inglês.
         String englishOption = englishMenuOption(event.getMenuEntry());
-        if ("View".equals(option) || "View".equals(englishOption)) {
-            skillGuideNeedsTranslation = true;
-            translateInterface(skillGuideInterfaceId);
+        if (englishOption != null) {
+            event.getMenuEntry().setOption(englishOption);
         }
     }
 
@@ -817,86 +525,6 @@ public class OsrsTranslatePlugin extends Plugin {
     public void onBeforeRender(BeforeRender event) {
         translateOpenInterfaces();
         suppressMouseHighlightTooltipForTranslatedMenuOptions();
-        translateDynamicInterfaces();
-
-        if (!skillGuideOpen || !config.enableSkillGuide()) {
-            return;
-        }
-
-        int visibleSkillGuide = findVisibleInterface(SKILL_GUIDE_INTERFACES);
-        if (visibleSkillGuide < 0) {
-            skillGuideOpen = false;
-            skillGuideNeedsTranslation = false;
-            skillGuideInterfaceId = SKILL_GUIDE;
-            return;
-        }
-        skillGuideInterfaceId = visibleSkillGuide;
-
-        if (skillGuideNeedsTranslation) {
-            skillGuideNeedsTranslation = false;
-            translateInterface(skillGuideInterfaceId);
-        }
-    }
-
-    private int findVisibleInterface(int[] interfaceIds) {
-        for (int interfaceId : interfaceIds) {
-            Widget root = client.getWidget(interfaceId, 0);
-            if (root != null && !root.isHidden()) {
-                return interfaceId;
-            }
-        }
-        return -1;
-    }
-
-    private void translateDynamicInterfaces() {
-        if (config.enableMenuEntries()) {
-            String tutorialSnapshot = buildWidgetTextSnapshot(TUTORIAL_PLAYER_EXPERIENCE);
-            String displayNameSnapshot = buildWidgetTextSnapshot(TUTORIAL_DISPLAY_NAME);
-            String snapshot = !displayNameSnapshot.isEmpty() ? displayNameSnapshot : tutorialSnapshot;
-
-            if (!snapshot.isEmpty() && !snapshot.equals(lastTutorialPlayerExperienceSnapshot)) {
-                lastTutorialPlayerExperienceSnapshot = snapshot;
-                if (!displayNameSnapshot.isEmpty()) {
-                    translateInterface(TUTORIAL_DISPLAY_NAME);
-                }
-                if (!tutorialSnapshot.isEmpty()) {
-                    translateInterface(TUTORIAL_PLAYER_EXPERIENCE);
-                }
-            }
-
-            Widget macroMimeRoot = client.getWidget(MACRO_MIME_EMOTES, 0);
-            if (macroMimeRoot != null && !macroMimeRoot.isHidden()) {
-                translateInterface(MACRO_MIME_EMOTES);
-            }
-
-            Widget craftingGoldRoot = client.getWidget(CRAFTING_GOLD, 0);
-            if (craftingGoldRoot != null && !craftingGoldRoot.isHidden()) {
-                translateInterface(CRAFTING_GOLD);
-            }
-        }
-
-        if (config.enableGameMessages()) {
-            String overlaySnapshot = buildWidgetTextSnapshot(CHAT_OVERLAY);
-            if (!overlaySnapshot.isEmpty() && !overlaySnapshot.equals(lastChatOverlaySnapshot)) {
-                lastChatOverlaySnapshot = overlaySnapshot;
-                translateInterface(CHAT_OVERLAY);
-            }
-        }
-
-        if (config.enableWelcome()) {
-            Widget welcomeRoot = client.getWidget(WELCOME_SCREEN, 0);
-            if (welcomeRoot != null && !welcomeRoot.isHidden()) {
-                translateInterface(WELCOME_SCREEN);
-            }
-
-            if (isLoginScreenState()) {
-                for (int groupId : loginInterfaceGroups) {
-                    if (groupId != WELCOME_SCREEN) {
-                        translateInterface(groupId);
-                    }
-                }
-            }
-        }
     }
 
     private void suppressMouseHighlightTooltipForTranslatedMenuOptions() {
@@ -1009,8 +637,8 @@ public class OsrsTranslatePlugin extends Plugin {
             return null;
         }
 
-        String numberingPrefix = QuestHelperCompat.extractNumberingPrefix(cleanText);
-        String lookup = numberingPrefix.isEmpty() ? cleanText : QuestHelperCompat.stripNumberingPrefix(cleanText);
+        String numberingPrefix = TranslationLookupHelper.extractNumberingPrefix(cleanText);
+        String lookup = numberingPrefix.isEmpty() ? cleanText : TranslationLookupHelper.stripNumberingPrefix(cleanText);
 
         String specialTranslation = welcomeTranslationService.translateSpecialText(
             lookup,
@@ -1288,7 +916,9 @@ public class OsrsTranslatePlugin extends Plugin {
             return false;
         }
 
-        return !buildWidgetTextSnapshot(CHAT_OVERLAY).isEmpty();
+        // Com o overlay do chat na tela, a tradução vai para o widget dele.
+        Widget overlay = client.getWidget(CHAT_OVERLAY, 0);
+        return overlay != null && !overlay.isHidden();
     }
 
     private boolean containsRichOverlayFormatting(String text) {

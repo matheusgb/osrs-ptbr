@@ -13,14 +13,7 @@ import java.util.Map;
 
 @Slf4j
 final class TranslationRepository {
-    private volatile File remoteCacheDirectory;
     private volatile File localTranslationDirectory;
-
-    boolean configureRemoteCacheDirectory(File directory) {
-        File previous = remoteCacheDirectory;
-        remoteCacheDirectory = directory;
-        return previous == null ? directory != null : !previous.equals(directory);
-    }
 
     void configureLocalDirectory(File directory) {
         localTranslationDirectory = directory;
@@ -65,12 +58,12 @@ final class TranslationRepository {
         return true;
     }
 
-    TranslationState loadState(OsrsTranslateConfig.TranslationSource source) {
+    TranslationState loadState() {
         Map<TranslationDomain, TranslationDictionary> dictionaries = new EnumMap<>(TranslationDomain.class);
         StringBuilder summary = new StringBuilder("PT-BR carregado:");
         for (TranslationDomain domain : TranslationDomain.values()) {
             TranslationDictionary dictionary = new TranslationDictionary(
-                loadMap(domain.fileName, source),
+                loadLocalMap(domain.fileName),
                 domain.usesPlaceholders
             );
             dictionaries.put(domain, dictionary);
@@ -87,33 +80,6 @@ final class TranslationRepository {
         );
         log.info(summary.toString());
         return state;
-    }
-
-    private Map<String, String> loadMap(
-        String fileName,
-        OsrsTranslateConfig.TranslationSource source
-    ) {
-        if (source == OsrsTranslateConfig.TranslationSource.LOCAL) {
-            return loadLocalMap(fileName);
-        }
-
-        File cacheDirectory = remoteCacheDirectory;
-        if (cacheDirectory == null) {
-            return Collections.emptyMap();
-        }
-
-        File remoteFile = new File(cacheDirectory, fileName);
-        if (!remoteFile.isFile()) {
-            log.warn("Arquivo ausente no cache remoto: {}", fileName);
-            return Collections.emptyMap();
-        }
-
-        try (InputStream input = new FileInputStream(remoteFile)) {
-            return TranslationLookupHelper.parseJsonMap(input);
-        } catch (Exception e) {
-            log.warn("Cache remoto invalido para {}", fileName, e);
-            return Collections.emptyMap();
-        }
     }
 
     private Map<String, String> loadLocalMap(String fileName) {

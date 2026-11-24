@@ -9,7 +9,6 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
@@ -26,18 +25,6 @@ final class TranslationLookupHelper
 
     private TranslationLookupHelper()
     {
-    }
-
-    static Map<String, String> parseJsonMap(InputStream is)
-    {
-        try
-        {
-            return parseJsonMapStrict(is);
-        }
-        catch (Exception e)
-        {
-            return Collections.emptyMap();
-        }
     }
 
     static Map<String, String> parseJsonMapStrict(InputStream is) throws IOException
@@ -188,6 +175,20 @@ final class TranslationLookupHelper
             }
         }
         return null;
+    }
+
+    /** Prefixo "[1] " que o Quest Helper põe nas opções de diálogo. */
+    private static final Pattern NUMBERING_PREFIX = Pattern.compile("^\\[\\d+\\]\\s+");
+
+    static String extractNumberingPrefix(String clean)
+    {
+        Matcher matcher = NUMBERING_PREFIX.matcher(clean);
+        return matcher.find() ? matcher.group() : "";
+    }
+
+    static String stripNumberingPrefix(String clean)
+    {
+        return NUMBERING_PREFIX.matcher(clean).replaceFirst("");
     }
 
     static String cleanText(String text)

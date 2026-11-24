@@ -10,33 +10,6 @@ public interface OsrsTranslateConfig extends Config {
     /** Grupo próprio do fork, separado das configurações salvas do plugin original. */
     String GROUP = "osrstranslateptbr";
 
-    enum TranslationSource {
-        REMOTE("Remota"),
-        LOCAL("Local");
-
-        private final String displayName;
-
-        TranslationSource(String displayName) {
-            this.displayName = displayName;
-        }
-
-        @Override
-        public String toString() {
-            return displayName;
-        }
-    }
-
-    @ConfigItem(
-        keyName = "translationSource",
-        name = "Fonte das traduções",
-        description = "Escolhe entre os dicionários remotos e os arquivos locais do projeto",
-        section = translationCorrection,
-        position = 1
-    )
-    default TranslationSource translationSource() {
-        return TranslationSource.LOCAL;
-    }
-
     @ConfigItem(
         keyName = "translationHotReload",
         name = "Hot reload das traduções",
@@ -51,7 +24,7 @@ public interface OsrsTranslateConfig extends Config {
     @ConfigItem(
         keyName = "localTranslationPath",
         name = "Caminho dos JSONs",
-        description = "Pasta com os JSONs da fonte Local. Vazio usa ~/.runelite/osrs-translate-ptbr/pt-BR, onde o instalador copia as traduções",
+        description = "Pasta com os JSONs de tradução. Vazio usa ~/.runelite/osrs-translate-ptbr/pt-BR, onde o instalador copia as traduções",
         section = translationCorrection,
         position = 2
     )
