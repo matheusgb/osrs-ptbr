@@ -7,7 +7,7 @@ e pelos editores da wiki.
 O conteúdo da wiki segue a licença
 [Creative Commons Atribuição-NãoComercial-CompartilhaIgual 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/).
 Veja também a política de direitos da wiki em
-<https://meta.weirdgloop.org/w/Meta:Copyrights>.
+<https://meta.weirdgloop.org/w/Licensing>.
 
 Regras para este projeto:
 
