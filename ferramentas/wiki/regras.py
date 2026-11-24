@@ -42,6 +42,7 @@ MENSAGENS = {
     "ingles": "palavra do inglês sobrando na tradução",
     "acento": "palavra sem acento ou \"-só\" errado",
     "menu_imperativo": "verbo no imperativo no menu (o menu usa infinitivo)",
+    "parenteses": "nome em inglês acrescentado entre parênteses",
 }
 
 
@@ -157,6 +158,9 @@ def validar(ingles, traducao, arquivo, glossario, imperativos=frozenset()):
     nomes = nomes_proprios(ingles, glossario)
     if any(nome not in traducao for nome in nomes):
         erros.append("glossario")
+    # O nome tem que estar no lugar dele na frase, não pendurado: "...desse jeito (Black Knight)?".
+    if any(f"({nome})" in traducao and f"({nome})" not in ingles for nome in nomes):
+        erros.append("parenteses")
 
     if pontuacao_final(ingles) and pontuacao_final(ingles) != pontuacao_final(traducao):
         erros.append("pontuacao")

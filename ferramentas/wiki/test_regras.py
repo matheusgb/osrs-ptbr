@@ -45,6 +45,10 @@ class ValidacaoTest(unittest.TestCase):
     def test_glossario(self):
         self.assertIn("glossario", erros(self.EN, "Posso começar esta quest falando com Romeu na Varrock Square."))
 
+    def test_nome_pendurado_entre_parenteses(self):
+        self.assertIn("parenteses", erros("Talk to Romeo.", "Fale com o Romeu (Romeo)."))
+        self.assertEqual(erros("Talk to Romeo (again).", "Fale com Romeo (de novo)."), [])
+
     def test_titulo_com_maiusculas_so_conta_termo_composto(self):
         self.assertNotIn("glossario", erros("View Cook Options", "Ver opções do cozinheiro"))
         self.assertIn("glossario", erros("Open Grand Exchange Menu", "Abrir menu do Mercado"))

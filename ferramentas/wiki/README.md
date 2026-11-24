@@ -34,7 +34,8 @@ O tipo de cada fala é `fala` (NPC ou jogador), `opcao` (opção de diálogo), `
 
 ## Testes
 
-Rode `python3 test_extrair_falas.py`.
+Rode cada `test_*.py` desta pasta: `test_extrair_falas.py`, `test_regras.py` e
+`test_corrigir.py`.
 
 ## Licença
 

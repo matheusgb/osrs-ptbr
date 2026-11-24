@@ -10,8 +10,8 @@ cada texto vem das listas dados/faltando*.json e define o JSON de destino
 para dados/rejeitadas.json com o código do erro, e não entra. Chave que já existe no
 destino não muda. O script mantém a formatação e o fim de linha do destino.
 
---auditar roda as mesmas regras sobre os JSONs atuais e grava dados/auditoria.json,
-sem mudar nada.
+--auditar roda as mesmas regras sobre os JSONs atuais e grava dados/auditoria.json
+(resumo) e dados/auditoria_lista.json (todos os casos), sem mudar nada.
 """
 import glob
 import json
@@ -25,6 +25,7 @@ from destinos import arquivos_de_destino, imperativos  # noqa: E402
 
 REJEITADAS = os.path.join(comum.DADOS, "rejeitadas.json")
 AUDITORIA = os.path.join(comum.DADOS, "auditoria.json")
+AUDITORIA_LISTA = os.path.join(comum.DADOS, "auditoria_lista.json")
 
 
 def acrescentar(caminho, novas):
@@ -59,26 +60,33 @@ def acrescentar(caminho, novas):
 def auditar():
     glossario = regras.carregar_glossario()
     menu = imperativos()
-    relatorio = {}
+    relatorio, lista = {}, []
     for caminho in sorted(glob.glob(os.path.join(comum.PT_BR, "*.json"))):
         arquivo = os.path.basename(caminho)
         with open(caminho, encoding="utf-8-sig") as entrada:
             traducoes = json.load(entrada)
         por_regra = {}
         for en, pt in traducoes.items():
-            for codigo in regras.validar(en, pt, arquivo, glossario, menu):
+            erros = regras.validar(en, pt, arquivo, glossario, menu)
+            for codigo in erros:
                 por_regra.setdefault(codigo, []).append({"en": en, "pt": pt})
+            if erros:
+                lista.append({"arquivo": arquivo, "en": en, "pt": pt, "erros": erros})
         relatorio[arquivo] = {codigo: {"total": len(itens), "exemplos": itens[:20]}
                               for codigo, itens in sorted(por_regra.items())}
         resumo = ", ".join(f"{c}={len(i)}" for c, i in sorted(por_regra.items())) or "sem erros"
         print(f"{arquivo} ({len(traducoes)}): {resumo}")
     with open(AUDITORIA, "w", encoding="utf-8") as saida:
         json.dump(relatorio, saida, ensure_ascii=False, indent=1)
-    print(f"Relatório em {AUDITORIA}")
+    with open(AUDITORIA_LISTA, "w", encoding="utf-8") as saida:
+        json.dump(lista, saida, ensure_ascii=False, indent=1)
+    print(f"Relatório em {AUDITORIA}; todos os {len(lista)} casos em {AUDITORIA_LISTA}")
 
 
 def main():
-    if sys.argv[1:] == ["--auditar"]:
+    if "--auditar" in sys.argv[1:]:
+        if len(sys.argv) != 2:
+            sys.exit("Uso: python3 aplicar_traducoes.py --auditar (sem outros argumentos)")
         auditar()
         return
 
