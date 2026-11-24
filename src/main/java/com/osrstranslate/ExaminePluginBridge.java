@@ -18,8 +18,7 @@ final class ExaminePluginBridge
             return;
         }
 
-        String originalOption = entry.getOption();
-        String englishOption = plugin.reverseTranslateMenuOption(originalOption);
+        String englishOption = plugin.englishMenuOption(entry);
 
         if (englishOption == null)
         {

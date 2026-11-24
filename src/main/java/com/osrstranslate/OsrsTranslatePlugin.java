@@ -38,6 +38,7 @@ import net.runelite.client.plugins.PluginDescriptor;
 import javax.inject.Inject;
 import java.io.File;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.Locale;
@@ -186,6 +187,12 @@ public class OsrsTranslatePlugin extends Plugin {
     private final Set<Integer> openOtherInterfaces = new HashSet<>();
     /** Tradução já calculada por interface e texto cru. */
     private final TranslationCache widgetTextCache = new TranslationCache(TRANSLATION_CACHE_LIMIT);
+    /**
+     * Opção original em inglês de cada entrada de menu traduzida. Várias opções
+     * têm a mesma tradução ("Subir" para Climb-up e Climb-over), então o texto
+     * traduzido sozinho não diz qual era o original.
+     */
+    private final Map<String, String> originalMenuOptions = new HashMap<>();
 
     @Override
     protected void startUp() {
@@ -242,6 +249,7 @@ public class OsrsTranslatePlugin extends Plugin {
         openOtherInterfaces.clear();
         widgetTextCache.clear();
         otherInterfacesCache.clear();
+        originalMenuOptions.clear();
     }
 
     private void startRemoteTranslationUpdater() {
@@ -536,9 +544,9 @@ public class OsrsTranslatePlugin extends Plugin {
     }
 
     private void scheduleTranslation(int interfaceId) {
-        // As opções de diálogo ficam fora: o Quest Helper lê o texto em inglês
-        // logo depois de abrir, e a tradução antecipada quebraria o destaque.
-        if (interfaceId != InterfaceID.DIALOG_OPTION) {
+        // As opções de diálogo ficam fora por padrão: o Quest Helper lê o texto em
+        // inglês logo depois de abrir, e a tradução antecipada pode quebrar o destaque.
+        if (interfaceId != InterfaceID.DIALOG_OPTION || config.translateDialogOptionsEarly()) {
             openInterfaces.add(interfaceId);
         }
         QuestHelperCompat.scheduleDialogTranslation(clientThread, interfaceId, () -> translateInterface(interfaceId));
@@ -798,7 +806,7 @@ public class OsrsTranslatePlugin extends Plugin {
         }
 
         String option = event.getMenuOption();
-        String englishOption = reverseTranslateMenuOption(option);
+        String englishOption = englishMenuOption(event.getMenuEntry());
         if ("View".equals(option) || "View".equals(englishOption)) {
             skillGuideNeedsTranslation = true;
             translateInterface(skillGuideInterfaceId);
@@ -906,7 +914,7 @@ public class OsrsTranslatePlugin extends Plugin {
             return;
         }
 
-        String englishOption = reverseTranslateMenuOption(lastEntry.getOption());
+        String englishOption = englishMenuOption(lastEntry);
         if (englishOption == null || !TRIVIAL_MENU_OPTIONS.contains(englishOption)) {
             return;
         }
@@ -1102,6 +1110,8 @@ public class OsrsTranslatePlugin extends Plugin {
     // built-in, custom, item, NPC, object, UI, and submenu swaps.
     @Subscribe(priority = -1000f)
     public void onPostMenuSort(PostMenuSort event) {
+        // O menu é refeito a cada quadro com ele fechado; guarda só o atual.
+        originalMenuOptions.clear();
         if (!config.enableMenuEntries()) {
             return;
         }
@@ -1149,8 +1159,26 @@ public class OsrsTranslatePlugin extends Plugin {
         String cleanOption = HTML_TAG.matcher(option).replaceAll("").trim();
         String translation = translationState.get(TranslationDomain.MENU).translations.get(cleanOption);
         if (translation != null && !translation.equals(cleanOption)) {
-            entry.setOption(option.replaceAll(Pattern.quote(cleanOption), Matcher.quoteReplacement(translation)));
+            String translated = option.replaceAll(Pattern.quote(cleanOption), Matcher.quoteReplacement(translation));
+            entry.setOption(translated);
+            originalMenuOptions.put(menuEntryKey(entry, translated), option);
         }
+    }
+
+    /** Chave de uma entrada: texto da opção, alvo e o que o jogo usa para executar a ação. */
+    private static String menuEntryKey(MenuEntry entry, String option) {
+        return option + '\u0000' + entry.getTarget() + '\u0000' + entry.getType()
+            + '\u0000' + entry.getIdentifier() + '\u0000' + entry.getParam0() + '\u0000' + entry.getParam1();
+    }
+
+    /** Opção original em inglês da entrada, ou null se ela não foi traduzida. */
+    String englishMenuOption(MenuEntry entry) {
+        if (entry == null) {
+            return null;
+        }
+        String option = entry.getOption();
+        String original = option == null ? null : originalMenuOptions.get(menuEntryKey(entry, option));
+        return original != null ? original : reverseTranslateMenuOption(option);
     }
 
     private void restoreEnglishMenu(Menu menu) {
@@ -1173,7 +1201,7 @@ public class OsrsTranslatePlugin extends Plugin {
             return;
         }
 
-        String englishOption = reverseTranslateMenuOption(entry.getOption());
+        String englishOption = englishMenuOption(entry);
         if (englishOption != null) {
             entry.setOption(englishOption);
         }

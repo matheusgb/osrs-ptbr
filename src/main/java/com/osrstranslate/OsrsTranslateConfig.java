@@ -206,6 +206,18 @@ public interface OsrsTranslateConfig extends Config {
         return true;
     }
 
+    @ConfigItem(
+        keyName = "translateDialogOptionsEarly",
+        name = "Traduzir opções de diálogo sem atraso",
+        description = "Traduz as opções de resposta antes de aparecerem na tela. "
+            + "Desligado por padrão porque o Quest Helper pode deixar de destacar a opção certa",
+        section = staticTranslations,
+        position = 12
+    )
+    default boolean translateDialogOptionsEarly() {
+        return false;
+    }
+
     @ConfigSection(
         name = "Correções Visuais",
         description = "Ajustes de layout e apresentação",
