@@ -118,7 +118,8 @@ final class TranslationLookupHelper
                 translation,
                 specificity,
                 parts[0],
-                parts[parts.length - 1]
+                parts[parts.length - 1],
+                placeholders(key)
             ));
         }
         return new PatternIndex(entries);
@@ -132,6 +133,17 @@ final class TranslationLookupHelper
     private static String templateSignature(String text)
     {
         return PLACEHOLDER.matcher(text).replaceAll(Matcher.quoteReplacement("\u0000"));
+    }
+
+    private static List<String> placeholders(String text)
+    {
+        List<String> found = new ArrayList<>();
+        Matcher matcher = PLACEHOLDER.matcher(text);
+        while (matcher.find())
+        {
+            found.add(matcher.group());
+        }
+        return found;
     }
 
     private static boolean hasLetterOutsidePlaceholders(String text)
@@ -307,10 +319,13 @@ final class TranslationLookupHelper
         private final int specificity;
         private final String prefix;
         private final String suffix;
+        private final List<String> keyPlaceholders;
         private int order;
 
-        private PatternEntry(Pattern pattern, String translation, int specificity, String prefix, String suffix)
+        private PatternEntry(Pattern pattern, String translation, int specificity, String prefix, String suffix,
+            List<String> keyPlaceholders)
         {
+            this.keyPlaceholders = keyPlaceholders;
             this.pattern = pattern;
             this.translation = translation;
             this.specificity = specificity;
@@ -335,17 +350,23 @@ final class TranslationLookupHelper
 
             String result = translation;
             boolean replacedPlaceholder = false;
+            // Procura o próximo placeholder depois do texto já inserido, para um
+            // colchete dentro do texto capturado não ser tratado como placeholder.
+            int searchFrom = 0;
             for (int i = 1; i <= matcher.groupCount(); i++)
             {
                 Matcher placeholderMatcher = PLACEHOLDER.matcher(result);
-                if (!placeholderMatcher.find())
+                if (!placeholderMatcher.find(searchFrom))
                 {
                     break;
                 }
 
+                String keyPlaceholder = i <= keyPlaceholders.size() ? keyPlaceholders.get(i - 1) : "";
+                String inserted = ChoiceTranslator.translate(keyPlaceholder, placeholderMatcher.group(), matcher.group(i));
                 result = result.substring(0, placeholderMatcher.start())
-                    + matcher.group(i)
+                    + inserted
                     + result.substring(placeholderMatcher.end());
+                searchFrom = placeholderMatcher.start() + inserted.length();
                 replacedPlaceholder = true;
             }
             return replacedPlaceholder && !lookup.equals(result) ? result : null;

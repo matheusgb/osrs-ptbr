@@ -55,6 +55,27 @@ public class TranslationDictionaryTest {
     }
 
     @Test
+    public void choicePlaceholderIsTranslated() {
+        Map<String, String> map = new LinkedHashMap<>();
+        map.put("Good day, [sir/madam].", "Bom dia, [sir/madam].");
+        map.put("Hello, [lad/lass]!", "Olá, [garoto/garota]!");
+        map.put("Welcome, [player].", "Bem-vindo, [player].");
+        TranslationDictionary dictionary = new TranslationDictionary(map, true);
+        assertEquals("Bom dia, senhora.", dictionary.find("Good day, madam."));
+        assertEquals("Bom dia, Senhor.", dictionary.find("Good day, Sir."));
+        assertEquals("Olá, garota!", dictionary.find("Hello, lass!"));
+        assertEquals("nome de jogador não é escolha", "Bem-vindo, Sir Bob.", dictionary.find("Welcome, Sir Bob."));
+    }
+
+    @Test
+    public void bracketInsideCapturedTextIsNotAPlaceholder() {
+        Map<String, String> map = new LinkedHashMap<>();
+        map.put("[a] and [b]", "[a] e [b]");
+        TranslationDictionary dictionary = new TranslationDictionary(map, true);
+        assertEquals("[x] e y", dictionary.find("[x] and y"));
+    }
+
+    @Test
     public void domainWithoutPlaceholdersUsesExactMatchOnly() {
         TranslationDictionary dictionary = new TranslationDictionary(sample(), false);
         assertNull(dictionary.find("You need 3 more."));
