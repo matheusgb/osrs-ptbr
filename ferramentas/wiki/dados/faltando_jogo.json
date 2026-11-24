@@ -1,9 +1,233 @@
 [
  {
-  "texto": "Ernest the Chicken",
+  "texto": "5 Quest Points",
+  "tipo": "arquivo:translations.json",
+  "paginas": [
+   "translations.json"
+  ]
+ },
+ {
+  "texto": "An Antique Lamp",
+  "tipo": "arquivo:translations.json",
+  "paginas": [
+   "translations.json"
+  ]
+ },
+ {
+  "texto": "Can't you see that I'm in the middle of a sermon?!",
+  "tipo": "arquivo:translations.json",
+  "paginas": [
+   "translations.json"
+  ]
+ },
+ {
+  "texto": "Crypt! Again... very creepy! You must have some strange hobbies.",
+  "tipo": "arquivo:translations.json",
+  "paginas": [
+   "translations.json"
+  ]
+ },
+ {
+  "texto": "Dead! Sounds a bit creepy to me... but please, continue.",
+  "tipo": "arquivo:translations.json",
+  "paginas": [
+   "translations.json"
+  ]
+ },
+ {
+  "texto": "Draul Leptoc",
+  "tipo": "arquivo:translations.json",
+  "paginas": [
+   "translations.json"
+  ]
+ },
+ {
+  "texto": "Ok, okay... what do you want so I can get rid of you and continue with my sermon?",
+  "tipo": "arquivo:translations.json",
+  "paginas": [
+   "translations.json"
+  ]
+ },
+ {
+  "texto": "The potion will only make Juliet 'appear' dead... then she'll be taken to the crypt...",
+  "tipo": "arquivo:translations.json",
+  "paginas": [
+   "translations.json"
+  ]
+ },
+ {
+  "texto": "Total Quest Points: 7",
+  "tipo": "arquivo:translations.json",
+  "paginas": [
+   "translations.json"
+  ]
+ },
+ {
+  "texto": "Yes, very confused.... Anyway, Romeo wishes to be married to Juliet! She must be rescued from her father's control!",
+  "tipo": "arquivo:translations.json",
+  "paginas": [
+   "translations.json"
+  ]
+ },
+ {
+  "texto": "You are awarded:",
+  "tipo": "arquivo:translations.json",
+  "paginas": [
+   "translations.json"
+  ]
+ },
+ {
+  "texto": "You have completed Romeo & Juliet!",
+  "tipo": "arquivo:translations.json",
+  "paginas": [
+   "translations.json"
+  ]
+ },
+ {
+  "texto": "Juliet gives you a message.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Price of Message : HA value 3",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Romeo folds the message away.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "The Apothecary gives you a Cadava potion.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "You feel weakened.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "You gave a 4/5 rating to a quest: @q_mes@Romeo & Juliet",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "You hand over Juliet's message to Romeo.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "You hand over the berries, which the Apothecary shakes up in a vial of strange liquid.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "You pass the suspicious potion to Juliet.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "You recharge your Prayer Points.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Quest Month Week III brings two more surprise quests!",
+  "tipo": "arquivo:translations_overhead.json",
+  "paginas": [
+   "translations_overhead.json"
+  ]
+ },
+ {
+  "texto": "TFA Practice Mode is here!",
+  "tipo": "arquivo:translations_overhead.json",
+  "paginas": [
+   "translations_overhead.json"
+  ]
+ },
+ {
+  "texto": "Combat Level 15",
   "tipo": "arquivo:translations_quests.json",
   "paginas": [
    "translations_quests.json"
+  ]
+ },
+ {
+  "texto": "Demon Slayer",
+  "tipo": "arquivo:translations_quests.json",
+  "paginas": [
+   "translations_quests.json"
+  ]
+ },
+ {
+  "texto": "Demon Slayer #1",
+  "tipo": "arquivo:translations_quests.json",
+  "paginas": [
+   "translations_quests.json"
+  ]
+ },
+ {
+  "texto": "I should take this cadava potion to Juliet.",
+  "tipo": "arquivo:translations_quests.json",
+  "paginas": [
+   "translations_quests.json"
+  ]
+ },
+ {
+  "texto": "[number] Quest Points",
+  "tipo": "arquivo:translations.json",
+  "paginas": [
+   "translations.json"
+  ]
+ },
+ {
+  "texto": "Total Quest Points: [number]",
+  "tipo": "arquivo:translations.json",
+  "paginas": [
+   "translations.json"
+  ]
+ },
+ {
+  "texto": "You have completed [quest]!",
+  "tipo": "arquivo:translations.json",
+  "paginas": [
+   "translations.json"
+  ]
+ },
+ {
+  "texto": "Price of [item] : HA value [value]",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "You gave a [rating] rating to a quest: [quest]",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
   ]
  }
 ]

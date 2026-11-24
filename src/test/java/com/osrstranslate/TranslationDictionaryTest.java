@@ -22,6 +22,18 @@ public class TranslationDictionaryTest {
     }
 
     @Test
+    public void caseAndEllipsisSpacingStillMatch() {
+        Map<String, String> map = new LinkedHashMap<>();
+        map.put("Can't you see that I'm in the middle of a Sermon?!", "Não vê que estou no meio de um sermão?!");
+        map.put("Crypt! Again...very creepy!", "Cripta! De novo... que sinistro!");
+        TranslationDictionary dictionary = new TranslationDictionary(map, true);
+        assertEquals("Não vê que estou no meio de um sermão?!",
+            dictionary.find("Can't you see that I'm in the middle of a sermon?!"));
+        assertEquals("Cripta! De novo... que sinistro!", dictionary.find("Crypt! Again... very creepy!"));
+        assertNull("palavra diferente não casa", dictionary.find("Crypt! Again... very spooky!"));
+    }
+
+    @Test
     public void exactMatchWins() {
         TranslationDictionary dictionary = new TranslationDictionary(sample(), true);
         assertEquals("Mudar de mundo", dictionary.find("Switch world"));

@@ -712,6 +712,10 @@ public class OsrsTranslatePlugin extends Plugin {
         }
 
         String translation = dictionary.find(lookup);
+        if (translation == null && interfaceId != CHAT_OVERLAY) {
+            // A mesma frase pode estar no JSON de outra área (fala mostrada como mensagem).
+            translation = state.findInOtherDomains(domainForInterface(interfaceId), lookup);
+        }
         // O overlay do chat mostra também mensagens de jogadores: não entra no registro.
         if (translation == null && interfaceId != CHAT_OVERLAY) {
             recordMissing(domainForInterface(interfaceId), lookup);
@@ -947,6 +951,10 @@ public class OsrsTranslatePlugin extends Plugin {
         }
 
         String translation = gameMessages.find(clean);
+        if (translation == null) {
+            // A mesma frase pode estar no JSON de outra área (fala mostrada como mensagem).
+            translation = translationState.findInOtherDomains(TranslationDomain.GAME_MESSAGE, clean);
+        }
         if (translation == null) {
             recordMissing(TranslationDomain.GAME_MESSAGE, clean);
             return;

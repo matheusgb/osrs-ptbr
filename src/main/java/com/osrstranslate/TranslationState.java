@@ -2,7 +2,7 @@ package com.osrstranslate;
 
 import java.util.Collections;
 import java.util.EnumMap;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 /** Conjunto imutável de dicionários carregados. */
@@ -38,7 +38,8 @@ final class TranslationState {
     }
 
     private static TranslationDictionary merge(Map<TranslationDomain, TranslationDictionary> dictionaries) {
-        Map<String, String> all = new HashMap<>();
+        // LinkedHashMap: a ordem de MERGE_ORDER vale também na busca normalizada.
+        Map<String, String> all = new LinkedHashMap<>();
         for (TranslationDomain domain : MERGE_ORDER) {
             TranslationDictionary dictionary = dictionaries.get(domain);
             if (dictionary == null) {
@@ -49,6 +50,24 @@ final class TranslationState {
             }
         }
         return new TranslationDictionary(all, false);
+    }
+
+    /**
+     * Busca a frase nos dicionários das outras áreas, na ordem de MERGE_ORDER: uma fala pode
+     * aparecer como mensagem do jogo ou no diário. Só busca exata e normalizada; o menu fica
+     * de fora, porque usa o infinitivo e não serve para fala.
+     */
+    String findInOtherDomains(TranslationDomain own, String lookup) {
+        for (TranslationDomain domain : MERGE_ORDER) {
+            if (domain == own || domain == TranslationDomain.MENU) {
+                continue;
+            }
+            String translation = get(domain).findText(lookup);
+            if (translation != null) {
+                return translation;
+            }
+        }
+        return null;
     }
 
     TranslationDictionary get(TranslationDomain domain) {
