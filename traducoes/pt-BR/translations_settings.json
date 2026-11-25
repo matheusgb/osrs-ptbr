@@ -6828,7 +6828,7 @@
   "Group: Show none": "Grupo: mostrar nenhum",
   "Growing plants have a chance to become diseased which stops it growing and it may die if left untreated. Diseased plants can be cured using Plant Cure or they can be protected from becoming diseased by paying the Farmer near the patch. This requires certain produce in exchange, which can be viewed in the tabs on the left under the plant you want to protect.": "Plantas crescendo têm chance de ficar doentes, o que impede o crescimento e pode fazê-las morrer se não forem tratadas. Plantas doentes podem ser curadas usando Plant Cure, ou podem ser protegidas de ficarem doentes pagando o Farmer perto da patch. Isso exige certos produtos em troca, que podem ser vistos nas abas à esquerda, embaixo da planta que você quer proteger.",
   "Guam leaf": "Folha de guam",
-  "Guardians of the rift": "Guardiões do Rift",
+  "Guardians of the rift": "Guardians of the rift",
   "Guest Iron status": "Status Iron de convidado",
   "Guest clan chat": "Chat de clan para convidados",
   "Guest minimum QP": "QP mínimo para convidado",
@@ -8519,7 +8519,7 @@
   "Obor kills:": "Abates de Obor:",
   "Obor the Hill Titan is the strongest of all the hill giants. His lair can be found within the Edgeville Dungeon. Giant key required - 5 Provided.": "Obor the Hill Titan é o mais forte de todos os hill giants. O covil dele fica dentro da Edgeville Dungeon. Exige uma giant key, 5 fornecidas.",
   "Obor the Hill Titan is the strongest of all the hill giants. His lair can be located behind a locked gate found within the hill giant area of the Edgeville Dungeon. In order to access Obor's lair, a giant key, obtained from killing a Hill Giant, is required. Attack Styles - Melee, Ranged Immunities - Venom Slayer Categories - Hill Giant": "Obor the Hill Titan é o mais forte de todos os hill giants. O covil dele fica atrás de um portão trancado, dentro da área de hill giant da Edgeville Dungeon. Para acessar o covil de Obor, é preciso uma giant key, obtida ao matar um Hill Giant. Estilos de ataque: Melee, Ranged Imunidades: Venom Categorias de Slayer: Hill Giant",
-  "Observatory quest": "Quest do observatório",
+  "Observatory quest": "Observatory quest",
   "Obsidian Cape (red)": "Obsidian Cape (red)",
   "Obsidian armour: All obsidian weaponry will be given a 10% boost in melee accuracy and melee strength.": "Obsidian armour: todas as armas de obsidian recebem um bônus de 10% na precisão e força de melee.",
   "Obtain any pet": "Obtenha qualquer pet",
@@ -9480,5 +9480,9 @@
   "Show health overlay,hide health overlay,boss health overlay,Advanced Display Settings,name,percent,percentages,health,hitpoints,hp,overlay,value,enemy,boss": "Mostrar sobreposição de vida,esconder sobreposição de vida,sobreposição de vida do boss,Configurações avançadas de exibição,nome,porcentagem,porcentagens,vida,hitpoints,hp,sobreposição,valor,inimigo,boss",
   "Show health overlay,hide health overlay,health overlay,Advanced Display Settings,health,hitpoints,hp,overlay,show,hide,enemy": "Mostrar sobreposição de vida,esconder sobreposição de vida,sobreposição de vida,Configurações avançadas de exibição,vida,hitpoints,hp,sobreposição,mostrar,esconder,inimigo",
   "Show hint": "Mostrar dica",
-  "Show hotkeys": "Mostrar hotkeys"
+  "Show hotkeys": "Mostrar hotkeys",
+  "Game client layout:": "Layout do client:",
+  "NPC 'Attack' options:": "Opções de 'Attack' em NPC:",
+  "Player 'Attack' options:": "Opções de 'Attack' em jogador:",
+  "You may add friends by using the button below, or by right-clicking on a message from them and selecting to add them as a friend.": "Você pode adicionar amigos pelo botão abaixo, ou clicando com o botão direito numa mensagem da pessoa e escolhendo adicionar como amigo."
 }

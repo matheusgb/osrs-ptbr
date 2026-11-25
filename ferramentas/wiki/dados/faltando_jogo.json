@@ -1,5 +1,19 @@
 [
  {
+  "texto": "1 Quest Point",
+  "tipo": "arquivo:translations.json",
+  "paginas": [
+   "translations.json"
+  ]
+ },
+ {
+  "texto": "4 Quest Points",
+  "tipo": "arquivo:translations.json",
+  "paginas": [
+   "translations.json"
+  ]
+ },
+ {
   "texto": "5 Quest Points",
   "tipo": "arquivo:translations.json",
   "paginas": [
@@ -7,7 +21,7 @@
   ]
  },
  {
-  "texto": "An Antique Lamp",
+  "texto": "Be careful in here. There's lots of dangerous equipment.",
   "tipo": "arquivo:translations.json",
   "paginas": [
    "translations.json"
@@ -15,6 +29,13 @@
  },
  {
   "texto": "Can't you see that I'm in the middle of a sermon?!",
+  "tipo": "arquivo:translations.json",
+  "paginas": [
+   "translations.json"
+  ]
+ },
+ {
+  "texto": "Congratulations, you just advanced 2 combat levels.",
   "tipo": "arquivo:translations.json",
   "paginas": [
    "translations.json"
@@ -35,14 +56,49 @@
   ]
  },
  {
-  "texto": "Draul Leptoc",
+  "texto": "Fred the Farmer",
   "tipo": "arquivo:translations.json",
   "paginas": [
    "translations.json"
   ]
  },
  {
-  "texto": "Ok, okay... what do you want so I can get rid of you and continue with my sermon?",
+  "texto": "Grand Exchange Clerk",
+  "tipo": "arquivo:translations.json",
+  "paginas": [
+   "translations.json"
+  ]
+ },
+ {
+  "texto": "Ooh I dunno... She could have free eggs for breakfast.",
+  "tipo": "arquivo:translations.json",
+  "paginas": [
+   "translations.json"
+  ]
+ },
+ {
+  "texto": "Professor Oddenstein",
+  "tipo": "arquivo:translations.json",
+  "paginas": [
+   "translations.json"
+  ]
+ },
+ {
+  "texto": "Start the Ernest the Chicken quest?",
+  "tipo": "arquivo:translations.json",
+  "paginas": [
+   "translations.json"
+  ]
+ },
+ {
+  "texto": "That would be a help. They'll be somewhere in the manor house or its grounds. The gremlins never get further than the entrance gate.",
+  "tipo": "arquivo:translations.json",
+  "paginas": [
+   "translations.json"
+  ]
+ },
+ {
+  "texto": "The coffin is sealed shut.",
   "tipo": "arquivo:translations.json",
   "paginas": [
    "translations.json"
@@ -56,14 +112,14 @@
   ]
  },
  {
-  "texto": "Total Quest Points: 7",
+  "texto": "Well, I can look for them.",
   "tipo": "arquivo:translations.json",
   "paginas": [
    "translations.json"
   ]
  },
  {
-  "texto": "Yes, very confused.... Anyway, Romeo wishes to be married to Juliet! She must be rescued from her father's control!",
+  "texto": "Well, a reward is always nice...",
   "tipo": "arquivo:translations.json",
   "paginas": [
    "translations.json"
@@ -77,10 +133,87 @@
   ]
  },
  {
-  "texto": "You have completed Romeo & Juliet!",
+  "texto": "You dig up an unusual item. There doesn't seem to be any use for it around here, so you leave it alone.",
   "tipo": "arquivo:translations.json",
   "paginas": [
    "translations.json"
+  ]
+ },
+ {
+  "texto": "You open and throw away the tatty nest and find a clue scroll inside!",
+  "tipo": "arquivo:translations.json",
+  "paginas": [
+   "translations.json"
+  ]
+ },
+ {
+  "texto": "Your wish has been granted! You have been awarded 500 Attack experience!",
+  "tipo": "arquivo:translations.json",
+  "paginas": [
+   "translations.json"
+  ]
+ },
+ {
+  "texto": "Your wish has been granted! You have been awarded 500 Woodcutting experience!",
+  "tipo": "arquivo:translations.json",
+  "paginas": [
+   "translations.json"
+  ]
+ },
+ {
+  "texto": "11|Check the skill guide for more information about Crafting.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "18|Check the skill guide for more information about Woodcutting.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "1|Check the skill guide for more information about Attack.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "@ap_mes@You just completed the task Getting started with Attack! Speak to Adventurer Jon to claim your reward.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "@ap_mes@You just completed the task Getting started with Woodcutting! Speak to Adventurer Jon to claim your reward.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "A bird's nest falls out of the tree.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Did you know? On mobile you can categorise, highlight, and hide loot dropped on the ground by its value.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Did you know? You can also play Old School Runescape on mobile and tablet.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
   ]
  },
  {
@@ -91,7 +224,105 @@
   ]
  },
  {
-  "texto": "Price of Message : HA value 3",
+  "texto": "Level 10 Woodcutting: Light jungle (members-only)",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Level 11 Woodcutting: Black axe",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Level 11 Woodcutting: Black felling axe (members-only)",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Level 12 Woodcutting: Log canoe",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Level 15 Woodcutting: Oak trees",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Level 2 Crafting: Pheasant clothing (members-only)",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Level 20 Woodcutting: Medium jungle (members-only)",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Level 21 Woodcutting: Mithril axe",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Level 21 Woodcutting: Mithril felling axe (members-only)",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Level 3 Crafting: Cup (members-only)",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Level 3 Crafting: Polished buttons (members-only)",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Level 5 Attack: Steel weapons",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Level 6 Woodcutting: Steel axe",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Level 6 Woodcutting: Steel felling axe (members-only)",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Price of Oak logs : GE average 30 HA value 12",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
@@ -112,14 +343,77 @@
   ]
  },
  {
-  "texto": "You feel weakened.",
+  "texto": "The candles on the floor burn your feet!",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "You gave a 4/5 rating to a quest: @q_mes@Romeo & Juliet",
+  "texto": "The coffin is sealed shut.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "The doors slam shut behind you.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "The doors won't open.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "The lever opens the secret door!",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "The wardrobe is empty.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "You aren't carrying any containers that can be emptied.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "You climb up the ladder.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "You dig up an unusual item. There doesn't seem to be any use for it around here, so you leave it alone.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "You don't have any of that item available to sell.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "You give a rubber tube, a pressure gauge,",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
@@ -140,6 +434,20 @@
   ]
  },
  {
+  "texto": "You hear a clunk.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "You open and throw away the tatty nest and find a clue scroll inside!",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
   "texto": "You pass the suspicious potion to Juliet.",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
@@ -147,21 +455,133 @@
   ]
  },
  {
-  "texto": "You recharge your Prayer Points.",
+  "texto": "You pull lever A down.",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "Quest Month Week III brings two more surprise quests!",
+  "texto": "You pull lever A up.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "You pull lever B down.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "You pull lever B up.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "You pull lever C down.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "You pull lever C up.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "You pull lever D down.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "You pull lever D up.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "You pull lever E down.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "You pull lever E up.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "You pull lever F down.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "You pull lever F up.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "You've found a secret door!",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Your account is currently restricted for trading. The restrictions will lift in 16 hours, 25 minutes, provided you gain 2 more quest points and 37 more skill levels.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Your wish has been granted! You have been awarded 500 Attack experience!",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Your wish has been granted! You have been awarded 500 Woodcutting experience!",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Talk to Charlie the Tramp in Varrock.",
+  "tipo": "arquivo:translations_items.json",
+  "paginas": [
+   "translations_items.json"
+  ]
+ },
+ {
+  "texto": "Talk to Olaf in Rellekka to start The Graveyard!",
   "tipo": "arquivo:translations_overhead.json",
   "paginas": [
    "translations_overhead.json"
   ]
  },
  {
-  "texto": "TFA Practice Mode is here!",
+  "texto": "The Graveyard, a new Master tier quest, is here!",
   "tipo": "arquivo:translations_overhead.json",
   "paginas": [
    "translations_overhead.json"
@@ -175,59 +595,7724 @@
   ]
  },
  {
-  "texto": "Demon Slayer",
+  "texto": "Farmer Fred said there was a spinning wheel in Lumbridge",
   "tipo": "arquivo:translations_quests.json",
   "paginas": [
    "translations_quests.json"
   ]
  },
  {
-  "texto": "Demon Slayer #1",
+  "texto": "Fred gave me some shears to use, to get the job done.",
   "tipo": "arquivo:translations_quests.json",
   "paginas": [
    "translations_quests.json"
   ]
  },
  {
-  "texto": "I should take this cadava potion to Juliet.",
+  "texto": "He went into Draynor Manor and hasn't returned, I should go",
   "tipo": "arquivo:translations_quests.json",
   "paginas": [
    "translations_quests.json"
   ]
  },
  {
-  "texto": "[number] Quest Points",
-  "tipo": "arquivo:translations.json",
+  "texto": "I asked Farmer Fred, near Lumbridge, for a quest. Fred said",
+  "tipo": "arquivo:translations_quests.json",
   "paginas": [
-   "translations.json"
+   "translations_quests.json"
   ]
  },
  {
-  "texto": "Total Quest Points: [number]",
-  "tipo": "arquivo:translations.json",
+  "texto": "I need to collect 20 more balls of wool.",
+  "tipo": "arquivo:translations_quests.json",
   "paginas": [
-   "translations.json"
+   "translations_quests.json"
   ]
  },
  {
-  "texto": "You have completed [quest]!",
-  "tipo": "arquivo:translations.json",
+  "texto": "I need to find Ernest.",
+  "tipo": "arquivo:translations_quests.json",
   "paginas": [
-   "translations.json"
+   "translations_quests.json"
   ]
  },
  {
-  "texto": "Price of [item] : HA value [value]",
-  "tipo": "arquivo:translations_game_message.json",
+  "texto": "castle I could use to make the balls of wool.",
+  "tipo": "arquivo:translations_quests.json",
   "paginas": [
-   "translations_game_message.json"
+   "translations_quests.json"
   ]
  },
  {
-  "texto": "You gave a [rating] rating to a quest: [quest]",
-  "tipo": "arquivo:translations_game_message.json",
+  "texto": "he'd pay me for shearing his sheep for him!",
+  "tipo": "arquivo:translations_quests.json",
   "paginas": [
-   "translations_game_message.json"
+   "translations_quests.json"
+  ]
+ },
+ {
+  "texto": "into the manor and investigate.",
+  "tipo": "arquivo:translations_quests.json",
+  "paginas": [
+   "translations_quests.json"
+  ]
+ },
+ {
+  "texto": "Adamant axe",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Adamant weapons",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Animal Magnetism",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Attack - Armour (Members Only)",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Attack - Level-up Unlocks",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Attack - Weapons",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Axe Shops",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Barronite mace Requires: Below Ice Mountain",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Black axe",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Black weapons",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Bronze weapons",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Bryophyta's staff Requires: Level 30 Magic",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Crafting - Level-up Unlocks",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Death Plateau",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Enlightened Journey",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Fairytale I - Growing Pains",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Ferocious Gloves Requires: Level 80 Defence",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Fight Arena",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Gilded axe",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Grim Tales",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Heroes' Quest",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Icthlarin's Little Helper",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "In Aid of the Myreque",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "In Search of the Myreque",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Iron axe",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Iron weapons",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Lost City",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Maple trees",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: 3rd Age weapons",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: 3rd age axe",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: 3rd age felling axe",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Abyssal bludgeon Requires: Level 70 Strength",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Abyssal tentacle",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Abyssal whip & dagger",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Achey trees",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Adamant felling axe",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Ahrim's staff Requires: Level 70 Magic",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Ancient sceptre Requires: Level 60 Strength, level 70 Magic, Secrets of the North",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Ancient staff Requires: Level 50 Magic, Desert Treasure I",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Arclight",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Arctic Pine trees",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Arkan blade Requires: The Final Dawn",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Avernic defender Requires: Level 70 Defence",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Barrelchest Anchor Requires: Level 40 Strength, The Great Brain Robbery",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Battlestaves Requires: Level 30 Magic",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Belle's Folly",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Black felling axe",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Black salamander Requires: Level 70 Ranged, level 70 Magic",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Blade of Saeldor",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Blessed Saradomin sword",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Blisterwood Requires: Sins of the Father",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Blisterwood tree",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Bloodwood trees Requires: The Blood Moon Rises",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Bone mace",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Brine sabre",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Bronze felling axe",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Burning claws",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Camphor trees",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Clothes Pouch Requires: Level 50 Crafting",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Colossal Blade",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Crimson Kisten Requires: Level 85 Strength",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Crystal axe Requires: Song of the Elves",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Crystal felling axe Requires: Song of the Elves",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Crystal halberd Requires: Level 50 Agility, Roving Elves Requires: Western Provinces Achievement Diary - hard tier",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Crystal weaponry Requires: Level 50 Agility",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Cup",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Dense jungle",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Dharok's greataxe Requires: Level 70 Strength",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Dinh's bulwark Requires: Level 75 Defence",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Dragon axe",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Dragon felling axe",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Dragon hunter lance",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Dragon weapons",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Dual Macuahuitl Requires: Level 75 Strength",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Earthbound tecpatl",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Elder maul Requires: Level 75 Strength",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Emberlight",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Forester's ration Requires: Level 35 Cooking",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Frostmoon Spear Requires: Level 75 Magic",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Ghrazi rapier",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Glacial temotli",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Godswords",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Granite longsword Requires: Level 50 Strength",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Granite maul Requires: Level 50 Strength",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Guthan's warspear",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Hallowfell",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Hollow trees",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Infected tree roots",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Infernal axe Requires: Level 85 Firemaking",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Inquisitor's mace",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Iron felling axe",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Ironwood trees",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Ivandis Flail Requires: A Taste of Hope",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Jatoba trees",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Juniper trees",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Keris dagger Requires: Contact!",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Keris partisan Requires: Beneath Cursed Sands",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Light jungle",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Magic trees",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Mahogany trees",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Medium jungle",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Mithril felling axe",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Mystic staves Requires: Level 40 Magic",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Nature Offerings Requires: Level 50 Farming",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Noxious Halberd",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Obligator",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Obsidian melee weapons",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Orange salamander Requires: Level 50 Ranged, level 50 Magic",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Osmumten's Fang",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Pheasant clothing",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Polished buttons",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Purging staff Requires: Level 77 Magic",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Red salamander Requires: Level 60 Ranged, level 60 Magic",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Redwood trees",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Rosewood trees",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Rune felling axe",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Sarachnis cudgel",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Saradomin sword",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Scythe of Vitur Requires: Level 90 Strength",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Secateurs Attachment Requires: Level 35 Smithing",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Soulreaper axe Requires: Level 80 Strength",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Staff of Balance Requires: Level 75 Magic",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Staff of Light Requires: Level 75 Magic",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Staff of the Dead Requires: Level 75 Magic",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Steel felling axe",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Sturdy Harness Requires: Level 75 Smithing",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Sulliuscep mushroom trees",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Sulphur blades",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Swamp lizard Requires: Level 30 Ranged, level 30 Magic",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Teak trees",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Tecu salamander Requires: Level 80 Ranged, level 80 Magic",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: TokTz-Mej-Tal Requires: Level 60 Magic",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Torag's hammers Requires: Level 70 Strength",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Upgraded Ancient Sceptre Requires: Level 60 Strength, level 75 Magic, Desert Treasure II - The Fallen Empire",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Ursine Chainmace",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Variants of Keris partisan Requires: Beneath Cursed Sands",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Verac's flail",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Vesta's blighted longsword",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Viggora's Chainmace",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Void Knight mace Requires: Level 22 Prayer, level 42 Ranged, level 42 Defence, level 42 Strength, level 42 Hitpoints, level 42 Magic",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Voidwaker",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: White weapons",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Zamorakian spear",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Members: Zombie axe",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Mithril axe",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Mithril weapons",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Monk's Friend",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Mountain Daughter",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Normal trees",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Oak trees",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Recipe for Disaster - Skrach Uglogwee",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Requirements: View journal for details.",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Rune axe",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Rune weapons",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Skillcape See Ajjat at the Warriors' Guild",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Smithing skill",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Song of the Elves",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Steel axe",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Steel weapons",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "The Fremennik Isles",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "The Grand Tree",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "The Ribbiting Tale of a Lily Pad Labour Dispute",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Throne of Miscellania",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Tree Gnome Village",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Vampyre Slayer",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "View Woodcutting on the Wiki",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Void Knight equipment Requires: Level 22 Prayer, level 42 Ranged, level 42 Magic, level 42 Defence, level 42 Strength, level 42 Hitpoints",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Waterfall Quest",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Willow trees",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Woodcutting - Axes",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Woodcutting - Forestry",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Woodcutting - Level-up Unlocks",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Woodcutting - Overview",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Woodcutting - Trees",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "Yew trees",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "you'll",
+  "tipo": "arquivo:translations_skills.json",
+  "paginas": [
+   "translations_skills.json"
+  ]
+ },
+ {
+  "texto": "... e encontra uma pequena chave.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "... então morrem e flutuam até a superfície.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "...mas não encontrou nada de interessante.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "7th Realm",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "@ap_mes@You just completed the task Getting started with Woodcutting! Speak to Adventurer Jon to claim your reward.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "A Dangerous Game",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "A Desolate Past",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "A Farmer's Grind",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "A Festive Party",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "A Forgotten Religion",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "A Kingdom Divided",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "A Matter of Intrigue",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "A Mother's Curse",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "A New Leaf",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "A Night at the Theatre",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "A Porcine of Interest",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "A Prisão Antiga",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "A Ruff Situation",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "A Sailor's Dream",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "A Shell of a Friend",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "A Soul's Bane",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "A Tail of Two Cats",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "A Taste of Hope",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "A Thorn in My Side",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "A Walk in the Woods",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "A Worthy Foe",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "A bird's nest falls out of the tree.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "A máquina ronrona e treme.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Adicionar amigo",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Al Kharid",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Alchemical Attack!",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Algo na água morde você.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "All Aboard",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "All Settings",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "All the Trimmings",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "All's Fairy in Love & War",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Altar Ego",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Alternative Root",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Amascut's Promise",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Ambient Jungle",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Animal Magnetism",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Another Slice of H.A.M.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Ape-ex Predator",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Arachnids of Vampyrium",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Architects of Prifddinas",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Are You Not Entertained?",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Armadyl Alliance",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Army of Darkness",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Artifacts of Old",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "As piranhas começam a comer a ração...",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Assault and Battery",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "At First Light",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Auto Retaliate (On)",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Autumn Voyage",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Awful Anthem",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Aye Car Rum Ba",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Back to Life",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Ballad of Enchantment",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Ballad of the Basilisk",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Bandit Camp",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Bandos Battalion",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Barb Wire",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Barbarian Workout",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Barking Mad",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Barren Land",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Beetle Juice",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Below Ice Mountain",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Below the Conch",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Bem-Vindo(a) ao Old School RuneScape.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Beneath Cursed Sands",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Beneath the Kingdom",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Beneath the Stronghold",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Between a Rock...",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Beyond the Meadow",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Big Chompy Bird Hunting",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Big Chords",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Black Knights' Fortress",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Black of Knight",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Blade of Forgotten Justice",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Blistering Barnacles",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Blood Rush",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Boat 'Em Up",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Bob's on Holiday",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Body Parts",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Bolrie's Diary",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Bone Dance",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Bone Dry",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Bone Voyage",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Book of Spells",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Bork's Beats",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Boss Moosic",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Box of Delights",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Brain Battle",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Brew Hoo Hoo!",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Brimstail's Scales",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Bronze shortsword",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Bubble and Squeak",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Bunny's Sugar Rush",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Burning Desire",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Business as Unusual",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Cabin Fever",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Cain's Tutorial",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Caixa de entrada: 0 mensagens não lidas",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Call of the Tlati",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Castle Drakan",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Catacombs and Tombs",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Catch Me If You Can",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Category: Unarmed",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Cave Background",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Cave of Beasts",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Cave of the Goblins",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Cellar Song",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Chain of Command",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Change Name",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Check the skill guide for more information about Woodcutting.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Chef Surprise",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Chickened Out",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Chompy Hunt",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "City of the Dead",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Clan Wars",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Client of Kourend",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Clique aqui para sair",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Clique com o botão esquerdo onde disponível",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Clock Tower",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Close Quarters",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Colossus of the Deep",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Combat Lvl: 5.025",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Começar",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Controls Settings",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Cook's Assistant",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Corporal Punishment",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Corridors of Power",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Country Jig",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Crab Quest",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Crashing Waves",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Creature Cruelty",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Creatures of Varlamore",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Creeping Vines",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Crest of a Wave",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Crystal Castle",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Crystal Cave",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Crystal Sword",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Current Affairs",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Customer Support",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Daddy's Home",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Dagannoth Dawn",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Dance of Death",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Dance of the Meilyr",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Dance of the Nylocas",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Dance of the Undead",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Dangerous Logic",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Dangerous Road",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Dangerous Way",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Darkly Altared",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Darkness in the Depths",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Darkness of Hallowvale",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Daughter of Darkness",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Davy Jones' Locker",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Dead Quiet",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Death Plateau",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Death on the Isle",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Death to the Dorgeshuun",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Deep Down",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Deep Wildy",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Del Friend",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Desert Heat",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Desert Treasure I",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Desert Treasure II - The Fallen Empire",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Desert Voyage",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Devils May Care",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Devious Minds",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Diango's Little Helpers",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Did you know? On mobile you can categorise, highlight, and hide loot dropped on the ground by its value.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Dies Irae",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Distant Land",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Distillery Hilarity",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Dogs of War",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Domain of the Vampyres",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Don't Panic Zanik",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Dorgeshuun City",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Dorgeshuun Deep",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Dorgeshuun Treaty",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Doric's Quest",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Dot's Yuletide",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Down Below",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Down and Out",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Down by the Docks",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Down to Earth",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Dragon Slayer I",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Dragon Slayer II",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Dragontooth Island",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Dream Mentor",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Druidic Ritual",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Dunes of Eternity",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Dusk in Yu'biusk",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Dwarf Cannon",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Dwarf Theme",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Dwarven Domain",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Eadgar's Ruse",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Eagles' Peak",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Easter Jig",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Echoes of the North",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Elder Wisdom",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Elemental Workshop I",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Elemental Workshop II",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Elven Guardians",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Elven Mist",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Elven Seed",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Emissaries of Twilight",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Enakhra's Lament",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Enlightened Journey",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Enviando solicitação de cancelamento...",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Essência rúnica",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Este ninho parece ter algum papel velho dentro.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Ethically Acquired Antiquities",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Eve's Epinette",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Everlasting Fire",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Evil Bob's Island",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Eye See You",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Eye of the Storm",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Fairytale I - Growing Pains",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Fairytale II - Cure a Queen",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Faith of the Hefin",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Fallen From Grace",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Family Crest",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Fangs for the Memory",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Far Away",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Fe Fi Fo Fum",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Fear and Loathing",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Fenkenstrain's Refrain",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Fight Arena",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Fight of the Basilisk",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Fight or Flight",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Find My Way",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Fire and Brimstone",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Fire in the Deep",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Fishing Contest",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Floating Free",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Flute Salad",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Food for Thought",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Forged Through Fire",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Forgettable Melody",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Friends List - World 692",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Fruits de Mer",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Ful to the Brim",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Funny Bunnies",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Game client layout:",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Garden of Autumn",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Garden of Spring",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Garden of Summer",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Garden of Winter",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Gertrude's Cat",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Getting Ahead",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Getting Down to Business",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Gill Bill",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Gnome King",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Gnome Village",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Gnome Village 2",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Gnome Village Party",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Goblin Game",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Goblin Village",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Golden Touch",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Grand Exchange",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Grand Exchange: Terminou de vender 1 x Bronze axe.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Grim Tales",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Grimly Fiendish",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Grip of the Talon",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Grow Grow Grow",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Guardiões do Rift",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "H.A.M. and Seek",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Haunted Mine",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Have a Blast",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Have an Ice Day",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Hazeel Cult",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Head to Head",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Healin' Feelin'",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Heart and Mind",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Heavy Security",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Hells Bells",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Heroes' Quest",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "High Seas",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "High Spirits",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "His Faithful Servants",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Hoe Down",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Holy Grail",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Home Sweet Home",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Honkytonky Sea Shanty 2",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "I can't believe I'm about to do this!",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Ice Melody",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Ice and Fire",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Icthlarin's Little Helper",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Imp Catcher",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "In Aid of the Myreque",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "In Between",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "In Search of the Myreque",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "In the Brine",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "In the Clink",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "In the Manor",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "In the Pits",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "In the Shadows",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Insect Queen",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Into the Abyss",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Into the Archive",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Into the Blue",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Into the Tombs",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Io io io!",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Iorwerth's Lament",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Island Life",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Island of the Trolls",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Isle of Everywhere",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Isle of Serenity",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "It's not over 'til...",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Itsy Bitsy...",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Jaws of Gluttony",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Jaws of the Basilisk",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Jester Minute",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Joy of the Hunt",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Judgement of the Depths",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Jungle Bells",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Jungle Hunt",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Jungle Island",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Jungle Island Xmas",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Jungle Potion",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Jungle Troubles",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Kanon of Kahlith",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Karamja Jam",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "King of the Trolls",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "King's Ransom",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Kourend the Magnificent",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "La Mort",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Laid to Rest",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Lair of the Basilisk",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Lament for the Hallowed",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Lament of Meiyerditch",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Lamistard's Labyrinth",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Land Down Under",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Land of Snow",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Land of the Dwarves",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Land of the Goblins",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Last King of the Yarasa",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Last Man Standing",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Last Stand",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Latest Update",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Lava is Mine",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Learning the Ropes",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Legends' Quest",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 10 Woodcutting: Light jungle (members-only)",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 11 Woodcutting: Black axe",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 11 Woodcutting: Black felling axe (members-only)",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 12 Woodcutting: Log canoe",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 15 Woodcutting: Oak trees",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 20 Woodcutting: Medium jungle (members-only)",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 21 Woodcutting: Mithril axe",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 21 Woodcutting: Mithril felling axe (members-only)",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 6 Woodcutting: Steel axe",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 6 Woodcutting: Steel felling axe (members-only)",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Life at Sea",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Life's a Beach!",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Links úteis",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Lista de quests",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Little Cave of Horrors",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Long Ago",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Long Way Home",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Look to the Stars",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Looking Back",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Lord of the Larvae",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Lore and Order",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Lost City",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Lost Soul",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Lost to Time",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Lower Depths",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Lucid Dream",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Lucid Nightmare",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Lunar Diplomacy",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Lurking Threats",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "MQ: Alfred Grimhand's Barcrawl",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "MQ: Barbarian Training",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "MQ: Bear Your Soul",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "MQ: Curse of the Empty Lord",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "MQ: Enter the Abyss",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "MQ: Family Pest",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "MQ: His Faithful Servants",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "MQ: Hopespear's Will",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "MQ: In Search of Knowledge",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "MQ: Into the Tombs",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "MQ: Lair of Tarn Razorlor",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "MQ: Mage Arena I",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "MQ: Mage Arena II",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "MQ: Skippy and the Mogres",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "MQ: The Enchanted Key",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "MQ: The Fractured Archive",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "MQ: The Frozen Door",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "MQ: The General's Shadow",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "MQ: Vale Totems",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Mad Eadgar",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Mage Arena",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Magic Dance",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Magic Magic Magic",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Magical Journey",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Major Miner",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Making History",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Making Waves",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "March of the Shayzien",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Master of Puppets",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Maws Jaws & Claws",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Meat and Greet",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Meddling Kids",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Membership: None",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Memories of the Myreque",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Merlin's Crystal",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Method of Madness",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Miles Away",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Military Life",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Mind over Matter",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Miracle Dance",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Miscelânea",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Misthalin Mystery",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Monarch Waltz",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Monk's Friend",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Monkey Badness",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Monkey Business",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Monkey Madness",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Monkey Madness I",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Monkey Madness II",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Monkey Sadness",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Monkey Trouble",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Monster Melee",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Mor Ul Rek",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "More Than Meets the Eye",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Morytanian Mystery",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Mother Ruckus",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Mountain Daughter",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Mourning's End Part I",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Mourning's End Part II",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Mouse Trap",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Mudfoot's Big Adventure",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Mudskipper Melody",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Mundo sugerido:",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Murder Mystery",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Museum Medley",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Mutant Medley",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "My Arm's Journey",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Mysterious Lands",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Mystics of Nature",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "NPC 'Attack' options:",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Name: galinha69",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Narnode's Theme",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Nether Realm",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Newbie Farming",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Newbie Melody",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Night of the Vampyre",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "No Pasaran",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "No Way Out",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Norse Code",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Not a Moment of Relief",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Nox Irae",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Noxious Awakening",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Null and Void",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Não consigo alcançar isso!",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Ocean Depths",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Oddenstein aciona a máquina.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Ogre the Top",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Oh Rats!",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Olaf's Quest",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Old School Website",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Old School Wiki",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "On Thin Ice",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "On the Frontline",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "On the Shore",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "On the Up",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "On the Wing",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Oncoming Foe",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "One Small Favour",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Organ Music 1",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Organ Music 2",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Out at the Mines",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Out of the Deep",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Over the Horizon",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Over the Mountains",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Over to Nardah",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "PK Skull Prevention",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 10.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 11.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 12.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 13.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 14.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 15.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 16.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 17.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 18.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 19.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 2.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 20.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 21.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 22.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 3.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 4.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 5.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 6.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 7.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 8.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 9.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Parabéns, você alcançou o nível total de 50.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Parabéns, você concluiu uma missão: @q_mes@Ernest the Chicken",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Path of Peril",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Peace and Prosperity",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Penguin Plots",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Perilous Moons",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Pest Control",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Pharaoh's Tomb",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Pheasant Peasant",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Pick & Shovel",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Pinball Wizard",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Pirate's Treasure",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Pirates of Penance",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Pirates of Peril",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Plague City",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Player 'Attack' options:",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Plots and Plans",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Poles Apart",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Polls: Inactive",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Power of the Shadow Realm",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Prayer Filters",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Predator Xarpus",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Price of Clue nest (beginner) : HA value 270",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Price of Oak logs : GE average 30 HA value 12",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Prime Time",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Prince Ali Rescue",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Prison Break",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Prospering Fortune",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Prying Times",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "PvP Arena",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Quest Points: 12/357",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Quest do observatório",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Race Against the Clock",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Rag and Bone Man I",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Rag and Bone Man II",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Rag and Bone Man III",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Rage of Ræun",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Rat Hunt",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Rat a Tat Tat",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Ready for Battle",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Ready for the Hunt",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Recipe for Disaster - Another Cook's Quest",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Recipe for Disaster - Culinaromancer",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Recipe for Disaster - Evil Dave",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Recipe for Disaster - King Awowogei",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Recipe for Disaster - Lumbridge Guide",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Recipe for Disaster - Mountain Dwarf",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Recipe for Disaster - Pirate Pete",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Recipe for Disaster - Sir Amik Varze",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Recipe for Disaster - Skrach Uglogwee",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Recipe for Disaster - Wartface & Bentnoze",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Recruitment Drive",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Redimensionável - layout moderno",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Regal Pomp",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Reign of the Basilisk",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Relíquias Esfaceladas",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Remote Waters",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Rest in Peace",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Right on Track",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Rising Damp",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Roc and Roll",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Roll the Bones",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Romancing the Crone",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Romper Chomper",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Roots and Flutes",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Roving Elves",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Royal Trouble",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Rugged Terrain",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Ruins of Isolation",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Rum Deal",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Rune Mysteries",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Sad Meadow",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Safety in Numbers",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Sands of Time",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Sarim's Vermin",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Scape Ape",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Scape Cave",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Scape Crystal",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Scape Five",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Scape Ground",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Scape Home",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Scape Hunter",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Scape Main",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Scape Original",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Scape Sad",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Scape Sail",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Scape Santa",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Scape Scared",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Scape Soft",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Scape Wild",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Scar Tissue",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "School's Out",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Scorching Horizon",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Scorpia Dances",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Scorpion Catcher",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Scrubfoot's Descent",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Sea Minor Shanty",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Sea Shanty",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Sea Shanty 2",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Sea Shanty Xmas",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Secrets of the North",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Selecione uma atividade...",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Sempre clique com o botão direito",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Servants of Strife",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Set Effect (Off)",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Set Sail",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Seu inventário está cheio demais para carregar mais troncos de oak.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Seu inventário está cheio demais para guardar mais lenhas.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Seu inventário está muito cheio.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Shades of Mort'ton",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Shadow of the Ocean",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Shadow of the Storm",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Shadows of Custodia",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Sharp End of the Crystal",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Sheep Herder",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Shilo Village",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Shining Spirit",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Sigmund's Showdown",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Sign Here",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Sins of the Father",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Sleeping Giants",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Slice of Silent Movie",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Slice of Station",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Slither and Thither",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Slug a Bug Ball",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Snowflake & My Arm",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Song of the Elves",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Song of the Silent Choir",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Sorceress's Garden",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Soul Fall",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Soul Wars",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Spirit of the Forest",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Spirits of the Elid",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Spooky Jungle",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Stand Up and Be Counted",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Still Night",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Stones of Old",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Storeroom Shuffle",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Storm Brew",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Strange Place",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Strength of Saradomin",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Stuck in the Mire",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Sunny Side Up",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Surok's Theme",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Swan Song",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Tale of Keldagrim",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Tale of the Righteous",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Talking Forest",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Tarn Razorlor",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Tears of Guthix",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Temple Desecrated",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Temple of Ikov",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Temple of Light",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Temple of Tribes",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Temple of the Eye",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Tempor of the Storm",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Terrorbird Tussle",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Test Your Sails",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Test of Companionship",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Test of Isolation",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Test of Resourcefulness",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Test of Strength",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "That Sullen Hall",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Angel's Fury",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Archive Guardian",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Ascent of Arceuus",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Bane of Ashihama",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Birds and the Wasps",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Blood Moon Rises",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Bridge",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Burning Sun",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Cellar Dwellers",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Chosen",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The City of Sun",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Consortium",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Corsair Curse",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Curse of Arrav",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Curtain Closes",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Dark Beast Sotetseg",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Depths",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Depths of Despair",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Desert",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Desolate Isle",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Desolate Mage",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Dig Site",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Doom",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Doors of Dinh",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Dragon Slayer",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Dream Theatre",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Emir's Arena",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Enchanter",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Enclave",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Eternal Waves",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Everlasting Slumber",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Evil Within",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Fairy Dragon",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Fallen Empire",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Far Side",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Fat Lady Sings",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Feathered Serpent",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Feud",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Final Dawn",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Fires of Lletya",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Forests of Shayzien",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Forgotten Tomb",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Forlorn Homestead",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Forsaken",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Forsaken Tower",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Foundry",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Fragment",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Fremennik Exiles",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Fremennik Isles",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Fremennik Kings",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Galleon",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Garden of Death",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Gates of Menaphos",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Gauntlet",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Genie",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Giant Dwarf",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Golem",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Grand Tree",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Graveyard",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Graveyard, a new Master tier quest continuing the Fremennik storyline, is here! A new Agility Course also awaits those who answer the call!",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Graveyard, a new Master tier quest that continues the Fremennik storyline, is here! - click here for the newspost.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Great Brain Robbery",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Great North",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Guardian of Tapoyauik",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Guardians Prepare",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Guidance of Ralos",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Hand in the Sand",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Heist",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Horror",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Houses of Kourend",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Ides of Milk",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Kin",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Knight's Sword",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Last Shanty",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Longramble Scramble",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Lost Melody",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Lost Tribe",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Lunar Isle",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Mad Mole",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Maiden's Anger",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Maiden's Sorrow",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Maze",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Militia",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Mollusc Menace",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Monsters Below",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Moons of Ruin",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Navigator",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Nightmare Continues",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Noble Rodent",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The North",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Old Ones",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Other Side",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Part Where You Die",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Path of Glouphrie",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Penguin Bards",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Pharaoh",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Plundered Tomb",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Power of Tears",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Queen of Thieves",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Quizmaster",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Red Reef",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Restless Ghost",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Ribbiting Tale of a Lily Pad Labour Dispute",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Rising Sun",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Rogues' Den",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Route of All Evil",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Route of the Problem",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Ruins of Camdozaal",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Seed of Crwys",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Setting Sun",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Shadow",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Sinclairs",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Slayer",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Slug Menace",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Sound of Guthix",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Spurned Demon",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Spymaster",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Talkasti People",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Terrible Caverns",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Terrible Tower",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Terrible Tunnels",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Tortugan Way",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Tourist Trap",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Tower",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Tower of Voices",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Trade Parade",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Undying Light",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Vault",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Waiting Game",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Walking Dead",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Western Seas",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The Writing's on the Wall",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The doors slam shut behind you.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The doors won't open.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "The lever opens the secret door!",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Thrall of the Devourer",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Thrall of the Serpent",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Throne of Miscellania",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Throne of the Demon",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Tick Tock",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Time Out",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Time to Mine",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Title Fight",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Toda a música",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Tomb Raider",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Too Many Cooks...",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Torre de Vigia",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Total level: 63",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Tower of Life",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Trahaearn Toil",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Trawler Minor",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Tree Gnome Village",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Tree Spirits",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Tribal Background",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Tribal Totem",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Triple Threat",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Trocar de mundo",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Troll Shuffle",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Troll Stronghold",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Troncos cortados de uma árvore carvalho.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Trouble Brewing",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Troubled Tortugans",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Troubled Waters",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Twilight's Promise",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Undead Army",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Undead Dungeon",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Under the Mountain",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Unknown Land",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Unturned Stones",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Upgrade Now",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Upir Likhyi",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Upper Depths",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Vampyre Assault",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Vampyre Slayer",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Varlamore's Sunset",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Ver caixa de entrada",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Victory is Mine",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "View Archive",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "View Benefits",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "View History",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "View Newspost",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "View Poll",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Você cava no composto...",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Você consegue alguns troncos de oak.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Você desbloqueou uma nova faixa de música: @mes_hl_red@The Trade Parade",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Você despeja a ração de peixe envenenada na fonte.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Você destranca a porta.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Você deu nota 5/5 a uma quest: @q_mes@Ernest the Chicken",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Você envenena a ração de peixes.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Você golpeia a árvore com seu machado.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Você não está num chat-channel de grupo agora.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Você não tem espaço suficiente no inventário para retirar essa quantidade.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Você pega o manômetro da fonte.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Você precisa de nível 15 em Woodcutting para cortar esta árvore.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Você precisa de nível 30 em Woodcutting para cortar esta árvore.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Você se sente enfraquecido.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Volcanic Vikings",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Voodoo Cult",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Waking Dream",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Wally the Hero",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Warriors' Guild",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Waste Defaced",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Watch Your Step",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Waterfall Quest",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Way of the Enchanter",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Way of the Wyrm",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "We are the Fairies",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Welcome to my Nightmare",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Welcome to the Theatre",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Well Hallowed Air",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Well of Voyage",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "What Happens Below...",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "What Lies Below",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "What the Shell!",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Where Eagles Lair",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "While Guthix Sleeps",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Whispering Wind",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Wild Isle",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Wild Side",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Wings of Madness",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Winter Funfair",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Witch's House",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Witch's Potion",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Woe of the Wyvern",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Work Work Work",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Wrath and Ruin",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "X Marks the Spot",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "You Have My Attention",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "You aren't carrying any containers that can be emptied.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "You climb up the ladder.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "You don't have any of that item available to sell.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "You give a rubber tube, a pressure gauge,",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "You hear a clunk.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "You may add friends by using the button below, or by right-clicking on a message from them and selecting to add them as a friend.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "You pull lever A down.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "You pull lever A up.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "You pull lever B down.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "You pull lever B up.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "You pull lever C down.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "You pull lever D down.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "You pull lever E down.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "You pull lever E up.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "You pull lever F down.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "You've found a secret door!",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Your account is currently restricted for trading. The restrictions will lift in 16 hours, 25 minutes, provided you gain 2 more quest points and 37 more skill levels.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Zamorak Zoo",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Zanik's Theme",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Zaros Zeitgeist",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Zogre Dance",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Zogre Flesh Eaters",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Zombie Invasion",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "e uma lata de óleo ao professor.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "galinha69: mmimmm *",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
   ]
  }
 ]
