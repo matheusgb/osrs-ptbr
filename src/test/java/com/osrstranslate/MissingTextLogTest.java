@@ -25,6 +25,21 @@ public class MissingTextLogTest {
     }
 
     @Test
+    public void skipsTranslationsShownByThePlugin() throws Exception {
+        File arquivo = new File(pasta.getRoot(), "sem-traducao.jsonl");
+        MissingTextLog registro = new MissingTextLog(arquivo);
+        registro.markOutput("<col=ff0000>Parabéns, você subiu de nível em Woodcutting .</col>");
+        registro.record("translations_welcome.json", "Parabéns, você subiu de nível em Woodcutting.");
+        registro.record("translations_welcome.json", "You catch a shrimp.");
+        registro.close();
+        assertTrue(registro.awaitClosed(5000));
+
+        List<String> linhas = Files.readAllLines(arquivo.toPath(), StandardCharsets.UTF_8);
+        assertEquals(1, linhas.size());
+        assertTrue(linhas.get(0).contains("You catch a shrimp."));
+    }
+
+    @Test
     public void writesEachTextOnceAcrossRestarts() throws Exception {
         File arquivo = new File(pasta.getRoot(), "sub/sem-traducao.jsonl");
         MissingTextLog primeiro = new MissingTextLog(arquivo);

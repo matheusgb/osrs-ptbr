@@ -271,8 +271,17 @@ public class OsrsTranslatePlugin extends Plugin {
     /** Anota um texto que apareceu sem tradução, se o registro estiver ligado. */
     private void recordMissing(TranslationDomain domain, String text) {
         MissingTextLog current = missingTextLog;
-        if (current != null) {
+        // Tradução de qualquer área relida na tela não é texto sem tradução.
+        if (current != null && !translationState.merged.isTranslated(text)) {
             current.record(domain.fileName, text);
+        }
+    }
+
+    /** Avisa o registro que o plugin mostrou esta tradução. */
+    private void markOutput(String translation) {
+        MissingTextLog current = missingTextLog;
+        if (current != null) {
+            current.markOutput(translation);
         }
     }
 
@@ -455,7 +464,11 @@ public class OsrsTranslatePlugin extends Plugin {
     }
 
     private void onGameStateChanged(GameStateChanged event) {
-        if (!isLoginScreenState()) {
+        // As abas do jogo carregam ainda em LOGGING_IN e HOPPING e entrariam como interface
+        // de login: no LOGGED_IN a lista começa de novo, com o dicionário de cada área.
+        // O LOGGED_IN chega também a cada troca de região: só refaz se sobrou interface de login.
+        boolean leftLogin = event.getGameState() == GameState.LOGGED_IN && !loginInterfaceGroups.isEmpty();
+        if (!isLoginScreenState() && !leftLogin) {
             return;
         }
         // A tela de login troca as interfaces: começa a lista de novo.
@@ -703,6 +716,7 @@ public class OsrsTranslatePlugin extends Plugin {
             state.get(TranslationDomain.WELCOME).translations
         );
         if (specialTranslation != null) {
+            markOutput(specialTranslation);
             return preserveStartTags(originalText) + numberingPrefix + specialTranslation;
         }
 
@@ -721,6 +735,9 @@ public class OsrsTranslatePlugin extends Plugin {
             recordMissing(domainForInterface(interfaceId), lookup);
         }
 
+        if (translation != null) {
+            markOutput(translation);
+        }
         if (translation != null && interfaceId == CHAT_OVERLAY) {
             translation = normalizeChatOverlayTags(translation);
         }
@@ -797,6 +814,7 @@ public class OsrsTranslatePlugin extends Plugin {
         if (translation == null) {
             recordMissing(TranslationDomain.OVERHEAD, clean);
         } else {
+            markOutput(translation);
             actor.setOverheadText(translation);
             log.debug("[OverheadTranslate] '{}' -> '{}'", clean, translation);
         }
@@ -959,6 +977,7 @@ public class OsrsTranslatePlugin extends Plugin {
             recordMissing(TranslationDomain.GAME_MESSAGE, clean);
             return;
         }
+        markOutput(translation);
 
         if (shouldDeferRichChatOverlayTranslation(translation)) {
             translateInterface(CHAT_OVERLAY);

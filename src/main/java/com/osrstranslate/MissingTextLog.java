@@ -29,10 +29,13 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 final class MissingTextLog {
     static final int LIMIT = 50_000;
+    static final int OUTPUT_LIMIT = 5_000;
     private static final Pattern WORD = Pattern.compile("[A-Za-z]{2,}");
 
     private final File file;
     private final Set<String> seen = ConcurrentHashMap.newKeySet();
+    /** Traduções que o plugin pôs na tela: relidas depois, não são texto sem tradução. */
+    private final Set<String> outputs = ConcurrentHashMap.newKeySet();
     private final AtomicInteger written = new AtomicInteger();
     private final ExecutorService writer = Executors.newSingleThreadExecutor();
 
@@ -41,11 +44,26 @@ final class MissingTextLog {
         writer.execute(this::loadExisting);
     }
 
+    /** Guarda uma tradução que o plugin mostrou, para não anotar o texto quando ele for relido. */
+    void markOutput(String translation) {
+        if (translation == null) {
+            return;
+        }
+        if (outputs.size() >= OUTPUT_LIMIT) {
+            outputs.clear();
+        }
+        outputs.add(normalize(translation));
+    }
+
+    private static String normalize(String text) {
+        return TranslationLookupHelper.normalizeLookupText(TranslationLookupHelper.cleanText(text));
+    }
+
     /** Anota o texto, se ele valer a pena e ainda não estiver no arquivo. */
     void record(String targetFile, String text) {
         String key = targetFile + '\u0000' + text;
         // Atalho na thread do jogo para o caso comum: texto já anotado.
-        if (!worthRecording(text) || seen.contains(key)) {
+        if (!worthRecording(text) || seen.contains(key) || outputs.contains(normalize(text))) {
             return;
         }
         // A thread de gravação roda em ordem, depois de ler o arquivo existente,
