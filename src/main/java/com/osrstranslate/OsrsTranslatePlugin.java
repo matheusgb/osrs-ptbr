@@ -364,7 +364,9 @@ public class OsrsTranslatePlugin extends Plugin {
             return;
         }
 
-        if (isLoginScreenState()) {
+        // Só a tela de login conta: em LOGGING_IN e HOPPING o que abre são as abas do jogo
+        // (chatbox, quests, amigos), que cairiam no dicionário de boas-vindas e no registro.
+        if (isLoginScreen()) {
             if (config.enableWelcome()) {
                 loginInterfaceGroups.add(groupId);
                 scheduleTranslation(groupId);
@@ -520,6 +522,13 @@ public class OsrsTranslatePlugin extends Plugin {
         }
     }
 
+    /** Tela de login de fato. Use em registerInterface: decide o que é interface de login. */
+    private boolean isLoginScreen() {
+        GameState state = client.getGameState();
+        return state == GameState.LOGIN_SCREEN || state == GameState.LOGIN_SCREEN_AUTHENTICATOR;
+    }
+
+    /** Tela de login ou transição (LOGGING_IN, HOPPING). Use só para refazer a lista de interfaces. */
     private boolean isLoginScreenState() {
         GameState state = client.getGameState();
         return state == GameState.LOGIN_SCREEN
@@ -730,8 +739,9 @@ public class OsrsTranslatePlugin extends Plugin {
             // A mesma frase pode estar no JSON de outra área (fala mostrada como mensagem).
             translation = state.findInOtherDomains(domainForInterface(interfaceId), lookup);
         }
-        // O overlay do chat mostra também mensagens de jogadores: não entra no registro.
-        if (translation == null && interfaceId != CHAT_OVERLAY) {
+        // A chatbox e o overlay do chat mostram mensagens de jogadores: não entram no registro.
+        // Hoje a chatbox só chegava aqui como interface de login; a guarda fica como defesa.
+        if (translation == null && interfaceId != CHAT_OVERLAY && interfaceId != CHATBOX_UNIVERSE) {
             recordMissing(domainForInterface(interfaceId), lookup);
         }
 
