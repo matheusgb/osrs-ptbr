@@ -1,1882 +1,1973 @@
 [
  {
-  "texto": "1 Quest Point",
+  "texto": "Evil Bob",
   "tipo": "arquivo:translations.json",
   "paginas": [
    "translations.json"
   ]
  },
  {
-  "texto": "4 Quest Points",
+  "texto": "Mysterious Old Man",
   "tipo": "arquivo:translations.json",
   "paginas": [
    "translations.json"
   ]
  },
  {
-  "texto": "5 Quest Points",
+  "texto": "Postie Pete",
   "tipo": "arquivo:translations.json",
   "paginas": [
    "translations.json"
   ]
  },
  {
-  "texto": "Be careful in here. There's lots of dangerous equipment.",
+  "texto": "That was the strangest dream I've ever had! Assuming it was a dream...",
   "tipo": "arquivo:translations.json",
   "paginas": [
    "translations.json"
   ]
  },
  {
-  "texto": "Can't you see that I'm in the middle of a sermon?!",
+  "texto": "Yes and don't ask me again",
   "tipo": "arquivo:translations.json",
   "paginas": [
    "translations.json"
   ]
  },
  {
-  "texto": "Congratulations, you just advanced 2 combat levels.",
+  "texto": "You don't have any fishing bait.",
   "tipo": "arquivo:translations.json",
   "paginas": [
    "translations.json"
   ]
  },
  {
-  "texto": "Crypt! Again... very creepy! You must have some strange hobbies.",
+  "texto": "You don't know if this is a good place to go fishing. Perhaps you should ask someone, like one of the human servants.",
   "tipo": "arquivo:translations.json",
   "paginas": [
    "translations.json"
   ]
  },
  {
-  "texto": "Dead! Sounds a bit creepy to me... but please, continue.",
+  "texto": "You feel somehow that you've become better at Fishing.",
   "tipo": "arquivo:translations.json",
   "paginas": [
    "translations.json"
   ]
  },
  {
-  "texto": "Fred the Farmer",
-  "tipo": "arquivo:translations.json",
-  "paginas": [
-   "translations.json"
-  ]
- },
- {
-  "texto": "Grand Exchange Clerk",
-  "tipo": "arquivo:translations.json",
-  "paginas": [
-   "translations.json"
-  ]
- },
- {
-  "texto": "Ooh I dunno... She could have free eggs for breakfast.",
-  "tipo": "arquivo:translations.json",
-  "paginas": [
-   "translations.json"
-  ]
- },
- {
-  "texto": "Professor Oddenstein",
-  "tipo": "arquivo:translations.json",
-  "paginas": [
-   "translations.json"
-  ]
- },
- {
-  "texto": "Start the Ernest the Chicken quest?",
-  "tipo": "arquivo:translations.json",
-  "paginas": [
-   "translations.json"
-  ]
- },
- {
-  "texto": "That would be a help. They'll be somewhere in the manor house or its grounds. The gremlins never get further than the entrance gate.",
-  "tipo": "arquivo:translations.json",
-  "paginas": [
-   "translations.json"
-  ]
- },
- {
-  "texto": "The coffin is sealed shut.",
-  "tipo": "arquivo:translations.json",
-  "paginas": [
-   "translations.json"
-  ]
- },
- {
-  "texto": "The potion will only make Juliet 'appear' dead... then she'll be taken to the crypt...",
-  "tipo": "arquivo:translations.json",
-  "paginas": [
-   "translations.json"
-  ]
- },
- {
-  "texto": "Well, I can look for them.",
-  "tipo": "arquivo:translations.json",
-  "paginas": [
-   "translations.json"
-  ]
- },
- {
-  "texto": "Well, a reward is always nice...",
-  "tipo": "arquivo:translations.json",
-  "paginas": [
-   "translations.json"
-  ]
- },
- {
-  "texto": "You are awarded:",
-  "tipo": "arquivo:translations.json",
-  "paginas": [
-   "translations.json"
-  ]
- },
- {
-  "texto": "You dig up an unusual item. There doesn't seem to be any use for it around here, so you leave it alone.",
-  "tipo": "arquivo:translations.json",
-  "paginas": [
-   "translations.json"
-  ]
- },
- {
-  "texto": "You open and throw away the tatty nest and find a clue scroll inside!",
-  "tipo": "arquivo:translations.json",
-  "paginas": [
-   "translations.json"
-  ]
- },
- {
-  "texto": "Your wish has been granted! You have been awarded 500 Attack experience!",
-  "tipo": "arquivo:translations.json",
-  "paginas": [
-   "translations.json"
-  ]
- },
- {
-  "texto": "Your wish has been granted! You have been awarded 500 Woodcutting experience!",
-  "tipo": "arquivo:translations.json",
-  "paginas": [
-   "translations.json"
-  ]
- },
- {
-  "texto": "11|Check the skill guide for more information about Crafting.",
+  "texto": "15|Check the skill guide for more information about Fishing.",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "18|Check the skill guide for more information about Woodcutting.",
+  "texto": "16|Check the skill guide for more information about Cooking.",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "1|Check the skill guide for more information about Attack.",
+  "texto": "16|Check the skill guide to see what else your new Cooking level unlocks!",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "@ap_mes@You just completed the task Getting started with Attack! Speak to Adventurer Jon to claim your reward.",
+  "texto": "17|Check the skill guide for more information about Firemaking.",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "@ap_mes@You just completed the task Getting started with Woodcutting! Speak to Adventurer Jon to claim your reward.",
+  "texto": "18|Check the skill guide to see what else your new Woodcutting level unlocks!",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "A bird's nest falls out of the tree.",
+  "texto": "@ap_mes@You just completed the task Getting started with Fishing! Speak to Adventurer Jon to claim your reward.",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "Did you know? On mobile you can categorise, highlight, and hide loot dropped on the ground by its value.",
+  "texto": "A gravestone appears on the ground near where you died. You can go there and retrieve your items by clicking on it.",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "Did you know? You can also play Old School Runescape on mobile and tablet.",
+  "texto": "A gravestone does not last forever. After about 15 minutes, a gravestone will collapse. Anything in it will be sent here, to me.",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "Juliet gives you a message.",
+  "texto": "A gravestone lasts for at least 15 minutes before it collapses. However, that timer pauses if you become inactive, in case you have lost your conn",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "Level 10 Woodcutting: Light jungle (members-only)",
+  "texto": "Death's Coffer won't accept items worth less than 10,000 coins per item - Death doesn't want cheap junk! But more valuable items can be sacrificed to pay down </col",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "Level 11 Woodcutting: Black axe",
+  "texto": "Did you know? If you're looking for a break from your desk, you can continue the grind on mobile no matter where you are.",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "Level 11 Woodcutting: Black felling axe (members-only)",
+  "texto": "Did you know? On mobile you can check your Grand Exchange offers at any time and on the go.",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "Level 12 Woodcutting: Log canoe",
+  "texto": "Gravestones charge a small fee to return especially valuable items, but most things are returned free of charge. Conveniently, a gravestone can take its fee <",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "Level 15 Woodcutting: Oak trees",
+  "texto": "Level 10 Cooking: Mackerel (members-only)",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "Level 2 Crafting: Pheasant clothing (members-only)",
+  "texto": "Level 10 Cooking: Redberry pie",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "Level 20 Woodcutting: Medium jungle (members-only)",
+  "texto": "Level 10 Cooking: Toad crunchies (members-only)",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "Level 21 Woodcutting: Mithril axe",
+  "texto": "Level 10 Fishing: Herring",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "Level 21 Woodcutting: Mithril felling axe (members-only)",
+  "texto": "Level 11 Cooking: Chilli con carne (topping) (members-only)",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "Level 3 Crafting: Cup (members-only)",
+  "texto": "Level 11 Cooking: Roasted bird meat (members-only)",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "Level 3 Crafting: Polished buttons (members-only)",
+  "texto": "Level 12 Cooking: Spicy crunchies (members-only)",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "Level 5 Attack: Steel weapons",
+  "texto": "Level 12 Cooking: Thin snail (members-only)",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "Level 6 Woodcutting: Steel axe",
+  "texto": "Level 13 Cooking: Scrambled egg (topping ingredient) (members-only)",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "Level 6 Woodcutting: Steel felling axe (members-only)",
+  "texto": "Level 13 Cooking: T-bone Steak",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "Price of Oak logs : GE average 30 HA value 12",
+  "texto": "Level 14 Cooking: Cider (members-only)",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "Romeo folds the message away.",
+  "texto": "Level 14 Cooking: Worm crunchies (members-only)",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "The Apothecary gives you a Cadava potion.",
+  "texto": "Level 15 Cooking: Chambers of Xeric - Prael bat (members-only)",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "The candles on the floor burn your feet!",
+  "texto": "Level 15 Cooking: Chambers of Xeric - Suphi fish (members-only)",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "The coffin is sealed shut.",
+  "texto": "Level 15 Cooking: Trout",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "The doors slam shut behind you.",
+  "texto": "Level 15 Fishing: Anchovies",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "The doors won't open.",
+  "texto": "Level 15 Fishing: Suphi fish (members-only)",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "The lever opens the secret door!",
+  "texto": "Level 16 Cooking: Chocolate chip crunchies (members-only)",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "The wardrobe is empty.",
+  "texto": "Level 16 Cooking: Roasted rabbit (members-only)",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "You aren't carrying any containers that can be emptied.",
+  "texto": "Level 16 Cooking: Spider (members-only)",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "You climb up the ladder.",
+  "texto": "Level 16 Fishing: Casket (members-only)",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "You dig up an unusual item. There doesn't seem to be any use for it around here, so you leave it alone.",
+  "texto": "Level 16 Fishing: Mackerel (members-only)",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "You don't have any of that item available to sell.",
+  "texto": "Level 16 Fishing: Oyster (members-only)",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "You give a rubber tube, a pressure gauge,",
+  "texto": "Level 17 Cooking: Lean snail (members-only)",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "You hand over Juliet's message to Romeo.",
+  "texto": "Level 18 Cooking: Cod (members-only)",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "You hand over the berries, which the Apothecary shakes up in a vial of strange liquid.",
+  "texto": "Level 18 Cooking: Wizard Blizzard (members-only)",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "You hear a clunk.",
+  "texto": "Level 19 Cooking: Dwarven Stout (members-only)",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "You open and throw away the tatty nest and find a clue scroll inside!",
+  "texto": "Level 20 Cooking: Meat pie",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "You pass the suspicious potion to Juliet.",
+  "texto": "Level 20 Cooking: Nettle tea (members-only)",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "You pull lever A down.",
+  "texto": "Level 20 Cooking: Pike",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "You pull lever A up.",
+  "texto": "Level 27 Woodcutting: Dugout canoe",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "You pull lever B down.",
+  "texto": "Level 30 Woodcutting: Willow trees",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "You pull lever B up.",
+  "texto": "Level 31 Woodcutting: Adamant axe",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "You pull lever C down.",
+  "texto": "Level 31 Woodcutting: Adamant felling axe (members-only)",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "You pull lever C up.",
+  "texto": "Level 35 Woodcutting: Dense jungle (members-only)",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "You pull lever D down.",
+  "texto": "Level 35 Woodcutting: Forester's ration (members-only)",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "You pull lever D up.",
+  "texto": "Level 35 Woodcutting: Teak trees (members-only)",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "You pull lever E down.",
+  "texto": "Level 4 Firemaking: Candle lanterns (members-only)",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "You pull lever E up.",
+  "texto": "Level 40 Woodcutting: Jatoba trees (members-only)",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "You pull lever F down.",
+  "texto": "Level 41 Woodcutting: Gilded axe",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "You pull lever F up.",
+  "texto": "Level 41 Woodcutting: Rune axe",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "You've found a secret door!",
+  "texto": "Level 41 Woodcutting: Rune felling axe (members-only)",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "Your account is currently restricted for trading. The restrictions will lift in 16 hours, 25 minutes, provided you gain 2 more quest points and 37 more skill levels.",
+  "texto": "Level 5 Cooking: Herring",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "Your wish has been granted! You have been awarded 500 Attack experience!",
+  "texto": "Level 5 Firemaking: Pyre logs (members-only)",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "Your wish has been granted! You have been awarded 500 Woodcutting experience!",
+  "texto": "Level 5 Fishing: Karambwanji (members-only)",
   "tipo": "arquivo:translations_game_message.json",
   "paginas": [
    "translations_game_message.json"
   ]
  },
  {
-  "texto": "Talk to Charlie the Tramp in Varrock.",
-  "tipo": "arquivo:translations_items.json",
+  "texto": "Level 5 Fishing: Sardine",
+  "tipo": "arquivo:translations_game_message.json",
   "paginas": [
-   "translations_items.json"
+   "translations_game_message.json"
   ]
  },
  {
-  "texto": "Talk to Olaf in Rellekka to start The Graveyard!",
+  "texto": "Level 6 Cooking: Fruit Blast (members-only)",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Level 7 Cooking: Baked potato (members-only)",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Level 7 Cooking: Ritual Offering - Guppy",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Level 7 Fishing: Guppy",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Level 8 Cooking: Pineapple Punch (members-only)",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Level 9 Cooking: Spicy sauce (topping ingredient) (members-only)",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Oh dear, you are dead!",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Price of 27 x Willow logs : GE average 648 ( 24 ea) HA value 648 ( 24 ea)",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Price of 270 x Willow logs : GE average 6,480 ( 24 ea) HA value 6,480 ( 24 ea)",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Price of 290 x Oak logs : GE average 8,700 ( 30 ea) HA value 3,480 ( 12 ea)",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Price of 43 x Sardine : GE average 774 ( 18 ea) HA value 258 ( 6 ea)",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Price of 53 x Shrimps : GE average 1,113 ( 21 ea) HA value 159 ( 3 ea)",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Price of Uncut ruby : GE average 909 HA value 60",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Quest Helper has been updated to 4.18.0! Crab Quest (ty maskarauder!) and A Ruff Situation (ty leafyboat and pajlada!) are now both added!",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Some of your dropped items are being held in a gravestone, near where you died.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "That offer costs 7,228 coins. You haven't got enough.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "The Items Kept on Death menu tells you roughly what your items will do when you next die, including estimating gravestone fees.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "To create a new tab, drag items from your bank onto this tab.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "You are not a high enough level to use this item.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "You don't have any fishing bait.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "You don't know if this is a good place to go fishing. Perhaps you should ask someone, like one of the human servants.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "You feel somehow that you've become better at Fishing.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "You need to have an attack level of 10.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "You successfully cook some anchovies.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "You successfully cook some shrimps.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "You successfully retrieved everything from your gravestone.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Your gravestone would be marked with an arrow to help you spot it. A grave icon appears on the world map too, if your grave is in a mapped area.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Rom4nIrl626!",
   "tipo": "arquivo:translations_overhead.json",
   "paginas": [
    "translations_overhead.json"
   ]
  },
  {
-  "texto": "The Graveyard, a new Master tier quest, is here!",
-  "tipo": "arquivo:translations_overhead.json",
-  "paginas": [
-   "translations_overhead.json"
-  ]
- },
- {
-  "texto": "Combat Level 15",
+  "texto": "Achievement Diaries",
   "tipo": "arquivo:translations_quests.json",
   "paginas": [
    "translations_quests.json"
   ]
  },
  {
-  "texto": "Farmer Fred said there was a spinning wheel in Lumbridge",
+  "texto": "Kourend & Kebos",
   "tipo": "arquivo:translations_quests.json",
   "paginas": [
    "translations_quests.json"
   ]
  },
  {
-  "texto": "Fred gave me some shears to use, to get the job done.",
+  "texto": "Lumbridge & Draynor",
   "tipo": "arquivo:translations_quests.json",
   "paginas": [
    "translations_quests.json"
   ]
  },
  {
-  "texto": "He went into Draynor Manor and hasn't returned, I should go",
+  "texto": "Western Provinces",
   "tipo": "arquivo:translations_quests.json",
   "paginas": [
    "translations_quests.json"
   ]
  },
  {
-  "texto": "I asked Farmer Fred, near Lumbridge, for a quest. Fred said",
-  "tipo": "arquivo:translations_quests.json",
+  "texto": "Area sounds volume - 25%",
+  "tipo": "arquivo:translations_settings.json",
   "paginas": [
-   "translations_quests.json"
+   "translations_settings.json"
   ]
  },
  {
-  "texto": "I need to collect 20 more balls of wool.",
-  "tipo": "arquivo:translations_quests.json",
+  "texto": "Beta Worlds",
+  "tipo": "arquivo:translations_settings.json",
   "paginas": [
-   "translations_quests.json"
+   "translations_settings.json"
   ]
  },
  {
-  "texto": "I need to find Ernest.",
-  "tipo": "arquivo:translations_quests.json",
+  "texto": "Camera Effects",
+  "tipo": "arquivo:translations_settings.json",
   "paginas": [
-   "translations_quests.json"
+   "translations_settings.json"
   ]
  },
  {
-  "texto": "castle I could use to make the balls of wool.",
-  "tipo": "arquivo:translations_quests.json",
+  "texto": "Chat Colour - Opaque",
+  "tipo": "arquivo:translations_settings.json",
   "paginas": [
-   "translations_quests.json"
+   "translations_settings.json"
   ]
  },
  {
-  "texto": "he'd pay me for shearing his sheep for him!",
-  "tipo": "arquivo:translations_quests.json",
+  "texto": "Chat Colour - Split",
+  "tipo": "arquivo:translations_settings.json",
   "paginas": [
-   "translations_quests.json"
+   "translations_settings.json"
   ]
  },
  {
-  "texto": "into the manor and investigate.",
-  "tipo": "arquivo:translations_quests.json",
+  "texto": "Chatbox Mode - Set Automatically",
+  "tipo": "arquivo:translations_settings.json",
   "paginas": [
-   "translations_quests.json"
+   "translations_settings.json"
   ]
  },
  {
-  "texto": "Adamant axe",
-  "tipo": "arquivo:translations_skills.json",
+  "texto": "Clan Broadcasts",
+  "tipo": "arquivo:translations_settings.json",
   "paginas": [
-   "translations_skills.json"
+   "translations_settings.json"
   ]
  },
  {
-  "texto": "Adamant weapons",
-  "tipo": "arquivo:translations_skills.json",
+  "texto": "Combat Achievement Tasks - Failure",
+  "tipo": "arquivo:translations_settings.json",
   "paginas": [
-   "translations_skills.json"
+   "translations_settings.json"
   ]
  },
  {
-  "texto": "Animal Magnetism",
-  "tipo": "arquivo:translations_skills.json",
+  "texto": "Control Options",
+  "tipo": "arquivo:translations_settings.json",
   "paginas": [
-   "translations_skills.json"
+   "translations_settings.json"
   ]
  },
  {
-  "texto": "Attack - Armour (Members Only)",
-  "tipo": "arquivo:translations_skills.json",
+  "texto": "Exact Value",
+  "tipo": "arquivo:translations_settings.json",
   "paginas": [
-   "translations_skills.json"
+   "translations_settings.json"
   ]
  },
  {
-  "texto": "Attack - Level-up Unlocks",
-  "tipo": "arquivo:translations_skills.json",
+  "texto": "Game Chat",
+  "tipo": "arquivo:translations_settings.json",
   "paginas": [
-   "translations_skills.json"
+   "translations_settings.json"
   ]
  },
  {
-  "texto": "Attack - Weapons",
-  "tipo": "arquivo:translations_skills.json",
+  "texto": "General Audio Settings",
+  "tipo": "arquivo:translations_settings.json",
   "paginas": [
-   "translations_skills.json"
+   "translations_settings.json"
   ]
  },
  {
-  "texto": "Axe Shops",
-  "tipo": "arquivo:translations_skills.json",
+  "texto": "He/him",
+  "tipo": "arquivo:translations_settings.json",
   "paginas": [
-   "translations_skills.json"
+   "translations_settings.json"
   ]
  },
  {
-  "texto": "Barronite mace Requires: Below Ice Mountain",
-  "tipo": "arquivo:translations_skills.json",
+  "texto": "Master volume - 100%",
+  "tipo": "arquivo:translations_settings.json",
   "paginas": [
-   "translations_skills.json"
+   "translations_settings.json"
   ]
  },
  {
-  "texto": "Black axe",
-  "tipo": "arquivo:translations_skills.json",
+  "texto": "Music Player",
+  "tipo": "arquivo:translations_settings.json",
   "paginas": [
-   "translations_skills.json"
+   "translations_settings.json"
   ]
  },
  {
-  "texto": "Black weapons",
-  "tipo": "arquivo:translations_skills.json",
+  "texto": "Music Settings",
+  "tipo": "arquivo:translations_settings.json",
   "paginas": [
-   "translations_skills.json"
+   "translations_settings.json"
   ]
  },
  {
-  "texto": "Bronze weapons",
-  "tipo": "arquivo:translations_skills.json",
+  "texto": "Music volume - 20%",
+  "tipo": "arquivo:translations_settings.json",
   "paginas": [
-   "translations_skills.json"
+   "translations_settings.json"
   ]
  },
  {
-  "texto": "Bryophyta's staff Requires: Level 30 Magic",
-  "tipo": "arquivo:translations_skills.json",
+  "texto": "PK Skull Prevention",
+  "tipo": "arquivo:translations_settings.json",
   "paginas": [
-   "translations_skills.json"
+   "translations_settings.json"
   ]
  },
  {
-  "texto": "Crafting - Level-up Unlocks",
-  "tipo": "arquivo:translations_skills.json",
+  "texto": "Release Date",
+  "tipo": "arquivo:translations_settings.json",
   "paginas": [
-   "translations_skills.json"
+   "translations_settings.json"
   ]
  },
  {
-  "texto": "Death Plateau",
-  "tipo": "arquivo:translations_skills.json",
+  "texto": "Screen Brightness",
+  "tipo": "arquivo:translations_settings.json",
   "paginas": [
-   "translations_skills.json"
+   "translations_settings.json"
   ]
  },
  {
-  "texto": "Enlightened Journey",
-  "tipo": "arquivo:translations_skills.json",
+  "texto": "Show Activity Adviser",
+  "tipo": "arquivo:translations_settings.json",
   "paginas": [
-   "translations_skills.json"
+   "translations_settings.json"
   ]
  },
  {
-  "texto": "Fairytale I - Growing Pains",
-  "tipo": "arquivo:translations_skills.json",
+  "texto": "Sound effects volume - 45%",
+  "tipo": "arquivo:translations_settings.json",
   "paginas": [
-   "translations_skills.json"
+   "translations_settings.json"
   ]
  },
  {
-  "texto": "Ferocious Gloves Requires: Level 80 Defence",
-  "tipo": "arquivo:translations_skills.json",
+  "texto": "Stone Border",
+  "tipo": "arquivo:translations_settings.json",
   "paginas": [
-   "translations_skills.json"
+   "translations_settings.json"
+  ]
+ },
+ {
+  "texto": "Visual Effects",
+  "tipo": "arquivo:translations_settings.json",
+  "paginas": [
+   "translations_settings.json"
+  ]
+ },
+ {
+  "texto": "World Map Hotkey",
+  "tipo": "arquivo:translations_settings.json",
+  "paginas": [
+   "translations_settings.json"
   ]
  },
  {
-  "texto": "Fight Arena",
+  "texto": "Accessing drift net fishing on Fossil Island Requires: Level 44 Hunter",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Gilded axe",
+  "texto": "Anchovies Small fishing net",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Grim Tales",
+  "texto": "Bass Big fishing net",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Heroes' Quest",
+  "texto": "Big Net",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Icthlarin's Little Helper",
+  "texto": "Bluefin shoal Shallow, moderate & deep trawling with fine fish offcuts",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "In Aid of the Myreque",
+  "texto": "Bluegill Aerial fishing Requires: Level 35 Hunter",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "In Search of the Myreque",
+  "texto": "Brawk fish",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Iron axe",
+  "texto": "Bream Big fishing net",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Iron weapons",
+  "texto": "Casket Big fishing net",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Lost City",
+  "texto": "Catfish Big fishing net Requires: Below Ice Mountain",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Maple trees",
+  "texto": "Cavefish Small fishing net Requires: Below Ice Mountain",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: 3rd Age weapons",
+  "texto": "Cod Big fishing net",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: 3rd age axe",
+  "texto": "Common tench Aerial fishing Requires: Level 51 Hunter",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: 3rd age felling axe",
+  "texto": "Cooking - Level-up Unlocks",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Abyssal bludgeon Requires: Level 70 Strength",
+  "texto": "Crab Quest",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Abyssal tentacle",
+  "texto": "Current Affairs",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Abyssal whip & dagger",
+  "texto": "Deep Sea Trawling",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Achey trees",
+  "texto": "Deep Sea Trawling is a Fishing method that takes place out at sea. Because of this, you need to be an experienced sailor with your own boat. For more information, you should speak to Netmaster Kellan in the Rolling Tide pub in Port Roberts.",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Adamant felling axe",
+  "texto": "Fighting Tempoross",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Ahrim's staff Requires: Level 70 Magic",
+  "texto": "Firemaking - Level-up Unlocks",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Ancient sceptre Requires: Level 60 Strength, level 70 Magic, Secrets of the North",
+  "texto": "Fishing - Aerial (Members Only)",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Ancient staff Requires: Level 50 Magic, Desert Treasure I",
+  "texto": "Fishing - Barbarian (Members Only)",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Arclight",
+  "texto": "Fishing - Big Net (Members Only)",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Arctic Pine trees",
+  "texto": "Fishing - Cage",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Arkan blade Requires: The Final Dawn",
+  "texto": "Fishing - Deep Sea Trawling (Members Only)",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Avernic defender Requires: Level 70 Defence",
+  "texto": "Fishing - Equipment",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Barrelchest Anchor Requires: Level 40 Strength, The Great Brain Robbery",
+  "texto": "Fishing - Harpoon",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Battlestaves Requires: Level 30 Magic",
+  "texto": "Fishing - Level-up Unlocks",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Belle's Folly",
+  "texto": "Fishing - Other (Members Only)",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Black felling axe",
+  "texto": "Fishing - Overview",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Black salamander Requires: Level 70 Ranged, level 70 Magic",
+  "texto": "Fishing - Raids (Members Only)",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Blade of Saeldor",
+  "texto": "Fishing - Rod",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Blessed Saradomin sword",
+  "texto": "Fishing - Small Net",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Blisterwood Requires: Sins of the Father",
+  "texto": "Fishing Contest",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Blisterwood tree",
+  "texto": "Fishing Shops",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Bloodwood trees Requires: The Blood Moon Rises",
+  "texto": "Fishing Spots",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Bone mace",
+  "texto": "Fishing rod",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Brine sabre",
+  "texto": "Fly fishing rod",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Bronze felling axe",
+  "texto": "Giant krill shoal Shallow trawling with fish offcuts",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Burning claws",
+  "texto": "Glistening shoal Shallow & moderate trawling with fine fish offcuts",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Camphor trees",
+  "texto": "Greater siren Aerial fishing Requires: Level 87 Hunter",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Clothes Pouch Requires: Level 50 Crafting",
+  "texto": "Guppy Small fishing net Requires: Below Ice Mountain",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Colossal Blade",
+  "texto": "Haddock shoal Shallow trawling with fish offcuts",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Crimson Kisten Requires: Level 85 Strength",
+  "texto": "Halibut shoal Shallow & moderate trawling with fine fish offcuts",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Crystal axe Requires: Song of the Elves",
+  "texto": "Harpoonfish (barehanded) Requires: Level 35 Strength",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Crystal felling axe Requires: Song of the Elves",
+  "texto": "He'll",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Crystal halberd Requires: Level 50 Agility, Roving Elves Requires: Western Provinces Achievement Diary - hard tier",
+  "texto": "Herring Fishing rod & fishing bait",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Crystal weaponry Requires: Level 50 Agility",
+  "texto": "Hot Drinks",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Cup",
+  "texto": "Karambwan Karambwan vessel",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Dense jungle",
+  "texto": "Kyren fish",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Dharok's greataxe Requires: Level 70 Strength",
+  "texto": "Land of the Goblins",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Dinh's bulwark Requires: Level 75 Defence",
+  "texto": "Leaping salmon Barbarian rod & most bait types Requires: Level 30 Strength, level 30 Agility",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Dragon axe",
+  "texto": "Leaping sturgeon Barbarian rod & most bait types Requires: Level 45 Strength, level 45 Agility",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Dragon felling axe",
+  "texto": "Leaping trout Barbarian rod & most bait types Requires: Level 15 Strength, level 15 Agility",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Dragon hunter lance",
+  "texto": "Leckish fish",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Dragon weapons",
+  "texto": "Leechfin Big fishing net Requires: The Blood Moon Rises",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Dual Macuahuitl Requires: Level 75 Strength",
+  "texto": "Lobster Lobster pot",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Earthbound tecpatl",
+  "texto": "Mackerel Big fishing net",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Elder maul Requires: Level 75 Strength",
+  "texto": "Manta ray Trawler & Tempoross",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Emberlight",
+  "texto": "Marlin shoal Shallow, moderate & deep trawling with fine fish offcuts",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Forester's ration Requires: Level 35 Cooking",
+  "texto": "Meat pie",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Frostmoon Spear Requires: Level 75 Magic",
+  "texto": "Members: Angler's outfit",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Ghrazi rapier",
+  "texto": "Members: Anglerfish Fishing rod & sandworms",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Glacial temotli",
+  "texto": "Members: Baked potato",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Godswords",
+  "texto": "Members: Barbarian rod Requires: Level 15 Agility, level 15 Strength",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Granite longsword Requires: Level 50 Strength",
+  "texto": "Members: Big fishing net",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Granite maul Requires: Level 50 Strength",
+  "texto": "Members: Bluefin shoal Fishing rod & fine fish offcuts",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Guthan's warspear",
+  "texto": "Members: Candle lanterns",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Hallowfell",
+  "texto": "Members: Casket Big fishing net",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Hollow trees",
+  "texto": "Members: Cave eel Fishing rod & fishing bait",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Infected tree roots",
+  "texto": "Members: Chambers of Xeric - Prael bat",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Infernal axe Requires: Level 85 Firemaking",
+  "texto": "Members: Chambers of Xeric - Suphi fish",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Inquisitor's mace",
+  "texto": "Members: Chilli con carne (topping) Meat & spicy sauce",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Iron felling axe",
+  "texto": "Members: Chocolate chip crunchies",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Ironwood trees",
+  "texto": "Members: Cider 4 Apple mush",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Ivandis Flail Requires: A Taste of Hope",
+  "texto": "Members: Cod",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Jatoba trees",
+  "texto": "Members: Cormorant's glove Requires: Level 35 Hunter",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Juniper trees",
+  "texto": "Members: Crystal harpoon Requires: Song of the Elves",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Keris dagger Requires: Contact!",
+  "texto": "Members: Dark crab Lobster pot & dark fishing bait",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Keris partisan Requires: Beneath Cursed Sands",
+  "texto": "Members: Dragon harpoon",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Light jungle",
+  "texto": "Members: Dwarven Stout 4 Hammerstone hops",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Magic trees",
+  "texto": "Members: Fruit Blast",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Mahogany trees",
+  "texto": "Members: Giant frogspawn Small fishing net",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Medium jungle",
+  "texto": "Members: Giant krill shoal Fishing rod & fish offcuts",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Mithril felling axe",
+  "texto": "Members: Glistening shoal Fishing rod & fine fish offcuts",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Mystic staves Requires: Level 40 Magic",
+  "texto": "Members: Haddock shoal Fishing rod & fish offcuts",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Nature Offerings Requires: Level 50 Farming",
+  "texto": "Members: Halibut shoal Fishing rod & fine fish offcuts",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Noxious Halberd",
+  "texto": "Members: Infernal eel Oily fishing rod & fishing bait",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Obligator",
+  "texto": "Members: Infernal harpoon Requires: Level 85 Cooking",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Obsidian melee weapons",
+  "texto": "Members: Jumbo squid Harpoon & lantern",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Orange salamander Requires: Level 50 Ranged, level 50 Magic",
+  "texto": "Members: Karambwan vessel Requires: Tai Bwo Wannai Trio",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Osmumten's Fang",
+  "texto": "Members: Karambwanji Small fishing net",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Pheasant clothing",
+  "texto": "Members: Lava eel Oily fishing rod & fishing bait",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Polished buttons",
+  "texto": "Members: Lean snail",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Purging staff Requires: Level 77 Magic",
+  "texto": "Members: Mackerel",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Red salamander Requires: Level 60 Ranged, level 60 Magic",
+  "texto": "Members: Mackerel Big fishing net",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Redwood trees",
+  "texto": "Members: Marlin shoal Fishing rod & fine fish offcuts",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Rosewood trees",
+  "texto": "Members: Monkfish Small fishing net",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Rune felling axe",
+  "texto": "Members: Nettle tea",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Sarachnis cudgel",
+  "texto": "Members: Oyster Big fishing net",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Saradomin sword",
+  "texto": "Members: Pineapple Punch",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Scythe of Vitur Requires: Level 90 Strength",
+  "texto": "Members: Pyre logs",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Secateurs Attachment Requires: Level 35 Smithing",
+  "texto": "Members: Rainbow fish Fly fishing rod & stripy feathers",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Soulreaper axe Requires: Level 80 Strength",
+  "texto": "Members: Roasted bird meat",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Staff of Balance Requires: Level 75 Magic",
+  "texto": "Members: Roasted rabbit",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Staff of Light Requires: Level 75 Magic",
+  "texto": "Members: Sacred eel Fishing rod & fishing bait",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Staff of the Dead Requires: Level 75 Magic",
+  "texto": "Members: Scrambled egg (topping ingredient)",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Steel felling axe",
+  "texto": "Members: Shark Harpoon",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Sturdy Harness Requires: Level 75 Smithing",
+  "texto": "Members: Shimmering shoal Fishing rod & fish offcuts",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Sulliuscep mushroom trees",
+  "texto": "Members: Short Green Guy (SGG)",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Sulphur blades",
+  "texto": "Members: Skillcape See the Master Fisher in the Fishing Guild",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Swamp lizard Requires: Level 30 Ranged, level 30 Magic",
+  "texto": "Members: Slimy eel Fishing rod & fishing bait",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Teak trees",
+  "texto": "Members: Spicy crunchies",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Tecu salamander Requires: Level 80 Ranged, level 80 Magic",
+  "texto": "Members: Spicy sauce (topping ingredient) Garlic + gnome spice",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: TokTz-Mej-Tal Requires: Level 60 Magic",
+  "texto": "Members: Spider",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Torag's hammers Requires: Level 70 Strength",
+  "texto": "Members: Suphi fish",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Upgraded Ancient Sceptre Requires: Level 60 Strength, level 75 Magic, Desert Treasure II - The Fallen Empire",
+  "texto": "Members: Swordtip squid Harpoon & lantern",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Ursine Chainmace",
+  "texto": "Members: Thin snail",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Variants of Keris partisan Requires: Beneath Cursed Sands",
+  "texto": "Members: Toad crunchies",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Verac's flail",
+  "texto": "Members: Vibrant shoal Fishing rod & fine fish offcuts",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Vesta's blighted longsword",
+  "texto": "Members: Wizard Blizzard",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Viggora's Chainmace",
+  "texto": "Members: Worm crunchies",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Void Knight mace Requires: Level 22 Prayer, level 42 Ranged, level 42 Defence, level 42 Strength, level 42 Hitpoints, level 42 Magic",
+  "texto": "Members: Yellowfin shoal Fishing rod & fine fish offcuts",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Voidwaker",
+  "texto": "Minnow Small fishing net Requires: Fishing Contest",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: White weapons",
+  "texto": "Mottled eel Aerial fishing Requires: Level 68 Hunter",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Zamorakian spear",
+  "texto": "Mycil fish",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Members: Zombie axe",
+  "texto": "Oyster Big fishing net",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Mithril axe",
+  "texto": "Perilous Moons",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Mithril weapons",
+  "texto": "Pike Fishing rod & fishing bait",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Monk's Friend",
+  "texto": "Pysk fish",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Mountain Daughter",
+  "texto": "Recipe for Disaster - Pirate Pete",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Normal trees",
+  "texto": "Redberry pie",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Oak trees",
+  "texto": "Ritual Offering - Cavefish",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Recipe for Disaster - Skrach Uglogwee",
+  "texto": "Ritual Offering - Guppy",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Requirements: View journal for details.",
+  "texto": "Roqed fish",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Rune axe",
+  "texto": "Rum Deal",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Rune weapons",
+  "texto": "Salmon Fly fishing rod & feathers",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Skillcape See Ajjat at the Warriors' Guild",
+  "texto": "Sardine Fishing rod & fishing bait",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Smithing skill",
+  "texto": "Sea turtle Trawler & Tempoross",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Song of the Elves",
+  "texto": "Shadows of Custodia",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Steel axe",
+  "texto": "Shark (barehanded) Requires: Level 76 Strength",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Steel weapons",
+  "texto": "Shimmering shoal Shallow trawling with fish offcuts",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "The Fremennik Isles",
+  "texto": "Shrimp Small fishing net",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "The Grand Tree",
+  "texto": "Small Net",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "The Ribbiting Tale of a Lily Pad Labour Dispute",
+  "texto": "Small fishing net",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Throne of Miscellania",
+  "texto": "Suphi fish",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Tree Gnome Village",
+  "texto": "Swan Song",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Vampyre Slayer",
+  "texto": "Swordfish (barehanded) Requires: Level 50 Strength",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "View Woodcutting on the Wiki",
+  "texto": "Swordfish Harpoon",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Void Knight equipment Requires: Level 22 Prayer, level 42 Ranged, level 42 Magic, level 42 Defence, level 42 Strength, level 42 Hitpoints",
+  "texto": "T-bone Steak",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Waterfall Quest",
+  "texto": "Tetra Small fishing net Requires: Below Ice Mountain",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Willow trees",
+  "texto": "To start fishing like a Barbarian, talk to Otto Godblessed when you have at least level 48 Fishing, level 15 Agility and level 15 Strength.",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Woodcutting - Axes",
+  "texto": "Trout Fly fishing rod & feathers",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Woodcutting - Forestry",
+  "texto": "Tuna (barehanded) Requires: Level 35 Strength",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Woodcutting - Level-up Unlocks",
+  "texto": "Tuna Harpoon",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Woodcutting - Overview",
+  "texto": "Vibrant shoal Shallow, moderate & deep trawling with fine fish offcuts",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Woodcutting - Trees",
+  "texto": "View Fishing on the Wiki",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
   ]
  },
  {
-  "texto": "Yew trees",
+  "texto": "Yellowfin shoal Shallow & moderate trawling with fish offcuts",
   "tipo": "arquivo:translations_skills.json",
   "paginas": [
    "translations_skills.json"
@@ -1890,21 +1981,28 @@
   ]
  },
  {
-  "texto": "... e encontra uma pequena chave.",
+  "texto": "*** 60 pila era 3 meses",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
   ]
  },
  {
-  "texto": "... então morrem e flutuam até a superfície.",
+  "texto": "45 de prayer",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
   ]
  },
  {
-  "texto": "...mas não encontrou nada de interessante.",
+  "texto": "60 + de def",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "60 pila 1 mes é facada",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -1918,7 +2016,7 @@
   ]
  },
  {
-  "texto": "@ap_mes@You just completed the task Getting started with Woodcutting! Speak to Adventurer Jon to claim your reward.",
+  "texto": "@ap_mes@You just completed the task Getting started with Fishing! Speak to Adventurer Jon to claim your reward.",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -2002,13 +2100,6 @@
   ]
  },
  {
-  "texto": "A Prisão Antiga",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
   "texto": "A Ruff Situation",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
@@ -2072,21 +2163,21 @@
   ]
  },
  {
-  "texto": "A bird's nest falls out of the tree.",
+  "texto": "Add eu tb cowboy",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
   ]
  },
  {
-  "texto": "A máquina ronrona e treme.",
+  "texto": "Agora * high alch",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
   ]
  },
  {
-  "texto": "Adicionar amigo",
+  "texto": "Ai eu do",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -2107,7 +2198,7 @@
   ]
  },
  {
-  "texto": "Algo na água morde você.",
+  "texto": "Alguem me doa uma rune pickaxe",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -2170,13 +2261,6 @@
   ]
  },
  {
-  "texto": "Animal Magnetism",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
   "texto": "Another Slice of H.A.M.",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
@@ -2233,13 +2317,6 @@
   ]
  },
  {
-  "texto": "As piranhas começam a comer a ração...",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
   "texto": "Assault and Battery",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
@@ -2254,7 +2331,21 @@
   ]
  },
  {
+  "texto": "Ate no celular",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
   "texto": "Auto Retaliate (On)",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Autobot ativar",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -2366,13 +2457,6 @@
   ]
  },
  {
-  "texto": "Bem-Vindo(a) ao Old School RuneScape.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
   "texto": "Beneath Cursed Sands",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
@@ -2451,6 +2535,20 @@
  },
  {
   "texto": "Blood Rush",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Boa noite",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Boa noite aí pros ces",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -2555,7 +2653,7 @@
   ]
  },
  {
-  "texto": "Bronze shortsword",
+  "texto": "Briòfita",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -2598,13 +2696,6 @@
  },
  {
   "texto": "Cain's Tutorial",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Caixa de entrada: 0 mensagens não lidas",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -2688,7 +2779,35 @@
   ]
  },
  {
-  "texto": "Check the skill guide for more information about Woodcutting.",
+  "texto": "Check the skill guide for more information about Cooking.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Check the skill guide for more information about Firemaking.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Check the skill guide for more information about Fishing.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Check the skill guide to see what else your new Cooking level unlocks!",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Check the skill guide to see what else your new Woodcutting level unlocks!",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -2696,6 +2815,13 @@
  },
  {
   "texto": "Chef Surprise",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Chega de queimar lenha por hoje",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -2730,21 +2856,14 @@
   ]
  },
  {
+  "texto": "Click here to see all the paths.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
   "texto": "Client of Kourend",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Clique aqui para sair",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Clique com o botão esquerdo onde disponível",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -2779,7 +2898,21 @@
   ]
  },
  {
-  "texto": "Começar",
+  "texto": "Compensa mais que *icar pegando coisa de rune?",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Con*eço não, quê isso?",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Consigo derrotar o briófrito duas vezes por ida mas nunca aparece o cão da essên",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -2912,6 +3045,13 @@
   ]
  },
  {
+  "texto": "Dance for money",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
   "texto": "Dance of Death",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
@@ -3003,13 +3143,6 @@
   ]
  },
  {
-  "texto": "Death Plateau",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
   "texto": "Death on the Isle",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
@@ -3094,7 +3227,14 @@
   ]
  },
  {
-  "texto": "Did you know? On mobile you can categorise, highlight, and hide loot dropped on the ground by its value.",
+  "texto": "Did you know? If you're looking for a break from your desk, you can continue the grind on mobile no matter where you are.",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Did you know? On mobile you can check your Grand Exchange offers at any time and on the go.",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -3165,6 +3305,13 @@
  },
  {
   "texto": "Doric's Quest",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Dormir quentin nesse calo slk",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -3276,6 +3423,13 @@
   ]
  },
  {
+  "texto": "E fazer dinheirinho",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
   "texto": "Eadgar's Ruse",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
@@ -3360,35 +3514,49 @@
   ]
  },
  {
-  "texto": "Enlightened Journey",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Enviando solicitação de cancelamento...",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Essência rúnica",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Este ninho parece ter algum papel velho dentro.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
   "texto": "Ethically Acquired Antiquities",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Eu achava que era uns 20 reais, pfffff",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Eu aqui *** 18 de mining",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Eu gosto de upar por q tem uns truques de mágica bacanas",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Eu na saga de conseguir o cajado do priófrito",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Eu tô *** dois ventiladores aqui",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Eu tô no 31 aqui**** sacrifício",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -3424,13 +3592,6 @@
  },
  {
   "texto": "Eye of the Storm",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Fairytale I - Growing Pains",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -3479,6 +3640,13 @@
   ]
  },
  {
+  "texto": "Fazer high alquimy *** diamond necklake",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
   "texto": "Fe Fi Fo Fum",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
@@ -3494,13 +3662,6 @@
  },
  {
   "texto": "Fenkenstrain's Refrain",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Fight Arena",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -3563,6 +3724,13 @@
   ]
  },
  {
+  "texto": "Foi mal, peidinho, as coisa tão apertada",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
   "texto": "Food for Thought",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
@@ -3598,6 +3766,20 @@
   ]
  },
  {
+  "texto": "Fuego fuego fuegooo",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Fui ver e desanimei",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
   "texto": "Ful to the Brim",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
@@ -3612,7 +3794,7 @@
   ]
  },
  {
-  "texto": "Game client layout:",
+  "texto": "Ganha uma grana boa",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -3724,27 +3906,6 @@
   ]
  },
  {
-  "texto": "Grand Exchange",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Grand Exchange: Terminou de vender 1 x Bronze axe.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Grim Tales",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
   "texto": "Grimly Fiendish",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
@@ -3760,13 +3921,6 @@
  },
  {
   "texto": "Grow Grow Grow",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Guardiões do Rift",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -3843,13 +3997,6 @@
   ]
  },
  {
-  "texto": "Heroes' Quest",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
   "texto": "High Seas",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
@@ -3899,7 +4046,7 @@
   ]
  },
  {
-  "texto": "I can't believe I'm about to do this!",
+  "texto": "Ia da uma hypada da boa",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -3920,13 +4067,6 @@
   ]
  },
  {
-  "texto": "Icthlarin's Little Helper",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
   "texto": "Imp Catcher",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
@@ -3934,21 +4074,7 @@
   ]
  },
  {
-  "texto": "In Aid of the Myreque",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
   "texto": "In Between",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "In Search of the Myreque",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -4019,13 +4145,6 @@
  },
  {
   "texto": "Into the Tombs",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Io io io!",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -4158,6 +4277,13 @@
   ]
  },
  {
+  "texto": "Já tá queimada *** esse calor",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
   "texto": "Kanon of Kahlith",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
@@ -4180,6 +4306,27 @@
  },
  {
   "texto": "King's Ransom",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Kkkkkk a galera traumatizada",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Kkkkkk ah, é tranquilo até",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Kkkkkkkkk uma salva de palmas",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -4312,70 +4459,357 @@
   ]
  },
  {
-  "texto": "Level 10 Woodcutting: Light jungle (members-only)",
+  "texto": "Level 10 Cooking: Mackerel (members-only)",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
   ]
  },
  {
-  "texto": "Level 11 Woodcutting: Black axe",
+  "texto": "Level 10 Cooking: Redberry pie",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
   ]
  },
  {
-  "texto": "Level 11 Woodcutting: Black felling axe (members-only)",
+  "texto": "Level 10 Cooking: Toad crunchies (members-only)",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
   ]
  },
  {
-  "texto": "Level 12 Woodcutting: Log canoe",
+  "texto": "Level 10 Fishing: Herring",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
   ]
  },
  {
-  "texto": "Level 15 Woodcutting: Oak trees",
+  "texto": "Level 11 Cooking: Chilli con carne (topping) (members-only)",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
   ]
  },
  {
-  "texto": "Level 20 Woodcutting: Medium jungle (members-only)",
+  "texto": "Level 11 Cooking: Roasted bird meat (members-only)",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
   ]
  },
  {
-  "texto": "Level 21 Woodcutting: Mithril axe",
+  "texto": "Level 12 Cooking: Spicy crunchies (members-only)",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
   ]
  },
  {
-  "texto": "Level 21 Woodcutting: Mithril felling axe (members-only)",
+  "texto": "Level 12 Cooking: Thin snail (members-only)",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
   ]
  },
  {
-  "texto": "Level 6 Woodcutting: Steel axe",
+  "texto": "Level 13 Cooking: Scrambled egg (topping ingredient) (members-only)",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
   ]
  },
  {
-  "texto": "Level 6 Woodcutting: Steel felling axe (members-only)",
+  "texto": "Level 13 Cooking: T-bone Steak",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 14 Cooking: Cider (members-only)",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 14 Cooking: Worm crunchies (members-only)",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 15 Cooking: Chambers of Xeric - Prael bat (members-only)",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 15 Cooking: Chambers of Xeric - Suphi fish (members-only)",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 15 Fishing: Anchovies",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 15 Fishing: Suphi fish (members-only)",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 16 Cooking: Chocolate chip crunchies (members-only)",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 16 Cooking: Roasted rabbit (members-only)",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 16 Cooking: Spider (members-only)",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 16 Fishing: Casket (members-only)",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 16 Fishing: Mackerel (members-only)",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 16 Fishing: Oyster (members-only)",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 17 Cooking: Lean snail (members-only)",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 18 Cooking: Cod (members-only)",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 18 Cooking: Wizard Blizzard (members-only)",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 19 Cooking: Dwarven Stout (members-only)",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 20 Cooking: Meat pie",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 20 Cooking: Nettle tea (members-only)",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 20 Cooking: Pike",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 27 Woodcutting: Dugout canoe",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 30 Woodcutting: Willow trees",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 31 Woodcutting: Adamant axe",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 31 Woodcutting: Adamant felling axe (members-only)",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 35 Woodcutting: Dense jungle (members-only)",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 35 Woodcutting: Forester's ration (members-only)",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 35 Woodcutting: Teak trees (members-only)",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 40 Woodcutting: Jatoba trees (members-only)",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 41 Woodcutting: Gilded axe",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 41 Woodcutting: Rune axe",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 41 Woodcutting: Rune felling axe (members-only)",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 5 Cooking: Herring",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 5 Firemaking: Pyre logs (members-only)",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 5 Fishing: Karambwanji (members-only)",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 5 Fishing: Sardine",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 6 Cooking: Fruit Blast (members-only)",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 7 Cooking: Baked potato (members-only)",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 7 Cooking: Ritual Offering - Guppy",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 7 Fishing: Guppy",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 8 Cooking: Pineapple Punch (members-only)",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level 9 Cooking: Spicy sauce (topping ingredient) (members-only)",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Li que neste multiverso só tem badeco",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -4390,20 +4824,6 @@
  },
  {
   "texto": "Life's a Beach!",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Links úteis",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Lista de quests",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -4459,13 +4879,6 @@
   ]
  },
  {
-  "texto": "Lost City",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
   "texto": "Lost Soul",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
@@ -4495,6 +4908,13 @@
  },
  {
   "texto": "Lucid Nightmare",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Lug desapareceu",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -4648,6 +5068,13 @@
   ]
  },
  {
+  "texto": "Maconheros e autistas boatos",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
   "texto": "Mad Eadgar",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
@@ -4711,6 +5138,13 @@
   ]
  },
  {
+  "texto": "Mas eu só ataco *** fogo",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
   "texto": "Master of Puppets",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
@@ -4767,6 +5201,13 @@
   ]
  },
  {
+  "texto": "Meu prayer consegui no member",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
   "texto": "Miles Away",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
@@ -4795,13 +5236,6 @@
   ]
  },
  {
-  "texto": "Miscelânea",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
   "texto": "Misthalin Mystery",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
@@ -4810,13 +5244,6 @@
  },
  {
   "texto": "Monarch Waltz",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Monk's Friend",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -4879,13 +5306,6 @@
   ]
  },
  {
-  "texto": "Mor Ul Rek",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
   "texto": "More Than Meets the Eye",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
@@ -4901,13 +5321,6 @@
  },
  {
   "texto": "Mother Ruckus",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Mountain Daughter",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -4943,13 +5356,6 @@
  },
  {
   "texto": "Mudskipper Melody",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Mundo sugerido:",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -4998,7 +5404,7 @@
   ]
  },
  {
-  "texto": "NPC 'Attack' options:",
+  "texto": "N sei**** depende da paciência de mudar de mundo",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -5012,7 +5418,21 @@
   ]
  },
  {
+  "texto": "Nao tem pq nao",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
   "texto": "Narnode's Theme",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Nd haver",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -5061,7 +5481,21 @@
   ]
  },
  {
+  "texto": "No caso 60+ de mage",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
   "texto": "Norse Code",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Nossa, sim",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -5096,7 +5530,28 @@
   ]
  },
  {
-  "texto": "Não consigo alcançar isso!",
+  "texto": "Num fala essa palavra aqui",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Não con*ecia, que da hora",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Não manjo de magic",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "O cajado dele é bom?",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -5104,13 +5559,6 @@
  },
  {
   "texto": "Ocean Depths",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Oddenstein aciona a máquina.",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -5125,6 +5573,13 @@
  },
  {
   "texto": "Oh Rats!",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Oh dear, you are dead!",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -5257,167 +5712,6 @@
   ]
  },
  {
-  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 10.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 11.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 12.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 13.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 14.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 15.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 16.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 17.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 18.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 19.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 2.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 20.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 21.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 22.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 3.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 4.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 5.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 6.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 7.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 8.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Parabéns, você acabou de subir seu nível de Woodcutting. Você agora está no nível 9.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Parabéns, você alcançou o nível total de 50.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Parabéns, você concluiu uma missão: @q_mes@Ernest the Chicken",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
   "texto": "Path of Peril",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
@@ -5426,6 +5720,20 @@
  },
  {
   "texto": "Peace and Prosperity",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Pegar um dia de boa, deixar um filme rolando do lado",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Pena q * tem pet f2p tnt",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -5447,6 +5755,13 @@
  },
  {
   "texto": "Pest Control",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Pga 40 de mining antes ow peidin",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -5509,13 +5824,6 @@
   ]
  },
  {
-  "texto": "Player 'Attack' options:",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
   "texto": "Plots and Plans",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
@@ -5531,6 +5839,13 @@
  },
  {
   "texto": "Polls: Inactive",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Por exemplo",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -5558,14 +5873,42 @@
   ]
  },
  {
-  "texto": "Price of Clue nest (beginner) : HA value 270",
+  "texto": "Price of 27 x Willow logs : GE average 648 ( 24 ea) HA value 648 ( 24 ea)",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
   ]
  },
  {
-  "texto": "Price of Oak logs : GE average 30 HA value 12",
+  "texto": "Price of 270 x Willow logs : GE average 6,480 ( 24 ea) HA value 6,480 ( 24 ea)",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Price of 290 x Oak logs : GE average 8,700 ( 30 ea) HA value 3,480 ( 12 ea)",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Price of 43 x Sardine : GE average 774 ( 18 ea) HA value 258 ( 6 ea)",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Price of 53 x Shrimps : GE average 1,113 ( 21 ea) HA value 159 ( 3 ea)",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Price of Uncut ruby : GE average 909 HA value 60",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -5614,14 +5957,28 @@
   ]
  },
  {
-  "texto": "Quest Points: 12/357",
+  "texto": "Quando teve a atualização dos mundos",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
   ]
  },
  {
-  "texto": "Quest do observatório",
+  "texto": "Queima rosca agr",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Quest Helper has been updated to 4.18.0! Crab Quest (ty maskarauder!) and A Ruff Situation (ty leafyboat and pajlada!) are now both added!",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Quest Points: 12/357",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -5747,13 +6104,6 @@
   ]
  },
  {
-  "texto": "Recipe for Disaster - Skrach Uglogwee",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
   "texto": "Recipe for Disaster - Wartface & Bentnoze",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
@@ -5768,13 +6118,6 @@
   ]
  },
  {
-  "texto": "Redimensionável - layout moderno",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
   "texto": "Regal Pomp",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
@@ -5783,13 +6126,6 @@
  },
  {
   "texto": "Reign of the Basilisk",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Relíquias Esfaceladas",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -6111,14 +6447,21 @@
   ]
  },
  {
-  "texto": "Selecione uma atividade...",
+  "texto": "Sem con*ições",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
   ]
  },
  {
-  "texto": "Sempre clique com o botão direito",
+  "texto": "Semi autista *** hiperfoco em fazer fogueira",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Seria uma boa, presentinho de natal",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -6146,21 +6489,7 @@
   ]
  },
  {
-  "texto": "Seu inventário está cheio demais para carregar mais troncos de oak.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Seu inventário está cheio demais para guardar mais lenhas.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Seu inventário está muito cheio.",
+  "texto": "Set a Path and Task in focus to see the task description show up here. Click the eye icon to set a task in focus.",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -6223,6 +6552,13 @@
   ]
  },
  {
+  "texto": "Show Paths",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
   "texto": "Sigmund's Showdown",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
@@ -6231,6 +6567,13 @@
  },
  {
   "texto": "Sign Here",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Sim, ainda mais pra galera que voltou recentemente",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -6286,7 +6629,14 @@
   ]
  },
  {
-  "texto": "Song of the Elves",
+  "texto": "So os decepticons no ar",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Some of your dropped items are being held in a gravestone, near where you died.",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -6419,6 +6769,20 @@
   ]
  },
  {
+  "texto": "Só high alch ta compesando aqui?",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Só se até semana que vem mudar algo",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
   "texto": "Tale of Keldagrim",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
@@ -6539,6 +6903,13 @@
  },
  {
   "texto": "That Sullen Hall",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "That offer costs 7,228 coins. You haven't got enough.",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -6881,13 +7252,6 @@
   ]
  },
  {
-  "texto": "The Fremennik Isles",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
   "texto": "The Fremennik Kings",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
@@ -6944,28 +7308,7 @@
   ]
  },
  {
-  "texto": "The Grand Tree",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
   "texto": "The Graveyard",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "The Graveyard, a new Master tier quest continuing the Fremennik storyline, is here! A new Agility Course also awaits those who answer the call!",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "The Graveyard, a new Master tier quest that continues the Fremennik storyline, is here! - click here for the newspost.",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -7259,13 +7602,6 @@
   ]
  },
  {
-  "texto": "The Ribbiting Tale of a Lily Pad Labour Dispute",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
   "texto": "The Rising Sun",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
@@ -7469,27 +7805,6 @@
   ]
  },
  {
-  "texto": "The doors slam shut behind you.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "The doors won't open.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "The lever opens the secret door!",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
   "texto": "Thrall of the Devourer",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
@@ -7498,13 +7813,6 @@
  },
  {
   "texto": "Thrall of the Serpent",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Throne of Miscellania",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -7532,6 +7840,13 @@
   ]
  },
  {
+  "texto": "Time Played: 6 hours, 43 minutes",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
   "texto": "Time to Mine",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
@@ -7546,7 +7861,14 @@
   ]
  },
  {
-  "texto": "Toda a música",
+  "texto": "To 3 anos sem jogar, tendi foi nada kkkkkkkkkkkkkkkk",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "To create a new tab, drag items from your bank onto this tab.",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -7567,14 +7889,28 @@
   ]
  },
  {
-  "texto": "Torre de Vigia",
+  "texto": "Total XP: 26,745",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
   ]
  },
  {
-  "texto": "Total level: 63",
+  "texto": "Total level: 121",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Total level: 77",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Total level: 87",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -7596,13 +7932,6 @@
  },
  {
   "texto": "Trawler Minor",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Tree Gnome Village",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -7637,28 +7966,7 @@
   ]
  },
  {
-  "texto": "Trocar de mundo",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
   "texto": "Troll Shuffle",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Troll Stronghold",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Troncos cortados de uma árvore carvalho.",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -7756,13 +8064,6 @@
   ]
  },
  {
-  "texto": "Vampyre Slayer",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
   "texto": "Varlamore's Sunset",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
@@ -7770,7 +8071,14 @@
   ]
  },
  {
-  "texto": "Ver caixa de entrada",
+  "texto": "Vcs tao farmando bond como?",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Vi aqui que precisa de prayer alto, complicado pra mim kkkkk",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -7813,104 +8121,6 @@
  },
  {
   "texto": "View Poll",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Você cava no composto...",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Você consegue alguns troncos de oak.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Você desbloqueou uma nova faixa de música: @mes_hl_red@The Trade Parade",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Você despeja a ração de peixe envenenada na fonte.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Você destranca a porta.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Você deu nota 5/5 a uma quest: @q_mes@Ernest the Chicken",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Você envenena a ração de peixes.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Você golpeia a árvore com seu machado.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Você não está num chat-channel de grupo agora.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Você não tem espaço suficiente no inventário para retirar essa quantidade.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Você pega o manômetro da fonte.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Você precisa de nível 15 em Woodcutting para cortar esta árvore.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Você precisa de nível 30 em Woodcutting para cortar esta árvore.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Você se sente enfraquecido.",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -7960,13 +8170,6 @@
  },
  {
   "texto": "Watch Your Step",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Waterfall Quest",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -8141,119 +8344,28 @@
   ]
  },
  {
-  "texto": "You aren't carrying any containers that can be emptied.",
+  "texto": "You are not a high enough level to use this item.",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
   ]
  },
  {
-  "texto": "You climb up the ladder.",
+  "texto": "You need to have an attack level of 10.",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
   ]
  },
  {
-  "texto": "You don't have any of that item available to sell.",
+  "texto": "You successfully cook some shrimps.",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
   ]
  },
  {
-  "texto": "You give a rubber tube, a pressure gauge,",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "You hear a clunk.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "You may add friends by using the button below, or by right-clicking on a message from them and selecting to add them as a friend.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "You pull lever A down.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "You pull lever A up.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "You pull lever B down.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "You pull lever B up.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "You pull lever C down.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "You pull lever D down.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "You pull lever E down.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "You pull lever E up.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "You pull lever F down.",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "You've found a secret door!",
-  "tipo": "arquivo:translations_welcome.json",
-  "paginas": [
-   "translations_welcome.json"
-  ]
- },
- {
-  "texto": "Your account is currently restricted for trading. The restrictions will lift in 16 hours, 25 minutes, provided you gain 2 more quest points and 37 more skill levels.",
+  "texto": "You successfully retrieved everything from your gravestone.",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
@@ -8302,14 +8414,133 @@
   ]
  },
  {
-  "texto": "e uma lata de óleo ao professor.",
+  "texto": "erica hylton:",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
   ]
  },
  {
-  "texto": "galinha69: mmimmm *",
+  "texto": "faz-miii:",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "galinha69: iii *",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "É difícil ou é tranquilo?",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "É disseram que era aqui tam**m, mas fonte vozes da cabeça",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "É o melhor do f2p mas se vc paga 30 reais ele é food",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "É um dos boses f2p",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Ó os cara trabalhando na meritocracia, quê isso",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Última queimada pra ir dormir quentinho",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Level [number] [skill]: [item] (members-only)",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Level [number] [skill]: [item]",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Price of [number] x [item] : GE average [number] ( [number] ea) HA value [number] ( [number] ea)",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Price of [item] : GE average [number] HA value [number]",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "That offer costs [number] coins. You haven't got enough.",
+  "tipo": "arquivo:translations_game_message.json",
+  "paginas": [
+   "translations_game_message.json"
+  ]
+ },
+ {
+  "texto": "Total level: [number]",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Total XP: [number]",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Quest Points: [number]/[number]",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Time Played: [number] hours, [number] minutes",
+  "tipo": "arquivo:translations_welcome.json",
+  "paginas": [
+   "translations_welcome.json"
+  ]
+ },
+ {
+  "texto": "Friends List - World [number]",
   "tipo": "arquivo:translations_welcome.json",
   "paginas": [
    "translations_welcome.json"
