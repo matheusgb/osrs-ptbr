@@ -25272,5 +25272,18 @@
   "Level [number] [skill]: [item]": "Nível [number] de [skill]: [item]",
   "Price of [number] x [item] : GE average [number] ( [number] ea) HA value [number] ( [number] ea)": "Preço de [number] x [item] : média GE [number] ( [number] cada) valor HA [number] ( [number] cada)",
   "Price of [item] : GE average [number] HA value [number]": "Preço de [item] : média GE [number] valor HA [number]",
-  "That offer costs [number] coins. You haven't got enough.": "Essa oferta custa [number] coins. Você não tem o suficiente."
+  "That offer costs [number] coins. You haven't got enough.": "Essa oferta custa [number] coins. Você não tem o suficiente.",
+  "Did you know? On mobile you can use bank tags to help categorise and display your bank contents.": "Sabia? No celular você pode usar bank tags para organizar e mostrar o que tem no seu banco.",
+  "Did you know? You can customise your interactions on mobile, like 1 tap pickpocketing, making on the go play easy!": "Sabia? No celular você pode personalizar suas interações, como pickpocket com 1 toque, e jogar fora de casa fica fácil!",
+  "Did you know? You can highlight ground tiles when playing on mobile to help you know where to tap, especially in high-stakes encounters!": "Sabia? No celular você pode destacar os tiles do chão para saber onde tocar, ainda mais em lutas de alto risco!",
+  "Someone else is fighting that.": "Outra pessoa já está lutando com isso.",
+  "That item is currently out of stock.": "Esse item está sem estoque no momento.",
+  "They heal some health.": "Eles recuperam um pouco de vida.",
+  "Untradeable drop: Red goblin mail": "Drop não negociável: Red goblin mail",
+  "You can't actually see anything.": "Você não consegue ver nada, na real.",
+  "You don't have enough Anima bark.": "Você não tem Anima bark suficiente.",
+  "You'd need a total of 750 in non-member skills to log into that world.": "Você precisaria de um total de 750 nas skills de não membro para entrar nesse mundo.",
+  "You'll need an empty bucket to collect the milk.": "Você vai precisar de um balde vazio para pegar o leite.",
+  "Are you sure you wish to switch to World [number]?": "Tem certeza de que quer trocar para o Mundo [number]?",
+  "@ap_mes@You just completed the task [task]! Speak to Adventurer Jon to claim your reward.": "@ap_mes@Você acabou de completar a tarefa [task]! Fale com Adventurer Jon para pegar sua recompensa."
 }
